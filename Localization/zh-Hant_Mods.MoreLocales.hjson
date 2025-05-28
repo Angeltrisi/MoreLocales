@@ -1,5 +1,8 @@
 Configs: {
-	Headers.Fonts: 字體設定
+	Headers: {
+		Fonts: 字體設定
+		// Features: Localized Prefix Placement Header
+	}
 
 	ClientSideConfig: {
 		DisplayName: 客戶端設定
@@ -11,6 +14,16 @@ Configs: {
 				強制遊戲使用此類型的在地化字體，忽略目前的語言設置。
 				預設為{$Configs.LocalizedFont.None.Label}，代表字體會根據所選語言動態變更。
 				'''
+		}
+
+		LocalizedPrefixPlacement: {
+			// Label: Localized Prefix Placement
+			// Tooltip: ""
+		}
+
+		LocalizedPrefixGenderPluralization: {
+			// Label: Localized Prefix Gender Pluralization
+			// Tooltip: ""
 		}
 	}
 

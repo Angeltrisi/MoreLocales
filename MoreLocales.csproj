@@ -5,8 +5,20 @@
 
 	<!-- General -->
 	<PropertyGroup>
-		
+		<ResolveAssemblyWarnOrErrorOnTargetArchitectureMismatch>None</ResolveAssemblyWarnOrErrorOnTargetArchitectureMismatch>
 	</PropertyGroup>
+	<ItemGroup>
+	  <PackageReference Include="Krafs.Publicizer" Version="2.3.0">
+	    <PrivateAssets>all</PrivateAssets>
+	    <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+	  </PackageReference>
+	</ItemGroup>
+	<ItemGroup>
+		<Publicize Include="ReLogic" />
+		<Publicize Include="tModLoader" />
+		<DoNotPublicize Include="tModLoader:Terraria.UI.UIElement" />
+		<DoNotPublicize Include="tModLoader:Terraria.Main.OnResolutionChanged" />
+	</ItemGroup>
 	
 	<!-- References -->
 

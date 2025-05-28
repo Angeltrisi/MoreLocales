@@ -1,122 +1,98 @@
 ﻿using System;
 using Terraria.Localization;
-using static Terraria.Localization.GameCulture;
 using static MoreLocales.Core.CultureNamePlus;
+using Terraria;
+using System.Runtime.CompilerServices;
 
 namespace MoreLocales.Utilities
 {
     public static class CultureHelper
     {
         public static bool CustomCultureActive(CultureNamePlus customCulture) => LanguageManager.Instance.ActiveCulture.LegacyId == (int)customCulture;
-        public static bool NeedsLocalizedTitle(string cultureKey) => Language.Exists($"{cultureKey}.LocalizedFont");
-        public static string FullName(this GameCulture culture) => culture.IsCustom() ? ((CultureNamePlus)culture.LegacyId).ToString() : ((CultureName)culture.LegacyId).ToString();
-        public static bool IsCustom(this GameCulture culture) => ExtraLocalesSupport.extraCultures.ContainsValue(culture);
-        public static bool HasSubtitle(this GameCulture culture)
+        public static string FullName(this GameCulture culture) => ExtraLocalesSupport.extraCulturesV2[culture.LegacyId].Name; // culture.IsCustom() ? ((CultureNamePlus)culture.LegacyId).ToString() : ((CultureName)culture.LegacyId).ToString();
+        public static bool IsCustom(this GameCulture culture) => !ExtraLocalesSupport.extraCulturesV2[culture.LegacyId].Vanilla;
+        public static bool IsValid(int culture) => culture > 0 && culture < ExtraLocalesSupport.extraCulturesV2.Length;
+        /// <summary>
+        /// Maps a custom culture's ID to a vanilla culture with the same pluralization rule. Returns 10 for <see cref="PluralizationStyle.Custom"/>.
+        /// </summary>
+        /// <param name="realID"></param>
+        /// <returns></returns>
+        public static int MapLegacyIDToPluralizationID(int realID)
         {
-            if (!Enum.IsDefined((CultureName)culture.LegacyId))
-            {
-                CultureNamePlus name = (CultureNamePlus)culture.LegacyId;
-                return name switch
-                {
-                    CultureNamePlus.Vietnamese => false,
-                    _ => true
-                };
-            }
-            return true;
-
-        }
-        public static bool HasDescription(this GameCulture culture)
-        {
-            if (culture.IsCustom())
-            {
-                CultureNamePlus name0 = (CultureNamePlus)culture.LegacyId;
-                return name0 switch
-                {
-                    _ => false
-                };
-            }
-            CultureName name1 = (CultureName)culture.LegacyId;
-            return name1 switch
-            {
-                _ => false
-            };
-        }
-        public static string LangCode(this CultureNamePlus culture)
-        {
-            return culture switch
-            {
-                BritishEnglish => "en-GB",
-                Japanese => "ja-JP",
-                Korean => "ko-KR",
-                TraditionalChinese => "zh-Hant",
-                Turkish => "tr-TR",
-                Thai => "th-TH",
-                Ukrainian => "uk-UA",
-                LatinAmericanSpanish => "es-LA",
-                Czech => "cs-CZ",
-                Hungarian => "hu-HU",
-                PortugalPortuguese => "pt-PT",
-                Swedish => "sv-SE",
-                Dutch => "nl-NL",
-                Danish => "da-DK",
-                Vietnamese => "vi-VN",
-                Finnish => "fi-FI",
-                Romanian => "ro-RO",
-                Indonesian => "id-ID",
-                _ => null
-            };
-        }
-        public static CultureName FallbackLang(this CultureNamePlus culture)
-        {
-            return culture switch
-            {
-                TraditionalChinese => CultureName.Chinese,
-                Ukrainian => CultureName.Russian,
-                LatinAmericanSpanish => CultureName.Spanish,
-                PortugalPortuguese => CultureName.Portuguese,
-                _ => CultureName.English
-            };
-        }
-        public static bool IsValid(this CultureNamePlus culture) => Enum.IsDefined(culture) && culture != Unknown;
-        public static PluralizationType Pluralization(this CultureNamePlus culture)
-        {
-            return culture switch
-            {
-                BritishEnglish or LatinAmericanSpanish or PortugalPortuguese
-                or Hungarian or Swedish or Dutch or Danish or Finnish => PluralizationType.Simple,
-
-                Japanese or Korean or TraditionalChinese or Thai or Vietnamese or Indonesian => PluralizationType.None, // for completion's sake
-
-                Ukrainian => PluralizationType.RussianThreeway,
-
-                Czech or Turkish or Romanian => PluralizationType.Custom,
-
-                _ => PluralizationType.None,
-            };
+            if (realID < (int)BritishEnglish)
+                return realID;
+            return (int)ExtraLocalesSupport.extraCulturesV2[realID].PluralizationRule;
         }
         public static int CustomPluralization(int c, int mod10, int mod100, int count)
         {
-            CultureNamePlus culture = (CultureNamePlus)c;
-            switch (culture)
-            {
-                case Czech:
-                    if (count == 1)
-                        return 0;
-                    else if (count >= 2 && count <= 4)
-                        return 1;
-                    return 2;
-                case Turkish:
-                    if (count > 1)
-                        return 1;
-                    return 0;
-                case Romanian:
-                    if (count == 1)
-                        return 0;
-                    else if (count == 0 || (mod100 > 0 && mod100 < 20))
-                        return 1;
-                    return 2;
-            }
+            return ExtraLocalesSupport.extraCulturesV2[c].CustomPluralizationRule(count, mod10, mod100);
+        }
+        #region Pluralization Rules
+        public static int czechPlural(int count, int mod10, int mod100)
+        {
+            if (count == 1)
+                return 0;
+            else if (count >= 2 && count <= 4)
+                return 1;
+            return 2;
+        }
+        public static int turkishPlural(int count, int mod10, int mod100)
+        {
+            if (count > 1)
+                return 1;
             return 0;
+        }
+        public static int romanianPlural(int count, int mod10, int mod100)
+        {
+            if (count == 1)
+                return 0;
+            else if (count == 0 || (mod100 > 0 && mod100 < 20))
+                return 1;
+            return 2;
+        }
+        #endregion
+        /// <summary>
+        /// Replicates the behavior of <see cref="Item.Name"/> before the effects of <see cref="FeaturesPlus.RemovePrefixLiteralFromName(ILContext)"/>.
+        /// </summary>
+        /// <param name="i"></param>
+        /// <returns></returns>
+        public static string GetRealName(this Item i) => i._nameOverride ?? Lang.GetItemNameValue(i.type);
+        public static ref MoreLocalesCulture RegisterCulture(this Mod mod,
+            string internalName,
+            string languageCode,
+            int fallbackCulture = 1,
+            bool hasSubtitle = true,
+            bool hasDescription = false,
+            PluralizationStyle pluralizationStyle = PluralizationStyle.Simple,
+            Func<int, int, int, int> customPluralizationRule = null,
+            AdjectiveOrder adjectiveOrder = default,
+            Func<int, int, bool> contextChangesAdjective = null)
+        =>
+            ref ExtraLocalesSupport.RegisterCulture( internalName, languageCode, fallbackCulture, hasSubtitle, hasDescription,
+                pluralizationStyle, customPluralizationRule, adjectiveOrder, contextChangesAdjective, mod);
+    }
+    /// <summary>
+    /// A light text formatting structure for adjective-noun order.
+    /// </summary>
+    /// <param name="Type">Whether or not the adjective should go before or after the noun.</param>
+    /// <param name="Connector">The string to insert between the adjective and the noun, if any.</param>
+    public readonly record struct AdjectiveOrder(AdjectiveOrderType Type = AdjectiveOrderType.Before, string Connector = "")
+    {
+        private static readonly AdjectiveOrder _before = new();
+        private static readonly AdjectiveOrder _after = new(AdjectiveOrderType.After);
+        private static readonly AdjectiveOrder _beforeWithSpace = new(AdjectiveOrderType.Before, " ");
+        private static readonly AdjectiveOrder _afterWithSpace = new(AdjectiveOrderType.After, " ");
+
+        public static AdjectiveOrder Before => _before;
+        public static AdjectiveOrder After => _after;
+        public static AdjectiveOrder BeforeWithSpace => _beforeWithSpace;
+        public static AdjectiveOrder AfterWithSpace => _afterWithSpace;
+
+        public string Apply(string noun, string adjective)
+        {
+            if (Type == AdjectiveOrderType.Before)
+                return $"{adjective}{Connector}{noun}";
+            return $"{noun}{Connector}{adjective}";
         }
     }
 }

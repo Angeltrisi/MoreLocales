@@ -23,7 +23,9 @@ global using MoreLocales.Core;
 global using MoreLocales.Utilities;
 global using ReLogic.Graphics;
 global using Terraria.ModLoader;
+using MoreLocales.Common;
 using System;
+using System.Diagnostics;
 using System.IO;
 using System.Reflection;
 using System.Windows.Forms;
@@ -34,77 +36,38 @@ namespace MoreLocales
 	public class MoreLocales : Mod
 	{
         public static MoreLocales Instance { get; private set; }
+        static MoreLocales()
+        {
+            LocalizationTweaks.Apply();
+        }
+        public MoreLocales()
+        {
+            Instance = this;
+            ExtraLocalesSupport.DoLoad();
+        }
+        public override void Load()
+        {
+            AssetHelper.Setup(Instance);
+            FontHelperV2.DoLoad();
+            FeaturesPlus.DoLoad();
+            ExtraLocalesSupport.DoSafeLoad();
+        }
         public override void PostSetupContent()
         {
             ExtraLocalesSupport.cachedVanillaCulture = LanguageManager.Instance.ActiveCulture.LegacyId;
             ExtraLocalesSupport.LoadCustomCultureData();
 
-            if (FontHelperV2.CharDataInlined)
+            if (FontHelperV2.CharDataInlined && OperatingSystem.IsWindows())
                 MessageBox.Show(Language.GetTextValue("Mods.MoreLocales.Misc.Error.FontPatchingError"), Language.GetTextValue("Error.Error"));
         }
-        public override void Load()
+        public override object Call(params object[] args)
         {
-            Instance = this;
-            FontHelperV2.DoLoad();
-            ExtraLocalesSupport.DoSafeLoad();
-        }
-        static MoreLocales()
-        {
-            Type[] mParams =
-            [
-                typeof(Mod),
-                typeof(string),
-                typeof(GameCulture)
-            ];
-            MethodInfo peskyLegacyMarker = typeof(LocalizationLoader).GetMethod("UpdateLocalizationFilesForMod", BindingFlags.Static | BindingFlags.NonPublic, mParams);
-            MonoModHooks.Modify(peskyLegacyMarker, FixPeskyLegacyMarking);
-
-            ExtraLocalesSupport.DoLoad();
-        }
-        private static void FixPeskyLegacyMarking(ILContext il)
-        {
-            Mod mod = Instance;
-            try
-            {
-                var c = new ILCursor(il);
-
-                MethodInfo move = typeof(File).GetMethod("Move", [typeof(string), typeof(string)]);
-                PropertyInfo getTMLprop = typeof(Logging).GetProperty("tML", BindingFlags.Static | BindingFlags.NonPublic);
-                MethodInfo getTML = getTMLprop.GetGetMethod(true);
-
-                if (!c.TryGotoNext(i => i.MatchCall(getTML)))
-                {
-                    mod.Logger.Warn("FixPeskyLegacyMarking: Couldn't find start of legacy marking");
-                    return;
-                }
-
-                var skipLabel = il.DefineLabel();
-
-                c.EmitLdarg0();
-
-                c.EmitDelegate<Func<Mod, bool>>(m =>
-                {
-                    return m.Name == ModContent.GetInstance<MoreLocales>().Name;
-                });
-
-                c.EmitBrtrue(skipLabel);
-
-                if (!c.TryGotoNext(MoveType.After, i => i.MatchCall(move)))
-                {
-                    mod.Logger.Warn("FixPeskyLegacyMarking: Couldn't find branch target");
-                    return;
-                }
-
-                c.MarkLabel(skipLabel);
-            }
-            catch
-            {
-                MonoModHooks.DumpIL(mod, il);
-            }
+            return base.Call(args);
         }
         public override void Unload()
         {
             ExtraLocalesSupport.DoUnload();
+            LocalizationTweaks.Unapply();
         }
     }
 }

@@ -10,7 +10,7 @@ using Terraria.ID;
 
 namespace MoreLocales.Core
 {
-    public class ExtraLocalesUI : ModSystem
+    public class MoreLocalesSystem : ModSystem
     {
         //private static bool testOverlap = false;
         public const int betterLangMenuID = 74592; //LANGS
@@ -19,6 +19,10 @@ namespace MoreLocales.Core
         {
             IL_Main.DrawMenu += GoToBetterLangMenuInstead;
             //On_Main.DrawInterface += On_Main_DrawInterface;
+        }
+        public override void OnLocalizationsLoaded()
+        {
+            MoreLocalesSets.ReloadedLocalizations();
         }
         private static void GoToBetterLangMenuInstead(ILContext il)
         {
@@ -51,7 +55,6 @@ namespace MoreLocales.Core
                 MonoModHooks.DumpIL(mod, il);
             }
         }
-
         private static void TryEnterBetterLangMenu()
         {
             if (Main.menuMode != betterLangMenuID)

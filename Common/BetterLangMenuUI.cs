@@ -133,12 +133,12 @@ namespace MoreLocales.Common
         private static Asset<Texture2D> _flagAtlas;
         public static Asset<Texture2D> _panelHighlight;
         private const int _flagFrames = 28;
-        private readonly GameCulture _culture;
+        private readonly MoreLocalesCulture _culture;
         private Rectangle _flagFrame = Rectangle.Empty;
         private readonly LocalizedText _cultureTitle;
         private readonly LocalizedText _cultureSubtitle;
         private readonly LocalizedText _cultureDescription = null;
-        private bool Active => _culture == LanguageManager.Instance.ActiveCulture;
+        private bool Active => _culture.Culture == LanguageManager.Instance.ActiveCulture;
         private bool Interactable => !Active;
         private const string _culturesKey = "Mods.MoreLocales.Cultures";
         private bool hovered = false;
@@ -149,17 +149,17 @@ namespace MoreLocales.Common
         }
         public LanguageButton(GameCulture culture)
         {
-            _culture = culture;
+            _culture = ExtraLocalesSupport.extraCulturesV2[culture.LegacyId];
 
             string cultureName = culture.FullName();
             string cultureKey = $"{_culturesKey}.{cultureName}";
 
             _cultureTitle = Language.GetOrRegister($"{cultureKey}.Title");
 
-            if (culture.HasSubtitle())
+            if (_culture.HasSubtitle)
                 _cultureSubtitle = Language.GetOrRegister($"{cultureKey}.Subtitle");
 
-            if (culture.HasDescription())
+            if (_culture.HasDescription)
                 _cultureDescription = Language.GetOrRegister($"{cultureKey}.Description");
 
             OnLeftClick += Clicked;
@@ -191,7 +191,7 @@ namespace MoreLocales.Common
             if (!Interactable)
                 return;
 
-            LanguageManager.Instance.SetLanguage(_culture);
+            LanguageManager.Instance.SetLanguage(_culture.Culture);
             SoundEngine.PlaySound(in SoundID.MenuOpen);
         }
 
@@ -226,7 +226,7 @@ namespace MoreLocales.Common
 
             if (_flagFrame == Rectangle.Empty)
             {
-                int cultureID = (_culture.LegacyId > (int)CultureNamePlus.Indonesian || _culture.LegacyId >= _flagFrames) ? 0 : _culture.LegacyId;
+                int cultureID = (_culture.Culture.LegacyId > (int)CultureNamePlus.Indonesian || _culture.Culture.LegacyId >= _flagFrames) ? 0 : _culture.Culture.LegacyId;
 
                 _flagFrame = _flagAtlas.Frame(1, _flagFrames, 0, cultureID);
             }
@@ -242,7 +242,7 @@ namespace MoreLocales.Common
 
             Vector2 center = pos + ((bounds.Size() + new Vector2(flag.Width + flagOffset.X, 0f)) * 0.5f);
 
-            bool sub = _culture.HasSubtitle();
+            bool sub = _culture.HasSubtitle;
             if (sub)
             {
                 float subSize = 0.85f;
@@ -255,7 +255,7 @@ namespace MoreLocales.Common
             float xSizeTitle = font.MeasureString(title).X;
             ChatManager.DrawColorCodedStringWithShadow(spriteBatch, font, title, center - new Vector2(xSizeTitle * 0.5f, sub ? 18f : 10f), drawColor, 0f, Vector2.Zero, Vector2.One);
 
-            string cultureName = $"({_culture.Name})";
+            string cultureName = $"({_culture.Culture.Name})";
             float flagCenterX = flagDrawPos.X + (flag.Width * 0.5f);
             float cultureScale = 0.75f;
             float cultureSizeX = font.MeasureString(cultureName).X * cultureScale;

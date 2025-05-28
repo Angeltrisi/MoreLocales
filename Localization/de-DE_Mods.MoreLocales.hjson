@@ -1,5 +1,8 @@
 Configs: {
-	Headers.Fonts: Schrifteinstellungen
+	Headers: {
+		Fonts: Schrifteinstellungen
+		// Features: Localized Prefix Placement Header
+	}
 
 	ClientSideConfig: {
 		DisplayName: Clienteinstellungen
@@ -11,6 +14,16 @@ Configs: {
 				Zwingt das Spiel, dieses Schriftsystem zu nutzen, unabhängig von den Spracheinstellungen.
 				Die Standardoption ist {$Configs.LocalizedFont.None.Label} , das heißt, das Schriftsystem passt sich an die Sprache an.
 				'''
+		}
+
+		LocalizedPrefixPlacement: {
+			// Label: Localized Prefix Placement
+			// Tooltip: ""
+		}
+
+		LocalizedPrefixGenderPluralization: {
+			// Label: Localized Prefix Gender Pluralization
+			// Tooltip: ""
 		}
 	}
 

@@ -1,5 +1,8 @@
 Configs: {
-	Headers.Fonts: 字体配置
+	Headers: {
+		Fonts: 字体配置
+		// Features: Localized Prefix Placement Header
+	}
 
 	ClientSideConfig: {
 		DisplayName: 客户端配置
@@ -12,6 +15,16 @@ Configs: {
 				默认为{$Configs.LocalizedFont.None.Label}
 				这意味着字体将会跟随所选语言而自动变化
 				'''
+		}
+
+		LocalizedPrefixPlacement: {
+			// Label: Localized Prefix Placement
+			// Tooltip: ""
+		}
+
+		LocalizedPrefixGenderPluralization: {
+			// Label: Localized Prefix Gender Pluralization
+			// Tooltip: ""
 		}
 	}
 

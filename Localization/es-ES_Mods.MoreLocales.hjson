@@ -1,5 +1,8 @@
 Configs: {
-	Headers.Fonts: Configuración de fuentes
+	Headers: {
+		Fonts: Configuración de fuentes
+		// Features: Localized Prefix Placement Header
+	}
 
 	ClientSideConfig: {
 		DisplayName: Configuración del cliente
@@ -7,6 +10,16 @@ Configs: {
 		ForcedFont: {
 			Label: Tipo de fuente localizada forzada
 			Tooltip: Obliga al juego a usar este tipo de fuente localizada, sin importar el idioma elegido. Esto es {$Configs.LocalizedFont.None.Label} por defecto, lo que hará que la fuente cambie dinámicamente dependiendo en el idioma elegido
+		}
+
+		LocalizedPrefixPlacement: {
+			// Label: Localized Prefix Placement
+			// Tooltip: ""
+		}
+
+		LocalizedPrefixGenderPluralization: {
+			// Label: Localized Prefix Gender Pluralization
+			// Tooltip: ""
 		}
 	}
 

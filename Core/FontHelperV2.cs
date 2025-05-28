@@ -1,12 +1,11 @@
-﻿using ReLogic.Content;
+﻿using MoreLocales.Config;
+using ReLogic.Content;
 using System;
 using System.Collections;
 using System.Collections.Generic;
-using System.Data.Common;
 using System.Linq;
 using System.Reflection;
 using System.Runtime.CompilerServices;
-using Terraria;
 using Terraria.GameContent;
 using static ReLogic.Graphics.DynamicSpriteFont;
 
@@ -40,7 +39,7 @@ namespace MoreLocales.Core
 
             for (int i = 0; i < children.Length; i++)
             {
-                children[i] = new(ModContent.Request<DynamicSpriteFont>($"MoreLocales/Assets/Fonts/{fileNames[i]}"), overrideConds[i]);
+                children[i] = new(AssetHelper.UnsafeRequestSpriteFont($"Assets\\Fonts\\{fileNames[i]}"), overrideConds[i]);
             }
 
             return new ChildFontData(children);
@@ -88,16 +87,7 @@ namespace MoreLocales.Core
         private const string combatTextName = "CombatText-";
         private const string critTextName = "CritText-";
 
-        public static LocalizedFont ForcedFont { get; set; } = LocalizedFont.None;
-
-        [UnsafeAccessor(UnsafeAccessorKind.Field, Name = "_spriteCharacters")]
-        public static extern ref Dictionary<char, SpriteCharacterData> GetSpriteCharacters(DynamicSpriteFont instance);
-
-        [UnsafeAccessor(UnsafeAccessorKind.Field, Name = "_defaultCharacterData")]
-        public static extern ref SpriteCharacterData GetDefaultCharacterData(DynamicSpriteFont instance);
-
-        [UnsafeAccessor(UnsafeAccessorKind.Field, Name = "_characterSpacing")]
-        public static extern ref float GetCharacterSpacing(DynamicSpriteFont instance);
+        public static LocalizedFont ForcedFont => ClientSideConfig.Instance.ForcedFont;
 
         public delegate bool IsCharacterSupported_orig(DynamicSpriteFont self, char character);
         public delegate SpriteCharacterData GetCharacterData_orig(DynamicSpriteFont self, char character);
@@ -122,6 +112,13 @@ namespace MoreLocales.Core
         {
             static bool japaneseActive() => CultureHelper.CustomCultureActive(CultureNamePlus.Japanese);
             static bool koreanActive() => CultureHelper.CustomCultureActive(CultureNamePlus.Korean);
+
+            /*
+            foreach (var file in MoreLocales.Instance.File.files.Keys)
+            {
+                MoreLocales.Instance.Logger.Warn(file);
+            }
+            */
 
             Func<bool>[] commonOverrideConds =
             [
@@ -192,14 +189,14 @@ namespace MoreLocales.Core
         private static bool OnIsCharacterSupported(IsCharacterSupported_orig orig, DynamicSpriteFont self, char character)
         {
             if (character != '\n' && character != '\r')
-                return GetSpriteCharacters(self).ContainsKey(character) || GetChildren(self).Any(c => GetSpriteCharacters(c.Font.Value).ContainsKey(character));
+                return self._spriteCharacters.ContainsKey(character) || GetChildren(self).Any(c => c.Font.Value._spriteCharacters.ContainsKey(character));
             return true;
         }
         private static SpriteCharacterData OnGetCharacterData(GetCharacterData_orig orig, DynamicSpriteFont self, char character)
         {
             ChildFont[] children = GetChildren(self).Children;
 
-            if (GetSpriteCharacters(self).TryGetValue(character, out var value))
+            if (self._spriteCharacters.TryGetValue(character, out var value))
             {
                 for (int i = 0; i < children.Length; i++)
                 {
@@ -213,7 +210,7 @@ namespace MoreLocales.Core
                     if (!font.IsLoaded)
                         font.Wait();
 
-                    if (GetSpriteCharacters(font.Value).TryGetValue(character, out var overriddenValue))
+                    if (font.Value._spriteCharacters.TryGetValue(character, out var overriddenValue))
                     {
                         _currentlyDrawnFont = font.Value;
                         return overriddenValue;
@@ -233,7 +230,7 @@ namespace MoreLocales.Core
                     if (!font.IsLoaded)
                         font.Wait();
 
-                    if (GetSpriteCharacters(font.Value).TryGetValue(character, out var extendedValue))
+                    if (font.Value._spriteCharacters.TryGetValue(character, out var extendedValue))
                     {
                         _currentlyDrawnFont = font.Value;
                         return extendedValue;
@@ -242,7 +239,7 @@ namespace MoreLocales.Core
             }
 
             _currentlyDrawnFont = self;
-            return GetDefaultCharacterData(self);
+            return self._defaultCharacterData;
         }
         private static void EditInternalDraw(ILContext il)
         {
@@ -273,6 +270,6 @@ namespace MoreLocales.Core
             c.EmitPop();
             c.EmitLdsfld(typeof(FontHelperV2).GetField("_currentlyDrawnFont"));
         }
-        private static float OnGetCharacterSpacing(get_CharacterSpacing_orig orig, DynamicSpriteFont self) => GetCharacterSpacing(_currentlyDrawnFont);
+        private static float OnGetCharacterSpacing(get_CharacterSpacing_orig orig, DynamicSpriteFont self) => _currentlyDrawnFont._characterSpacing;
     }
 }

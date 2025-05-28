@@ -1,5 +1,8 @@
 Configs: {
-	Headers.Fonts: Font Settings
+	Headers: {
+		Fonts: Font Settings
+		Features: Localized Prefix Placement Header
+	}
 
 	ClientSideConfig: {
 		DisplayName: Client Side Config
@@ -11,6 +14,16 @@ Configs: {
 				Forces the game to use this type of localized font, disregarding the current language settings.
 				This is {$Configs.LocalizedFont.None.Label} by default, which means the font will dynamically change with the chosen language.
 				'''
+		}
+
+		LocalizedPrefixPlacement: {
+			Label: Localized Prefix Placement
+			Tooltip: ""
+		}
+
+		LocalizedPrefixGenderPluralization: {
+			Label: Localized Prefix Gender Pluralization
+			Tooltip: ""
 		}
 	}
 

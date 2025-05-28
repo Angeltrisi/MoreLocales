@@ -1,0 +1,329 @@
+﻿using MoreLocales.Config;
+using System;
+using System.Diagnostics;
+using System.Linq;
+using Terraria;
+using Terraria.ID;
+using Terraria.Localization;
+
+namespace MoreLocales.Core
+{
+    /// <summary>
+    /// Container for all features of Localization+ that are not (directly) related to extra language support.
+    /// </summary>
+    public static class FeaturesPlus
+    {
+        private const string StringToReplace = "{Prefix}";
+        private static readonly string[] GenderNames = Enum.GetNames<Gender>();
+        public static void DoLoad()
+        {
+            // prefix stuff
+            MonoModHooks.Modify(typeof(Item).GetMethod("get_Name"), RemovePrefixLiteralFromName);
+            IL_Item.AffixName += LocalizedPrefixPosition;
+        }
+        public static string RemovePrefixLiteral(string input)
+        {
+            int index = input.IndexOf(StringToReplace);
+            if (index == -1)
+                return input;
+
+            if (index == 0) // beginning case
+            {
+                int start = StringToReplace.Length;
+
+                if (input.Length > start && char.IsWhiteSpace(input[start]))
+                    start++;
+
+                return input[start..];
+            }
+
+            if (index + StringToReplace.Length == input.Length) // end case
+            {
+                int end = index;
+
+                if (char.IsWhiteSpace(input[end - 1]))
+                    end--;
+
+                return input[..end];
+            }
+
+            // middle case
+
+            string before = input[..index];
+            string after = input[(index + StringToReplace.Length)..];
+
+            if (char.IsWhiteSpace(before[^1]) && char.IsWhiteSpace(after[0]))
+                after = after[1..];
+
+            Debug.WriteLine(before + after);
+
+            return before + after;
+        }
+        private static void RemovePrefixLiteralFromName(ILContext il)
+        {
+            Mod m = MoreLocales.Instance;
+            try
+            {
+                var c = new ILCursor(il);
+
+                c.GotoNext(i => i.MatchRet());
+
+                c.EmitCall(typeof(FeaturesPlus).GetMethod("RemovePrefixLiteral"));
+            }
+            catch
+            {
+                MonoModHooks.DumpIL(m, il);
+            }
+        }
+        private static void LocalizedPrefixPosition(ILContext il)
+        {
+            Mod m = MoreLocales.Instance;
+            try
+            {
+                // this edit is a little loaded.
+                // there's a case in this method specifically for prefix names that start with (. these names are formatted in a specific way in Terraria (at the end instead of at the start).
+                // this case needs to be changed. instead of returning the end-formatted name, we make the case remove the parentheses, store the result, then jump to the normal case for further formatting.
+
+                // for convenience, we can add the config value as a local
+                var localConfigOption = new VariableDefinition(il.Import(typeof(bool)));
+                il.Body.Variables.Add(localConfigOption);
+
+                var c = new ILCursor(il);
+
+                // init our local
+                c.EmitLdsfld(typeof(ClientSideConfig).GetField("Instance"));
+                c.EmitLdfld(typeof(ClientSideConfig).GetField("LocalizedPrefixPlacement"));
+                c.EmitStloc(localConfigOption.Index);
+
+                // this is the label for the final case (last line of the method)
+                ILLabel finalTextLabel = null;
+
+                // first we get the final case label
+                if (!c.TryGotoNext(i => i.MatchCallvirt(out _), i => i.MatchBrfalse(out finalTextLabel)))
+                {
+                    m.Logger.Warn("LocalizedPrefixPosition: Couldn't find final label for branching");
+                    return;
+                }
+
+                // then we find where we can do our branching (inside the code block for the parentheses check)
+                if (!c.TryGotoNext(i => i.MatchLdarg0(), i => i.MatchCall<Item>("get_Name"), i => i.MatchLdstr(" ")))
+                {
+                    m.Logger.Warn("LocalizedPrefixPosition: Couldn't find correct location for branching");
+                    return;
+                }
+
+                // we'll make a label to skip our special parentheses removal. this is for making the config option work.
+                var skipParenthesesRemovalLabel = il.DefineLabel();
+
+                // now, we branch according to the config value
+                c.EmitLdloc(localConfigOption.Index);
+
+                c.EmitBrfalse(skipParenthesesRemovalLabel);
+
+                // now, we do the parentheses thing
+                c.EmitLdloc0(); // load the localized prefix string (we already know it's in parentheses)
+                c.EmitDelegate<Func<string, string>>(s =>
+                {
+                    return s[1..^1]; // return the string without the first and last characters
+                });
+                c.EmitStloc0(); // store the cleaned-up string back in the local
+
+                c.EmitBr(finalTextLabel);
+
+                // mark the label to continue normally if the config option is off
+                c.MarkLabel(skipParenthesesRemovalLabel);
+
+                // this part of the edit is now done. something like "Espada corta de hierro (Pequeño)" will now show up as "Pequeño Espada corta de hierro".
+
+                // part two: replacing occurences of {Prefix} with the actual prefix, and custom formatting.
+                // remember that Item.Name now returns the item name with the {Prefix} literal removed, so we have to get the actual lang value.
+
+                c.GotoLabel(finalTextLabel);
+
+                // the original last case code will not run at all: now this label's target will be the code that we emit from here on
+
+                c.EmitLdarg0(); // item
+                c.EmitLdloc0(); // prefix name (sanitized)
+
+                c.EmitDelegate<Func<Item, string, string>>((item, prefix) =>
+                {
+                    string realName = CultureHelper.GetRealName(item);
+
+                    // custom position will take priority over localized order
+                    if (realName.Contains(StringToReplace))
+                        return realName.Replace(StringToReplace, prefix);
+
+                    // localized order
+                    AdjectiveOrder realOrder = ExtraLocalesSupport.ActiveCulture.AdjectiveOrder;
+
+                    return realOrder.Apply(realName, prefix);
+                });
+
+                c.EmitRet();
+            }
+            catch
+            {
+                MonoModHooks.DumpIL(m, il);
+            }
+        }
+        /// <summary>
+        /// Retrieves a LocalizedText that contains the gendered and pluralized form of a prefix depending on the item it's applied to (if applicable)
+        /// </summary>
+        /// <param name="prefix"></param>
+        /// <param name="context"></param>
+        /// <returns></returns>
+        public static LocalizedText GetPrefixNameWithItemContext(int prefix, Item context)
+        {
+            MoreLocalesSets.CachedGenderPluralization[context.type].Deconstruct(out Gender gender, out Pluralization pluralization);
+
+            if (!LanguageManager.Instance.ActiveCulture.GPDataChangesAdjectiveForm(gender, pluralization))
+                return Lang.prefix[prefix]; // adjective form stays the same
+
+            bool vanilla = prefix < PrefixID.Count;
+            string prefixName = vanilla ? PrefixID.Search.GetName(prefix) : PrefixLoader.GetPrefix(prefix).Name;
+
+            string genderName = GenderNames[(byte)gender];
+
+            if (prefix < PrefixID.Count) // vanilla prefix
+            {
+                return MoreLocales.Instance.GetLocalization($"GenderPluralization.Prefixes.{prefixName}.{genderName}", () => Lang.prefix[prefix].Value).WithFormatArgs((byte)pluralization);
+            }
+
+            return Lang.prefix[prefix];
+        }
+        public static bool GPDataChangesAdjectiveForm(this GameCulture c, GenderPluralization data)
+        {
+            data.Deconstruct(out Gender gender, out Pluralization pluralization);
+            return c.GPDataChangesAdjectiveForm(gender, pluralization);
+        }
+        public static bool GPDataChangesAdjectiveForm(this GameCulture c, Gender gender, Pluralization pluralization)
+        {
+            return ExtraLocalesSupport.extraCulturesV2[c.LegacyId].GenderPluralizationChangesAdjectiveForm((int)gender, (int)pluralization);
+        }
+        public static bool gpNeverChanges(int gender, int pluralization) => false;
+        public static bool gpChangesWhenNotDefault(int gender, int pluralization) => gender > 0 || pluralization > 0;
+        public static GenderPluralization GetItemGenderPluralization(int type)
+        {
+            bool vanilla = type < ItemID.Count;
+            string itemName = vanilla ? ItemID.Search.GetName(type) : ItemLoader.GetItem(type).Name;
+
+            if (itemName == null)
+                return GenderPluralization.Default;
+
+            LocalizedText data = null;
+            if (vanilla)
+                data = MoreLocales.Instance.GetLocalization($"VanillaData.GenderPluralization.Items.{itemName}", () => "/");
+            else // figure out file generation later
+                return GenderPluralization.Default;
+
+            if (TryParse(data.Value, out GenderPluralization genderPluralization))
+                return genderPluralization;
+
+            return GenderPluralization.Default;
+        }
+        public static bool TryParse(string value, out GenderPluralization result)
+        {
+            result = GenderPluralization.Default;
+
+            string[] values = value.Split('/');
+            if (values.Length == 0 || values.Length > 2)
+                return false;
+
+            uint finalGender = 0;
+
+            // we want to default to 0 for an entry like "/Pm" for a language with adjective pluralization but no grammatical gender
+            if (!string.IsNullOrEmpty(values[0]))
+            {
+                char gender = char.ToUpper(values[0][0]);
+
+                finalGender = gender switch
+                {
+                    '0' or 'M' or 'C' => 0,
+                    '1' or 'F' => 1,
+                    '2' or 'N' => 2,
+                    _ => 0
+                };
+            }
+
+            uint finalPluralization = 0;
+
+            // we want to default to 0 for an entry like "F/" or "F" for a language with grammatical gender but no adjective pluralization
+            if (values.Length == 2 && !string.IsNullOrEmpty(values[1]))
+            {
+                char plural = char.ToUpper(values[1][0]);
+
+                // special format
+                if (values[1].Length > 1 && plural == 'P' && uint.TryParse(values[1].AsSpan(1), out uint specialResult))
+                {
+                    finalPluralization = specialResult;
+                }
+                else
+                {
+                    // custom alias support
+                    LocalizedText customAliasEntry = MoreLocales.Instance.GetLocalization("VanillaData.GenderPluralization.PluralizationAliases");
+                    string[] aliasesCollection = new string[3];
+                    if (!string.IsNullOrEmpty(customAliasEntry.Value)) // we have aliases
+                    {
+                        string[] aliases = customAliasEntry.Value.ToUpper().Split('/');
+
+                        if (aliases.Length > aliasesCollection.Length)
+                            Array.Resize(ref aliasesCollection, aliases.Length);
+
+                        for (int i = 0; i < aliases.Length; i++)
+                        {
+                            string alias = aliases[i];
+                            if (!string.IsNullOrEmpty(alias))
+                            {
+                                aliasesCollection[i] += alias;
+                            }
+                        }
+                    }
+                    // parse
+                    for (int i = 0; i < aliasesCollection.Length; i++)
+                    {
+                        if (string.IsNullOrEmpty(aliasesCollection[i]))
+                            aliasesCollection[i] = i switch
+                            {
+                                // main aliases
+                                0 => "0/S",
+                                1 => "1/P/F",
+                                2 => "2/M",
+                                _ => null,
+                            };
+                        if (aliasesCollection[i].Split("/").Contains(values[1].ToUpper()))
+                        {
+                            finalPluralization = (uint)i;
+                            break;
+                        }
+                    }
+                }
+            }
+
+            result |= (GenderPluralization)finalGender;
+            result |= (GenderPluralization)(finalPluralization << 4);
+
+            return true;
+        }
+        public static void Deconstruct(this GenderPluralization data, out Gender gender, out Pluralization pluralization)
+        {
+            gender = (Gender)((byte)data & 0xF);
+            pluralization = (Pluralization)((byte)data >> 4);
+        }
+    }
+    public enum GenderPluralization : byte
+    {
+        Default = 0,
+    }
+    public enum Gender : byte
+    {
+        Masculine = 0,
+        Feminine = 1,
+        Neuter = 2,
+    }
+    public enum Pluralization : byte
+    {
+        Singular = 0,
+        Plural, Few = 1,
+        Many = 2,
+    }
+}

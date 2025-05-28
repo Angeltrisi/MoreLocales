@@ -1,5 +1,8 @@
 Configs: {
-	Headers.Fonts: Skrifttype-indstillinger
+	Headers: {
+		Fonts: Skrifttype-indstillinger
+		// Features: Localized Prefix Placement Header
+	}
 
 	ClientSideConfig: {
 		DisplayName: Indstillinger Til Klient-siden
@@ -11,6 +14,16 @@ Configs: {
 				Tvinger spillet til at bruge den valgte lokaliserings-skrifttype, fuldkommen uafhængigt af de nuværende sprogindstillinger.
 				Den er sat til {$Configs.LocalizedFont.None.Label} som standard, hvilket betyder, at skrifttypen automatisk ændres baseret på sproget.
 				'''
+		}
+
+		LocalizedPrefixPlacement: {
+			// Label: Localized Prefix Placement
+			// Tooltip: ""
+		}
+
+		LocalizedPrefixGenderPluralization: {
+			// Label: Localized Prefix Gender Pluralization
+			// Tooltip: ""
 		}
 	}
 

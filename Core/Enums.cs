@@ -1,4 +1,6 @@
-﻿namespace MoreLocales.Core
+﻿using static Terraria.Localization.GameCulture;
+
+namespace MoreLocales.Core
 {
     /// <summary>
     /// The new added cultures. Enums can be freely cast into other enums without any errors. The enum underneath will keep the value.
@@ -38,31 +40,36 @@
         Japanese,
         Korean,
     }
-    public enum PluralizationType
+    public enum PluralizationStyle
     {
         /// <summary>
         /// Like zh-Hans.
         /// </summary>
-        None,
+        None = CultureName.Chinese,
         /// <summary>
         /// Like en-US, de-DE, it-IT, es-ES, pt-BR.
         /// </summary>
-        Simple,
+        Simple = CultureName.English,
         /// <summary>
         /// Like fr-FR.
         /// </summary>
-        SimpleWithSingularZero,
+        SimpleWithSingularZero = CultureName.French,
         /// <summary>
         /// Like ru-RU.
         /// </summary>
-        RussianThreeway,
+        RussianThreeway = CultureName.Russian,
         /// <summary>
         /// Like pl-PL.
         /// </summary>
-        PolishThreeway,
+        PolishThreeway = CultureName.Polish,
         /// <summary>
-        /// Needs special pluralization rule.
+        /// Needs special pluralization rule. Defined in <see cref="MoreLocalesCulture.CustomPluralizationRule"/> in <see cref="CultureHelper.CustomPluralization(int, int, int, int)"/>.
         /// </summary>
-        Custom
+        Custom = 10,
+    }
+    public enum AdjectiveOrderType
+    {
+        Before,
+        After,
     }
 }

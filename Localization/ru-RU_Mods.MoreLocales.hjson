@@ -1,5 +1,8 @@
 Configs: {
-	Headers.Fonts: Настройки шрифта
+	Headers: {
+		Fonts: Настройки шрифта
+		// Features: Localized Prefix Placement Header
+	}
 
 	ClientSideConfig: {
 		DisplayName: Клиентская конфигурация
@@ -11,6 +14,16 @@ Configs: {
 				Заставляет игру использовать данный тип шрифта, не обращая внимания на текущие языковые настройки.
 				По умолчанию отключено, что означает, что шрифт будет динамически меняться в зависимости от выбранного языка.
 				'''
+		}
+
+		LocalizedPrefixPlacement: {
+			// Label: Localized Prefix Placement
+			// Tooltip: ""
+		}
+
+		LocalizedPrefixGenderPluralization: {
+			// Label: Localized Prefix Gender Pluralization
+			// Tooltip: ""
 		}
 	}
 

@@ -1,5 +1,8 @@
 Configs: {
-	Headers.Fonts: Cài Đặt Phông Chữ
+	Headers: {
+		Fonts: Cài Đặt Phông Chữ
+		// Features: Localized Prefix Placement Header
+	}
 
 	ClientSideConfig: {
 		DisplayName: Cấu Hình Bên Máy Chủ
@@ -7,6 +10,16 @@ Configs: {
 		ForcedFont: {
 			Label: Buộc Thể Loại Phông
 			Tooltip: Buộc game phải sử dung loại phông này, bỏ qua chế độ ngôn ngữ hiện tại. Mặc định là {$Configs.LocalizedFont.None.Label}, nghĩa là phông sẽ thay đổi linh hoạt cho với ngôn ngữ được chọn.
+		}
+
+		LocalizedPrefixPlacement: {
+			// Label: Localized Prefix Placement
+			// Tooltip: ""
+		}
+
+		LocalizedPrefixGenderPluralization: {
+			// Label: Localized Prefix Gender Pluralization
+			// Tooltip: ""
 		}
 	}
 
