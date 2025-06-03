@@ -50,207 +50,61 @@
 # 'Pn', where 'n' is any pluralization type.
 # For example, 'M' with the special format would be written 'P2'.
 
-GenderPluralization: {
+InflectionData: {
 	// PluralizationAliases: ""
 
 	Items: {
 		# DisplayName: Iron Pickaxe
 		// IronPickaxe: /
-		// None: /
-		// DirtBlock: /
-		// StoneBlock: /
 		// IronBroadsword: /
-		// Mushroom: /
 		// IronShortsword: /
 		// IronHammer: /
-		// Torch: /
-		// Wood: /
 		// IronAxe: /
-		// IronOre: /
-		// CopperOre: /
-		// GoldOre: /
-		// SilverOre: /
 		// CopperWatch: /
 		// SilverWatch: /
 		// GoldWatch: /
 		// DepthMeter: /
-		// GoldBar: /
-		// CopperBar: /
-		// SilverBar: /
-		// IronBar: /
-		// Gel: /
 		// WoodenSword: /
-		// WoodenDoor: /
-		// StoneWall: /
-		// Acorn: /
-		// LesserHealingPotion: /
-		// LifeCrystal: /
-		// DirtWall: /
-		// Bottle: /
-		// WoodenTable: /
-		// Furnace: /
-		// WoodenChair: /
-		// IronAnvil: /
-		// WorkBench: /
-		// Goggles: /
-		// Lens: /
 		// WoodenBow: /
-		// WoodenArrow: /
-		// FlamingArrow: /
-		// Shuriken: /
-		// SuspiciousLookingEye: /
 		// DemonBow: /
 		// WarAxeoftheNight: /
 		// LightsBane: /
-		// UnholyArrow: /
-		// Chest: /
 		// BandofRegeneration: /
-		// MagicMirror: /
-		// JestersArrow: /
-		// AngelStatue: /
 		// CloudinaBottle: /
 		// HermesBoots: /
 		// EnchantedBoomerang: /
-		// DemoniteOre: /
-		// DemoniteBar: /
-		// Heart: /
-		// CorruptSeeds: /
-		// VileMushroom: /
-		// EbonstoneBlock: /
-		// GrassSeeds: /
-		// Sunflower: /
 		// Vilethorn: /
 		// Starfury: /
-		// PurificationPowder: /
-		// VilePowder: /
-		// RottenChunk: /
-		// WormTooth: /
-		// WormFood: /
-		// CopperCoin: /
-		// SilverCoin: /
-		// GoldCoin: /
-		// PlatinumCoin: /
-		// FallenStar: /
-		// CopperGreaves: /
-		// IronGreaves: /
-		// SilverGreaves: /
-		// GoldGreaves: /
-		// CopperChainmail: /
-		// IronChainmail: /
-		// SilverChainmail: /
-		// GoldChainmail: /
-		// GrapplingHook: /
-		// Chain: /
-		// ShadowScale: /
-		// PiggyBank: /
-		// MiningHelmet: /
-		// CopperHelmet: /
-		// IronHelmet: /
-		// SilverHelmet: /
-		// GoldHelmet: /
-		// WoodWall: /
-		// WoodPlatform: /
 		// FlintlockPistol: /
 		// Musket: /
-		// MusketBall: /
 		// Minishark: /
 		// IronBow: /
-		// ShadowGreaves: /
-		// ShadowScalemail: /
-		// ShadowHelmet: /
 		// NightmarePickaxe: /
 		// TheBreaker: /
-		// Candle: /
-		// CopperChandelier: /
-		// SilverChandelier: /
-		// GoldChandelier: /
-		// ManaCrystal: /
-		// LesserManaPotion: /
 		// BandofStarpower: /
 		// FlowerofFire: /
 		// MagicMissile: /
-		// DirtRod: /
-		// ShadowOrb: /
-		// Meteorite: /
-		// MeteoriteBar: /
-		// Hook: /
 		// Flamarang: /
 		// MoltenFury: /
 		// FieryGreatsword: /
 		// MoltenPickaxe: /
-		// MeteorHelmet: /
-		// MeteorSuit: /
-		// MeteorLeggings: /
-		// BottledWater: /
 		// SpaceGun: /
 		// RocketBoots: /
-		// GrayBrick: /
-		// GrayBrickWall: /
-		// RedBrick: /
-		// RedBrickWall: /
-		// ClayBlock: /
-		// BlueBrick: /
-		// BlueBrickWall: /
-		// ChainLantern: /
-		// GreenBrick: /
-		// GreenBrickWall: /
-		// PinkBrick: /
-		// PinkBrickWall: /
-		// GoldBrick: /
-		// GoldBrickWall: /
-		// SilverBrick: /
-		// SilverBrickWall: /
-		// CopperBrick: /
-		// CopperBrickWall: /
-		// Spike: /
-		// WaterCandle: /
-		// Book: /
-		// Cobweb: /
-		// NecroHelmet: /
-		// NecroBreastplate: /
-		// NecroGreaves: /
-		// Bone: /
 		// Muramasa: /
 		// CobaltShield: /
 		// AquaScepter: /
 		// LuckyHorseshoe: /
 		// ShinyRedBalloon: /
 		// Harpoon: /
-		// SpikyBall: /
 		// BallOHurt: /
 		// BlueMoon: /
 		// Handgun: /
 		// WaterBolt: /
-		// Bomb: /
-		// Dynamite: /
-		// Grenade: /
-		// SandBlock: /
-		// Glass: /
-		// Sign: /
-		// AshBlock: /
-		// Obsidian: /
-		// Hellstone: /
-		// HellstoneBar: /
-		// MudBlock: /
-		// Sapphire: /
-		// Ruby: /
-		// Emerald: /
-		// Topaz: /
-		// Amethyst: /
-		// Diamond: /
-		// GlowingMushroom: /
-		// Star: /
-		// IvyWhip: /
 		// BreathingReed: /
 		// Flipper: /
-		// HealingPotion: /
-		// ManaPotion: /
 		// BladeofGrass: /
 		// ThornChakram: /
-		// ObsidianBrick: /
 		// ObsidianSkull: /
-		// MushroomGrassSeeds: /
-		// JungleGrassSeeds: /
 		// WoodenHammer: /
 		// StarCannon: /
 		// BluePhaseblade: /
@@ -260,184 +114,26 @@ GenderPluralization: {
 		// WhitePhaseblade: /
 		// YellowPhaseblade: /
 		// MeteorHamaxe: /
-		// EmptyBucket: /
-		// WaterBucket: /
-		// LavaBucket: /
-		// JungleRose: /
-		// Stinger: /
-		// Vine: /
 		// FeralClaws: /
 		// AnkletoftheWind: /
 		// StaffofRegrowth: /
-		// HellstoneBrick: /
-		// WhoopieCushion: /
 		// Shackle: /
 		// MoltenHamaxe: /
 		// Flamelash: /
 		// PhoenixBlaster: /
 		// Sunfury: /
-		// Hellforge: /
-		// ClayPot: /
 		// NaturesGift: /
-		// Bed: /
-		// Silk: /
-		// LesserRestorationPotion: /
-		// RestorationPotion: /
-		// JungleHat: /
-		// JungleShirt: /
-		// JunglePants: /
-		// MoltenHelmet: /
-		// MoltenBreastplate: /
-		// MoltenGreaves: /
-		// MeteorShot: /
-		// StickyBomb: /
-		// BlackLens: /
-		// Sunglasses: /
-		// WizardHat: /
-		// TopHat: /
-		// TuxedoShirt: /
-		// TuxedoPants: /
-		// SummerHat: /
-		// BunnyHood: /
-		// PlumbersHat: /
-		// PlumbersShirt: /
-		// PlumbersPants: /
-		// HerosHat: /
-		// HerosShirt: /
-		// HerosPants: /
-		// FishBowl: /
-		// ArchaeologistsHat: /
-		// ArchaeologistsJacket: /
-		// ArchaeologistsPants: /
-		// BlackThread: /
-		// GreenThread: /
-		// NinjaHood: /
-		// NinjaShirt: /
-		// NinjaPants: /
-		// Leather: /
-		// RedHat: /
-		// Goldfish: /
-		// Robe: /
-		// RobotHat: /
-		// GoldCrown: /
-		// HellfireArrow: /
 		// Sandgun: /
-		// GuideVoodooDoll: /
-		// DivingHelmet: /
-		// FamiliarShirt: /
-		// FamiliarPants: /
-		// FamiliarWig: /
 		// DemonScythe: /
 		// NightsEdge: /
 		// DarkLance: /
-		// Coral: /
-		// Cactus: /
 		// Trident: /
-		// SilverBullet: /
-		// ThrowingKnife: /
 		// Spear: /
 		// Blowpipe: /
-		// Glowstick: /
-		// Seed: /
 		// WoodenBoomerang: /
 		// Aglet: /
-		// StickyGlowstick: /
-		// PoisonedKnife: /
-		// ObsidianSkinPotion: /
-		// RegenerationPotion: /
-		// SwiftnessPotion: /
-		// GillsPotion: /
-		// IronskinPotion: /
-		// ManaRegenerationPotion: /
-		// MagicPowerPotion: /
-		// FeatherfallPotion: /
-		// SpelunkerPotion: /
-		// InvisibilityPotion: /
-		// ShinePotion: /
-		// NightOwlPotion: /
-		// BattlePotion: /
-		// ThornsPotion: /
-		// WaterWalkingPotion: /
-		// ArcheryPotion: /
-		// HunterPotion: /
-		// GravitationPotion: /
-		// GoldChest: /
-		// DaybloomSeeds: /
-		// MoonglowSeeds: /
-		// BlinkrootSeeds: /
-		// DeathweedSeeds: /
-		// WaterleafSeeds: /
-		// FireblossomSeeds: /
-		// Daybloom: /
-		// Moonglow: /
-		// Blinkroot: /
-		// Deathweed: /
-		// Waterleaf: /
-		// Fireblossom: /
-		// SharkFin: /
-		// Feather: /
-		// Tombstone: /
-		// MimeMask: /
-		// AntlionMandible: /
-		// IllegalGunParts: /
-		// TheDoctorsShirt: /
-		// TheDoctorsPants: /
-		// GoldenKey: /
-		// ShadowChest: /
-		// ShadowKey: /
-		// ObsidianBrickWall: /
-		// JungleSpores: /
-		// Loom: /
-		// Piano: /
-		// Dresser: /
-		// Bench: /
-		// Bathtub: /
-		// RedBanner: /
-		// GreenBanner: /
-		// BlueBanner: /
-		// YellowBanner: /
-		// LampPost: /
-		// TikiTorch: /
-		// Barrel: /
-		// ChineseLantern: /
-		// CookingPot: /
-		// Safe: /
-		// SkullLantern: /
-		// TrashCan: /
-		// Candelabra: /
-		// PinkVase: /
-		// Mug: /
-		// Keg: /
-		// Ale: /
-		// Bookcase: /
-		// Throne: /
-		// Bowl: /
-		// BowlofSoup: /
-		// Toilet: /
-		// GrandfatherClock: /
-		// ArmorStatue: /
-		// GoblinBattleStandard: /
-		// TatteredCloth: /
-		// Sawmill: /
-		// CobaltOre: /
-		// MythrilOre: /
-		// AdamantiteOre: /
 		// Pwnhammer: /
 		// Excalibur: /
-		// HallowedSeeds: /
-		// EbonsandBlock: /
-		// CobaltHat: /
-		// CobaltHelmet: /
-		// CobaltMask: /
-		// CobaltBreastplate: /
-		// CobaltLeggings: /
-		// MythrilHood: /
-		// MythrilHelmet: /
-		// MythrilHat: /
-		// MythrilChainmail: /
-		// MythrilGreaves: /
-		// CobaltBar: /
-		// MythrilBar: /
 		// CobaltChainsaw: /
 		// MythrilChainsaw: /
 		// CobaltDrill: /
@@ -446,104 +142,25 @@ GenderPluralization: {
 		// AdamantiteDrill: /
 		// DaoofPow: /
 		// MythrilHalberd: /
-		// AdamantiteBar: /
-		// GlassWall: /
 		// Compass: /
 		// DivingGear: /
 		// GPS: /
 		// ObsidianHorseshoe: /
 		// ObsidianShield: /
-		// TinkerersWorkshop: /
 		// CloudinaBalloon: /
-		// AdamantiteHeadgear: /
-		// AdamantiteHelmet: /
-		// AdamantiteMask: /
-		// AdamantiteBreastplate: /
-		// AdamantiteLeggings: /
 		// SpectreBoots: /
 		// AdamantiteGlaive: /
 		// Toolbelt: /
-		// PearlsandBlock: /
-		// PearlstoneBlock: /
-		// MiningShirt: /
-		// MiningPants: /
-		// PearlstoneBrick: /
-		// IridescentBrick: /
-		// MudstoneBlock: /
-		// CobaltBrick: /
-		// MythrilBrick: /
-		// PearlstoneBrickWall: /
-		// IridescentBrickWall: /
-		// MudstoneBrickWall: /
-		// CobaltBrickWall: /
-		// MythrilBrickWall: /
-		// HolyWater: /
-		// UnholyWater: /
-		// SiltBlock: /
-		// FairyBell: /
 		// BreakerBlade: /
-		// BlueTorch: /
-		// RedTorch: /
-		// GreenTorch: /
-		// PurpleTorch: /
-		// WhiteTorch: /
-		// YellowTorch: /
-		// DemonTorch: /
 		// ClockworkAssaultRifle: /
 		// CobaltRepeater: /
 		// MythrilRepeater: /
-		// DualHook: /
-		// StarStatue: /
-		// SwordStatue: /
-		// SlimeStatue: /
-		// GoblinStatue: /
-		// ShieldStatue: /
-		// BatStatue: /
-		// FishStatue: /
-		// BunnyStatue: /
-		// SkeletonStatue: /
-		// ReaperStatue: /
-		// WomanStatue: /
-		// ImpStatue: /
-		// GargoyleStatue: /
-		// GloomStatue: /
-		// HornetStatue: /
-		// BombStatue: /
-		// CrabStatue: /
-		// HammerStatue: /
-		// PotionStatue: /
-		// SpearStatue: /
-		// CrossStatue: /
-		// JellyfishStatue: /
-		// BowStatue: /
-		// BoomerangStatue: /
-		// BootStatue: /
-		// ChestStatue: /
-		// BirdStatue: /
-		// AxeStatue: /
-		// CorruptStatue: /
-		// TreeStatue: /
-		// AnvilStatue: /
-		// PickaxeStatue: /
-		// MushroomStatue: /
-		// EyeballStatue: /
-		// PillarStatue: /
-		// HeartStatue: /
-		// PotStatue: /
-		// SunflowerStatue: /
-		// KingStatue: /
-		// QueenStatue: /
-		// PiranhaStatue: /
-		// PlankedWall: /
-		// WoodenBeam: /
 		// AdamantiteRepeater: /
 		// AdamantiteSword: /
 		// CobaltSword: /
 		// MythrilSword: /
 		// MoonCharm: /
 		// Ruler: /
-		// CrystalBall: /
-		// DiscoBall: /
 		// SorcererEmblem: /
 		// WarriorEmblem: /
 		// RangerEmblem: /
@@ -553,161 +170,23 @@ GenderPluralization: {
 		// RainbowRod: /
 		// IceRod: /
 		// NeptunesShell: /
-		// Mannequin: /
-		// GreaterHealingPotion: /
-		// GreaterManaPotion: /
-		// PixieDust: /
-		// CrystalShard: /
-		// ClownHat: /
-		// ClownShirt: /
-		// ClownPants: /
 		// Flamethrower: /
-		// Bell: /
-		// Harp: /
-		// Wrench: /
-		// WireCutter: /
-		// ActiveStoneBlock: /
-		// InactiveStoneBlock: /
-		// Lever: /
 		// LaserRifle: /
-		// CrystalBullet: /
-		// HolyArrow: /
 		// MagicDagger: /
 		// CrystalStorm: /
 		// CursedFlames: /
-		// SoulofLight: /
-		// SoulofNight: /
-		// CursedFlame: /
-		// CursedTorch: /
-		// AdamantiteForge: /
-		// MythrilAnvil: /
-		// UnicornHorn: /
-		// DarkShard: /
-		// LightShard: /
-		// RedPressurePlate: /
-		// Wire: /
-		// SpellTome: /
 		// StarCloak: /
 		// Megashark: /
 		// Shotgun: /
 		// PhilosophersStone: /
 		// TitanGlove: /
 		// CobaltNaginata: /
-		// Switch: /
-		// DartTrap: /
-		// Boulder: /
-		// GreenPressurePlate: /
-		// GrayPressurePlate: /
-		// BrownPressurePlate: /
-		// MechanicalEye: /
-		// CursedArrow: /
-		// CursedBullet: /
-		// SoulofFright: /
-		// SoulofMight: /
-		// SoulofSight: /
 		// Gungnir: /
-		// HallowedPlateMail: /
-		// HallowedGreaves: /
-		// HallowedHelmet: /
 		// CrossNecklace: /
 		// ManaFlower: /
-		// MechanicalWorm: /
-		// MechanicalSkull: /
-		// HallowedHeadgear: /
-		// HallowedMask: /
-		// SlimeCrown: /
 		// LightDisc: /
-		// MusicBoxOverworldDay: /
-		// MusicBoxEerie: /
-		// MusicBoxNight: /
-		// MusicBoxTitle: /
-		// MusicBoxUnderground: /
-		// MusicBoxBoss1: /
-		// MusicBoxJungle: /
-		// MusicBoxCorruption: /
-		// MusicBoxUndergroundCorruption: /
-		// MusicBoxTheHallow: /
-		// MusicBoxBoss2: /
-		// MusicBoxUndergroundHallow: /
-		// MusicBoxBoss3: /
-		// SoulofFlight: /
-		// MusicBox: /
-		// DemoniteBrick: /
 		// HallowedRepeater: /
 		// Drax: /
-		// Explosives: /
-		// InletPump: /
-		// OutletPump: /
-		// Timer1Second: /
-		// Timer3Second: /
-		// Timer5Second: /
-		// CandyCaneBlock: /
-		// CandyCaneWall: /
-		// SantaHat: /
-		// SantaShirt: /
-		// SantaPants: /
-		// GreenCandyCaneBlock: /
-		// GreenCandyCaneWall: /
-		// SnowBlock: /
-		// SnowBrick: /
-		// SnowBrickWall: /
-		// BlueLight: /
-		// RedLight: /
-		// GreenLight: /
-		// BluePresent: /
-		// GreenPresent: /
-		// YellowPresent: /
-		// SnowGlobe: /
-		// Carrot: /
-		// AdamantiteBeam: /
-		// AdamantiteBeamWall: /
-		// DemoniteBrickWall: /
-		// SandstoneBrick: /
-		// SandstoneBrickWall: /
-		// EbonstoneBrick: /
-		// EbonstoneBrickWall: /
-		// RedStucco: /
-		// YellowStucco: /
-		// GreenStucco: /
-		// GrayStucco: /
-		// RedStuccoWall: /
-		// YellowStuccoWall: /
-		// GreenStuccoWall: /
-		// GrayStuccoWall: /
-		// Ebonwood: /
-		// RichMahogany: /
-		// Pearlwood: /
-		// EbonwoodWall: /
-		// RichMahoganyWall: /
-		// PearlwoodWall: /
-		// EbonwoodChest: /
-		// RichMahoganyChest: /
-		// PearlwoodChest: /
-		// EbonwoodChair: /
-		// RichMahoganyChair: /
-		// PearlwoodChair: /
-		// EbonwoodPlatform: /
-		// RichMahoganyPlatform: /
-		// PearlwoodPlatform: /
-		// BonePlatform: /
-		// EbonwoodWorkBench: /
-		// RichMahoganyWorkBench: /
-		// PearlwoodWorkBench: /
-		// EbonwoodTable: /
-		// RichMahoganyTable: /
-		// PearlwoodTable: /
-		// EbonwoodPiano: /
-		// RichMahoganyPiano: /
-		// PearlwoodPiano: /
-		// EbonwoodBed: /
-		// RichMahoganyBed: /
-		// PearlwoodBed: /
-		// EbonwoodDresser: /
-		// RichMahoganyDresser: /
-		// PearlwoodDresser: /
-		// EbonwoodDoor: /
-		// RichMahoganyDoor: /
-		// PearlwoodDoor: /
 		// EbonwoodSword: /
 		// EbonwoodHammer: /
 		// EbonwoodBow: /
@@ -717,139 +196,44 @@ GenderPluralization: {
 		// PearlwoodSword: /
 		// PearlwoodHammer: /
 		// PearlwoodBow: /
-		// RainbowBrick: /
-		// RainbowBrickWall: /
-		// IceBlock: /
 		// RedsWings: /
-		// RedsHelmet: /
-		// RedsBreastplate: /
-		// RedsLeggings: /
-		// Fish: /
 		// IceBoomerang: /
 		// Keybrand: /
 		// Cutlass: /
-		// BorealWoodWorkBench: /
 		// TrueExcalibur: /
 		// TrueNightsEdge: /
 		// Frostbrand: /
-		// BorealWoodTable: /
-		// RedPotion: /
 		// TacticalShotgun: /
-		// IvyChest: /
-		// IceChest: /
 		// Marrow: /
 		// UnholyTrident: /
-		// FrostHelmet: /
-		// FrostBreastplate: /
-		// FrostLeggings: /
-		// TinHelmet: /
-		// TinChainmail: /
-		// TinGreaves: /
-		// LeadHelmet: /
-		// LeadChainmail: /
-		// LeadGreaves: /
-		// TungstenHelmet: /
-		// TungstenChainmail: /
-		// TungstenGreaves: /
-		// PlatinumHelmet: /
-		// PlatinumChainmail: /
-		// PlatinumGreaves: /
-		// TinOre: /
-		// LeadOre: /
-		// TungstenOre: /
-		// PlatinumOre: /
-		// TinBar: /
-		// LeadBar: /
-		// TungstenBar: /
-		// PlatinumBar: /
 		// TinWatch: /
 		// TungstenWatch: /
 		// PlatinumWatch: /
-		// TinChandelier: /
-		// TungstenChandelier: /
-		// PlatinumChandelier: /
-		// PlatinumCandle: /
-		// PlatinumCandelabra: /
-		// PlatinumCrown: /
-		// LeadAnvil: /
-		// TinBrick: /
-		// TungstenBrick: /
-		// PlatinumBrick: /
-		// TinBrickWall: /
-		// TungstenBrickWall: /
-		// PlatinumBrickWall: /
 		// BeamSword: /
 		// IceBlade: /
 		// IceBow: /
 		// FrostStaff: /
-		// WoodHelmet: /
-		// WoodBreastplate: /
-		// WoodGreaves: /
-		// EbonwoodHelmet: /
-		// EbonwoodBreastplate: /
-		// EbonwoodGreaves: /
-		// RichMahoganyHelmet: /
-		// RichMahoganyBreastplate: /
-		// RichMahoganyGreaves: /
-		// PearlwoodHelmet: /
-		// PearlwoodBreastplate: /
-		// PearlwoodGreaves: /
 		// AmethystStaff: /
 		// TopazStaff: /
 		// SapphireStaff: /
 		// EmeraldStaff: /
 		// RubyStaff: /
 		// DiamondStaff: /
-		// GrassWall: /
-		// JungleWall: /
-		// FlowerWall: /
 		// Jetpack: /
 		// ButterflyWings: /
-		// CactusWall: /
-		// Cloud: /
-		// CloudWall: /
-		// Seaweed: /
-		// RuneHat: /
-		// RuneRobe: /
 		// MushroomSpear: /
 		// TerraBlade: /
 		// GrenadeLauncher: /
 		// RocketLauncher: /
 		// ProximityMineLauncher: /
 		// FairyWings: /
-		// SlimeBlock: /
-		// FleshBlock: /
-		// MushroomWall: /
-		// RainCloud: /
-		// BoneBlock: /
-		// FrozenSlimeBlock: /
-		// BoneBlockWall: /
-		// SlimeBlockWall: /
-		// FleshBlockWall: /
-		// RocketI: /
-		// RocketII: /
-		// RocketIII: /
-		// RocketIV: /
-		// AsphaltBlock: /
 		// CobaltPickaxe: /
 		// MythrilPickaxe: /
 		// AdamantitePickaxe: /
-		// Clentaminator: /
-		// GreenSolution: /
-		// BlueSolution: /
-		// PurpleSolution: /
-		// DarkBlueSolution: /
-		// RedSolution: /
 		// HarpyWings: /
 		// BoneWings: /
 		// Hammush: /
 		// NettleBurst: /
-		// AnkhBanner: /
-		// SnakeBanner: /
-		// OmegaBanner: /
-		// CrimsonHelmet: /
-		// CrimsonScalemail: /
-		// CrimsonGreaves: /
 		// BloodButcherer: /
 		// TendonBow: /
 		// FleshGrinder: /
@@ -858,88 +242,18 @@ GenderPluralization: {
 		// TheUndertaker: /
 		// TheMeatball: /
 		// TheRottedFork: /
-		// EskimoHood: /
-		// EskimoCoat: /
-		// EskimoPants: /
-		// LivingWoodChair: /
-		// CactusChair: /
-		// BoneChair: /
-		// FleshChair: /
-		// MushroomChair: /
-		// BoneWorkBench: /
-		// CactusWorkBench: /
-		// FleshWorkBench: /
-		// MushroomWorkBench: /
-		// SlimeWorkBench: /
-		// CactusDoor: /
-		// FleshDoor: /
-		// MushroomDoor: /
-		// LivingWoodDoor: /
-		// BoneDoor: /
 		// FlameWings: /
 		// FrozenWings: /
 		// GhostWings: /
-		// SunplateBlock: /
-		// DiscWall: /
-		// SkywareChair: /
-		// BoneTable: /
-		// FleshTable: /
-		// LivingWoodTable: /
-		// SkywareTable: /
-		// LivingWoodChest: /
-		// LivingWoodWand: /
-		// PurpleIceBlock: /
-		// PinkIceBlock: /
-		// RedIceBlock: /
-		// CrimstoneBlock: /
-		// SkywareDoor: /
-		// SkywareChest: /
-		// SteampunkHat: /
-		// SteampunkShirt: /
-		// SteampunkPants: /
-		// BeeHat: /
-		// BeeShirt: /
-		// BeePants: /
-		// WorldBanner: /
-		// SunBanner: /
-		// GravityBanner: /
-		// PharaohsMask: /
-		// Actuator: /
-		// BlueWrench: /
-		// GreenWrench: /
-		// BluePressurePlate: /
-		// YellowPressurePlate: /
 		// DiscountCard: /
 		// LuckyCoin: /
-		// UnicornonaStick: /
 		// SandstorminaBottle: /
-		// BorealWoodSofa: /
-		// BeachBall: /
 		// CharmofMyths: /
 		// MoonShell: /
 		// StarVeil: /
 		// WaterWalkingBoots: /
-		// Tiara: /
-		// PrincessDress: /
-		// PharaohsRobe: /
-		// GreenCap: /
-		// MushroomCap: /
-		// TamOShanter: /
-		// MummyMask: /
-		// MummyShirt: /
-		// MummyPants: /
-		// CowboyHat: /
-		// CowboyJacket: /
-		// CowboyPants: /
-		// PirateHat: /
-		// PirateShirt: /
-		// PiratePants: /
-		// VikingHelmet: /
-		// CrimtaneOre: /
 		// CactusSword: /
 		// CactusPickaxe: /
-		// IceBrick: /
-		// IceBrickWall: /
 		// AdhesiveBandage: /
 		// ArmorPolish: /
 		// Bezoar: /
@@ -949,9 +263,6 @@ GenderPluralization: {
 		// Nazar: /
 		// Vitamins: /
 		// TrifoldMap: /
-		// CactusHelmet: /
-		// CactusBreastplate: /
-		// CactusLeggings: /
 		// PowerGlove: /
 		// LightningBoots: /
 		// SunStone: /
@@ -960,327 +271,73 @@ GenderPluralization: {
 		// MedicatedBandage: /
 		// ThePlan: /
 		// CountercurseMantra: /
-		// CoinGun: /
 		// LavaCharm: /
 		// ObsidianWaterWalkingBoots: /
 		// LavaWaders: /
-		// PureWaterFountain: /
-		// DesertWaterFountain: /
-		// Shadewood: /
-		// ShadewoodDoor: /
-		// ShadewoodPlatform: /
-		// ShadewoodChest: /
-		// ShadewoodChair: /
-		// ShadewoodWorkBench: /
-		// ShadewoodTable: /
-		// ShadewoodDresser: /
-		// ShadewoodPiano: /
-		// ShadewoodBed: /
 		// ShadewoodSword: /
 		// ShadewoodHammer: /
 		// ShadewoodBow: /
-		// ShadewoodHelmet: /
-		// ShadewoodBreastplate: /
-		// ShadewoodGreaves: /
-		// ShadewoodWall: /
-		// Cannon: /
-		// Cannonball: /
 		// FlareGun: /
-		// Flare: /
-		// BoneWand: /
-		// LeafWand: /
 		// FlyingCarpet: /
 		// AvengerEmblem: /
 		// MechanicalGlove: /
-		// LandMine: /
 		// PaladinsShield: /
-		// WebSlinger: /
-		// JungleWaterFountain: /
-		// IcyWaterFountain: /
-		// CorruptWaterFountain: /
-		// CrimsonWaterFountain: /
-		// HallowedWaterFountain: /
-		// BloodWaterFountain: /
 		// Umbrella: /
-		// ChlorophyteOre: /
 		// SteampunkWings: /
-		// Snowball: /
 		// IceSkates: /
-		// SnowballLauncher: /
-		// WebCoveredChest: /
 		// ClimbingClaws: /
-		// AncientIronHelmet: /
-		// AncientGoldHelmet: /
-		// AncientShadowHelmet: /
-		// AncientShadowScalemail: /
-		// AncientShadowGreaves: /
-		// AncientNecroHelmet: /
-		// AncientCobaltHelmet: /
-		// AncientCobaltBreastplate: /
-		// AncientCobaltLeggings: /
 		// BlackBelt: /
 		// Boomstick: /
-		// Rope: /
-		// Campfire: /
-		// Marshmallow: /
-		// MarshmallowonaStick: /
-		// CookedMarshmallow: /
-		// RedRocket: /
-		// GreenRocket: /
-		// BlueRocket: /
-		// YellowRocket: /
-		// IceTorch: /
 		// ShoeSpikes: /
 		// TigerClimbingGear: /
 		// Tabi: /
-		// PinkEskimoHood: /
-		// PinkEskimoCoat: /
-		// PinkEskimoPants: /
-		// PinkThread: /
 		// ManaRegenerationBand: /
 		// SandstorminaBalloon: /
 		// MasterNinjaGear: /
-		// RopeCoil: /
 		// Blowgun: /
 		// BlizzardinaBottle: /
-		// FrostburnArrow: /
 		// EnchantedSword: /
 		// PickaxeAxe: /
 		// CobaltWaraxe: /
 		// MythrilWaraxe: /
 		// AdamantiteWaraxe: /
-		// EatersBone: /
-		// BlendOMatic: /
-		// MeatGrinder: /
-		// Extractinator: /
-		// Solidifier: /
-		// Amber: /
-		// ConfettiGun: /
-		// ChlorophyteMask: /
-		// ChlorophyteHelmet: /
-		// ChlorophyteHeadgear: /
-		// ChlorophytePlateMail: /
-		// ChlorophyteGreaves: /
-		// ChlorophyteBar: /
-		// RedDye: /
-		// OrangeDye: /
-		// YellowDye: /
-		// LimeDye: /
-		// GreenDye: /
-		// TealDye: /
-		// CyanDye: /
-		// SkyBlueDye: /
-		// BlueDye: /
-		// PurpleDye: /
-		// VioletDye: /
-		// PinkDye: /
-		// RedandBlackDye: /
-		// OrangeandBlackDye: /
-		// YellowandBlackDye: /
-		// LimeandBlackDye: /
-		// GreenandBlackDye: /
-		// TealandBlackDye: /
-		// CyanandBlackDye: /
-		// SkyBlueandBlackDye: /
-		// BlueandBlackDye: /
-		// PurpleandBlackDye: /
-		// VioletandBlackDye: /
-		// PinkandBlackDye: /
-		// FlameDye: /
-		// FlameAndBlackDye: /
-		// GreenFlameDye: /
-		// GreenFlameAndBlackDye: /
-		// BlueFlameDye: /
-		// BlueFlameAndBlackDye: /
-		// SilverDye: /
-		// BrightRedDye: /
-		// BrightOrangeDye: /
-		// BrightYellowDye: /
-		// BrightLimeDye: /
-		// BrightGreenDye: /
-		// BrightTealDye: /
-		// BrightCyanDye: /
-		// BrightSkyBlueDye: /
-		// BrightBlueDye: /
-		// BrightPurpleDye: /
-		// BrightVioletDye: /
-		// BrightPinkDye: /
-		// BlackDye: /
-		// RedandSilverDye: /
-		// OrangeandSilverDye: /
-		// YellowandSilverDye: /
-		// LimeandSilverDye: /
-		// GreenandSilverDye: /
-		// TealandSilverDye: /
-		// CyanandSilverDye: /
-		// SkyBlueandSilverDye: /
-		// BlueandSilverDye: /
-		// PurpleandSilverDye: /
-		// VioletandSilverDye: /
-		// PinkandSilverDye: /
-		// IntenseFlameDye: /
-		// IntenseGreenFlameDye: /
-		// IntenseBlueFlameDye: /
-		// RainbowDye: /
-		// IntenseRainbowDye: /
-		// YellowGradientDye: /
-		// CyanGradientDye: /
-		// VioletGradientDye: /
-		// Paintbrush: /
-		// PaintRoller: /
-		// RedPaint: /
-		// OrangePaint: /
-		// YellowPaint: /
-		// LimePaint: /
-		// GreenPaint: /
-		// TealPaint: /
-		// CyanPaint: /
-		// SkyBluePaint: /
-		// BluePaint: /
-		// PurplePaint: /
-		// VioletPaint: /
-		// PinkPaint: /
-		// DeepRedPaint: /
-		// DeepOrangePaint: /
-		// DeepYellowPaint: /
-		// DeepLimePaint: /
-		// DeepGreenPaint: /
-		// DeepTealPaint: /
-		// DeepCyanPaint: /
-		// DeepSkyBluePaint: /
-		// DeepBluePaint: /
-		// DeepPurplePaint: /
-		// DeepVioletPaint: /
-		// DeepPinkPaint: /
-		// BlackPaint: /
-		// WhitePaint: /
-		// GrayPaint: /
-		// PaintScraper: /
-		// LihzahrdBrick: /
-		// LihzahrdBrickWall: /
-		// SlushBlock: /
-		// PalladiumOre: /
-		// OrichalcumOre: /
-		// TitaniumOre: /
-		// TealMushroom: /
-		// GreenMushroom: /
-		// SkyBlueFlower: /
-		// YellowMarigold: /
-		// BlueBerries: /
-		// LimeKelp: /
-		// PinkPricklyPear: /
-		// OrangeBloodroot: /
-		// RedHusk: /
-		// CyanHusk: /
-		// VioletHusk: /
-		// PurpleMucos: /
-		// BlackInk: /
-		// DyeVat: /
 		// BeeGun: /
 		// PossessedHatchet: /
 		// BeeKeeper: /
-		// Hive: /
-		// HoneyBlock: /
-		// HiveWall: /
-		// CrispyHoneyBlock: /
-		// HoneyBucket: /
-		// HiveWand: /
-		// Beenade: /
 		// GravityGlobe: /
 		// HoneyComb: /
-		// Abeemination: /
-		// BottledHoney: /
-		// RainHat: /
-		// RainCoat: /
-		// LihzahrdDoor: /
-		// DungeonDoor: /
-		// LeadDoor: /
-		// IronDoor: /
-		// TempleKey: /
-		// LihzahrdChest: /
-		// LihzahrdChair: /
-		// LihzahrdTable: /
-		// LihzahrdWorkBench: /
-		// SuperDartTrap: /
-		// FlameTrap: /
-		// SpikyBallTrap: /
-		// SpearTrap: /
-		// WoodenSpike: /
-		// LihzahrdPressurePlate: /
-		// LihzahrdStatue: /
-		// LihzahrdWatcherStatue: /
-		// LihzahrdGuardianStatue: /
 		// WaspGun: /
 		// PiranhaGun: /
 		// PygmyStaff: /
 		// PygmyNecklace: /
-		// TikiMask: /
-		// TikiShirt: /
-		// TikiPants: /
 		// LeafWings: /
 		// BlizzardinaBalloon: /
 		// BundleofBalloons: /
 		// BatWings: /
 		// BoneSword: /
 		// HerculesBeetle: /
-		// SmokeBomb: /
-		// BoneKey: /
-		// Nectar: /
-		// TikiTotem: /
-		// LizardEgg: /
-		// GraveMarker: /
-		// CrossGraveMarker: /
-		// Headstone: /
-		// Gravestone: /
-		// Obelisk: /
 		// LeafBlower: /
-		// ChlorophyteBullet: /
-		// ParrotCracker: /
-		// StrangeGlowingMushroom: /
-		// Seedling: /
-		// WispinaBottle: /
-		// PalladiumBar: /
 		// PalladiumSword: /
 		// PalladiumPike: /
 		// PalladiumRepeater: /
 		// PalladiumPickaxe: /
 		// PalladiumDrill: /
 		// PalladiumChainsaw: /
-		// OrichalcumBar: /
 		// OrichalcumSword: /
 		// OrichalcumHalberd: /
 		// OrichalcumRepeater: /
 		// OrichalcumPickaxe: /
 		// OrichalcumDrill: /
 		// OrichalcumChainsaw: /
-		// TitaniumBar: /
 		// TitaniumSword: /
 		// TitaniumTrident: /
 		// TitaniumRepeater: /
 		// TitaniumPickaxe: /
 		// TitaniumDrill: /
 		// TitaniumChainsaw: /
-		// PalladiumMask: /
-		// PalladiumHelmet: /
-		// PalladiumHeadgear: /
-		// PalladiumBreastplate: /
-		// PalladiumLeggings: /
-		// OrichalcumMask: /
-		// OrichalcumHelmet: /
-		// OrichalcumHeadgear: /
-		// OrichalcumBreastplate: /
-		// OrichalcumLeggings: /
-		// TitaniumMask: /
-		// TitaniumHelmet: /
-		// TitaniumHeadgear: /
-		// TitaniumBreastplate: /
-		// TitaniumLeggings: /
-		// OrichalcumAnvil: /
-		// TitaniumForge: /
 		// PalladiumWaraxe: /
 		// OrichalcumWaraxe: /
 		// TitaniumWaraxe: /
-		// HallowedBar: /
 		// ChlorophyteClaymore: /
 		// ChlorophyteSaber: /
 		// ChlorophytePartisan: /
@@ -1290,18 +347,7 @@ GenderPluralization: {
 		// ChlorophyteChainsaw: /
 		// ChlorophyteGreataxe: /
 		// ChlorophyteWarhammer: /
-		// ChlorophyteArrow: /
-		// AmethystHook: /
-		// TopazHook: /
-		// SapphireHook: /
-		// EmeraldHook: /
-		// RubyHook: /
-		// DiamondHook: /
-		// AmberMosquito: /
-		// UmbrellaHat: /
 		// NimbusRod: /
-		// OrangeTorch: /
-		// CrimsandBlock: /
 		// BeeCloak: /
 		// EyeoftheGolem: /
 		// HoneyBalloon: /
@@ -1312,68 +358,28 @@ GenderPluralization: {
 		// SniperRifle: /
 		// VenusMagnum: /
 		// CrimsonRod: /
-		// CrimtaneBar: /
 		// Stynger: /
 		// FlowerPow: /
 		// RainbowGun: /
-		// StyngerBolt: /
 		// ChlorophyteJackhammer: /
-		// Teleporter: /
 		// FlowerofFrost: /
 		// Uzi: /
 		// MagnetSphere: /
-		// PurpleStainedGlass: /
-		// YellowStainedGlass: /
-		// BlueStainedGlass: /
-		// GreenStainedGlass: /
-		// RedStainedGlass: /
-		// MulticoloredStainedGlass: /
-		// SkeletronHand: /
-		// Skull: /
-		// BallaHat: /
-		// GangstaHat: /
-		// SailorHat: /
-		// EyePatch: /
-		// SailorShirt: /
-		// SailorPants: /
-		// SkeletronMask: /
-		// AmethystRobe: /
-		// TopazRobe: /
-		// SapphireRobe: /
-		// EmeraldRobe: /
-		// RubyRobe: /
-		// DiamondRobe: /
-		// WhiteTuxedoShirt: /
-		// WhiteTuxedoPants: /
 		// PanicNecklace: /
-		// LifeFruit: /
-		// LihzahrdAltar: /
-		// LihzahrdPowerCell: /
 		// Picksaw: /
 		// HeatRay: /
 		// StaffofEarth: /
 		// GolemFist: /
-		// WaterChest: /
-		// Binoculars: /
 		// RifleScope: /
 		// DestroyerEmblem: /
-		// HighVelocityBullet: /
 		// JellyfishNecklace: /
 		// ZombieArm: /
 		// TheAxe: /
 		// IceSickle: /
-		// ClothierVoodooDoll: /
 		// PoisonStaff: /
 		// SlimeStaff: /
-		// PoisonDart: /
-		// EyeSpring: /
-		// ToySled: /
 		// BookofSkulls: /
 		// KOCannon: /
-		// PirateMap: /
-		// TurtleHelmet: /
-		// TurtleScaleMail: /
-		// TurtleLeggings: /
 		// SnowballCannon: /
 		// BonePickaxe: /
 		// MagicQuiver: /
@@ -1381,540 +387,43 @@ GenderPluralization: {
 		// ObsidianRose: /
 		// Bananarang: /
 		// ChainKnife: /
-		// RodofDiscord: /
 		// DeathSickle: /
-		// TurtleShell: /
-		// TissueSample: /
-		// Vertebrae: /
-		// BloodySpine: /
-		// Ichor: /
-		// IchorTorch: /
-		// IchorArrow: /
-		// IchorBullet: /
 		// GoldenShower: /
-		// BunnyCannon: /
-		// ExplosiveBunny: /
-		// VialofVenom: /
-		// FlaskofVenom: /
-		// VenomArrow: /
-		// VenomBullet: /
 		// FireGauntlet: /
-		// Cog: /
-		// Confetti: /
-		// Nanites: /
-		// ExplosivePowder: /
-		// GoldDust: /
-		// PartyBullet: /
-		// NanoBullet: /
-		// ExplodingBullet: /
-		// GoldenBullet: /
-		// FlaskofCursedFlames: /
-		// FlaskofFire: /
-		// FlaskofGold: /
-		// FlaskofIchor: /
-		// FlaskofNanites: /
-		// FlaskofParty: /
-		// FlaskofPoison: /
-		// EyeofCthulhuTrophy: /
-		// EaterofWorldsTrophy: /
-		// BrainofCthulhuTrophy: /
-		// SkeletronTrophy: /
-		// QueenBeeTrophy: /
-		// WallofFleshTrophy: /
-		// DestroyerTrophy: /
-		// SkeletronPrimeTrophy: /
-		// RetinazerTrophy: /
-		// SpazmatismTrophy: /
-		// PlanteraTrophy: /
-		// GolemTrophy: /
-		// BloodMoonRising: /
-		// TheHangedMan: /
-		// GloryoftheFire: /
-		// BoneWarp: /
-		// WallSkeleton: /
-		// HangingSkeleton: /
-		// BlueSlabWall: /
-		// BlueTiledWall: /
-		// PinkSlabWall: /
-		// PinkTiledWall: /
-		// GreenSlabWall: /
-		// GreenTiledWall: /
-		// BlueBrickPlatform: /
-		// PinkBrickPlatform: /
-		// GreenBrickPlatform: /
-		// MetalShelf: /
-		// BrassShelf: /
-		// WoodShelf: /
-		// BrassLantern: /
-		// CagedLantern: /
-		// CarriageLantern: /
-		// AlchemyLantern: /
-		// DiablostLamp: /
-		// OilRagSconse: /
-		// BlueDungeonChair: /
-		// BlueDungeonTable: /
-		// BlueDungeonWorkBench: /
-		// GreenDungeonChair: /
-		// GreenDungeonTable: /
-		// GreenDungeonWorkBench: /
-		// PinkDungeonChair: /
-		// PinkDungeonTable: /
-		// PinkDungeonWorkBench: /
-		// BlueDungeonCandle: /
-		// GreenDungeonCandle: /
-		// PinkDungeonCandle: /
-		// BlueDungeonVase: /
-		// GreenDungeonVase: /
-		// PinkDungeonVase: /
-		// BlueDungeonDoor: /
-		// GreenDungeonDoor: /
-		// PinkDungeonDoor: /
-		// BlueDungeonBookcase: /
-		// GreenDungeonBookcase: /
-		// PinkDungeonBookcase: /
-		// Catacomb: /
-		// DungeonShelf: /
-		// SkellingtonJSkellingsworth: /
-		// TheCursedMan: /
-		// TheEyeSeestheEnd: /
-		// SomethingEvilisWatchingYou: /
-		// TheTwinsHaveAwoken: /
-		// TheScreamer: /
-		// GoblinsPlayingPoker: /
-		// Dryadisque: /
-		// Sunflowers: /
-		// TerrarianGothic: /
-		// Beanie: /
-		// ImbuingStation: /
-		// StarinaBottle: /
-		// EmptyBullet: /
-		// Impact: /
-		// PoweredbyBirds: /
-		// TheDestroyer: /
-		// ThePersistencyofEyes: /
-		// UnicornCrossingtheHallows: /
-		// GreatWave: /
-		// StarryNight: /
-		// GuidePicasso: /
-		// TheGuardiansGaze: /
-		// FatherofSomeone: /
-		// NurseLisa: /
 		// ShadowbeamStaff: /
 		// InfernoFork: /
 		// SpectreStaff: /
-		// WoodenFence: /
-		// LeadFence: /
-		// BubbleMachine: /
-		// BubbleWand: /
-		// MarchingBonesBanner: /
-		// NecromanticSign: /
-		// RustedCompanyStandard: /
-		// RaggedBrotherhoodSigil: /
-		// MoltenLegionFlag: /
-		// DiabolicSigil: /
-		// ObsidianPlatform: /
-		// ObsidianDoor: /
-		// ObsidianChair: /
-		// ObsidianTable: /
-		// ObsidianWorkBench: /
-		// ObsidianVase: /
-		// ObsidianBookcase: /
-		// HellboundBanner: /
-		// HellHammerBanner: /
-		// HelltowerBanner: /
-		// LostHopesofManBanner: /
-		// ObsidianWatcherBanner: /
-		// LavaEruptsBanner: /
-		// BlueDungeonBed: /
-		// GreenDungeonBed: /
-		// PinkDungeonBed: /
-		// ObsidianBed: /
-		// Waldo: /
-		// Darkness: /
-		// DarkSoulReaper: /
-		// Land: /
-		// TrappedGhost: /
-		// DemonsEye: /
-		// FindingGold: /
-		// FirstEncounter: /
-		// GoodMorning: /
-		// UndergroundReward: /
-		// ThroughtheWindow: /
-		// PlaceAbovetheClouds: /
-		// DoNotStepontheGrass: /
-		// ColdWatersintheWhiteLand: /
-		// LightlessChasms: /
-		// TheLandofDeceivingLooks: /
-		// Daylight: /
-		// SecretoftheSands: /
-		// DeadlandComesAlive: /
-		// EvilPresence: /
-		// SkyGuardian: /
-		// AmericanExplosive: /
-		// Discover: /
-		// HandEarth: /
-		// OldMiner: /
-		// Skelehead: /
-		// FacingtheCerebralMastermind: /
-		// LakeofFire: /
-		// TrioSuperHeroes: /
-		// SpectreHood: /
-		// SpectreRobe: /
-		// SpectrePants: /
 		// SpectrePickaxe: /
 		// SpectreHamaxe: /
-		// Ectoplasm: /
-		// GothicChair: /
-		// GothicTable: /
-		// GothicWorkBench: /
-		// GothicBookcase: /
 		// PaladinsHammer: /
-		// SWATHelmet: /
 		// BeeWings: /
-		// GiantHarpyFeather: /
-		// BoneFeather: /
-		// FireFeather: /
-		// IceFeather: /
-		// BrokenBatWing: /
-		// TatteredBeeWing: /
-		// LargeAmethyst: /
-		// LargeTopaz: /
-		// LargeSapphire: /
-		// LargeEmerald: /
-		// LargeRuby: /
-		// LargeDiamond: /
-		// JungleChest: /
-		// CorruptionChest: /
-		// CrimsonChest: /
-		// HallowedChest: /
-		// FrozenChest: /
-		// JungleKey: /
-		// CorruptionKey: /
-		// CrimsonKey: /
-		// HallowedKey: /
-		// FrozenKey: /
-		// ImpFace: /
-		// OminousPresence: /
-		// ShiningMoon: /
-		// LivingGore: /
-		// FlowingMagma: /
-		// SpectrePaintbrush: /
-		// SpectrePaintRoller: /
-		// SpectrePaintScraper: /
-		// ShroomiteHeadgear: /
-		// ShroomiteMask: /
-		// ShroomiteHelmet: /
-		// ShroomiteBreastplate: /
-		// ShroomiteLeggings: /
-		// Autohammer: /
-		// ShroomiteBar: /
 		// SDMG: /
-		// CenxsTiara: /
-		// CenxsBreastplate: /
-		// CenxsLeggings: /
-		// CrownosMask: /
-		// CrownosBreastplate: /
-		// CrownosLeggings: /
-		// WillsHelmet: /
-		// WillsBreastplate: /
-		// WillsLeggings: /
-		// JimsHelmet: /
-		// JimsBreastplate: /
-		// JimsLeggings: /
-		// AaronsHelmet: /
-		// AaronsBreastplate: /
-		// AaronsLeggings: /
 		// VampireKnives: /
-		// BrokenHeroSword: /
 		// ScourgeoftheCorruptor: /
 		// StaffoftheFrostHydra: /
-		// TheCreationoftheGuide: /
-		// TheMerchant: /
-		// CrownoDevoursHisLunch: /
-		// RareEnchantment: /
-		// GloriousNight: /
 		// SweetheartNecklace: /
 		// FlurryBoots: /
-		// DTownsHelmet: /
-		// DTownsBreastplate: /
-		// DTownsLeggings: /
 		// DTownsWings: /
 		// WillsWings: /
 		// CrownosWings: /
 		// CenxsWings: /
-		// CenxsDress: /
-		// CenxsDressPants: /
-		// PalladiumColumn: /
-		// PalladiumColumnWall: /
-		// BubblegumBlock: /
-		// BubblegumBlockWall: /
-		// TitanstoneBlock: /
-		// TitanstoneBlockWall: /
 		// MagicCuffs: /
-		// MusicBoxSnow: /
-		// MusicBoxSpace: /
-		// MusicBoxCrimson: /
-		// MusicBoxBoss4: /
-		// MusicBoxAltOverworldDay: /
-		// MusicBoxRain: /
-		// MusicBoxIce: /
-		// MusicBoxDesert: /
-		// MusicBoxOcean: /
-		// MusicBoxDungeon: /
-		// MusicBoxPlantera: /
-		// MusicBoxBoss5: /
-		// MusicBoxTemple: /
-		// MusicBoxEclipse: /
-		// MusicBoxMushrooms: /
-		// ButterflyDust: /
 		// AnkhCharm: /
 		// AnkhShield: /
-		// BlueFlare: /
-		// AnglerFishBanner: /
-		// AngryNimbusBanner: /
-		// AnomuraFungusBanner: /
-		// AntlionBanner: /
-		// ArapaimaBanner: /
-		// ArmoredSkeletonBanner: /
-		// BatBanner: /
-		// BirdBanner: /
-		// BlackRecluseBanner: /
-		// BloodFeederBanner: /
-		// BloodJellyBanner: /
-		// BloodCrawlerBanner: /
-		// BoneSerpentBanner: /
-		// BunnyBanner: /
-		// ChaosElementalBanner: /
-		// MimicBanner: /
-		// ClownBanner: /
-		// CorruptBunnyBanner: /
-		// CorruptGoldfishBanner: /
-		// CrabBanner: /
-		// CrimeraBanner: /
-		// CrimsonAxeBanner: /
-		// CursedHammerBanner: /
-		// DemonBanner: /
-		// DemonEyeBanner: /
-		// DerplingBanner: /
-		// EaterofSoulsBanner: /
-		// EnchantedSwordBanner: /
-		// ZombieEskimoBanner: /
-		// FaceMonsterBanner: /
-		// FloatyGrossBanner: /
-		// FlyingFishBanner: /
-		// FlyingSnakeBanner: /
-		// FrankensteinBanner: /
-		// FungiBulbBanner: /
-		// FungoFishBanner: /
-		// GastropodBanner: /
-		// GoblinThiefBanner: /
-		// GoblinSorcererBanner: /
-		// GoblinPeonBanner: /
-		// GoblinScoutBanner: /
-		// GoblinWarriorBanner: /
-		// GoldfishBanner: /
-		// HarpyBanner: /
-		// HellbatBanner: /
-		// HerplingBanner: /
-		// HornetBanner: /
-		// IceElementalBanner: /
-		// IcyMermanBanner: /
-		// FireImpBanner: /
-		// JellyfishBanner: /
-		// JungleCreeperBanner: /
-		// LihzahrdBanner: /
-		// ManEaterBanner: /
-		// MeteorHeadBanner: /
-		// MothBanner: /
-		// MummyBanner: /
-		// MushiLadybugBanner: /
-		// ParrotBanner: /
-		// PigronBanner: /
-		// PiranhaBanner: /
-		// PirateBanner: /
-		// PixieBanner: /
-		// RaincoatZombieBanner: /
-		// ReaperBanner: /
-		// SharkBanner: /
-		// SkeletonBanner: /
-		// SkeletonMageBanner: /
-		// SlimeBanner: /
-		// SnowFlinxBanner: /
-		// SpiderBanner: /
-		// SporeZombieBanner: /
-		// SwampThingBanner: /
-		// TortoiseBanner: /
-		// ToxicSludgeBanner: /
-		// UmbrellaSlimeBanner: /
-		// UnicornBanner: /
-		// VampireBanner: /
-		// VultureBanner: /
-		// NypmhBanner: /
-		// WerewolfBanner: /
-		// WolfBanner: /
-		// WorldFeederBanner: /
-		// WormBanner: /
-		// WraithBanner: /
-		// WyvernBanner: /
-		// ZombieBanner: /
-		// GlassPlatform: /
-		// GlassChair: /
-		// GoldenChair: /
-		// GoldenToilet: /
-		// BarStool: /
-		// HoneyChair: /
-		// SteampunkChair: /
-		// GlassDoor: /
-		// GoldenDoor: /
-		// HoneyDoor: /
-		// SteampunkDoor: /
-		// GlassTable: /
-		// BanquetTable: /
-		// Bar: /
-		// GoldenTable: /
-		// HoneyTable: /
-		// SteampunkTable: /
-		// GlassBed: /
-		// GoldenBed: /
-		// HoneyBed: /
-		// SteampunkBed: /
-		// LivingWoodWall: /
 		// FartinaJar: /
-		// Pumpkin: /
-		// PumpkinWall: /
-		// Hay: /
-		// HayWall: /
-		// SpookyWood: /
-		// SpookyWoodWall: /
-		// PumpkinHelmet: /
-		// PumpkinBreastplate: /
-		// PumpkinLeggings: /
-		// CandyApple: /
-		// SoulCake: /
-		// NurseHat: /
-		// NurseShirt: /
-		// NursePants: /
-		// WizardsHat: /
-		// GuyFawkesMask: /
-		// DyeTraderRobe: /
-		// SteampunkGoggles: /
-		// CyborgHelmet: /
-		// CyborgShirt: /
-		// CyborgPants: /
-		// CreeperMask: /
-		// CreeperShirt: /
-		// CreeperPants: /
-		// CatMask: /
-		// CatShirt: /
-		// CatPants: /
-		// GhostMask: /
-		// GhostShirt: /
-		// PumpkinMask: /
-		// PumpkinShirt: /
-		// PumpkinPants: /
-		// RobotMask: /
-		// RobotShirt: /
-		// RobotPants: /
-		// UnicornMask: /
-		// UnicornShirt: /
-		// UnicornPants: /
-		// VampireMask: /
-		// VampireShirt: /
-		// VampirePants: /
-		// WitchHat: /
-		// LeprechaunHat: /
-		// LeprechaunShirt: /
-		// LeprechaunPants: /
-		// PixieShirt: /
-		// PixiePants: /
-		// PrincessHat: /
-		// PrincessDressNew: /
-		// GoodieBag: /
-		// WitchDress: /
-		// WitchBoots: /
-		// BrideofFrankensteinMask: /
-		// BrideofFrankensteinDress: /
-		// KarateTortoiseMask: /
-		// KarateTortoiseShirt: /
-		// KarateTortoisePants: /
 		// CandyCornRifle: /
-		// CandyCorn: /
 		// JackOLanternLauncher: /
-		// ExplosiveJackOLantern: /
 		// Sickle: /
-		// PumpkinPie: /
-		// ScarecrowHat: /
-		// ScarecrowShirt: /
-		// ScarecrowPants: /
-		// Cauldron: /
-		// PumpkinChair: /
-		// PumpkinDoor: /
-		// PumpkinTable: /
-		// PumpkinWorkBench: /
-		// PumpkinPlatform: /
 		// TatteredFairyWings: /
-		// SpiderEgg: /
-		// MagicalPumpkinSeed: /
-		// BatHook: /
 		// BatScepter: /
 		// RavenStaff: /
-		// JungleKeyMold: /
-		// CorruptionKeyMold: /
-		// CrimsonKeyMold: /
-		// HallowedKeyMold: /
-		// FrozenKeyMold: /
-		// HangingJackOLantern: /
-		// RottenEgg: /
-		// UnluckyYarn: /
-		// BlackFairyDust: /
-		// Jackelier: /
-		// JackOLantern: /
-		// SpookyChair: /
-		// SpookyDoor: /
-		// SpookyTable: /
-		// SpookyWorkBench: /
-		// SpookyPlatform: /
-		// ReaperHood: /
-		// ReaperRobe: /
-		// FoxMask: /
-		// FoxShirt: /
-		// FoxPants: /
-		// CatEars: /
 		// BloodyMachete: /
 		// TheHorsemansBlade: /
 		// BladedGlove: /
-		// PumpkinSeed: /
-		// SpookyHook: /
 		// SpookyWings: /
-		// SpookyTwig: /
-		// SpookyHelmet: /
-		// SpookyBreastplate: /
-		// SpookyLeggings: /
 		// StakeLauncher: /
-		// Stake: /
-		// CursedSapling: /
-		// SpaceCreatureMask: /
-		// SpaceCreatureShirt: /
-		// SpaceCreaturePants: /
-		// WolfMask: /
-		// WolfShirt: /
-		// WolfPants: /
-		// PumpkinMoonMedallion: /
 		// NecromanticScroll: /
-		// JackingSkeletron: /
-		// BitterHarvest: /
-		// BloodMoonCountess: /
-		// HallowsEve: /
-		// MorbidCuriosity: /
-		// TreasureHunterShirt: /
-		// TreasureHunterPants: /
-		// DryadCoverings: /
-		// DryadLoincloth: /
-		// MourningWoodTrophy: /
-		// PumpkingTrophy: /
-		// JackOLanternMask: /
 		// SniperScope: /
-		// HeartLantern: /
 		// JellyfishDivingGear: /
 		// ArcticDivingGear: /
 		// FrostsparkBoots: /
@@ -1922,1151 +431,86 @@ GenderPluralization: {
 		// PapyrusScarab: /
 		// CelestialStone: /
 		// Hoverboard: /
-		// CandyCane: /
-		// SugarPlum: /
-		// Present: /
 		// RedRyder: /
 		// FestiveWings: /
-		// PineTreeBlock: /
-		// ChristmasTree: /
-		// StarTopper1: /
-		// StarTopper2: /
-		// StarTopper3: /
-		// BowTopper: /
-		// WhiteGarland: /
-		// WhiteAndRedGarland: /
-		// RedGardland: /
-		// RedAndGreenGardland: /
-		// GreenGardland: /
-		// GreenAndWhiteGarland: /
-		// MulticoloredBulb: /
-		// RedBulb: /
-		// YellowBulb: /
-		// GreenBulb: /
-		// RedAndGreenBulb: /
-		// YellowAndGreenBulb: /
-		// RedAndYellowBulb: /
-		// WhiteBulb: /
-		// WhiteAndRedBulb: /
-		// WhiteAndYellowBulb: /
-		// WhiteAndGreenBulb: /
-		// MulticoloredLights: /
-		// RedLights: /
-		// GreenLights: /
-		// BlueLights: /
-		// YellowLights: /
-		// RedAndYellowLights: /
-		// RedAndGreenLights: /
-		// YellowAndGreenLights: /
-		// BlueAndGreenLights: /
-		// RedAndBlueLights: /
-		// BlueAndYellowLights: /
-		// GiantBow: /
-		// ReindeerAntlers: /
-		// Holly: /
 		// CandyCaneSword: /
 		// ElfMelter: /
-		// ChristmasPudding: /
-		// Eggnog: /
-		// StarAnise: /
-		// ReindeerBells: /
-		// CandyCaneHook: /
-		// ChristmasHook: /
 		// CnadyCanePickaxe: /
 		// FruitcakeChakram: /
-		// SugarCookie: /
-		// GingerbreadCookie: /
 		// HandWarmer: /
-		// Coal: /
 		// Toolbox: /
-		// PineDoor: /
-		// PineChair: /
-		// PineTable: /
-		// DogWhistle: /
 		// ChristmasTreeSword: /
 		// ChainGun: /
 		// Razorpine: /
 		// BlizzardStaff: /
-		// MrsClauseHat: /
-		// MrsClauseShirt: /
-		// MrsClauseHeels: /
-		// ParkaHood: /
-		// ParkaCoat: /
-		// ParkaPants: /
-		// SnowHat: /
-		// UglySweater: /
-		// TreeMask: /
-		// TreeShirt: /
-		// TreeTrunks: /
-		// ElfHat: /
-		// ElfShirt: /
-		// ElfPants: /
 		// SnowmanCannon: /
 		// NorthPole: /
-		// ChristmasTreeWallpaper: /
-		// OrnamentWallpaper: /
-		// CandyCaneWallpaper: /
-		// FestiveWallpaper: /
-		// StarsWallpaper: /
-		// SquigglesWallpaper: /
-		// SnowflakeWallpaper: /
-		// KrampusHornWallpaper: /
-		// BluegreenWallpaper: /
-		// GrinchFingerWallpaper: /
-		// NaughtyPresent: /
-		// BabyGrinchMischiefWhistle: /
-		// IceQueenTrophy: /
-		// SantaNK1Trophy: /
-		// EverscreamTrophy: /
-		// MusicBoxPumpkinMoon: /
-		// MusicBoxAltUnderground: /
-		// MusicBoxFrostMoon: /
-		// BrownPaint: /
-		// ShadowPaint: /
-		// NegativePaint: /
-		// TeamDye: /
-		// AmethystGemsparkBlock: /
-		// TopazGemsparkBlock: /
-		// SapphireGemsparkBlock: /
-		// EmeraldGemsparkBlock: /
-		// RubyGemsparkBlock: /
-		// DiamondGemsparkBlock: /
-		// AmberGemsparkBlock: /
-		// LifeHairDye: /
-		// ManaHairDye: /
-		// DepthHairDye: /
-		// MoneyHairDye: /
-		// TimeHairDye: /
-		// TeamHairDye: /
-		// BiomeHairDye: /
-		// PartyHairDye: /
-		// RainbowHairDye: /
-		// SpeedHairDye: /
-		// AngelHalo: /
-		// Fez: /
-		// Womannquin: /
-		// HairDyeRemover: /
-		// BugNet: /
-		// Firefly: /
-		// FireflyinaBottle: /
-		// MonarchButterfly: /
-		// PurpleEmperorButterfly: /
-		// RedAdmiralButterfly: /
-		// UlyssesButterfly: /
-		// SulphurButterfly: /
-		// TreeNymphButterfly: /
-		// ZebraSwallowtailButterfly: /
-		// JuliaButterfly: /
-		// Worm: /
-		// Mouse: /
-		// LightningBug: /
-		// LightningBuginaBottle: /
-		// Snail: /
-		// GlowingSnail: /
-		// FancyGreyWallpaper: /
-		// IceFloeWallpaper: /
-		// MusicWallpaper: /
-		// PurpleRainWallpaper: /
-		// RainbowWallpaper: /
-		// SparkleStoneWallpaper: /
-		// StarlitHeavenWallpaper: /
-		// Bird: /
-		// BlueJay: /
-		// Cardinal: /
-		// Squirrel: /
-		// Bunny: /
-		// CactusBookcase: /
-		// EbonwoodBookcase: /
-		// FleshBookcase: /
-		// HoneyBookcase: /
-		// SteampunkBookcase: /
-		// GlassBookcase: /
-		// RichMahoganyBookcase: /
-		// PearlwoodBookcase: /
-		// SpookyBookcase: /
-		// SkywareBookcase: /
-		// LihzahrdBookcase: /
-		// FrozenBookcase: /
-		// CactusLantern: /
-		// EbonwoodLantern: /
-		// FleshLantern: /
-		// HoneyLantern: /
-		// SteampunkLantern: /
-		// GlassLantern: /
-		// RichMahoganyLantern: /
-		// PearlwoodLantern: /
-		// FrozenLantern: /
-		// LihzahrdLantern: /
-		// SkywareLantern: /
-		// SpookyLantern: /
-		// FrozenDoor: /
-		// CactusCandle: /
-		// EbonwoodCandle: /
-		// FleshCandle: /
-		// GlassCandle: /
-		// FrozenCandle: /
-		// RichMahoganyCandle: /
-		// PearlwoodCandle: /
-		// LihzahrdCandle: /
-		// SkywareCandle: /
-		// PumpkinCandle: /
-		// CactusChandelier: /
-		// EbonwoodChandelier: /
-		// FleshChandelier: /
-		// HoneyChandelier: /
-		// FrozenChandelier: /
-		// RichMahoganyChandelier: /
-		// PearlwoodChandelier: /
-		// LihzahrdChandelier: /
-		// SkywareChandelier: /
-		// SpookyChandelier: /
-		// GlassChandelier: /
-		// CactusBed: /
-		// FleshBed: /
-		// FrozenBed: /
-		// LihzahrdBed: /
-		// SkywareBed: /
-		// SpookyBed: /
-		// CactusBathtub: /
-		// EbonwoodBathtub: /
-		// FleshBathtub: /
-		// GlassBathtub: /
-		// FrozenBathtub: /
-		// RichMahoganyBathtub: /
-		// PearlwoodBathtub: /
-		// LihzahrdBathtub: /
-		// SkywareBathtub: /
-		// SpookyBathtub: /
-		// CactusLamp: /
-		// EbonwoodLamp: /
-		// FleshLamp: /
-		// GlassLamp: /
-		// FrozenLamp: /
-		// RichMahoganyLamp: /
-		// PearlwoodLamp: /
-		// LihzahrdLamp: /
-		// SkywareLamp: /
-		// SpookyLamp: /
-		// CactusCandelabra: /
-		// EbonwoodCandelabra: /
-		// FleshCandelabra: /
-		// HoneyCandelabra: /
-		// SteampunkCandelabra: /
-		// GlassCandelabra: /
-		// RichMahoganyCandelabra: /
-		// PearlwoodCandelabra: /
-		// FrozenCandelabra: /
-		// LihzahrdCandelabra: /
-		// SkywareCandelabra: /
-		// SpookyCandelabra: /
-		// BrainMask: /
-		// FleshMask: /
-		// TwinMask: /
-		// SkeletronPrimeMask: /
-		// BeeMask: /
-		// PlanteraMask: /
-		// GolemMask: /
-		// EaterMask: /
-		// EyeMask: /
-		// DestroyerMask: /
-		// BlacksmithRack: /
-		// CarpentryRack: /
-		// HelmetRack: /
-		// SpearRack: /
-		// SwordRack: /
-		// StoneSlab: /
-		// SandstoneSlab: /
-		// Frog: /
-		// MallardDuck: /
-		// Duck: /
-		// HoneyBathtub: /
-		// SteampunkBathtub: /
-		// LivingWoodBathtub: /
-		// ShadewoodBathtub: /
-		// BoneBathtub: /
-		// HoneyLamp: /
-		// SteampunkLamp: /
-		// LivingWoodLamp: /
-		// ShadewoodLamp: /
-		// GoldenLamp: /
-		// BoneLamp: /
-		// LivingWoodBookcase: /
-		// ShadewoodBookcase: /
-		// GoldenBookcase: /
-		// BoneBookcase: /
-		// LivingWoodBed: /
-		// BoneBed: /
-		// LivingWoodChandelier: /
-		// ShadewoodChandelier: /
-		// GoldenChandelier: /
-		// BoneChandelier: /
-		// LivingWoodLantern: /
-		// ShadewoodLantern: /
-		// GoldenLantern: /
-		// BoneLantern: /
-		// LivingWoodCandelabra: /
-		// ShadewoodCandelabra: /
-		// GoldenCandelabra: /
-		// BoneCandelabra: /
-		// LivingWoodCandle: /
-		// ShadewoodCandle: /
-		// GoldenCandle: /
-		// BlackScorpion: /
-		// Scorpion: /
-		// BubbleWallpaper: /
-		// CopperPipeWallpaper: /
-		// DuckyWallpaper: /
-		// FrostCore: /
-		// BunnyCage: /
-		// SquirrelCage: /
-		// MallardDuckCage: /
-		// DuckCage: /
-		// BirdCage: /
-		// BlueJayCage: /
-		// CardinalCage: /
-		// WaterfallWall: /
-		// LavafallWall: /
-		// CrimsonSeeds: /
-		// HeavyWorkBench: /
-		// CopperPlating: /
-		// SnailCage: /
-		// GlowingSnailCage: /
 		// ShroomiteDiggingClaw: /
-		// AmmoBox: /
-		// MonarchButterflyJar: /
-		// PurpleEmperorButterflyJar: /
-		// RedAdmiralButterflyJar: /
-		// UlyssesButterflyJar: /
-		// SulphurButterflyJar: /
-		// TreeNymphButterflyJar: /
-		// ZebraSwallowtailButterflyJar: /
-		// JuliaButterflyJar: /
-		// ScorpionCage: /
-		// BlackScorpionCage: /
 		// VenomStaff: /
-		// SpectreMask: /
-		// FrogCage: /
-		// MouseCage: /
-		// BoneWelder: /
-		// FleshCloningVaat: /
-		// GlassKiln: /
-		// LihzahrdFurnace: /
-		// LivingLoom: /
-		// SkyMill: /
-		// IceMachine: /
-		// BeetleHelmet: /
-		// BeetleScaleMail: /
-		// BeetleShell: /
-		// BeetleLeggings: /
-		// SteampunkBoiler: /
-		// HoneyDispenser: /
-		// Penguin: /
-		// PenguinCage: /
-		// WormCage: /
-		// Terrarium: /
-		// SuperManaPotion: /
-		// EbonwoodFence: /
-		// RichMahoganyFence: /
-		// PearlwoodFence: /
-		// ShadewoodFence: /
 		// BrickLayer: /
 		// ExtendoGrip: /
 		// PaintSprayer: /
 		// PortableCementMixer: /
-		// BeetleHusk: /
 		// CelestialMagnet: /
 		// CelestialEmblem: /
 		// CelestialCuffs: /
-		// PeddlersHat: /
 		// PulseBow: /
-		// DynastyChandelier: /
-		// DynastyLamp: /
-		// DynastyLantern: /
-		// DynastyCandelabra: /
-		// DynastyChair: /
-		// DynastyWorkBench: /
-		// DynastyChest: /
-		// DynastyBed: /
-		// DynastyBathtub: /
-		// DynastyBookcase: /
-		// DynastyCup: /
-		// DynastyBowl: /
-		// DynastyCandle: /
-		// DynastyClock: /
-		// GoldenClock: /
-		// GlassClock: /
-		// HoneyClock: /
-		// SteampunkClock: /
-		// FancyDishes: /
-		// GlassBowl: /
-		// WineGlass: /
-		// LivingWoodPiano: /
-		// FleshPiano: /
-		// FrozenPiano: /
-		// FrozenTable: /
-		// HoneyChest: /
-		// SteampunkChest: /
-		// HoneyWorkBench: /
-		// FrozenWorkBench: /
-		// SteampunkWorkBench: /
-		// GlassPiano: /
-		// HoneyPiano: /
-		// SteampunkPiano: /
-		// HoneyCup: /
-		// SteampunkCup: /
-		// DynastyTable: /
-		// DynastyWood: /
-		// RedDynastyShingles: /
-		// BlueDynastyShingles: /
-		// WhiteDynastyWall: /
-		// BlueDynastyWall: /
-		// DynastyDoor: /
-		// Sake: /
-		// PadThai: /
-		// Pho: /
 		// Revolver: /
 		// Gatligator: /
-		// ArcaneRuneWall: /
-		// WaterGun: /
 		// Katana: /
-		// UltrabrightTorch: /
-		// MagicHat: /
-		// DiamondRing: /
-		// Gi: /
-		// Kimono: /
-		// GypsyRobe: /
 		// BeetleWings: /
-		// TigerSkin: /
-		// LeopardSkin: /
-		// ZebraSkin: /
-		// CrimsonCloak: /
-		// MysteriousCape: /
-		// RedCape: /
-		// WinterCape: /
-		// FrozenChair: /
-		// WoodFishingPole: /
-		// Bass: /
-		// ReinforcedFishingPole: /
-		// FiberglassFishingPole: /
-		// FisherofSouls: /
-		// GoldenFishingRod: /
-		// MechanicsRod: /
-		// SittingDucksFishingRod: /
-		// Trout: /
-		// Salmon: /
-		// AtlanticCod: /
-		// Tuna: /
-		// RedSnapper: /
-		// NeonTetra: /
-		// ArmoredCavefish: /
-		// Damselfish: /
-		// CrimsonTigerfish: /
-		// FrostMinnow: /
-		// PrincessFish: /
-		// GoldenCarp: /
-		// SpecularFish: /
-		// Prismite: /
-		// VariegatedLardfish: /
-		// FlarefinKoi: /
-		// DoubleCod: /
-		// Honeyfin: /
-		// Obsidifish: /
-		// Shrimp: /
-		// ChaosFish: /
-		// Ebonkoi: /
-		// Hemopiranha: /
 		// Rockfish: /
-		// Stinkfish: /
-		// MiningPotion: /
-		// HeartreachPotion: /
-		// CalmingPotion: /
-		// BuilderPotion: /
-		// TitanPotion: /
-		// FlipperPotion: /
-		// SummoningPotion: /
-		// TrapsightPotion: /
 		// PurpleClubberfish: /
 		// ObsidianSwordfish: /
 		// Swordfish: /
-		// IronFence: /
-		// WoodenCrate: /
-		// IronCrate: /
-		// GoldenCrate: /
-		// OldShoe: /
-		// FishingSeaweed: /
-		// TinCan: /
-		// MinecartTrack: /
 		// ReaverShark: /
 		// SawtoothShark: /
-		// Minecart: /
-		// AmmoReservationPotion: /
-		// LifeforcePotion: /
-		// EndurancePotion: /
-		// RagePotion: /
-		// InfernoPotion: /
-		// WrathPotion: /
-		// RecallPotion: /
-		// TeleportationPotion: /
-		// LovePotion: /
-		// StinkPotion: /
-		// FishingPotion: /
-		// SonarPotion: /
-		// CratePotion: /
-		// ShiverthornSeeds: /
-		// Shiverthorn: /
-		// WarmthPotion: /
-		// FishHook: /
-		// BeeHeadgear: /
-		// BeeBreastplate: /
-		// BeeGreaves: /
 		// HornetStaff: /
 		// ImpStaff: /
 		// QueenSpiderStaff: /
-		// AnglerHat: /
-		// AnglerVest: /
-		// AnglerPants: /
-		// SpiderMask: /
-		// SpiderBreastplate: /
-		// SpiderGreaves: /
 		// HighTestFishingLine: /
 		// AnglerEarring: /
 		// TackleBox: /
-		// BlueDungeonPiano: /
-		// GreenDungeonPiano: /
-		// PinkDungeonPiano: /
-		// GoldenPiano: /
-		// ObsidianPiano: /
-		// BonePiano: /
-		// CactusPiano: /
-		// SpookyPiano: /
-		// SkywarePiano: /
-		// LihzahrdPiano: /
-		// BlueDungeonDresser: /
-		// GreenDungeonDresser: /
-		// PinkDungeonDresser: /
-		// GoldenDresser: /
-		// ObsidianDresser: /
-		// BoneDresser: /
-		// CactusDresser: /
-		// SpookyDresser: /
-		// SkywareDresser: /
-		// HoneyDresser: /
-		// LihzahrdDresser: /
-		// Sofa: /
-		// EbonwoodSofa: /
-		// RichMahoganySofa: /
-		// PearlwoodSofa: /
-		// ShadewoodSofa: /
-		// BlueDungeonSofa: /
-		// GreenDungeonSofa: /
-		// PinkDungeonSofa: /
-		// GoldenSofa: /
-		// ObsidianSofa: /
-		// BoneSofa: /
-		// CactusSofa: /
-		// SpookySofa: /
-		// SkywareSofa: /
-		// HoneySofa: /
-		// SteampunkSofa: /
-		// MushroomSofa: /
-		// GlassSofa: /
-		// PumpkinSofa: /
-		// LihzahrdSofa: /
-		// SeashellHairpin: /
-		// MermaidAdornment: /
-		// MermaidTail: /
-		// ZephyrFish: /
-		// Fleshcatcher: /
-		// HotlineFishingHook: /
 		// FrogLeg: /
 		// Anchor: /
-		// CookedFish: /
-		// CookedShrimp: /
-		// Sashimi: /
-		// FuzzyCarrot: /
-		// ScalyTruffle: /
-		// SlimySaddle: /
-		// BeeWax: /
-		// CopperPlatingWall: /
-		// StoneSlabWall: /
-		// Sail: /
-		// CoralstoneBlock: /
-		// BlueJellyfish: /
-		// GreenJellyfish: /
-		// PinkJellyfish: /
-		// BlueJellyfishJar: /
-		// GreenJellyfishJar: /
-		// PinkJellyfishJar: /
-		// LifePreserver: /
-		// ShipsWheel: /
-		// CompassRose: /
-		// WallAnchor: /
-		// GoldfishTrophy: /
-		// BunnyfishTrophy: /
-		// SwordfishTrophy: /
-		// SharkteethTrophy: /
-		// Batfish: /
-		// BumblebeeTuna: /
-		// Catfish: /
-		// Cloudfish: /
-		// Cursedfish: /
-		// Dirtfish: /
-		// DynamiteFish: /
-		// EaterofPlankton: /
-		// FallenStarfish: /
-		// TheFishofCthulu: /
-		// Fishotron: /
-		// Harpyfish: /
-		// Hungerfish: /
-		// Ichorfish: /
-		// Jewelfish: /
-		// MirageFish: /
-		// MutantFlinxfin: /
-		// Pengfish: /
-		// Pixiefish: /
-		// Spiderfish: /
-		// TundraTrout: /
-		// UnicornFish: /
-		// GuideVoodooFish: /
-		// Wyverntail: /
-		// ZombieFish: /
-		// AmanitaFungifin: /
-		// Angelfish: /
-		// BloodyManowar: /
-		// Bonefish: /
-		// Bunnyfish: /
-		// CapnTunabeard: /
-		// Clownfish: /
-		// DemonicHellfish: /
-		// Derpfish: /
-		// Fishron: /
-		// InfectedScabbardfish: /
-		// Mudfish: /
-		// Slimefish: /
-		// TropicalBarracuda: /
-		// KingSlimeTrophy: /
-		// ShipInABottle: /
-		// HardySaddle: /
-		// PressureTrack: /
-		// KingSlimeMask: /
 		// FinWings: /
-		// TreasureMap: /
-		// SeaweedPlanter: /
-		// PillaginMePixels: /
-		// FishCostumeMask: /
-		// FishCostumeShirt: /
-		// FishCostumeFinskirt: /
-		// GingerBeard: /
-		// HoneyedGoggles: /
-		// BorealWood: /
-		// PalmWood: /
-		// BorealWoodWall: /
-		// PalmWoodWall: /
-		// BorealWoodFence: /
-		// PalmWoodFence: /
-		// BorealWoodHelmet: /
-		// BorealWoodBreastplate: /
-		// BorealWoodGreaves: /
-		// PalmWoodHelmet: /
-		// PalmWoodBreastplate: /
-		// PalmWoodGreaves: /
 		// PalmWoodBow: /
 		// PalmWoodHammer: /
 		// PalmWoodSword: /
-		// PalmWoodPlatform: /
-		// PalmWoodBathtub: /
-		// PalmWoodBed: /
-		// PalmWoodBench: /
-		// PalmWoodCandelabra: /
-		// PalmWoodCandle: /
-		// PalmWoodChair: /
-		// PalmWoodChandelier: /
-		// PalmWoodChest: /
-		// PalmWoodSofa: /
-		// PalmWoodDoor: /
-		// PalmWoodDresser: /
-		// PalmWoodLantern: /
-		// PalmWoodPiano: /
-		// PalmWoodTable: /
-		// PalmWoodLamp: /
-		// PalmWoodWorkBench: /
 		// OpticStaff: /
-		// PalmWoodBookcase: /
-		// MushroomBathtub: /
-		// MushroomBed: /
-		// MushroomBench: /
-		// MushroomBookcase: /
-		// MushroomCandelabra: /
-		// MushroomCandle: /
-		// MushroomChandelier: /
-		// MushroomChest: /
-		// MushroomDresser: /
-		// MushroomLantern: /
-		// MushroomLamp: /
-		// MushroomPiano: /
-		// MushroomPlatform: /
-		// MushroomTable: /
 		// SpiderStaff: /
-		// BorealWoodBathtub: /
-		// BorealWoodBed: /
-		// BorealWoodBookcase: /
-		// BorealWoodCandelabra: /
-		// BorealWoodCandle: /
-		// BorealWoodChair: /
-		// BorealWoodChandelier: /
-		// BorealWoodChest: /
-		// BorealWoodClock: /
-		// BorealWoodDoor: /
-		// BorealWoodDresser: /
-		// BorealWoodLamp: /
-		// BorealWoodLantern: /
-		// BorealWoodPiano: /
-		// BorealWoodPlatform: /
-		// SlimeBathtub: /
-		// SlimeBed: /
-		// SlimeBookcase: /
-		// SlimeCandelabra: /
-		// SlimeCandle: /
-		// SlimeChair: /
-		// SlimeChandelier: /
-		// SlimeChest: /
-		// SlimeClock: /
-		// SlimeDoor: /
-		// SlimeDresser: /
-		// SlimeLamp: /
-		// SlimeLantern: /
-		// SlimePiano: /
-		// SlimePlatform: /
-		// SlimeSofa: /
-		// SlimeTable: /
 		// PirateStaff: /
-		// SlimeHook: /
-		// StickyGrenade: /
-		// TartarSauce: /
-		// DukeFishronMask: /
-		// DukeFishronTrophy: /
-		// MolotovCocktail: /
-		// BoneClock: /
-		// CactusClock: /
-		// EbonwoodClock: /
-		// FrozenClock: /
-		// LihzahrdClock: /
-		// LivingWoodClock: /
-		// RichMahoganyClock: /
-		// FleshClock: /
-		// MushroomClock: /
-		// ObsidianClock: /
-		// PalmWoodClock: /
-		// PearlwoodClock: /
-		// PumpkinClock: /
-		// ShadewoodClock: /
-		// SpookyClock: /
-		// SkywareClock: /
-		// SpiderFang: /
 		// FalconBlade: /
 		// FishronWings: /
-		// SlimeGun: /
 		// Flairon: /
-		// GreenDungeonChest: /
-		// PinkDungeonChest: /
-		// BlueDungeonChest: /
-		// BoneChest: /
-		// CactusChest: /
-		// FleshChest: /
-		// ObsidianChest: /
-		// PumpkinChest: /
-		// SpookyChest: /
 		// TempestStaff: /
 		// RazorbladeTyphoon: /
 		// BubbleGun: /
 		// Tsunami: /
-		// Seashell: /
-		// Starfish: /
-		// SteampunkPlatform: /
-		// SkywarePlatform: /
-		// LivingWoodPlatform: /
-		// HoneyPlatform: /
-		// SkywareWorkbench: /
-		// GlassWorkBench: /
-		// LivingWoodWorkBench: /
-		// FleshSofa: /
-		// FrozenSofa: /
-		// LivingWoodSofa: /
-		// PumpkinDresser: /
-		// SteampunkDresser: /
-		// GlassDresser: /
-		// FleshDresser: /
-		// PumpkinLantern: /
-		// ObsidianLantern: /
-		// PumpkinLamp: /
-		// ObsidianLamp: /
-		// BlueDungeonLamp: /
-		// GreenDungeonLamp: /
-		// PinkDungeonLamp: /
-		// HoneyCandle: /
-		// SteampunkCandle: /
-		// SpookyCandle: /
-		// ObsidianCandle: /
-		// BlueDungeonChandelier: /
-		// GreenDungeonChandelier: /
-		// PinkDungeonChandelier: /
-		// SteampunkChandelier: /
-		// PumpkinChandelier: /
-		// ObsidianChandelier: /
-		// BlueDungeonBathtub: /
-		// GreenDungeonBathtub: /
-		// PinkDungeonBathtub: /
-		// PumpkinBathtub: /
-		// ObsidianBathtub: /
-		// GoldenBathtub: /
-		// BlueDungeonCandelabra: /
-		// GreenDungeonCandelabra: /
-		// PinkDungeonCandelabra: /
-		// ObsidianCandelabra: /
-		// PumpkinCandelabra: /
-		// PumpkinBed: /
-		// PumpkinBookcase: /
-		// PumpkinPiano: /
-		// SharkStatue: /
-		// TruffleWorm: /
-		// ApprenticeBait: /
-		// JourneymanBait: /
-		// MasterBait: /
-		// AmberGemsparkWall: /
-		// AmberGemsparkWallOff: /
-		// AmethystGemsparkWall: /
-		// AmethystGemsparkWallOff: /
-		// DiamondGemsparkWall: /
-		// DiamondGemsparkWallOff: /
-		// EmeraldGemsparkWall: /
-		// EmeraldGemsparkWallOff: /
-		// RubyGemsparkWall: /
-		// RubyGemsparkWallOff: /
-		// SapphireGemsparkWall: /
-		// SapphireGemsparkWallOff: /
-		// TopazGemsparkWall: /
-		// TopazGemsparkWallOff: /
-		// TinPlatingWall: /
-		// TinPlating: /
-		// WaterfallBlock: /
-		// LavafallBlock: /
-		// ConfettiBlock: /
-		// ConfettiWall: /
-		// ConfettiBlockBlack: /
-		// ConfettiWallBlack: /
-		// WeaponRack: /
-		// FireworksBox: /
-		// LivingFireBlock: /
-		// AlphabetStatue0: /
-		// AlphabetStatue1: /
-		// AlphabetStatue2: /
-		// AlphabetStatue3: /
-		// AlphabetStatue4: /
-		// AlphabetStatue5: /
-		// AlphabetStatue6: /
-		// AlphabetStatue7: /
-		// AlphabetStatue8: /
-		// AlphabetStatue9: /
-		// AlphabetStatueA: /
-		// AlphabetStatueB: /
-		// AlphabetStatueC: /
-		// AlphabetStatueD: /
-		// AlphabetStatueE: /
-		// AlphabetStatueF: /
-		// AlphabetStatueG: /
-		// AlphabetStatueH: /
-		// AlphabetStatueI: /
-		// AlphabetStatueJ: /
-		// AlphabetStatueK: /
-		// AlphabetStatueL: /
-		// AlphabetStatueM: /
-		// AlphabetStatueN: /
-		// AlphabetStatueO: /
-		// AlphabetStatueP: /
-		// AlphabetStatueQ: /
-		// AlphabetStatueR: /
-		// AlphabetStatueS: /
-		// AlphabetStatueT: /
-		// AlphabetStatueU: /
-		// AlphabetStatueV: /
-		// AlphabetStatueW: /
-		// AlphabetStatueX: /
-		// AlphabetStatueY: /
-		// AlphabetStatueZ: /
-		// FireworkFountain: /
-		// BoosterTrack: /
-		// Grasshopper: /
-		// GrasshopperCage: /
-		// MusicBoxUndergroundCrimson: /
-		// CactusTable: /
-		// CactusPlatform: /
 		// BorealWoodSword: /
 		// BorealWoodHammer: /
 		// BorealWoodBow: /
-		// GlassChest: /
 		// XenoStaff: /
 		// MeteorStaff: /
-		// LivingCursedFireBlock: /
-		// LivingDemonFireBlock: /
-		// LivingFrostFireBlock: /
-		// LivingIchorBlock: /
-		// LivingUltrabrightFireBlock: /
-		// GenderChangePotion: /
-		// VortexHelmet: /
-		// VortexBreastplate: /
-		// VortexLeggings: /
-		// NebulaHelmet: /
-		// NebulaBreastplate: /
-		// NebulaLeggings: /
-		// SolarFlareHelmet: /
-		// SolarFlareBreastplate: /
-		// SolarFlareLeggings: /
-		// LunarTabletFragment: /
-		// SolarTablet: /
-		// DrillContainmentUnit: /
-		// CosmicCarKey: /
 		// MothronWings: /
-		// BrainScrambler: /
-		// VortexAxe: /
-		// VortexChainsaw: /
 		// VortexDrill: /
-		// VortexHammer: /
 		// VortexPickaxe: /
-		// NebulaAxe: /
-		// NebulaChainsaw: /
 		// NebulaDrill: /
-		// NebulaHammer: /
 		// NebulaPickaxe: /
-		// SolarFlareAxe: /
-		// SolarFlareChainsaw: /
 		// SolarFlareDrill: /
-		// SolarFlareHammer: /
 		// SolarFlarePickaxe: /
-		// HoneyfallBlock: /
-		// HoneyfallWall: /
-		// ChlorophyteBrickWall: /
-		// CrimtaneBrickWall: /
-		// ShroomitePlatingWall: /
-		// ChlorophyteBrick: /
-		// CrimtaneBrick: /
-		// ShroomitePlating: /
 		// LaserMachinegun: /
 		// ElectrosphereLauncher: /
 		// Xenopopper: /
 		// LaserDrill: /
 		// LaserRuler: /
-		// AntiGravityHook: /
-		// MoonMask: /
-		// SunMask: /
-		// MartianCostumeMask: /
-		// MartianCostumeShirt: /
-		// MartianCostumePants: /
-		// MartianUniformHelmet: /
-		// MartianUniformTorso: /
-		// MartianUniformPants: /
-		// MartianAstroClock: /
-		// MartianBathtub: /
-		// MartianBed: /
-		// MartianHoverChair: /
-		// MartianChandelier: /
-		// MartianChest: /
-		// MartianDoor: /
-		// MartianDresser: /
-		// MartianHolobookcase: /
-		// MartianHoverCandle: /
-		// MartianLamppost: /
-		// MartianLantern: /
-		// MartianPiano: /
-		// MartianPlatform: /
-		// MartianSofa: /
-		// MartianTable: /
-		// MartianTableLamp: /
-		// MartianWorkBench: /
-		// WoodenSink: /
-		// EbonwoodSink: /
-		// RichMahoganySink: /
-		// PearlwoodSink: /
-		// BoneSink: /
-		// FleshSink: /
-		// LivingWoodSink: /
-		// SkywareSink: /
-		// ShadewoodSink: /
-		// LihzahrdSink: /
-		// BlueDungeonSink: /
-		// GreenDungeonSink: /
-		// PinkDungeonSink: /
-		// ObsidianSink: /
-		// MetalSink: /
-		// GlassSink: /
-		// GoldenSink: /
-		// HoneySink: /
-		// SteampunkSink: /
-		// PumpkinSink: /
-		// SpookySink: /
-		// FrozenSink: /
-		// DynastySink: /
-		// PalmWoodSink: /
-		// MushroomSink: /
-		// BorealWoodSink: /
-		// SlimeSink: /
-		// CactusSink: /
-		// MartianSink: /
-		// WhiteLunaticHood: /
-		// BlueLunaticHood: /
-		// WhiteLunaticRobe: /
-		// BlueLunaticRobe: /
-		// MartianConduitPlating: /
-		// MartianConduitWall: /
-		// HiTekSunglasses: /
-		// MartianHairDye: /
-		// MartianArmorDye: /
-		// PaintingCastleMarsberg: /
-		// PaintingMartiaLisa: /
-		// PaintingTheTruthIsUpThere: /
-		// SmokeBlock: /
-		// LivingFlameDye: /
-		// LivingRainbowDye: /
-		// ShadowDye: /
-		// NegativeDye: /
-		// LivingOceanDye: /
-		// BrownDye: /
-		// BrownAndBlackDye: /
-		// BrightBrownDye: /
-		// BrownAndSilverDye: /
-		// WispDye: /
-		// PixieDye: /
 		// InfluxWaver: /
-		// PhasicWarpEjector: /
 		// ChargedBlasterCannon: /
-		// ChlorophyteDye: /
-		// UnicornWispDye: /
-		// InfernalWispDye: /
-		// ViciousPowder: /
-		// ViciousMushroom: /
 		// BeesKnees: /
-		// GoldBird: /
-		// GoldBunny: /
-		// GoldButterfly: /
-		// GoldFrog: /
-		// GoldGrasshopper: /
-		// GoldMouse: /
-		// GoldWorm: /
-		// StickyDynamite: /
-		// AngryTrapperBanner: /
-		// ArmoredVikingBanner: /
-		// BlackSlimeBanner: /
-		// BlueArmoredBonesBanner: /
-		// BlueCultistArcherBanner: /
-		// BlueCultistCasterBanner: /
-		// BlueCultistFighterBanner: /
-		// BoneLeeBanner: /
-		// ClingerBanner: /
-		// CochinealBeetleBanner: /
-		// CorruptPenguinBanner: /
-		// CorruptSlimeBanner: /
-		// CorruptorBanner: /
-		// CrimslimeBanner: /
-		// CursedSkullBanner: /
-		// CyanBeetleBanner: /
-		// DevourerBanner: /
-		// DiablolistBanner: /
-		// DoctorBonesBanner: /
-		// DungeonSlimeBanner: /
-		// DungeonSpiritBanner: /
-		// ElfArcherBanner: /
-		// ElfCopterBanner: /
-		// EyezorBanner: /
-		// FlockoBanner: /
-		// GhostBanner: /
-		// GiantBatBanner: /
-		// GiantCursedSkullBanner: /
-		// GiantFlyingFoxBanner: /
-		// GingerbreadManBanner: /
-		// GoblinArcherBanner: /
-		// GreenSlimeBanner: /
-		// HeadlessHorsemanBanner: /
-		// HellArmoredBonesBanner: /
-		// HellhoundBanner: /
-		// HoppinJackBanner: /
-		// IceBatBanner: /
-		// IceGolemBanner: /
-		// IceSlimeBanner: /
-		// IchorStickerBanner: /
-		// IlluminantBatBanner: /
-		// IlluminantSlimeBanner: /
-		// JungleBatBanner: /
-		// JungleSlimeBanner: /
-		// KrampusBanner: /
-		// LacBeetleBanner: /
-		// LavaBatBanner: /
-		// LavaSlimeBanner: /
-		// MartianBrainscramblerBanner: /
-		// MartianDroneBanner: /
-		// MartianEngineerBanner: /
-		// MartianGigazapperBanner: /
-		// MartianGreyGruntBanner: /
-		// MartianOfficerBanner: /
-		// MartianRaygunnerBanner: /
-		// MartianScutlixGunnerBanner: /
-		// MartianTeslaTurretBanner: /
-		// MisterStabbyBanner: /
-		// MotherSlimeBanner: /
-		// NecromancerBanner: /
-		// NutcrackerBanner: /
-		// PaladinBanner: /
-		// PenguinBanner: /
-		// PinkyBanner: /
-		// PoltergeistBanner: /
-		// PossessedArmorBanner: /
-		// PresentMimicBanner: /
-		// PurpleSlimeBanner: /
-		// RaggedCasterBanner: /
-		// RainbowSlimeBanner: /
-		// RavenBanner: /
-		// RedSlimeBanner: /
-		// RuneWizardBanner: /
-		// RustyArmoredBonesBanner: /
-		// ScarecrowBanner: /
-		// ScutlixBanner: /
-		// SkeletonArcherBanner: /
-		// SkeletonCommandoBanner: /
-		// SkeletonSniperBanner: /
-		// SlimerBanner: /
-		// SnatcherBanner: /
-		// SnowBallaBanner: /
-		// SnowmanGangstaBanner: /
-		// SpikedIceSlimeBanner: /
-		// SpikedJungleSlimeBanner: /
-		// SplinterlingBanner: /
-		// SquidBanner: /
-		// TacticalSkeletonBanner: /
-		// TheGroomBanner: /
-		// TimBanner: /
-		// UndeadMinerBanner: /
-		// UndeadVikingBanner: /
-		// WhiteCultistArcherBanner: /
-		// WhiteCultistCasterBanner: /
-		// WhiteCultistFighterBanner: /
-		// YellowSlimeBanner: /
-		// YetiBanner: /
-		// ZombieElfBanner: /
-		// SparkyPainting: /
-		// VineRope: /
-		// WormholePotion: /
 		// SummonerEmblem: /
-		// BewitchingTable: /
-		// AlchemyTable: /
-		// StrangeBrew: /
-		// SpelunkerGlowstick: /
-		// BoneArrow: /
-		// BoneTorch: /
-		// VineRopeCoil: /
 		// SoulDrain: /
 		// DartPistol: /
 		// DartRifle: /
-		// CrystalDart: /
-		// CursedDart: /
-		// IchorDart: /
 		// ChainGuillotines: /
 		// FetidBaghnakhs: /
 		// ClingerStaff: /
@@ -3075,264 +519,59 @@ GenderPluralization: {
 		// FlowerBoots: /
 		// Seedler: /
 		// HellwingBow: /
-		// TendonHook: /
-		// ThornHook: /
-		// IlluminantHook: /
-		// WormHook: /
-		// DevDye: /
-		// PurpleOozeDye: /
-		// ReflectiveSilverDye: /
-		// ReflectiveGoldDye: /
-		// BlueAcidDye: /
 		// DaedalusStormbow: /
 		// FlyingKnife: /
-		// BottomlessBucket: /
-		// SuperAbsorbantSponge: /
 		// GoldRing: /
 		// CoinRing: /
 		// GreedyRing: /
 		// FishFinder: /
 		// WeatherRadio: /
-		// HadesDye: /
-		// TwilightDye: /
-		// AcidDye: /
-		// MushroomDye: /
-		// PhaseDye: /
-		// MagicLantern: /
-		// MusicBoxLunarBoss: /
-		// RainbowTorch: /
-		// CursedCampfire: /
-		// DemonCampfire: /
-		// FrozenCampfire: /
-		// IchorCampfire: /
-		// RainbowCampfire: /
 		// CrystalVileShard: /
 		// ShadowFlameBow: /
 		// ShadowFlameHexDoll: /
 		// ShadowFlameKnife: /
-		// PaintingAcorns: /
-		// PaintingColdSnap: /
-		// PaintingCursedSaint: /
-		// PaintingSnowfellas: /
-		// PaintingTheSeason: /
-		// BoneRattle: /
 		// ArchitectGizmoPack: /
-		// CrimsonHeart: /
 		// Meowmere: /
-		// Sundial: /
 		// StarWrath: /
-		// MarbleBlock: /
-		// HellstoneBrickWall: /
 		// CordageGuide: /
 		// WandofSparking: /
-		// GoldBirdCage: /
-		// GoldBunnyCage: /
-		// GoldButterflyCage: /
-		// GoldFrogCage: /
-		// GoldGrasshopperCage: /
-		// GoldMouseCage: /
-		// GoldWormCage: /
-		// SilkRope: /
-		// WebRope: /
-		// SilkRopeCoil: /
-		// WebRopeCoil: /
-		// Marble: /
-		// MarbleWall: /
-		// MarbleBlockWall: /
 		// Radar: /
-		// LockBox: /
-		// Granite: /
-		// GraniteBlock: /
-		// GraniteWall: /
-		// GraniteBlockWall: /
 		// RoyalGel: /
-		// NightKey: /
-		// LightKey: /
-		// HerbBag: /
-		// Javelin: /
 		// TallyCounter: /
 		// Sextant: /
 		// EoCShield: /
 		// ButchersChainsaw: /
 		// Stopwatch: /
-		// MeteoriteBrick: /
-		// MeteoriteBrickWall: /
 		// MetalDetector: /
-		// EndlessQuiver: /
-		// EndlessMusketPouch: /
 		// ToxicFlask: /
 		// PsychoKnife: /
 		// NailGun: /
-		// Nail: /
-		// NightVisionHelmet: /
 		// CelestialShell: /
-		// PinkGel: /
-		// BouncyGlowstick: /
-		// PinkSlimeBlock: /
-		// PinkTorch: /
-		// BouncyBomb: /
-		// BouncyGrenade: /
-		// PeaceCandle: /
 		// LifeformAnalyzer: /
 		// DPSMeter: /
 		// FishermansGuide: /
 		// GoblinTech: /
 		// REK: /
 		// PDA: /
-		// CellPhone: /
-		// GraniteChest: /
-		// MeteoriteClock: /
-		// MarbleClock: /
-		// GraniteClock: /
-		// MeteoriteDoor: /
-		// MarbleDoor: /
-		// GraniteDoor: /
-		// MeteoriteDresser: /
-		// MarbleDresser: /
-		// GraniteDresser: /
-		// MeteoriteLamp: /
-		// MarbleLamp: /
-		// GraniteLamp: /
-		// MeteoriteLantern: /
-		// MarbleLantern: /
-		// GraniteLantern: /
-		// MeteoritePiano: /
-		// MarblePiano: /
-		// GranitePiano: /
-		// MeteoritePlatform: /
-		// MarblePlatform: /
-		// GranitePlatform: /
-		// MeteoriteSink: /
-		// MarbleSink: /
-		// GraniteSink: /
-		// MeteoriteSofa: /
-		// MarbleSofa: /
-		// GraniteSofa: /
-		// MeteoriteTable: /
-		// MarbleTable: /
-		// GraniteTable: /
-		// MeteoriteWorkBench: /
-		// MarbleWorkBench: /
-		// GraniteWorkBench: /
-		// MeteoriteBathtub: /
-		// MarbleBathtub: /
-		// GraniteBathtub: /
-		// MeteoriteBed: /
-		// MarbleBed: /
-		// GraniteBed: /
-		// MeteoriteBookcase: /
-		// MarbleBookcase: /
-		// GraniteBookcase: /
-		// MeteoriteCandelabra: /
-		// MarbleCandelabra: /
-		// GraniteCandelabra: /
-		// MeteoriteCandle: /
-		// MarbleCandle: /
-		// GraniteCandle: /
-		// MeteoriteChair: /
-		// MarbleChair: /
-		// GraniteChair: /
-		// MeteoriteChandelier: /
-		// MarbleChandelier: /
-		// GraniteChandelier: /
-		// MeteoriteChest: /
-		// MarbleChest: /
-		// MagicWaterDropper: /
-		// GoldenBugNet: /
-		// MagicLavaDropper: /
-		// MagicHoneyDropper: /
-		// EmptyDropper: /
-		// GladiatorHelmet: /
-		// GladiatorBreastplate: /
-		// GladiatorLeggings: /
-		// ReflectiveDye: /
-		// EnchantedNightcrawler: /
-		// Grubby: /
-		// Sluggy: /
-		// Buggy: /
-		// GrubSoup: /
-		// BombFish: /
-		// FrostDaggerfish: /
-		// SharpeningStation: /
-		// IceMirror: /
 		// SailfishBoots: /
 		// TsunamiInABottle: /
-		// TargetDummy: /
-		// CorruptFishingCrate: /
-		// CrimsonFishingCrate: /
-		// DungeonFishingCrate: /
-		// FloatingIslandFishingCrate: /
-		// HallowedFishingCrate: /
-		// JungleFishingCrate: /
 		// CrystalSerpent: /
 		// Toxikarp: /
 		// Bladetongue: /
 		// SharkToothNecklace: /
-		// MoneyTrough: /
-		// Bubble: /
-		// DayBloomPlanterBox: /
-		// MoonglowPlanterBox: /
-		// CorruptPlanterBox: /
-		// CrimsonPlanterBox: /
-		// BlinkrootPlanterBox: /
-		// WaterleafPlanterBox: /
-		// ShiverthornPlanterBox: /
-		// FireBlossomPlanterBox: /
 		// BrainOfConfusion: /
 		// WormScarf: /
 		// BalloonPufferfish: /
-		// BejeweledValkyrieHead: /
-		// BejeweledValkyrieBody: /
 		// BejeweledValkyrieWing: /
-		// RichGravestone1: /
-		// RichGravestone2: /
-		// RichGravestone3: /
-		// RichGravestone4: /
-		// RichGravestone5: /
-		// CrystalBlock: /
-		// MusicBoxMartians: /
-		// MusicBoxPirates: /
-		// MusicBoxHell: /
-		// CrystalBlockWall: /
-		// Trapdoor: /
-		// TallGate: /
 		// SharkronBalloon: /
-		// TaxCollectorHat: /
-		// TaxCollectorSuit: /
-		// TaxCollectorPants: /
 		// BoneGlove: /
-		// ClothierJacket: /
-		// ClothierPants: /
-		// DyeTraderTurban: /
 		// DeadlySphereStaff: /
 		// BalloonHorseshoeFart: /
 		// BalloonHorseshoeHoney: /
 		// BalloonHorseshoeSharkron: /
-		// LavaLamp: /
-		// CageEnchantedNightcrawler: /
-		// CageBuggy: /
-		// CageGrubby: /
-		// CageSluggy: /
 		// SlapHand: /
-		// TwilightHairDye: /
-		// BlessedApple: /
-		// SpectreBar: /
 		// Code1: /
-		// BuccaneerBandana: /
-		// BuccaneerShirt: /
-		// BuccaneerPants: /
-		// ObsidianHelm: /
-		// ObsidianShirt: /
-		// ObsidianPants: /
 		// MedusaHead: /
-		// ItemFrame: /
-		// Sandstone: /
-		// HardenedSand: /
-		// SandstoneWall: /
-		// CorruptHardenedSand: /
-		// CrimsonHardenedSand: /
-		// CorruptSandstone: /
-		// CrimsonSandstone: /
 		// WoodYoyo: /
 		// CorruptYoyo: /
 		// CrimsonYoyo: /
@@ -3373,168 +612,28 @@ GenderPluralization: {
 		// FormatC: /
 		// Gradient: /
 		// Valor: /
-		// KingSlimeBossBag: /
-		// EyeOfCthulhuBossBag: /
-		// EaterOfWorldsBossBag: /
-		// BrainOfCthulhuBossBag: /
-		// QueenBeeBossBag: /
-		// SkeletronBossBag: /
-		// WallOfFleshBossBag: /
-		// DestroyerBossBag: /
-		// TwinsBossBag: /
-		// SkeletronPrimeBossBag: /
-		// PlanteraBossBag: /
-		// GolemBossBag: /
-		// FishronBossBag: /
-		// CultistBossBag: /
-		// MoonLordBossBag: /
 		// HiveBackpack: /
 		// YoYoGlove: /
-		// DemonHeart: /
 		// SporeSac: /
 		// ShinyStone: /
-		// HallowHardenedSand: /
-		// HallowSandstone: /
-		// HardenedSandWall: /
-		// CorruptHardenedSandWall: /
-		// CrimsonHardenedSandWall: /
-		// HallowHardenedSandWall: /
-		// CorruptSandstoneWall: /
-		// CrimsonSandstoneWall: /
-		// HallowSandstoneWall: /
-		// DesertFossil: /
-		// DesertFossilWall: /
 		// DyeTradersScimitar: /
 		// PainterPaintballGun: /
 		// TaxCollectorsStickOfDoom: /
 		// StylistKilLaKillScissorsIWish: /
-		// MinecartMech: /
-		// MechanicalWheelPiece: /
-		// MechanicalWagonPiece: /
-		// MechanicalBatteryPiece: /
-		// AncientCultistTrophy: /
-		// MartianSaucerTrophy: /
-		// FlyingDutchmanTrophy: /
-		// LivingMahoganyWand: /
-		// LivingMahoganyLeafWand: /
-		// FallenTuxedoShirt: /
-		// FallenTuxedoPants: /
-		// Fireplace: /
-		// Chimney: /
 		// YoyoBag: /
-		// ShrimpyTruffle: /
 		// Arkhalis: /
-		// ConfettiCannon: /
-		// MusicBoxTowers: /
-		// MusicBoxGoblins: /
-		// BossMaskCultist: /
-		// BossMaskMoonlord: /
-		// FossilHelm: /
-		// FossilShirt: /
-		// FossilPants: /
 		// AmberStaff: /
-		// BoneJavelin: /
-		// BoneDagger: /
-		// FossilOre: /
-		// StardustHelmet: /
-		// StardustBreastplate: /
-		// StardustLeggings: /
-		// PortalGun: /
-		// StrangePlant1: /
-		// StrangePlant2: /
-		// StrangePlant3: /
-		// StrangePlant4: /
 		// Terrarian: /
-		// GoblinSummonerBanner: /
-		// SalamanderBanner: /
-		// GiantShellyBanner: /
-		// CrawdadBanner: /
-		// FritzBanner: /
-		// CreatureFromTheDeepBanner: /
-		// DrManFlyBanner: /
-		// MothronBanner: /
-		// SeveredHandBanner: /
-		// ThePossessedBanner: /
-		// ButcherBanner: /
-		// PsychoBanner: /
-		// DeadlySphereBanner: /
-		// NailheadBanner: /
-		// PoisonousSporeBanner: /
-		// MedusaBanner: /
-		// GreekSkeletonBanner: /
-		// GraniteFlyerBanner: /
-		// GraniteGolemBanner: /
-		// BloodZombieBanner: /
-		// DripplerBanner: /
-		// TombCrawlerBanner: /
-		// DuneSplicerBanner: /
-		// FlyingAntlionBanner: /
-		// WalkingAntlionBanner: /
-		// DesertGhoulBanner: /
-		// DesertLamiaBanner: /
-		// DesertDjinnBanner: /
-		// DesertBasiliskBanner: /
-		// RavagerScorpionBanner: /
-		// StardustSoldierBanner: /
-		// StardustWormBanner: /
-		// StardustJellyfishBanner: /
-		// StardustSpiderBanner: /
-		// StardustSmallCellBanner: /
-		// StardustLargeCellBanner: /
-		// SolarCoriteBanner: /
-		// SolarSrollerBanner: /
-		// SolarCrawltipedeBanner: /
-		// SolarDrakomireRiderBanner: /
-		// SolarDrakomireBanner: /
-		// SolarSolenianBanner: /
-		// NebulaSoldierBanner: /
-		// NebulaHeadcrabBanner: /
-		// NebulaBrainBanner: /
-		// NebulaBeastBanner: /
-		// VortexLarvaBanner: /
-		// VortexHornetQueenBanner: /
-		// VortexHornetBanner: /
-		// VortexSoldierBanner: /
-		// VortexRiflemanBanner: /
-		// PirateCaptainBanner: /
-		// PirateDeadeyeBanner: /
-		// PirateCorsairBanner: /
-		// PirateCrossbowerBanner: /
-		// MartianWalkerBanner: /
-		// RedDevilBanner: /
-		// PinkJellyfishBanner: /
-		// GreenJellyfishBanner: /
-		// DarkMummyBanner: /
-		// LightMummyBanner: /
-		// AngryBonesBanner: /
-		// IceTortoiseBanner: /
-		// NebulaPickup1: /
-		// NebulaPickup2: /
-		// NebulaPickup3: /
-		// FragmentVortex: /
-		// FragmentNebula: /
-		// FragmentSolar: /
-		// FragmentStardust: /
-		// LunarOre: /
-		// LunarBrick: /
-		// StardustAxe: /
-		// StardustChainsaw: /
 		// StardustDrill: /
-		// StardustHammer: /
 		// StardustPickaxe: /
-		// LunarBar: /
 		// WingsSolar: /
 		// WingsVortex: /
 		// WingsNebula: /
 		// WingsStardust: /
-		// LunarBrickWall: /
 		// SolarEruption: /
 		// StardustCellStaff: /
 		// VortexBeater: /
 		// NebulaArcanum: /
-		// BloodWater: /
-		// TheBrideHat: /
-		// TheBrideDress: /
 		// PlatinumBow: /
 		// PlatinumHammer: /
 		// PlatinumAxe: /
@@ -3581,309 +680,46 @@ GenderPluralization: {
 		// LunarHamaxeVortex: /
 		// LunarHamaxeNebula: /
 		// LunarHamaxeStardust: /
-		// SolarDye: /
-		// NebulaDye: /
-		// VortexDye: /
-		// StardustDye: /
-		// VoidDye: /
 		// StardustDragonStaff: /
-		// Bacon: /
-		// ShiftingSandsDye: /
-		// MirageDye: /
-		// ShiftingPearlSandsDye: /
-		// VortexMonolith: /
-		// NebulaMonolith: /
-		// StardustMonolith: /
-		// SolarMonolith: /
 		// Phantasm: /
 		// LastPrism: /
 		// NebulaBlaze: /
 		// DayBreak: /
-		// SuperHealingPotion: /
-		// Detonator: /
 		// FireworksLauncher: /
-		// BouncyDynamite: /
-		// PartyGirlGrenade: /
-		// LunarCraftingStation: /
-		// FlameAndSilverDye: /
-		// GreenFlameAndSilverDye: /
-		// BlueFlameAndSilverDye: /
-		// ReflectiveCopperDye: /
-		// ReflectiveObsidianDye: /
-		// ReflectiveMetalDye: /
-		// MidnightRainbowDye: /
-		// BlackAndWhiteDye: /
-		// BrightSilverDye: /
-		// SilverAndBlackDye: /
-		// RedAcidDye: /
-		// GelDye: /
-		// PinkGelDye: /
-		// SquirrelRed: /
-		// SquirrelGold: /
-		// SquirrelOrangeCage: /
-		// SquirrelGoldCage: /
-		// MoonlordBullet: /
-		// MoonlordArrow: /
 		// MoonlordTurretStaff: /
 		// LunarFlareBook: /
 		// RainbowCrystalStaff: /
-		// LunarHook: /
-		// LunarBlockSolar: /
-		// LunarBlockVortex: /
-		// LunarBlockNebula: /
-		// LunarBlockStardust: /
-		// SuspiciousLookingTentacle: /
-		// Yoraiz0rShirt: /
-		// Yoraiz0rPants: /
 		// Yoraiz0rWings: /
-		// Yoraiz0rDarkness: /
 		// JimsWings: /
-		// Yoraiz0rHead: /
-		// LivingLeafWall: /
-		// SkiphsHelm: /
-		// SkiphsShirt: /
-		// SkiphsPants: /
 		// SkiphsWings: /
-		// LokisHelm: /
-		// LokisShirt: /
-		// LokisPants: /
 		// LokisWings: /
-		// SandSlimeBanner: /
-		// SeaSnailBanner: /
-		// MoonLordTrophy: /
-		// MoonLordPainting: /
-		// BurningHadesDye: /
-		// GrimDye: /
-		// LokisDye: /
-		// ShadowflameHadesDye: /
-		// CelestialSigil: /
-		// LogicGateLamp_Off: /
-		// LogicGate_AND: /
-		// LogicGate_OR: /
-		// LogicGate_NAND: /
-		// LogicGate_NOR: /
-		// LogicGate_XOR: /
-		// LogicGate_NXOR: /
-		// ConveyorBeltLeft: /
-		// ConveyorBeltRight: /
-		// WireKite: /
-		// YellowWrench: /
-		// LogicSensor_Sun: /
-		// LogicSensor_Moon: /
-		// LogicSensor_Above: /
-		// WirePipe: /
-		// AnnouncementBox: /
-		// LogicGateLamp_On: /
 		// MechanicalLens: /
-		// ActuationRod: /
-		// TeamBlockRed: /
-		// TeamBlockRedPlatform: /
-		// StaticHook: /
 		// ActuationAccessory: /
-		// MulticolorWrench: /
-		// WeightedPressurePlatePink: /
-		// EngineeringHelmet: /
-		// CompanionCube: /
-		// WireBulb: /
-		// WeightedPressurePlateOrange: /
-		// WeightedPressurePlatePurple: /
-		// WeightedPressurePlateCyan: /
-		// TeamBlockGreen: /
-		// TeamBlockBlue: /
-		// TeamBlockYellow: /
-		// TeamBlockPink: /
-		// TeamBlockWhite: /
-		// TeamBlockGreenPlatform: /
-		// TeamBlockBluePlatform: /
-		// TeamBlockYellowPlatform: /
-		// TeamBlockPinkPlatform: /
-		// TeamBlockWhitePlatform: /
-		// LargeAmber: /
-		// GemLockRuby: /
-		// GemLockSapphire: /
-		// GemLockEmerald: /
-		// GemLockTopaz: /
-		// GemLockAmethyst: /
-		// GemLockDiamond: /
-		// GemLockAmber: /
-		// SquirrelStatue: /
-		// ButterflyStatue: /
-		// WormStatue: /
-		// FireflyStatue: /
-		// ScorpionStatue: /
-		// SnailStatue: /
-		// GrasshopperStatue: /
-		// MouseStatue: /
-		// DuckStatue: /
-		// PenguinStatue: /
-		// FrogStatue: /
-		// BuggyStatue: /
-		// LogicGateLamp_Faulty: /
-		// PortalGunStation: /
-		// Fake_Chest: /
-		// Fake_GoldChest: /
-		// Fake_ShadowChest: /
-		// Fake_EbonwoodChest: /
-		// Fake_RichMahoganyChest: /
-		// Fake_PearlwoodChest: /
-		// Fake_IvyChest: /
-		// Fake_IceChest: /
-		// Fake_LivingWoodChest: /
-		// Fake_SkywareChest: /
-		// Fake_ShadewoodChest: /
-		// Fake_WebCoveredChest: /
-		// Fake_LihzahrdChest: /
-		// Fake_WaterChest: /
-		// Fake_JungleChest: /
-		// Fake_CorruptionChest: /
-		// Fake_CrimsonChest: /
-		// Fake_HallowedChest: /
-		// Fake_FrozenChest: /
-		// Fake_DynastyChest: /
-		// Fake_HoneyChest: /
-		// Fake_SteampunkChest: /
-		// Fake_PalmWoodChest: /
-		// Fake_MushroomChest: /
-		// Fake_BorealWoodChest: /
-		// Fake_SlimeChest: /
-		// Fake_GreenDungeonChest: /
-		// Fake_PinkDungeonChest: /
-		// Fake_BlueDungeonChest: /
-		// Fake_BoneChest: /
-		// Fake_CactusChest: /
-		// Fake_FleshChest: /
-		// Fake_ObsidianChest: /
-		// Fake_PumpkinChest: /
-		// Fake_SpookyChest: /
-		// Fake_GlassChest: /
-		// Fake_MartianChest: /
-		// Fake_MeteoriteChest: /
-		// Fake_GraniteChest: /
-		// Fake_MarbleChest: /
-		// Fake_newchest1: /
-		// Fake_newchest2: /
-		// ProjectilePressurePad: /
-		// WallCreeperStatue: /
-		// UnicornStatue: /
-		// DripplerStatue: /
-		// WraithStatue: /
-		// BoneSkeletonStatue: /
-		// UndeadVikingStatue: /
-		// MedusaStatue: /
-		// HarpyStatue: /
-		// PigronStatue: /
-		// HopliteStatue: /
-		// GraniteGolemStatue: /
-		// ZombieArmStatue: /
-		// BloodZombieStatue: /
 		// AnglerTackleBag: /
-		// GeyserTrap: /
-		// UltraBrightCampfire: /
-		// BoneCampfire: /
-		// PixelBox: /
-		// LogicSensor_Water: /
-		// LogicSensor_Lava: /
-		// LogicSensor_Honey: /
-		// LogicSensor_Liquid: /
-		// PartyBundleOfBalloonsAccessory: /
-		// PartyBalloonAnimal: /
-		// PartyHat: /
-		// FlowerBoyHat: /
-		// FlowerBoyShirt: /
-		// FlowerBoyPants: /
-		// SillyBalloonPink: /
-		// SillyBalloonPurple: /
-		// SillyBalloonGreen: /
-		// SillyStreamerBlue: /
-		// SillyStreamerGreen: /
-		// SillyStreamerPink: /
-		// SillyBalloonMachine: /
-		// SillyBalloonTiedPink: /
-		// SillyBalloonTiedPurple: /
-		// SillyBalloonTiedGreen: /
-		// Pigronata: /
-		// PartyMonolith: /
-		// PartyBundleOfBalloonTile: /
-		// PartyPresent: /
-		// SliceOfCake: /
-		// CogWall: /
-		// SandFallWall: /
-		// SnowFallWall: /
-		// SandFallBlock: /
-		// SnowFallBlock: /
-		// SnowCloudBlock: /
-		// PedguinHat: /
-		// PedguinShirt: /
-		// PedguinPants: /
-		// SillyBalloonPinkWall: /
-		// SillyBalloonPurpleWall: /
-		// SillyBalloonGreenWall: /
-		// AviatorSunglasses: /
 		// BluePhasesaber: /
 		// RedPhasesaber: /
 		// GreenPhasesaber: /
 		// PurplePhasesaber: /
 		// WhitePhasesaber: /
 		// YellowPhasesaber: /
-		// DjinnsCurse: /
-		// AncientHorn: /
 		// AntlionClaw: /
-		// AncientArmorHat: /
-		// AncientArmorShirt: /
-		// AncientArmorPants: /
-		// AncientBattleArmorHat: /
-		// AncientBattleArmorShirt: /
-		// AncientBattleArmorPants: /
 		// SpiritFlame: /
-		// SandElementalBanner: /
 		// PocketMirror: /
-		// MagicSandDropper: /
-		// AncientBattleArmorMaterial: /
-		// LamiaPants: /
-		// LamiaShirt: /
-		// LamiaHat: /
 		// SkyFracture: /
 		// OnyxBlaster: /
-		// SandsharkBanner: /
-		// SandsharkCorruptBanner: /
-		// SandsharkCrimsonBanner: /
-		// SandsharkHallowedBanner: /
-		// TumbleweedBanner: /
-		// AncientCloth: /
-		// DjinnLamp: /
-		// MusicBoxSandstorm: /
-		// ApprenticeHat: /
-		// ApprenticeRobe: /
-		// ApprenticeTrousers: /
-		// SquireGreatHelm: /
-		// SquirePlating: /
-		// SquireGreaves: /
-		// HuntressWig: /
-		// HuntressJerkin: /
-		// HuntressPants: /
-		// MonkBrows: /
-		// MonkShirt: /
-		// MonkPants: /
 		// ApprenticeScarf: /
 		// SquireShield: /
 		// HuntressBuckler: /
 		// MonkBelt: /
-		// DefendersForge: /
-		// WarTable: /
-		// WarTableBanner: /
-		// DD2ElderCrystalStand: /
-		// DefenderMedal: /
 		// DD2FlameburstTowerT1Popper: /
 		// DD2FlameburstTowerT2Popper: /
 		// DD2FlameburstTowerT3Popper: /
 		// AleThrowingGlove: /
-		// DD2EnergyCrystal: /
 		// DD2SquireDemonSword: /
 		// DD2BallistraTowerT1Popper: /
 		// DD2BallistraTowerT2Popper: /
 		// DD2BallistraTowerT3Popper: /
 		// DD2SquireBetsySword: /
-		// DD2ElderCrystal: /
 		// DD2LightningAuraT1Popper: /
 		// DD2LightningAuraT2Popper: /
 		// DD2LightningAuraT3Popper: /
@@ -3892,158 +728,15 @@ GenderPluralization: {
 		// DD2ExplosiveTrapT3Popper: /
 		// MonkStaffT1: /
 		// MonkStaffT2: /
-		// DD2GoblinBomberBanner: /
-		// DD2GoblinBanner: /
-		// DD2SkeletonBanner: /
-		// DD2DrakinBanner: /
-		// DD2KoboldFlyerBanner: /
-		// DD2KoboldBanner: /
-		// DD2WitherBeastBanner: /
-		// DD2WyvernBanner: /
-		// DD2JavelinThrowerBanner: /
-		// DD2LightningBugBanner: /
-		// OgreMask: /
-		// GoblinMask: /
-		// GoblinBomberCap: /
-		// EtherianJavelin: /
-		// KoboldDynamiteBackpack: /
 		// BookStaff: /
-		// BoringBow: /
 		// DD2PhoenixBow: /
-		// DD2PetGato: /
-		// DD2PetGhost: /
-		// DD2PetDragon: /
 		// MonkStaffT3: /
 		// DD2BetsyBow: /
-		// BossBagBetsy: /
-		// BossBagOgre: /
-		// BossBagDarkMage: /
-		// BossMaskBetsy: /
-		// BossMaskDarkMage: /
-		// BossMaskOgre: /
-		// BossTrophyBetsy: /
-		// BossTrophyDarkmage: /
-		// BossTrophyOgre: /
-		// MusicBoxDD2: /
 		// ApprenticeStaffT3: /
-		// SquireAltHead: /
-		// SquireAltShirt: /
-		// SquireAltPants: /
-		// ApprenticeAltHead: /
-		// ApprenticeAltShirt: /
-		// ApprenticeAltPants: /
-		// HuntressAltHead: /
-		// HuntressAltShirt: /
-		// HuntressAltPants: /
-		// MonkAltHead: /
-		// MonkAltShirt: /
-		// MonkAltPants: /
 		// BetsyWings: /
-		// CrystalChest: /
-		// GoldenChest: /
-		// Fake_CrystalChest: /
-		// Fake_GoldenChest: /
-		// CrystalDoor: /
-		// CrystalChair: /
-		// CrystalCandle: /
-		// CrystalLantern: /
-		// CrystalLamp: /
-		// CrystalCandelabra: /
-		// CrystalChandelier: /
-		// CrystalBathtub: /
-		// CrystalSink: /
-		// CrystalBed: /
-		// CrystalClock: /
-		// SkywareClock2: /
-		// DungeonClockBlue: /
-		// DungeonClockGreen: /
-		// DungeonClockPink: /
-		// CrystalPlatform: /
-		// GoldenPlatform: /
-		// DynastyPlatform: /
-		// LihzahrdPlatform: /
-		// FleshPlatform: /
-		// FrozenPlatform: /
-		// CrystalWorkbench: /
-		// GoldenWorkbench: /
-		// CrystalDresser: /
-		// DynastyDresser: /
-		// FrozenDresser: /
-		// LivingWoodDresser: /
-		// CrystalPiano: /
-		// DynastyPiano: /
-		// CrystalBookCase: /
-		// CrystalSofaHowDoesThatEvenWork: /
-		// DynastySofa: /
-		// CrystalTable: /
-		// ArkhalisHat: /
-		// ArkhalisShirt: /
-		// ArkhalisPants: /
 		// ArkhalisWings: /
-		// LeinforsHat: /
-		// LeinforsShirt: /
-		// LeinforsPants: /
 		// LeinforsWings: /
-		// LeinforsAccessory: /
 		// Celeb2: /
-		// SpiderBathtub: /
-		// SpiderBed: /
-		// SpiderBookcase: /
-		// SpiderDresser: /
-		// SpiderCandelabra: /
-		// SpiderCandle: /
-		// SpiderChair: /
-		// SpiderChandelier: /
-		// SpiderChest: /
-		// SpiderClock: /
-		// SpiderDoor: /
-		// SpiderLamp: /
-		// SpiderLantern: /
-		// SpiderPiano: /
-		// SpiderPlatform: /
-		// SpiderSinkSpiderSinkDoesWhateverASpiderSinkDoes: /
-		// SpiderSofa: /
-		// SpiderTable: /
-		// SpiderWorkbench: /
-		// Fake_SpiderChest: /
-		// IronBrick: /
-		// IronBrickWall: /
-		// LeadBrick: /
-		// LeadBrickWall: /
-		// LesionBlock: /
-		// LesionBlockWall: /
-		// LesionPlatform: /
-		// LesionBathtub: /
-		// LesionBed: /
-		// LesionBookcase: /
-		// LesionCandelabra: /
-		// LesionCandle: /
-		// LesionChair: /
-		// LesionChandelier: /
-		// LesionChest: /
-		// LesionClock: /
-		// LesionDoor: /
-		// LesionDresser: /
-		// LesionLamp: /
-		// LesionLantern: /
-		// LesionPiano: /
-		// LesionSink: /
-		// LesionSofa: /
-		// LesionTable: /
-		// LesionWorkbench: /
-		// Fake_LesionChest: /
-		// HatRack: /
-		// ColorOnlyDye: /
-		// WoodenCrateHard: /
-		// IronCrateHard: /
-		// GoldenCrateHard: /
-		// CorruptFishingCrateHard: /
-		// CrimsonFishingCrateHard: /
-		// DungeonFishingCrateHard: /
-		// FloatingIslandFishingCrateHard: /
-		// HallowedFishingCrateHard: /
-		// JungleFishingCrateHard: /
-		// DeadMansChest: /
 		// GolfBall: /
 		// AmphibianBoots: /
 		// ArcaneFlower: /
@@ -4063,240 +756,14 @@ GenderPluralization: {
 		// ReconScope: /
 		// StalkersQuiver: /
 		// StingerNecklace: /
-		// UltrabrightHelmet: /
-		// Apple: /
-		// ApplePieSlice: /
-		// ApplePie: /
-		// BananaSplit: /
-		// BBQRibs: /
-		// BunnyStew: /
-		// Burger: /
-		// ChickenNugget: /
-		// ChocolateChipCookie: /
-		// CreamSoda: /
-		// Escargot: /
-		// FriedEgg: /
-		// Fries: /
-		// GoldenDelight: /
-		// Grapes: /
-		// GrilledSquirrel: /
-		// Hotdog: /
-		// IceCream: /
-		// Milkshake: /
-		// Nachos: /
-		// Pizza: /
-		// PotatoChips: /
-		// RoastedBird: /
-		// RoastedDuck: /
-		// SauteedFrogLegs: /
-		// SeafoodDinner: /
-		// ShrimpPoBoy: /
-		// Spaghetti: /
-		// Steak: /
 		// MoltenCharm: /
-		// GolfClubIron: /
-		// GolfCup: /
-		// FlowerPacketBlue: /
-		// FlowerPacketMagenta: /
-		// FlowerPacketPink: /
-		// FlowerPacketRed: /
-		// FlowerPacketYellow: /
-		// FlowerPacketViolet: /
-		// FlowerPacketWhite: /
-		// FlowerPacketTallGrass: /
-		// LawnMower: /
-		// CrimstoneBrick: /
-		// SmoothSandstone: /
-		// CrimstoneBrickWall: /
-		// SmoothSandstoneWall: /
-		// BloodMoonMonolith: /
 		// SandBoots: /
 		// AncientChisel: /
-		// CarbonGuitar: /
-		// SkeletonBow: /
 		// FossilPickaxe: /
 		// SuperStarCannon: /
 		// ThunderSpear: /
 		// ThunderStaff: /
-		// DrumSet: /
-		// PicnicTable: /
-		// PicnicTableWithCloth: /
-		// DesertMinecart: /
-		// FishMinecart: /
-		// FairyCritterPink: /
-		// FairyCritterGreen: /
-		// FairyCritterBlue: /
-		// JunoniaShell: /
-		// LightningWhelkShell: /
-		// TulipShell: /
-		// PinWheel: /
-		// WeatherVane: /
-		// VoidVault: /
-		// MusicBoxOceanAlt: /
-		// MusicBoxSlimeRain: /
-		// MusicBoxSpaceAlt: /
-		// MusicBoxTownDay: /
-		// MusicBoxTownNight: /
-		// MusicBoxWindyDay: /
-		// GolfCupFlagWhite: /
-		// GolfCupFlagRed: /
-		// GolfCupFlagGreen: /
-		// GolfCupFlagBlue: /
-		// GolfCupFlagYellow: /
-		// GolfCupFlagPurple: /
-		// GolfTee: /
-		// ShellPileBlock: /
-		// AntiPortalBlock: /
-		// GolfClubPutter: /
-		// GolfClubWedge: /
-		// GolfClubDriver: /
-		// GolfWhistle: /
-		// ToiletEbonyWood: /
-		// ToiletRichMahogany: /
-		// ToiletPearlwood: /
-		// ToiletLivingWood: /
-		// ToiletCactus: /
-		// ToiletBone: /
-		// ToiletFlesh: /
-		// ToiletMushroom: /
-		// ToiletSunplate: /
-		// ToiletShadewood: /
-		// ToiletLihzhard: /
-		// ToiletDungeonBlue: /
-		// ToiletDungeonGreen: /
-		// ToiletDungeonPink: /
-		// ToiletObsidian: /
-		// ToiletFrozen: /
-		// ToiletGlass: /
-		// ToiletHoney: /
-		// ToiletSteampunk: /
-		// ToiletPumpkin: /
-		// ToiletSpooky: /
-		// ToiletDynasty: /
-		// ToiletPalm: /
-		// ToiletBoreal: /
-		// ToiletSlime: /
-		// ToiletMartian: /
-		// ToiletGranite: /
-		// ToiletMarble: /
-		// ToiletCrystal: /
-		// ToiletSpider: /
-		// ToiletLesion: /
-		// ToiletDiamond: /
-		// MaidHead: /
-		// MaidShirt: /
-		// MaidPants: /
-		// VoidLens: /
-		// MaidHead2: /
-		// MaidShirt2: /
-		// MaidPants2: /
-		// GolfHat: /
-		// GolfShirt: /
-		// GolfPants: /
-		// GolfVisor: /
-		// SpiderBlock: /
-		// SpiderWall: /
-		// ToiletMeteor: /
-		// LesionStation: /
-		// ManaCloakStar: /
 		// Terragrim: /
-		// SolarBathtub: /
-		// SolarBed: /
-		// SolarBookcase: /
-		// SolarDresser: /
-		// SolarCandelabra: /
-		// SolarCandle: /
-		// SolarChair: /
-		// SolarChandelier: /
-		// SolarChest: /
-		// SolarClock: /
-		// SolarDoor: /
-		// SolarLamp: /
-		// SolarLantern: /
-		// SolarPiano: /
-		// SolarPlatform: /
-		// SolarSink: /
-		// SolarSofa: /
-		// SolarTable: /
-		// SolarWorkbench: /
-		// Fake_SolarChest: /
-		// SolarToilet: /
-		// VortexBathtub: /
-		// VortexBed: /
-		// VortexBookcase: /
-		// VortexDresser: /
-		// VortexCandelabra: /
-		// VortexCandle: /
-		// VortexChair: /
-		// VortexChandelier: /
-		// VortexChest: /
-		// VortexClock: /
-		// VortexDoor: /
-		// VortexLamp: /
-		// VortexLantern: /
-		// VortexPiano: /
-		// VortexPlatform: /
-		// VortexSink: /
-		// VortexSofa: /
-		// VortexTable: /
-		// VortexWorkbench: /
-		// Fake_VortexChest: /
-		// VortexToilet: /
-		// NebulaBathtub: /
-		// NebulaBed: /
-		// NebulaBookcase: /
-		// NebulaDresser: /
-		// NebulaCandelabra: /
-		// NebulaCandle: /
-		// NebulaChair: /
-		// NebulaChandelier: /
-		// NebulaChest: /
-		// NebulaClock: /
-		// NebulaDoor: /
-		// NebulaLamp: /
-		// NebulaLantern: /
-		// NebulaPiano: /
-		// NebulaPlatform: /
-		// NebulaSink: /
-		// NebulaSofa: /
-		// NebulaTable: /
-		// NebulaWorkbench: /
-		// Fake_NebulaChest: /
-		// NebulaToilet: /
-		// StardustBathtub: /
-		// StardustBed: /
-		// StardustBookcase: /
-		// StardustDresser: /
-		// StardustCandelabra: /
-		// StardustCandle: /
-		// StardustChair: /
-		// StardustChandelier: /
-		// StardustChest: /
-		// StardustClock: /
-		// StardustDoor: /
-		// StardustLamp: /
-		// StardustLantern: /
-		// StardustPiano: /
-		// StardustPlatform: /
-		// StardustSink: /
-		// StardustSofa: /
-		// StardustTable: /
-		// StardustWorkbench: /
-		// Fake_StardustChest: /
-		// StardustToilet: /
-		// SolarBrick: /
-		// VortexBrick: /
-		// NebulaBrick: /
-		// StardustBrick: /
-		// SolarBrickWall: /
-		// VortexBrickWall: /
-		// NebulaBrickWall: /
-		// StardustBrickWall: /
-		// MusicBoxDayRemix: /
-		// CrackedBlueBrick: /
-		// CrackedGreenBrick: /
-		// CrackedPinkBrick: /
-		// FlowerPacketWild: /
 		// GolfBallDyedBlack: /
 		// GolfBallDyedBlue: /
 		// GolfBallDyedBrown: /
@@ -4311,889 +778,77 @@ GenderPluralization: {
 		// GolfBallDyedTeal: /
 		// GolfBallDyedViolet: /
 		// GolfBallDyedYellow: /
-		// AmberRobe: /
-		// AmberHook: /
 		// OrangePhaseblade: /
 		// OrangePhasesaber: /
-		// OrangeStainedGlass: /
-		// OrangePressurePlate: /
-		// MysticCoilSnake: /
-		// MagicConch: /
-		// GolfCart: /
-		// GolfChest: /
-		// Fake_GolfChest: /
-		// DesertChest: /
-		// Fake_DesertChest: /
 		// SanguineStaff: /
 		// SharpTears: /
-		// BloodMoonStarter: /
 		// DripplerFlail: /
 		// VampireFrogStaff: /
-		// GoldGoldfish: /
-		// GoldGoldfishBowl: /
-		// CatBast: /
-		// GoldStarryGlassBlock: /
-		// BlueStarryGlassBlock: /
-		// GoldStarryGlassWall: /
-		// BlueStarryGlassWall: /
 		// BabyBirdStaff: /
-		// Apricot: /
-		// Banana: /
-		// BlackCurrant: /
-		// BloodOrange: /
-		// Cherry: /
-		// Coconut: /
-		// Dragonfruit: /
-		// Elderberry: /
-		// Grapefruit: /
-		// Lemon: /
-		// Mango: /
-		// Peach: /
-		// Pineapple: /
-		// Plum: /
-		// Rambutan: /
-		// Starfruit: /
-		// SandstoneBathtub: /
-		// SandstoneBed: /
-		// SandstoneBookcase: /
-		// SandstoneDresser: /
-		// SandstoneCandelabra: /
-		// SandstoneCandle: /
-		// SandstoneChair: /
-		// SandstoneChandelier: /
-		// SandstoneClock: /
-		// SandstoneDoor: /
-		// SandstoneLamp: /
-		// SandstoneLantern: /
-		// SandstonePiano: /
-		// SandstonePlatform: /
-		// SandstoneSink: /
-		// SandstoneSofa: /
-		// SandstoneTable: /
-		// SandstoneWorkbench: /
-		// SandstoneToilet: /
 		// BloodHamaxe: /
-		// VoidMonolith: /
-		// ArrowSign: /
-		// PaintedArrowSign: /
-		// GameMasterShirt: /
-		// GameMasterPants: /
-		// StarPrincessCrown: /
-		// StarPrincessDress: /
-		// BloodFishingRod: /
-		// FoodPlatter: /
-		// BlackDragonflyJar: /
-		// BlueDragonflyJar: /
-		// GreenDragonflyJar: /
-		// OrangeDragonflyJar: /
-		// RedDragonflyJar: /
-		// YellowDragonflyJar: /
-		// GoldDragonflyJar: /
-		// BlackDragonfly: /
-		// BlueDragonfly: /
-		// GreenDragonfly: /
-		// OrangeDragonfly: /
-		// RedDragonfly: /
-		// YellowDragonfly: /
-		// GoldDragonfly: /
 		// PortableStool: /
-		// DragonflyStatue: /
-		// PaperAirplaneA: /
-		// PaperAirplaneB: /
-		// CanOfWorms: /
-		// EncumberingStone: /
 		// ZapinatorGray: /
 		// ZapinatorOrange: /
-		// GreenMoss: /
-		// BrownMoss: /
-		// RedMoss: /
-		// BlueMoss: /
-		// PurpleMoss: /
-		// LavaMoss: /
-		// BoulderStatue: /
-		// MusicBoxTitleAlt: /
-		// MusicBoxStorm: /
-		// MusicBoxGraveyard: /
-		// Seagull: /
-		// SeagullStatue: /
-		// LadyBug: /
-		// GoldLadyBug: /
-		// Maggot: /
-		// MaggotCage: /
-		// CelestialWand: /
-		// EucaluptusSap: /
-		// KiteBlue: /
-		// KiteBlueAndYellow: /
-		// KiteRed: /
-		// KiteRedAndYellow: /
-		// KiteYellow: /
-		// IvyGuitar: /
-		// Pupfish: /
-		// Grebe: /
-		// Rat: /
-		// RatCage: /
-		// KryptonMoss: /
-		// XenonMoss: /
-		// KiteWyvern: /
-		// LadybugCage: /
 		// BloodRainBow: /
-		// CombatBook: /
-		// DesertTorch: /
-		// CoralTorch: /
-		// CorruptTorch: /
-		// CrimsonTorch: /
-		// HallowedTorch: /
-		// JungleTorch: /
-		// ArgonMoss: /
-		// RollingCactus: /
-		// ThinIce: /
-		// EchoBlock: /
-		// ScarabFish: /
-		// ScorpioFish: /
-		// Owl: /
-		// OwlCage: /
-		// OwlStatue: /
-		// PupfishBowl: /
-		// GoldLadybugCage: /
-		// Geode: /
-		// Flounder: /
-		// RockLobster: /
-		// LobsterTail: /
 		// FloatingTube: /
-		// FrozenCrate: /
-		// FrozenCrateHard: /
-		// OasisCrate: /
-		// OasisCrateHard: /
 		// SpectreGoggles: /
-		// Oyster: /
-		// ShuckedOyster: /
-		// WhitePearl: /
-		// BlackPearl: /
-		// PinkPearl: /
-		// StoneDoor: /
-		// StonePlatform: /
-		// OasisFountain: /
-		// WaterStrider: /
-		// GoldWaterStrider: /
-		// LawnFlamingo: /
-		// MusicBoxUndergroundJungle: /
-		// Grate: /
-		// ScarabBomb: /
-		// WroughtIronFence: /
-		// SharkBait: /
-		// BeeMinecart: /
-		// LadybugMinecart: /
-		// PigronMinecart: /
-		// SunflowerMinecart: /
-		// PottedForestCedar: /
-		// PottedJungleCedar: /
-		// PottedHallowCedar: /
-		// PottedForestTree: /
-		// PottedJungleTree: /
-		// PottedHallowTree: /
-		// PottedForestPalm: /
-		// PottedJunglePalm: /
-		// PottedHallowPalm: /
-		// PottedForestBamboo: /
-		// PottedJungleBamboo: /
-		// PottedHallowBamboo: /
-		// ScarabFishingRod: /
-		// HellMinecart: /
-		// WitchBroom: /
-		// ClusterRocketI: /
-		// ClusterRocketII: /
-		// WetRocket: /
-		// LavaRocket: /
-		// HoneyRocket: /
-		// ShroomMinecart: /
-		// AmethystMinecart: /
-		// TopazMinecart: /
-		// SapphireMinecart: /
-		// EmeraldMinecart: /
-		// RubyMinecart: /
-		// DiamondMinecart: /
-		// MiniNukeI: /
-		// MiniNukeII: /
-		// DryRocket: /
-		// SandcastleBucket: /
-		// TurtleCage: /
-		// TurtleJungleCage: /
 		// Gladius: /
-		// Turtle: /
-		// TurtleJungle: /
-		// TurtleStatue: /
-		// AmberMinecart: /
-		// BeetleMinecart: /
-		// MeowmereMinecart: /
-		// PartyMinecart: /
-		// PirateMinecart: /
-		// SteampunkMinecart: /
-		// GrebeCage: /
-		// SeagullCage: /
-		// WaterStriderCage: /
-		// GoldWaterStriderCage: /
-		// LuckPotionLesser: /
-		// LuckPotion: /
-		// LuckPotionGreater: /
-		// Seahorse: /
-		// SeahorseCage: /
-		// GoldSeahorse: /
-		// GoldSeahorseCage: /
-		// TimerOneHalfSecond: /
-		// TimerOneFourthSecond: /
-		// EbonstoneEcho: /
-		// MudWallEcho: /
-		// PearlstoneEcho: /
-		// SnowWallEcho: /
-		// AmethystEcho: /
-		// TopazEcho: /
-		// SapphireEcho: /
-		// EmeraldEcho: /
-		// RubyEcho: /
-		// DiamondEcho: /
-		// Cave1Echo: /
-		// Cave2Echo: /
-		// Cave3Echo: /
-		// Cave4Echo: /
-		// Cave5Echo: /
-		// Cave6Echo: /
-		// Cave7Echo: /
-		// SpiderEcho: /
-		// CorruptGrassEcho: /
-		// HallowedGrassEcho: /
-		// IceEcho: /
-		// ObsidianBackEcho: /
-		// CrimsonGrassEcho: /
-		// CrimstoneEcho: /
-		// CaveWall1Echo: /
-		// CaveWall2Echo: /
-		// Cave8Echo: /
-		// Corruption1Echo: /
-		// Corruption2Echo: /
-		// Corruption3Echo: /
-		// Corruption4Echo: /
-		// Crimson1Echo: /
-		// Crimson2Echo: /
-		// Crimson3Echo: /
-		// Crimson4Echo: /
-		// Dirt1Echo: /
-		// Dirt2Echo: /
-		// Dirt3Echo: /
-		// Dirt4Echo: /
-		// Hallow1Echo: /
-		// Hallow2Echo: /
-		// Hallow3Echo: /
-		// Hallow4Echo: /
-		// Jungle1Echo: /
-		// Jungle2Echo: /
-		// Jungle3Echo: /
-		// Jungle4Echo: /
-		// Lava1Echo: /
-		// Lava2Echo: /
-		// Lava3Echo: /
-		// Lava4Echo: /
-		// Rocks1Echo: /
-		// Rocks2Echo: /
-		// Rocks3Echo: /
-		// Rocks4Echo: /
-		// TheBrideBanner: /
-		// ZombieMermanBanner: /
-		// EyeballFlyingFishBanner: /
-		// BloodSquidBanner: /
-		// BloodEelBanner: /
-		// GoblinSharkBanner: /
-		// LargeBambooBlock: /
-		// LargeBambooBlockWall: /
-		// DemonHorns: /
-		// BambooLeaf: /
-		// HellCake: /
-		// FogMachine: /
-		// PlasmaLamp: /
-		// MarbleColumn: /
-		// ChefHat: /
-		// ChefShirt: /
-		// ChefPants: /
-		// StarHairpin: /
-		// HeartHairpin: /
-		// BunnyEars: /
-		// DevilHorns: /
-		// Fedora: /
-		// UnicornHornHat: /
-		// BambooBlock: /
-		// BambooBlockWall: /
-		// BambooBathtub: /
-		// BambooBed: /
-		// BambooBookcase: /
-		// BambooDresser: /
-		// BambooCandelabra: /
-		// BambooCandle: /
-		// BambooChair: /
-		// BambooChandelier: /
-		// BambooChest: /
-		// BambooClock: /
-		// BambooDoor: /
-		// BambooLamp: /
-		// BambooLantern: /
-		// BambooPiano: /
-		// BambooPlatform: /
-		// BambooSink: /
-		// BambooSofa: /
-		// BambooTable: /
-		// BambooWorkbench: /
-		// Fake_BambooChest: /
-		// BambooToilet: /
-		// GolfClubStoneIron: /
-		// GolfClubRustyPutter: /
-		// GolfClubBronzeWedge: /
-		// GolfClubWoodDriver: /
-		// GolfClubMythrilIron: /
-		// GolfClubLeadPutter: /
-		// GolfClubGoldWedge: /
-		// GolfClubPearlwoodDriver: /
-		// GolfClubTitaniumIron: /
-		// GolfClubShroomitePutter: /
-		// GolfClubDiamondWedge: /
-		// GolfClubChlorophyteDriver: /
-		// GolfTrophyBronze: /
-		// GolfTrophySilver: /
-		// GolfTrophyGold: /
-		// BloodNautilusBanner: /
-		// BirdieRattle: /
-		// ExoticEasternChewToy: /
-		// BedazzledNectar: /
-		// MusicBoxJungleNight: /
 		// StormTigerStaff: /
-		// ChumBucket: /
-		// GardenGnome: /
-		// KiteBoneSerpent: /
-		// KiteWorldFeeder: /
-		// KiteBunny: /
-		// KitePigron: /
-		// AppleJuice: /
-		// GrapeJuice: /
-		// Lemonade: /
-		// BananaDaiquiri: /
-		// PeachSangria: /
-		// PinaColada: /
-		// TropicalSmoothie: /
-		// BloodyMoscato: /
-		// SmoothieofDarkness: /
-		// PrismaticPunch: /
-		// FruitJuice: /
-		// FruitSalad: /
-		// AndrewSphinx: /
-		// WatchfulAntlion: /
-		// BurningSpirit: /
-		// JawsOfDeath: /
-		// TheSandsOfSlime: /
-		// SnakesIHateSnakes: /
-		// LifeAboveTheSand: /
-		// Oasis: /
-		// PrehistoryPreserved: /
-		// AncientTablet: /
-		// Uluru: /
-		// VisitingThePyramids: /
-		// BandageBoy: /
-		// DivineEye: /
-		// AmethystStoneBlock: /
-		// TopazStoneBlock: /
-		// SapphireStoneBlock: /
-		// EmeraldStoneBlock: /
-		// RubyStoneBlock: /
-		// DiamondStoneBlock: /
-		// AmberStoneBlock: /
-		// AmberStoneWallEcho: /
-		// KiteManEater: /
-		// KiteJellyfishBlue: /
-		// KiteJellyfishPink: /
-		// KiteShark: /
-		// SuperHeroMask: /
-		// SuperHeroCostume: /
-		// SuperHeroTights: /
-		// PinkFairyJar: /
-		// GreenFairyJar: /
-		// BlueFairyJar: /
-		// GolfPainting1: /
-		// GolfPainting2: /
-		// GolfPainting3: /
-		// GolfPainting4: /
-		// FogboundDye: /
-		// BloodbathDye: /
-		// PrettyPinkDressSkirt: /
-		// PrettyPinkDressPants: /
-		// PrettyPinkRibbon: /
-		// BambooFence: /
-		// GlowPaint: /
-		// KiteSandShark: /
-		// KiteBunnyCorrupt: /
-		// KiteBunnyCrimson: /
 		// BlandWhip: /
-		// DrumStick: /
-		// KiteGoldfish: /
-		// KiteAngryTrapper: /
-		// KiteKoi: /
-		// KiteCrawltipede: /
 		// SwordWhip: /
 		// MaceWhip: /
 		// ScytheWhip: /
-		// KiteSpectrum: /
-		// ReleaseDoves: /
-		// KiteWanderingEye: /
-		// KiteUnicorn: /
-		// UndertakerHat: /
-		// UndertakerCoat: /
-		// DandelionBanner: /
-		// GnomeBanner: /
-		// DesertCampfire: /
-		// CoralCampfire: /
-		// CorruptCampfire: /
-		// CrimsonCampfire: /
-		// HallowedCampfire: /
-		// JungleCampfire: /
-		// SoulBottleLight: /
-		// SoulBottleNight: /
-		// SoulBottleFlight: /
-		// SoulBottleSight: /
-		// SoulBottleMight: /
-		// SoulBottleFright: /
-		// MudBud: /
-		// ReleaseLantern: /
 		// QuadBarrelShotgun: /
-		// FuneralHat: /
-		// FuneralCoat: /
-		// FuneralPants: /
 		// TragicUmbrella: /
-		// VictorianGothHat: /
-		// VictorianGothDress: /
-		// TatteredWoodSign: /
 		// GravediggerShovel: /
-		// DungeonDesertChest: /
-		// Fake_DungeonDesertChest: /
-		// DungeonDesertKey: /
 		// SparkleGuitar: /
-		// MolluskWhistle: /
-		// BorealBeam: /
-		// RichMahoganyBeam: /
-		// GraniteColumn: /
-		// SandstoneColumn: /
-		// MushroomBeam: /
-		// FirstFractal: /
-		// Nevermore: /
-		// Reborn: /
-		// Graveyard: /
-		// GhostManifestation: /
-		// WickedUndead: /
-		// BloodyGoblet: /
-		// StillLife: /
 		// GhostarsWings: /
-		// TerraToilet: /
-		// GhostarSkullPin: /
-		// GhostarShirt: /
-		// GhostarPants: /
-		// BallOfFuseWire: /
-		// FullMoonSqueakyToy: /
-		// OrnateShadowKey: /
-		// DrManFlyMask: /
-		// DrManFlyLabCoat: /
-		// ButcherMask: /
-		// ButcherApron: /
-		// ButcherPants: /
-		// Football: /
-		// HunterCloak: /
-		// CoffinMinecart: /
 		// SafemanWings: /
-		// SafemanSunHair: /
-		// SafemanSunDress: /
-		// SafemanDressLeggings: /
 		// FoodBarbarianWings: /
-		// FoodBarbarianHelm: /
-		// FoodBarbarianArmor: /
-		// FoodBarbarianGreaves: /
 		// GroxTheGreatWings: /
-		// GroxTheGreatHelm: /
-		// GroxTheGreatArmor: /
-		// GroxTheGreatGreaves: /
 		// Smolstar: /
-		// SquirrelHook: /
 		// BouncingShield: /
-		// RockGolemHead: /
-		// CritterShampoo: /
-		// DiggingMoleMinecart: /
 		// Shroomerang: /
-		// TreeGlobe: /
-		// WorldGlobe: /
-		// DontHurtCrittersBook: /
-		// DogEars: /
-		// DogTail: /
-		// FoxEars: /
-		// FoxTail: /
-		// LizardEars: /
-		// LizardTail: /
-		// PandaEars: /
-		// BunnyTail: /
-		// FairyGlowstick: /
-		// LightningCarrot: /
-		// HallowBossDye: /
-		// MushroomHat: /
-		// MushroomVest: /
-		// MushroomPants: /
-		// FairyQueenBossBag: /
-		// FairyQueenTrophy: /
-		// FairyQueenMask: /
-		// PaintedHorseSaddle: /
-		// MajesticHorseSaddle: /
-		// DarkHorseSaddle: /
 		// JoustingLance: /
 		// ShadowJoustingLance: /
 		// HallowJoustingLance: /
-		// PogoStick: /
-		// PirateShipMountItem: /
-		// SpookyWoodMountItem: /
-		// SantankMountItem: /
-		// WallOfFleshGoatMountItem: /
-		// DarkMageBookMountItem: /
-		// KingSlimePetItem: /
-		// EyeOfCthulhuPetItem: /
-		// EaterOfWorldsPetItem: /
-		// BrainOfCthulhuPetItem: /
-		// SkeletronPetItem: /
-		// QueenBeePetItem: /
-		// DestroyerPetItem: /
-		// TwinsPetItem: /
-		// SkeletronPrimePetItem: /
-		// PlanteraPetItem: /
-		// GolemPetItem: /
-		// DukeFishronPetItem: /
-		// LunaticCultistPetItem: /
-		// MoonLordPetItem: /
-		// FairyQueenPetItem: /
-		// PumpkingPetItem: /
-		// EverscreamPetItem: /
-		// IceQueenPetItem: /
-		// MartianPetItem: /
-		// DD2OgrePetItem: /
-		// DD2BetsyPetItem: /
 		// CombatWrench: /
-		// DemonConch: /
-		// BottomlessLavaBucket: /
-		// FireproofBugNet: /
-		// FlameWakerBoots: /
 		// RainbowWings: /
-		// WetBomb: /
-		// LavaBomb: /
-		// HoneyBomb: /
-		// DryBomb: /
-		// SuperheatedBlood: /
-		// LicenseCat: /
-		// LicenseDog: /
-		// GemSquirrelAmethyst: /
-		// GemSquirrelTopaz: /
-		// GemSquirrelSapphire: /
-		// GemSquirrelEmerald: /
-		// GemSquirrelRuby: /
-		// GemSquirrelDiamond: /
-		// GemSquirrelAmber: /
-		// GemBunnyAmethyst: /
-		// GemBunnyTopaz: /
-		// GemBunnySapphire: /
-		// GemBunnyEmerald: /
-		// GemBunnyRuby: /
-		// GemBunnyDiamond: /
-		// GemBunnyAmber: /
-		// HellButterfly: /
-		// HellButterflyJar: /
-		// Lavafly: /
-		// LavaflyinaBottle: /
-		// MagmaSnail: /
-		// MagmaSnailCage: /
-		// GemTreeTopazSeed: /
-		// GemTreeAmethystSeed: /
-		// GemTreeSapphireSeed: /
-		// GemTreeEmeraldSeed: /
-		// GemTreeRubySeed: /
-		// GemTreeDiamondSeed: /
-		// GemTreeAmberSeed: /
-		// PotSuspended: /
-		// PotSuspendedDaybloom: /
-		// PotSuspendedMoonglow: /
-		// PotSuspendedWaterleaf: /
-		// PotSuspendedShiverthorn: /
-		// PotSuspendedBlinkroot: /
-		// PotSuspendedDeathweedCorrupt: /
-		// PotSuspendedDeathweedCrimson: /
-		// PotSuspendedFireblossom: /
-		// BrazierSuspended: /
-		// VolcanoSmall: /
-		// VolcanoLarge: /
-		// PotionOfReturn: /
-		// VanityTreeSakuraSeed: /
-		// LavaAbsorbantSponge: /
-		// HallowedHood: /
 		// HellfireTreads: /
-		// TeleportationPylonJungle: /
-		// TeleportationPylonPurity: /
-		// LavaCrate: /
-		// LavaCrateHard: /
-		// ObsidianLockbox: /
-		// LavaFishbowl: /
 		// LavaFishingHook: /
-		// AmethystBunnyCage: /
-		// TopazBunnyCage: /
-		// SapphireBunnyCage: /
-		// EmeraldBunnyCage: /
-		// RubyBunnyCage: /
-		// DiamondBunnyCage: /
-		// AmberBunnyCage: /
-		// AmethystSquirrelCage: /
-		// TopazSquirrelCage: /
-		// SapphireSquirrelCage: /
-		// EmeraldSquirrelCage: /
-		// RubySquirrelCage: /
-		// DiamondSquirrelCage: /
-		// AmberSquirrelCage: /
-		// AncientHallowedMask: /
-		// AncientHallowedHelmet: /
-		// AncientHallowedHeadgear: /
-		// AncientHallowedHood: /
-		// AncientHallowedPlateMail: /
-		// AncientHallowedGreaves: /
-		// PottedLavaPlantPalm: /
-		// PottedLavaPlantBush: /
-		// PottedLavaPlantBramble: /
-		// PottedLavaPlantBulb: /
-		// PottedLavaPlantTendrils: /
-		// VanityTreeYellowWillowSeed: /
-		// DirtBomb: /
-		// DirtStickyBomb: /
-		// LicenseBunny: /
 		// CoolWhip: /
 		// FireWhip: /
 		// ThornWhip: /
 		// RainbowWhip: /
-		// TungstenBullet: /
-		// TeleportationPylonHallow: /
-		// TeleportationPylonUnderground: /
-		// TeleportationPylonOcean: /
-		// TeleportationPylonDesert: /
-		// TeleportationPylonSnow: /
-		// TeleportationPylonMushroom: /
-		// CavernFountain: /
 		// PiercingStarlight: /
-		// EyeofCthulhuMasterTrophy: /
-		// EaterofWorldsMasterTrophy: /
-		// BrainofCthulhuMasterTrophy: /
-		// SkeletronMasterTrophy: /
-		// QueenBeeMasterTrophy: /
-		// KingSlimeMasterTrophy: /
-		// WallofFleshMasterTrophy: /
-		// TwinsMasterTrophy: /
-		// DestroyerMasterTrophy: /
-		// SkeletronPrimeMasterTrophy: /
-		// PlanteraMasterTrophy: /
-		// GolemMasterTrophy: /
-		// DukeFishronMasterTrophy: /
-		// LunaticCultistMasterTrophy: /
-		// MoonLordMasterTrophy: /
-		// UFOMasterTrophy: /
-		// FlyingDutchmanMasterTrophy: /
-		// MourningWoodMasterTrophy: /
-		// PumpkingMasterTrophy: /
-		// IceQueenMasterTrophy: /
-		// EverscreamMasterTrophy: /
-		// SantankMasterTrophy: /
-		// DarkMageMasterTrophy: /
-		// OgreMasterTrophy: /
-		// BetsyMasterTrophy: /
-		// FairyQueenMasterTrophy: /
-		// QueenSlimeMasterTrophy: /
-		// TeleportationPylonVictory: /
 		// FairyQueenMagicItem: /
 		// FairyQueenRangedItem: /
 		// LongRainbowTrailWings: /
-		// RabbitOrder: /
 		// Zenith: /
-		// QueenSlimeBossBag: /
-		// QueenSlimeTrophy: /
-		// QueenSlimeMask: /
-		// QueenSlimePetItem: /
-		// EmpressButterfly: /
-		// AccentSlab: /
-		// TruffleWormCage: /
-		// EmpressButterflyJar: /
-		// RockGolemBanner: /
-		// BloodMummyBanner: /
-		// SporeSkeletonBanner: /
-		// SporeBatBanner: /
-		// LarvaeAntlionBanner: /
-		// CrimsonBunnyBanner: /
-		// CrimsonGoldfishBanner: /
-		// CrimsonPenguinBanner: /
-		// BigMimicCorruptionBanner: /
-		// BigMimicCrimsonBanner: /
-		// BigMimicHallowBanner: /
-		// MossHornetBanner: /
-		// WanderingEyeBanner: /
 		// CreativeWings: /
-		// MusicBoxQueenSlime: /
-		// QueenSlimeHook: /
-		// QueenSlimeMountSaddle: /
-		// CrystalNinjaHelmet: /
-		// CrystalNinjaChestplate: /
-		// CrystalNinjaLeggings: /
-		// MusicBoxEmpressOfLight: /
-		// GelBalloon: /
 		// VolatileGelatin: /
-		// QueenSlimeCrystal: /
 		// EmpressFlightBooster: /
-		// MusicBoxDukeFishron: /
-		// MusicBoxMorningRain: /
-		// MusicBoxConsoleTitle: /
-		// ChippysCouch: /
-		// GraduationCapBlue: /
-		// GraduationCapMaroon: /
-		// GraduationCapBlack: /
-		// GraduationGownBlue: /
-		// GraduationGownMaroon: /
-		// GraduationGownBlack: /
 		// TerrasparkBoots: /
-		// MoonLordLegs: /
-		// OceanCrate: /
-		// OceanCrateHard: /
-		// BadgersHat: /
 		// EmpressBlade: /
-		// MusicBoxUndergroundDesert: /
-		// DeadMansSweater: /
-		// TeaKettle: /
-		// Teacup: /
 		// TreasureMagnet: /
 		// Mace: /
 		// FlamingMace: /
-		// SleepingIcon: /
-		// MusicBoxOWRain: /
-		// MusicBoxOWDay: /
-		// MusicBoxOWNight: /
-		// MusicBoxOWUnderground: /
-		// MusicBoxOWDesert: /
-		// MusicBoxOWOcean: /
-		// MusicBoxOWMushroom: /
-		// MusicBoxOWDungeon: /
-		// MusicBoxOWSpace: /
-		// MusicBoxOWUnderworld: /
-		// MusicBoxOWSnow: /
-		// MusicBoxOWCorruption: /
-		// MusicBoxOWUndergroundCorruption: /
-		// MusicBoxOWCrimson: /
-		// MusicBoxOWUndergroundCrimson: /
-		// MusicBoxOWUndergroundSnow: /
-		// MusicBoxOWUndergroundHallow: /
-		// MusicBoxOWBloodMoon: /
-		// MusicBoxOWBoss2: /
-		// MusicBoxOWBoss1: /
-		// MusicBoxOWInvasion: /
-		// MusicBoxOWTowers: /
-		// MusicBoxOWMoonLord: /
-		// MusicBoxOWPlantera: /
-		// MusicBoxOWJungle: /
-		// MusicBoxOWWallOfFlesh: /
-		// MusicBoxOWHallow: /
-		// MilkCarton: /
-		// CoffeeCup: /
-		// TorchGodsFavor: /
-		// MusicBoxCredits: /
-		// PlaguebringerHelmet: /
-		// PlaguebringerChestplate: /
-		// PlaguebringerGreaves: /
-		// RoninHat: /
-		// RoninShirt: /
-		// RoninPants: /
-		// TimelessTravelerHood: /
-		// TimelessTravelerRobe: /
-		// TimelessTravelerBottom: /
-		// FloretProtectorHelmet: /
-		// FloretProtectorChestplate: /
-		// FloretProtectorLegs: /
-		// CapricornMask: /
-		// CapricornChestplate: /
-		// CapricornLegs: /
-		// CapricornTail: /
-		// TVHeadMask: /
-		// TVHeadSuit: /
-		// TVHeadPants: /
 		// LavaproofTackleBag: /
 		// PrincessWeapon: /
-		// BeeHive: /
-		// AntlionEggs: /
-		// FlinxFurCoat: /
 		// FlinxStaff: /
-		// FlinxFur: /
-		// RoyalTiara: /
-		// RoyalDressTop: /
-		// RoyalDressBottom: /
 		// BoneWhip: /
-		// RainbowCursor: /
-		// RoyalScepter: /
-		// GlassSlipper: /
-		// PrinceUniform: /
-		// PrincePants: /
-		// PrinceCape: /
-		// PottedCrystalPlantFern: /
-		// PottedCrystalPlantSpiral: /
-		// PottedCrystalPlantTeardrop: /
-		// PottedCrystalPlantTree: /
-		// Princess64: /
-		// PaintingOfALass: /
-		// DarkSideHallow: /
-		// BerniePetItem: /
-		// GlommerPetItem: /
-		// DeerclopsPetItem: /
-		// PigPetItem: /
-		// MonsterLasagna: /
-		// FroggleBunwich: /
 		// TentacleSpike: /
 		// LucyTheAxe: /
 		// HamBat: /
 		// BatBat: /
-		// ChesterPetItem: /
-		// GarlandHat: /
 		// BoneHelm: /
-		// Eyebrella: /
-		// WilsonShirt: /
-		// WilsonPants: /
-		// WilsonBeardShort: /
-		// WilsonBeardLong: /
-		// WilsonBeardMagnificent: /
 		// Magiluminescence: /
-		// DeerclopsTrophy: /
-		// DeerclopsMask: /
-		// DeerclopsMasterTrophy: /
-		// DeerclopsBossBag: /
-		// MusicBoxDeerclops: /
-		// DontStarveShaderItem: /
 		// AbigailsFlower: /
-		// WillowShirt: /
-		// WillowSkirt: /
 		// PewMaticHorn: /
 		// WeatherPain: /
 		// HoundiusShootius: /
-		// DeerThing: /
-		// PaintingWilson: /
-		// PaintingWillow: /
-		// PaintingWendy: /
-		// PaintingWolfgang: /
-		// FartMinecart: /
 		// HandOfCreation: /
-		// VioletMoss: /
-		// RainbowMoss: /
 		// Flymeal: /
-		// WolfMountItem: /
-		// ResplendentDessert: /
-		// Stinkbug: /
-		// StinkbugCage: /
-		// Clentaminator2: /
-		// VenomDartTrap: /
-		// VulkelfEar: /
-		// StinkbugHousingBlocker: /
-		// StinkbugHousingBlockerEcho: /
 		// FishingBobber: /
 		// FishingBobberGlowingStar: /
 		// FishingBobberGlowingLava: /
@@ -5203,317 +858,20 @@ GenderPluralization: {
 		// FishingBobberGlowingViolet: /
 		// FishingBobberGlowingRainbow: /
 		// WandofFrosting: /
-		// CoralBathtub: /
-		// CoralBed: /
-		// CoralBookcase: /
-		// CoralDresser: /
-		// CoralCandelabra: /
-		// CoralCandle: /
-		// CoralChair: /
-		// CoralChandelier: /
-		// CoralChest: /
-		// CoralClock: /
-		// CoralDoor: /
-		// CoralLamp: /
-		// CoralLantern: /
-		// CoralPiano: /
-		// CoralPlatform: /
-		// CoralSink: /
-		// CoralSofa: /
-		// CoralTable: /
-		// CoralWorkbench: /
-		// Fake_CoralChest: /
-		// CoralToilet: /
-		// BalloonBathtub: /
-		// BalloonBed: /
-		// BalloonBookcase: /
-		// BalloonDresser: /
-		// BalloonCandelabra: /
-		// BalloonCandle: /
-		// BalloonChair: /
-		// BalloonChandelier: /
-		// BalloonChest: /
-		// BalloonClock: /
-		// BalloonDoor: /
-		// BalloonLamp: /
-		// BalloonLantern: /
-		// BalloonPiano: /
-		// BalloonPlatform: /
-		// BalloonSink: /
-		// BalloonSofa: /
-		// BalloonTable: /
-		// BalloonWorkbench: /
-		// Fake_BalloonChest: /
-		// BalloonToilet: /
-		// AshWoodBathtub: /
-		// AshWoodBed: /
-		// AshWoodBookcase: /
-		// AshWoodDresser: /
-		// AshWoodCandelabra: /
-		// AshWoodCandle: /
-		// AshWoodChair: /
-		// AshWoodChandelier: /
-		// AshWoodChest: /
-		// AshWoodClock: /
-		// AshWoodDoor: /
-		// AshWoodLamp: /
-		// AshWoodLantern: /
-		// AshWoodPiano: /
-		// AshWoodPlatform: /
-		// AshWoodSink: /
-		// AshWoodSofa: /
-		// AshWoodTable: /
-		// AshWoodWorkbench: /
-		// Fake_AshWoodChest: /
-		// AshWoodToilet: /
-		// BiomeSightPotion: /
-		// ScarletMacaw: /
-		// ScarletMacawCage: /
-		// AshGrassSeeds: /
-		// AshWood: /
-		// AshWoodWall: /
-		// AshWoodFence: /
-		// Outcast: /
-		// FairyGuides: /
-		// AHorribleNightforAlchemy: /
-		// MorningHunt: /
-		// SuspiciouslySparkly: /
-		// Requiem: /
-		// CatSword: /
-		// KargohsSummon: /
-		// HighPitch: /
-		// AMachineforTerrarians: /
-		// TerraBladeChronicles: /
-		// BennyWarhol: /
-		// LizardKing: /
-		// MySon: /
-		// Duality: /
-		// ParsecPals: /
-		// RemnantsofDevotion: /
-		// NotSoLostInParadise: /
-		// OcularResonance: /
-		// WingsofEvil: /
-		// Constellation: /
-		// Eyezorhead: /
-		// DreadoftheRedSea: /
-		// DoNotEattheVileMushroom: /
-		// YuumaTheBlueTiger: /
-		// MoonmanandCompany: /
-		// SunshineofIsrapony: /
-		// Purity: /
-		// SufficientlyAdvanced: /
-		// StrangeGrowth: /
-		// HappyLittleTree: /
-		// StrangeDeadFellows: /
-		// Secrets: /
-		// Thunderbolt: /
-		// Crustography: /
-		// TheWerewolf: /
-		// BlessingfromTheHeavens: /
-		// LoveisintheTrashSlot: /
-		// Fangs: /
-		// HailtotheKing: /
-		// SeeTheWorldForWhatItIs: /
-		// WhatLurksBelow: /
-		// ThisIsGettingOutOfHand: /
-		// Buddies: /
-		// MidnightSun: /
-		// CouchGag: /
-		// SilentFish: /
-		// TheDuke: /
-		// RoyalRomance: /
-		// Bioluminescence: /
-		// Wildflowers: /
-		// VikingVoyage: /
-		// Bifrost: /
-		// Heartlands: /
-		// ForestTroll: /
-		// AuroraBorealis: /
-		// LadyOfTheLake: /
-		// JojaCola: /
-		// JunimoPetItem: /
-		// SpicyPepper: /
-		// Pomegranate: /
-		// AshWoodHelmet: /
-		// AshWoodBreastplate: /
-		// AshWoodGreaves: /
 		// AshWoodBow: /
 		// AshWoodHammer: /
 		// AshWoodSword: /
-		// MoonGlobe: /
-		// RepairedLifeCrystal: /
-		// RepairedManaCrystal: /
-		// TerraFartMinecart: /
-		// MinecartPowerup: /
-		// JimsCap: /
-		// EchoWall: /
-		// EchoPlatform: /
-		// MushroomTorch: /
 		// HiveFive: /
 		// AcornAxe: /
-		// ChlorophyteExtractinator: /
-		// BlueEgg: /
 		// Trimarang: /
-		// MushroomCampfire: /
-		// BlueMacaw: /
-		// BlueMacawCage: /
-		// BottomlessHoneyBucket: /
-		// HoneyAbsorbantSponge: /
-		// UltraAbsorbantSponge: /
-		// GoblorcEar: /
-		// ReefBlock: /
-		// ReefWall: /
-		// PlacePainting: /
-		// DontHurtNatureBook: /
-		// PrincessStyle: /
-		// Toucan: /
-		// YellowCockatiel: /
-		// GrayCockatiel: /
-		// ToucanCage: /
-		// YellowCockatielCage: /
-		// GrayCockatielCage: /
-		// MacawStatue: /
-		// ToucanStatue: /
-		// CockatielStatue: /
-		// PlaceableHealingPotion: /
-		// PlaceableManaPotion: /
-		// ShadowCandle: /
-		// DontHurtComboBook: /
-		// RubblemakerSmall: /
-		// ClosedVoidBag: /
-		// ArtisanLoaf: /
-		// TNTBarrel: /
-		// ChestLock: /
-		// RubblemakerMedium: /
-		// RubblemakerLarge: /
 		// HorseshoeBundle: /
-		// SpiffoPlush: /
-		// GlowTulip: /
-		// MechdusaSummon: /
-		// RodOfHarmony: /
-		// CombatBookVolumeTwo: /
-		// AegisCrystal: /
-		// AegisFruit: /
-		// ArcaneCrystal: /
-		// GalaxyPearl: /
-		// GummyWorm: /
-		// Ambrosia: /
-		// PeddlersSatchel: /
-		// EchoCoating: /
-		// EchoMonolith: /
-		// GasTrap: /
-		// ShimmerMonolith: /
-		// ShimmerArrow: /
-		// ShimmerBlock: /
-		// Shimmerfly: /
-		// ShimmerflyinaBottle: /
-		// ShimmerSlimeBanner: /
-		// ShimmerTorch: /
 		// ReflectiveShades: /
 		// ShimmerCloak: /
-		// UsedGasTrap: /
-		// ShimmerCampfire: /
-		// Shellphone: /
-		// ShellphoneSpawn: /
-		// ShellphoneOcean: /
-		// ShellphoneHell: /
-		// MusicBoxShimmer: /
-		// SpiderWallUnsafe: /
-		// BottomlessShimmerBucket: /
-		// BlueBrickWallUnsafe: /
-		// BlueSlabWallUnsafe: /
-		// BlueTiledWallUnsafe: /
-		// PinkBrickWallUnsafe: /
-		// PinkSlabWallUnsafe: /
-		// PinkTiledWallUnsafe: /
-		// GreenBrickWallUnsafe: /
-		// GreenSlabWallUnsafe: /
-		// GreenTiledWallUnsafe: /
-		// SandstoneWallUnsafe: /
-		// HardenedSandWallUnsafe: /
-		// LihzahrdWallUnsafe: /
-		// SpelunkerFlare: /
-		// CursedFlare: /
-		// RainbowFlare: /
-		// ShimmerFlare: /
-		// Moondial: /
 		// WaffleIron: /
-		// BouncyBoulder: /
-		// LifeCrystalBoulder: /
-		// DizzyHat: /
-		// LincolnsHoodie: /
-		// LincolnsPants: /
-		// SunOrnament: /
-		// HoplitePizza: /
-		// LincolnsHood: /
-		// UncumberingStone: /
-		// SandSolution: /
-		// SnowSolution: /
-		// DirtSolution: /
-		// PoopBlock: /
-		// PoopWall: /
-		// ShimmerWall: /
-		// ShimmerBrick: /
-		// ShimmerBrickWall: /
-		// DirtiestBlock: /
-		// LunarRustBrick: /
-		// DarkCelestialBrick: /
-		// AstraBrick: /
-		// CosmicEmberBrick: /
-		// CryocoreBrick: /
-		// MercuryBrick: /
-		// StarRoyaleBrick: /
-		// HeavenforgeBrick: /
-		// LunarRustBrickWall: /
-		// DarkCelestialBrickWall: /
-		// AstraBrickWall: /
-		// CosmicEmberBrickWall: /
-		// CryocoreBrickWall: /
-		// MercuryBrickWall: /
-		// StarRoyaleBrickWall: /
-		// HeavenforgeBrickWall: /
-		// AncientBlueDungeonBrick: /
-		// AncientBlueDungeonBrickWall: /
-		// AncientGreenDungeonBrick: /
-		// AncientGreenDungeonBrickWall: /
-		// AncientPinkDungeonBrick: /
-		// AncientPinkDungeonBrickWall: /
-		// AncientGoldBrick: /
-		// AncientGoldBrickWall: /
-		// AncientSilverBrick: /
-		// AncientSilverBrickWall: /
-		// AncientCopperBrick: /
-		// AncientCopperBrickWall: /
-		// AncientCobaltBrick: /
-		// AncientCobaltBrickWall: /
-		// AncientMythrilBrick: /
-		// AncientMythrilBrickWall: /
-		// AncientObsidianBrick: /
-		// AncientObsidianBrickWall: /
-		// AncientHellstoneBrick: /
-		// AncientHellstoneBrickWall: /
-		// ShellphoneDummy: /
-		// Fertilizer: /
-		// LavaMossBlock: /
-		// ArgonMossBlock: /
-		// KryptonMossBlock: /
-		// XenonMossBlock: /
-		// VioletMossBlock: /
-		// RainbowMossBlock: /
-		// LavaMossBlockWall: /
-		// ArgonMossBlockWall: /
-		// KryptonMossBlockWall: /
-		// XenonMossBlockWall: /
-		// VioletMossBlockWall: /
-		// RainbowMossBlockWall: /
-		// JimsDrone: /
 		// JimsDroneVisor: /
-		// DontHurtCrittersBookInactive: /
-		// DontHurtNatureBookInactive: /
-		// DontHurtComboBookInactive: /
 	}
 
-	# For prefixes, the new entires are separated into Masculine, Feminine and Neuter.
+	# For prefixes, the new entries are separated into Masculine, Feminine and Neuter.
 	# Plurality is included in the same way it is normally included in tMod localization files. Read: https://github.com/tModLoader/tModLoader/wiki/Localization#pluralization
 	Prefixes: {
 		Dull: {

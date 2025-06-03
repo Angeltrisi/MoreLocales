@@ -29,6 +29,7 @@ using System.Diagnostics;
 using System.IO;
 using System.Reflection;
 using System.Windows.Forms;
+using Terraria.GameContent.UI.Elements;
 using Terraria.Localization;
 
 namespace MoreLocales
@@ -43,30 +44,38 @@ namespace MoreLocales
         public MoreLocales()
         {
             Instance = this;
-            ExtraLocalesSupport.DoLoad();
+            MoreLocalesAPI._canRegister = true;
+            MoreLocalesAPI.DoLoad();
         }
         public override void Load()
         {
             AssetHelper.Setup(Instance);
             FontHelperV2.DoLoad();
-            FeaturesPlus.DoLoad();
-            ExtraLocalesSupport.DoSafeLoad();
+            LangFeaturesPlus.DoLoad();
+            MoreLocalesAPI.DoSafeLoad();
         }
         public override void PostSetupContent()
         {
-            ExtraLocalesSupport.cachedVanillaCulture = LanguageManager.Instance.ActiveCulture.LegacyId;
-            ExtraLocalesSupport.LoadCustomCultureData();
+            MoreLocalesSets._contentReady = true;
+            MoreLocalesSets.ReloadedLocalizations();
+
+            MoreLocalesAPI.cachedVanillaCulture = LanguageManager.Instance.ActiveCulture.LegacyId;
+            MoreLocalesAPI.LoadCustomCultureData();
 
             if (FontHelperV2.CharDataInlined && OperatingSystem.IsWindows())
-                MessageBox.Show(Language.GetTextValue("Mods.MoreLocales.Misc.Error.FontPatchingError"), Language.GetTextValue("Error.Error"));
+                MessageBox.Show(GetLocalization("Misc.Error.FontPatchingError").Value, Language.GetTextValue("Error.Error"));
         }
         public override object Call(params object[] args)
         {
-            return base.Call(args);
+            throw new InvalidOperationException
+                ("""
+                MoreLocales does not have a Mod.Call API. Using a weakReference is your only option if you do not wish for this mod to be a dependency in your mod.
+                This is in order to avoid extreme verbosity. Please consult the wiki for further information: https://github.com/queueAngel/MoreLocales/wiki/Home
+                """);
         }
         public override void Unload()
         {
-            ExtraLocalesSupport.DoUnload();
+            MoreLocalesAPI.DoUnload();
             LocalizationTweaks.Unapply();
         }
     }

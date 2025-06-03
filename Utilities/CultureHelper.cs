@@ -9,9 +9,9 @@ namespace MoreLocales.Utilities
     public static class CultureHelper
     {
         public static bool CustomCultureActive(CultureNamePlus customCulture) => LanguageManager.Instance.ActiveCulture.LegacyId == (int)customCulture;
-        public static string FullName(this GameCulture culture) => ExtraLocalesSupport.extraCulturesV2[culture.LegacyId].Name; // culture.IsCustom() ? ((CultureNamePlus)culture.LegacyId).ToString() : ((CultureName)culture.LegacyId).ToString();
-        public static bool IsCustom(this GameCulture culture) => !ExtraLocalesSupport.extraCulturesV2[culture.LegacyId].Vanilla;
-        public static bool IsValid(int culture) => culture > 0 && culture < ExtraLocalesSupport.extraCulturesV2.Length;
+        public static string FullName(this GameCulture culture) => MoreLocalesAPI.extraCulturesV2[culture.LegacyId].Name; // culture.IsCustom() ? ((CultureNamePlus)culture.LegacyId).ToString() : ((CultureName)culture.LegacyId).ToString();
+        public static bool IsCustom(this GameCulture culture) => !MoreLocalesAPI.extraCulturesV2[culture.LegacyId].Vanilla;
+        public static bool IsValid(int culture) => culture > 0 && culture < MoreLocalesAPI.extraCulturesV2.Length;
         /// <summary>
         /// Maps a custom culture's ID to a vanilla culture with the same pluralization rule. Returns 10 for <see cref="PluralizationStyle.Custom"/>.
         /// </summary>
@@ -21,11 +21,11 @@ namespace MoreLocales.Utilities
         {
             if (realID < (int)BritishEnglish)
                 return realID;
-            return (int)ExtraLocalesSupport.extraCulturesV2[realID].PluralizationRule;
+            return (int)MoreLocalesAPI.extraCulturesV2[realID].GrammarData.PluralizationRule;
         }
         public static int CustomPluralization(int c, int mod10, int mod100, int count)
         {
-            return ExtraLocalesSupport.extraCulturesV2[c].CustomPluralizationRule(count, mod10, mod100);
+            return MoreLocalesAPI.extraCulturesV2[c].GrammarData.CustomPluralizationRule(count, mod10, mod100);
         }
         #region Pluralization Rules
         public static int czechPlural(int count, int mod10, int mod100)
@@ -52,7 +52,7 @@ namespace MoreLocales.Utilities
         }
         #endregion
         /// <summary>
-        /// Replicates the behavior of <see cref="Item.Name"/> before the effects of <see cref="FeaturesPlus.RemovePrefixLiteralFromName(ILContext)"/>.
+        /// Replicates the behavior of <see cref="Item.Name"/> before the effects of <see cref="LangFeaturesPlus.RemovePrefixLiteralFromName(ILContext)"/>.
         /// </summary>
         /// <param name="i"></param>
         /// <returns></returns>
@@ -63,13 +63,12 @@ namespace MoreLocales.Utilities
             int fallbackCulture = 1,
             bool hasSubtitle = true,
             bool hasDescription = false,
-            PluralizationStyle pluralizationStyle = PluralizationStyle.Simple,
-            Func<int, int, int, int> customPluralizationRule = null,
-            AdjectiveOrder adjectiveOrder = default,
-            Func<int, int, bool> contextChangesAdjective = null)
+            GrammarData grammarData = new(),
+            Func<bool> available = null,
+            LanguageButtonDrawData buttonDrawData = new())
         =>
-            ref ExtraLocalesSupport.RegisterCulture( internalName, languageCode, fallbackCulture, hasSubtitle, hasDescription,
-                pluralizationStyle, customPluralizationRule, adjectiveOrder, contextChangesAdjective, mod);
+            ref MoreLocalesAPI.RegisterCulture( internalName, languageCode, fallbackCulture, hasSubtitle, hasDescription,
+                grammarData, available, buttonDrawData, mod);
     }
     /// <summary>
     /// A light text formatting structure for adjective-noun order.
@@ -83,9 +82,21 @@ namespace MoreLocales.Utilities
         private static readonly AdjectiveOrder _beforeWithSpace = new(AdjectiveOrderType.Before, " ");
         private static readonly AdjectiveOrder _afterWithSpace = new(AdjectiveOrderType.After, " ");
 
+        /// <summary>
+        /// {Adjective}{Noun}
+        /// </summary>
         public static AdjectiveOrder Before => _before;
+        /// <summary>
+        /// {Noun}{Adjective}
+        /// </summary>
         public static AdjectiveOrder After => _after;
+        /// <summary>
+        /// {Adjective} {Noun}
+        /// </summary>
         public static AdjectiveOrder BeforeWithSpace => _beforeWithSpace;
+        /// <summary>
+        /// {Noun} {Adjective}
+        /// </summary>
         public static AdjectiveOrder AfterWithSpace => _afterWithSpace;
 
         public string Apply(string noun, string adjective)

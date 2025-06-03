@@ -20,6 +20,12 @@ namespace MoreLocales.Core
             IL_Main.DrawMenu += GoToBetterLangMenuInstead;
             //On_Main.DrawInterface += On_Main_DrawInterface;
         }
+        // the docs for OnModLoad are wrong: it's called if all content is autoloaded specifically for the mod it's called on, not all mods.
+        // so we use SetStaticDefaults instead
+        public override void SetStaticDefaults()
+        {
+            MoreLocalesAPI._canRegister = false;
+        }
         public override void OnLocalizationsLoaded()
         {
             MoreLocalesSets.ReloadedLocalizations();

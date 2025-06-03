@@ -20,6 +20,11 @@ Configs: {
 			// Label: Localized Prefix Placement
 			// Tooltip: ""
 		}
+
+		LocalizedPrefixGenderPluralization: {
+			// Label: Localized Prefix Gender Pluralization
+			// Tooltip: ""
+		}
 	}
 
 	LocalizedFont: {

@@ -11,17 +11,17 @@ namespace MoreLocales.Core
     /// <summary>
     /// Container for all features of Localization+ that are not (directly) related to extra language support.
     /// </summary>
-    public static class FeaturesPlus
+    public static class LangFeaturesPlus
     {
         private const string StringToReplace = "{Prefix}";
-        private static readonly string[] GenderNames = Enum.GetNames<Gender>();
-        public static void DoLoad()
+        private static readonly string[] GenderNames = Enum.GetNames<GrammaticalGender>();
+        internal static void DoLoad()
         {
             // prefix stuff
             MonoModHooks.Modify(typeof(Item).GetMethod("get_Name"), RemovePrefixLiteralFromName);
             IL_Item.AffixName += LocalizedPrefixPosition;
         }
-        public static string RemovePrefixLiteral(string input)
+        internal static string RemovePrefixLiteral(string input)
         {
             int index = input.IndexOf(StringToReplace);
             if (index == -1)
@@ -68,7 +68,7 @@ namespace MoreLocales.Core
 
                 c.GotoNext(i => i.MatchRet());
 
-                c.EmitCall(typeof(FeaturesPlus).GetMethod("RemovePrefixLiteral"));
+                c.EmitCall(typeof(LangFeaturesPlus).GetMethod("RemovePrefixLiteral"));
             }
             catch
             {
@@ -154,7 +154,7 @@ namespace MoreLocales.Core
                         return realName.Replace(StringToReplace, prefix);
 
                     // localized order
-                    AdjectiveOrder realOrder = ExtraLocalesSupport.ActiveCulture.AdjectiveOrder;
+                    AdjectiveOrder realOrder = MoreLocalesAPI.ActiveCulture.GrammarData.AdjectiveOrder;
 
                     return realOrder.Apply(realName, prefix);
                 });
@@ -169,61 +169,89 @@ namespace MoreLocales.Core
         /// <summary>
         /// Retrieves a LocalizedText that contains the gendered and pluralized form of a prefix depending on the item it's applied to (if applicable)
         /// </summary>
-        /// <param name="prefix"></param>
-        /// <param name="context"></param>
-        /// <returns></returns>
+        /// <param name="prefix">The ID of the prefix.</param>
+        /// <param name="context">The item.</param>
         public static LocalizedText GetPrefixNameWithItemContext(int prefix, Item context)
         {
-            MoreLocalesSets.CachedGenderPluralization[context.type].Deconstruct(out Gender gender, out Pluralization pluralization);
+            if (!ClientSideConfig.Instance.LocalizedPrefixGenderPluralization)
+                return Lang.prefix[prefix];
+
+            MoreLocalesSets.CachedInflectionData[context.type].Deconstruct(out GrammaticalGender gender, out Pluralization pluralization);
 
             if (!LanguageManager.Instance.ActiveCulture.GPDataChangesAdjectiveForm(gender, pluralization))
                 return Lang.prefix[prefix]; // adjective form stays the same
 
             bool vanilla = prefix < PrefixID.Count;
-            string prefixName = vanilla ? PrefixID.Search.GetName(prefix) : PrefixLoader.GetPrefix(prefix).Name;
+            ModPrefix modPrefix = null;
+
+            if (!vanilla)
+                modPrefix = PrefixLoader.GetPrefix(prefix);
+
+            string prefixName = vanilla ? PrefixID.Search.GetName(prefix) : modPrefix.Name;
 
             string genderName = GenderNames[(byte)gender];
 
-            if (prefix < PrefixID.Count) // vanilla prefix
-            {
-                return MoreLocales.Instance.GetLocalization($"GenderPluralization.Prefixes.{prefixName}.{genderName}", () => Lang.prefix[prefix].Value).WithFormatArgs((byte)pluralization);
-            }
-
-            return Lang.prefix[prefix];
+            Mod target = vanilla ? MoreLocales.Instance : modPrefix.Mod;
+            string preprefix = vanilla ? "VanillaData." : string.Empty;
+            return target.GetLocalization($"{preprefix}InflectionData.Prefixes.{prefixName}.{genderName}", () => Lang.prefix[prefix].Value).WithFormatArgs((byte)pluralization);
         }
-        public static bool GPDataChangesAdjectiveForm(this GameCulture c, GenderPluralization data)
+        public static bool GPDataChangesAdjectiveForm(this GameCulture c, InflectionData data)
         {
-            data.Deconstruct(out Gender gender, out Pluralization pluralization);
+            data.Deconstruct(out GrammaticalGender gender, out Pluralization pluralization);
             return c.GPDataChangesAdjectiveForm(gender, pluralization);
         }
-        public static bool GPDataChangesAdjectiveForm(this GameCulture c, Gender gender, Pluralization pluralization)
+        public static bool GPDataChangesAdjectiveForm(this GameCulture c, GrammaticalGender gender, Pluralization pluralization)
         {
-            return ExtraLocalesSupport.extraCulturesV2[c.LegacyId].GenderPluralizationChangesAdjectiveForm((int)gender, (int)pluralization);
+            return MoreLocalesAPI.extraCulturesV2[c.LegacyId].GrammarData.ContextChangesAdjective(gender, pluralization);
         }
-        public static bool gpNeverChanges(int gender, int pluralization) => false;
-        public static bool gpChangesWhenNotDefault(int gender, int pluralization) => gender > 0 || pluralization > 0;
-        public static GenderPluralization GetItemGenderPluralization(int type)
+        public static bool gpNeverChanges(GrammaticalGender gender, Pluralization pluralization) => false;
+        public static bool gpChangesWhenNotDefault(GrammaticalGender gender, Pluralization pluralization) => gender > 0 || pluralization > 0;
+        /// <summary>
+        /// Only items that can be reforged should be able to affect adjectives.
+        /// </summary>
+        /// <param name="type">The type of the item to look up.</param>
+        /// <returns></returns>
+        public static bool ItemIsGenderPluralizable(int type)
         {
+            Item dummy = ContentSamples.ItemsByType[type];
+            return dummy.CanHavePrefixes();
+            /*
+            if (type < ItemID.Count)
+                return dummy.CanHavePrefixes();
+            retur
+            */
+        }
+        public static InflectionData GetItemInflection(int type)
+        {
+            if (!ItemIsGenderPluralizable(type))
+                return InflectionData.Default;
+
             bool vanilla = type < ItemID.Count;
-            string itemName = vanilla ? ItemID.Search.GetName(type) : ItemLoader.GetItem(type).Name;
+
+            ModItem modItem = null;
+            if (!vanilla)
+                modItem = ItemLoader.GetItem(type);
+
+            string itemName = vanilla ? ItemID.Search.GetName(type) : modItem.Name;
 
             if (itemName == null)
-                return GenderPluralization.Default;
+                return InflectionData.Default;
 
             LocalizedText data = null;
-            if (vanilla)
-                data = MoreLocales.Instance.GetLocalization($"VanillaData.GenderPluralization.Items.{itemName}", () => "/");
-            else // figure out file generation later
-                return GenderPluralization.Default;
 
-            if (TryParse(data.Value, out GenderPluralization genderPluralization))
-                return genderPluralization;
+            Mod target = vanilla ? MoreLocales.Instance : modItem.Mod;
+            string preprefix = vanilla ? "VanillaData." : string.Empty;
 
-            return GenderPluralization.Default;
+            data = target.GetLocalization($"{preprefix}InflectionData.Items.{itemName}", () => "/");
+
+            if (TryParse(data.Value, out InflectionData inflectionData))
+                return inflectionData;
+
+            return InflectionData.Default;
         }
-        public static bool TryParse(string value, out GenderPluralization result)
+        public static bool TryParse(string value, out InflectionData result)
         {
-            result = GenderPluralization.Default;
+            result = InflectionData.Default;
 
             string[] values = value.Split('/');
             if (values.Length == 0 || values.Length > 2)
@@ -231,7 +259,7 @@ namespace MoreLocales.Core
 
             uint finalGender = 0;
 
-            // we want to default to 0 for an entry like "/Pm" for a language with adjective pluralization but no grammatical gender
+            // we want to default to 0 for an entry like "/M" for a language with adjective pluralization but no grammatical gender
             if (!string.IsNullOrEmpty(values[0]))
             {
                 char gender = char.ToUpper(values[0][0]);
@@ -260,7 +288,7 @@ namespace MoreLocales.Core
                 else
                 {
                     // custom alias support
-                    LocalizedText customAliasEntry = MoreLocales.Instance.GetLocalization("VanillaData.GenderPluralization.PluralizationAliases");
+                    LocalizedText customAliasEntry = MoreLocales.Instance.GetLocalization("VanillaData.InflectionData.PluralizationAliases");
                     string[] aliasesCollection = new string[3];
                     if (!string.IsNullOrEmpty(customAliasEntry.Value)) // we have aliases
                     {
@@ -299,27 +327,36 @@ namespace MoreLocales.Core
                 }
             }
 
-            result |= (GenderPluralization)finalGender;
-            result |= (GenderPluralization)(finalPluralization << 4);
+            result |= (InflectionData)finalGender;
+            result |= (InflectionData)(finalPluralization << 4);
 
             return true;
         }
-        public static void Deconstruct(this GenderPluralization data, out Gender gender, out Pluralization pluralization)
+        public static void Deconstruct(this InflectionData data, out GrammaticalGender gender, out Pluralization pluralization)
         {
-            gender = (Gender)((byte)data & 0xF);
+            gender = (GrammaticalGender)((byte)data & 0xF);
             pluralization = (Pluralization)((byte)data >> 4);
         }
     }
-    public enum GenderPluralization : byte
+    /// <summary>
+    /// Container for grammatical gender and pluralization.
+    /// </summary>
+    public enum InflectionData : byte
     {
         Default = 0,
     }
-    public enum Gender : byte
+    /// <summary>
+    /// Grammatical gender.
+    /// </summary>
+    public enum GrammaticalGender : byte
     {
-        Masculine = 0,
+        Masculine, Common = 0,
         Feminine = 1,
         Neuter = 2,
     }
+    /// <summary>
+    /// Grammatical pluralization.
+    /// </summary>
     public enum Pluralization : byte
     {
         Singular = 0,

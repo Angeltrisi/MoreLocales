@@ -14,7 +14,7 @@ namespace MoreLocales.Core
         Turkish,
         Thai,
         Ukrainian,
-        LatinAmericanSpanish,
+        MexicanSpanish,
         Czech,
         Hungarian,
         PortugalPortuguese,
@@ -40,6 +40,9 @@ namespace MoreLocales.Core
         Japanese,
         Korean,
     }
+    /// <summary>
+    /// Defines a 'pluralization style' for text formatting.
+    /// </summary>
     public enum PluralizationStyle
     {
         /// <summary>

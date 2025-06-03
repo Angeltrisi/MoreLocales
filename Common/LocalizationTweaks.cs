@@ -37,7 +37,7 @@ namespace MoreLocales.Common
             MonoModHooks.Modify(terriblyUnperformantMethod.ResolveReflection(), DontUseLINQForAGiganticDictionary);
         }
         /// <summary>
-        /// System.Linq.Last, now hyperoptimized! (final time goes from around 2 seconds to 10 milliseconds)
+        /// System.Linq.Last, now hyperoptimized! (final time per mod load goes from around 2 seconds to 10 milliseconds)
         /// </summary>
         private static void EmitJsonObjectLastKey(ILCursor c)
         {

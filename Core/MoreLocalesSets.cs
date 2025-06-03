@@ -4,12 +4,15 @@ namespace MoreLocales.Core
 {
     public static class MoreLocalesSets
     {
-        public static readonly GenderPluralization[] CachedGenderPluralization = ItemID.Sets.Factory.CreateCustomSet(GenderPluralization.Default);
+        internal static bool _contentReady = false;
+        public static readonly InflectionData[] CachedInflectionData = ItemID.Sets.Factory.CreateCustomSet(InflectionData.Default);
         internal static void ReloadedLocalizations()
         {
-            for (int i = 0; i < CachedGenderPluralization.Length; i++)
+            if (!_contentReady)
+                return;
+            for (int i = 0; i < CachedInflectionData.Length; i++)
             {
-                CachedGenderPluralization[i] = FeaturesPlus.GetItemGenderPluralization(i);
+                CachedInflectionData[i] = LangFeaturesPlus.GetItemInflection(i);
             }
         }
     }
