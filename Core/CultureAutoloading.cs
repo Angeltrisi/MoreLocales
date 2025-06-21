@@ -21,6 +21,8 @@ namespace MoreLocales.Core
         private static readonly MethodInfo BaseContextCullerMethod = typeof(ModCulture).GetMethod(nameof(ContextChangesAdjective));
         private static readonly MethodInfo BaseAvailabilityMethod = typeof(ModCulture).GetMethod(nameof(IsAvailable));
         private static readonly MethodInfo BaseButtonPanelHijackMethod = typeof(ModCulture).GetMethod(nameof(PreDrawButtonPanel));
+        private Mod _mod;
+        public Mod Mod => _mod;
         /// <summary>
         /// The internal name of this. Used for localization generation.
         /// </summary>
@@ -107,7 +109,7 @@ namespace MoreLocales.Core
 
         }
         /// <inheritdoc cref="ButtonPanelDraw"/>
-        public virtual bool? PreDrawButtonPanel(ref DrawData drawData, ref Vector2 size)
+        public virtual bool? PreDrawButtonPanel(ref DrawData drawData)
         {
             return true;
         }
@@ -121,17 +123,24 @@ namespace MoreLocales.Core
         {
 
         }
-        void ILoadable.Load(Mod mod)
+        /// <summary>
+        /// Registers this <see cref="ModCulture"/> instance.<br/>
+        /// If this instance is already registered, it does nothing.
+        /// </summary>
+        /// <param name="mod">The mod to register it under.</param>
+        public void Register(Mod mod = null)
         {
+            Type t = GetType();
+
             MoreLocalesAPI._autoloadedCulturesRegistry ??= [];
+            if (MoreLocalesAPI._autoloadedCulturesRegistry.ContainsKey(t))
+                return;
 
             int fallbackCulture = 1;
             bool hasSubtitle = true;
             bool hasDescription = false;
 
             SetCultureData(ref fallbackCulture, ref hasSubtitle, ref hasDescription);
-
-            Type t = GetType();
 
             PluralizationStyle pluralization = PluralizationStyle.Simple;
             AdjectiveOrder orderFormatter = new();
@@ -153,15 +162,20 @@ namespace MoreLocales.Core
             int? sheetFrame = null;
 
             SetButtonDrawData(ref sheet, ref sheetFrameCount, ref sheetFrame);
-            LanguageButtonDrawData drawData = new(sheet, sheetFrameCount, sheetFrame, hasCustomButtonPanelDrawMethod ? PreDrawButtonPanel : null );
+            LanguageButtonDrawData drawData = new(sheet, sheetFrameCount, sheetFrame, hasCustomButtonPanelDrawMethod ? PreDrawButtonPanel : null);
 
             int index = mod
                 .RegisterCulture
                 (Name, LanguageCode, fallbackCulture, hasSubtitle, hasDescription, data, hasCustomAvailabilityMethod ? IsAvailable : null, drawData)
                 .Culture
                 .LegacyId;
-            MoreLocalesAPI._autoloadedCulturesRegistry.Add(t, index);
 
+            MoreLocalesAPI._autoloadedCulturesRegistry.Add(t, index);
+        }
+        void ILoadable.Load(Mod mod)
+        {
+            _mod = mod;
+            Register(mod);
             Load();
         }
         void ILoadable.Unload()

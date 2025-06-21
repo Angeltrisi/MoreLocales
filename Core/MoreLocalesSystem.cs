@@ -25,6 +25,8 @@ namespace MoreLocales.Core
         public override void SetStaticDefaults()
         {
             MoreLocalesAPI._canRegister = false;
+            // also, create the arrays for UI
+            BetterLangMenuV2.InitArrays();
         }
         public override void OnLocalizationsLoaded()
         {

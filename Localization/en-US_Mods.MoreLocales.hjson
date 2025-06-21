@@ -126,9 +126,9 @@ Cultures: {
 		Subtitle: "{$Cultures.Common.StandardSubtitle}"
 	}
 
-	LatinAmericanSpanish: {
+	MexicanSpanish: {
 		Title: Español (Spanish)
-		Subtitle: Standard Latin American
+		Subtitle: Mexico
 	}
 
 	Czech: {

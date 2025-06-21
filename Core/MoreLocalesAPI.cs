@@ -26,7 +26,7 @@ namespace MoreLocales.Core
     /// The only fields the instance of <see cref="DrawData"/> already has set are <see cref="DrawData.texture"/>, <see cref="DrawData.position"/> and <see cref="DrawData.color"/> (Set to <see cref="Color.White"/>)<br/>
     /// Nothing that you change in this <see cref="DrawData"/> instance will affect other steps.
     /// </summary>
-    public delegate bool? ButtonPanelDraw(ref DrawData drawData, ref Vector2 size);
+    public delegate bool? ButtonPanelDraw(ref DrawData drawData);
     /// <summary>
     /// A structure used to provide information about a certain <see cref="MoreLocalesCulture"/>'s grammar.<br/>
     /// Used mainly for advanced localization features like adjective form inflection and adjective ordering.<para/>
@@ -138,21 +138,22 @@ namespace MoreLocales.Core
     /// A structure used for control over the drawing of the language button for a certain culture.<para/>
     /// Can control basic stuff (using the basic fields) and also more advanced stuff at the different button draw steps (using the delegate fields).
     /// </summary>
-    public readonly struct LanguageButtonDrawData(Asset<Texture2D> sheet = null, int? sheetFrameCount = null,
+    public struct LanguageButtonDrawData(Asset<Texture2D> sheet = null, int? sheetFrameCount = null,
         int? sheetFrame = null, ButtonPanelDraw hijackPanelDraw = null)
     {
         /// <summary>
         /// The sheet where the language symbol graphic will be taken from. If this field is left null, this will be Flags.png
         /// </summary>
-        public readonly Asset<Texture2D> Sheet = sheet;
+        public Asset<Texture2D> Sheet = sheet;
         /// <summary>
-        /// The amount of vertical frames in <see cref="Sheet"/>. Defaults to 1.
+        /// The amount of vertical frames in <see cref="Sheet"/>.<para/>
+        /// Defaults to 28 if <see cref="Sheet"/> is also null, otherwise defaults to 1.
         /// </summary>
-        public readonly int SheetFrameCount = sheetFrameCount.HasValue ? Math.Max(sheetFrameCount.Value, 1) : 1;
+        public readonly int SheetFrameCount = sheetFrameCount.HasValue ? Math.Max(sheetFrameCount.Value, 1) : sheet is null ? BetterLangMenuV2.FlagsCount : 1;
         /// <summary>
-        /// The index of the vertical frame that this language symbol should use. Defaults to 1.
+        /// The index of the vertical frame that this language symbol should use. Defaults to 0.
         /// </summary>
-        public readonly int SheetFrame = sheetFrame.HasValue ? Math.Max(sheetFrameCount.Value, 0) : 0;
+        public readonly int SheetFrame = sheetFrame.HasValue ? Math.Max(sheetFrame.Value, 0) : 0;
         /// <summary>
         /// Allows you to do a range of things before drawing the main button panel. Leave null to not do anything.
         /// </summary>
@@ -164,7 +165,7 @@ namespace MoreLocales.Core
     /// Cultures registered through <see cref="MoreLocales"/> will create localization keys inside the <see cref="MoreLocalesCulture.Mod"/>'s localization file.<br/>
     /// These keys are needed for correct display inside <see cref="MoreLocales"/>'s UI.
     /// </summary>
-    public readonly struct MoreLocalesCulture(GameCulture culture, string name, int fallback = 1,
+    public struct MoreLocalesCulture(GameCulture culture, string name, int fallback = 1,
         bool subtitle = false, bool description = false, GrammarData grammarData = new(),
         Func<bool> available = null, LanguageButtonDrawData buttonDrawData = new(), Mod mod = null)
     {
@@ -196,7 +197,7 @@ namespace MoreLocales.Core
         /// Whether or not this culture should be visible on the language menu. Defaults to null (always available).
         /// </summary>
         public readonly Func<bool> Available = available;
-        public readonly LanguageButtonDrawData ButtonDrawData = buttonDrawData;
+        public LanguageButtonDrawData ButtonDrawData = buttonDrawData;
         /// <summary>
         /// The parent mod for this <see cref="MoreLocalesCulture"/>. Null if this represents a vanilla culture.
         /// </summary>
@@ -213,6 +214,8 @@ namespace MoreLocales.Core
         /// Whether or not this <see cref="MoreLocalesCulture"/> was registered as part of the set of languages defined by Terraria in <see cref="CultureName"/>.
         /// </summary>
         public readonly bool Vanilla => Mod is null;
+
+        internal readonly string OwnerFunctionalName => Vanilla ? "MoreLocales" : Mod.Name;
     }
 
     /// <summary>
@@ -279,15 +282,41 @@ namespace MoreLocales.Core
         {
             var basicRomance = GrammarData.OrderContext(AdjectiveOrder.AfterWithSpace, gpChangesWhenNotDefault);
 
-            RegisterCulture(nameof(English), grammarData: GrammarData.Context(gpNeverChanges));
-            RegisterCulture(nameof(German), grammarData: GrammarData.Context(gpChangesWhenNotDefault));
-            RegisterCulture(nameof(Italian), grammarData: basicRomance);
-            RegisterCulture(nameof(French), grammarData: GrammarData.StyleOrderContext(PluralizationStyle.SimpleWithSingularZero, AdjectiveOrder.AfterWithSpace, gpChangesWhenNotDefault));
-            RegisterCulture(nameof(Spanish), grammarData: basicRomance);
-            RegisterCulture(nameof(Russian), grammarData: GrammarData.StyleContext(PluralizationStyle.RussianThreeway, gpChangesWhenNotDefault));
-            RegisterCulture(nameof(Chinese), grammarData: GrammarData.StyleOrderContext(PluralizationStyle.None, AdjectiveOrder.Before, gpNeverChanges));
-            RegisterCulture(nameof(Portuguese), grammarData: basicRomance);
-            RegisterCulture(nameof(Polish), grammarData: GrammarData.StyleContext(PluralizationStyle.PolishThreeway, gpChangesWhenNotDefault));
+            RegisterCulture(nameof(English),
+                grammarData: GrammarData.Context(gpNeverChanges),
+                buttonDrawData: new(sheetFrame: (int)English));
+
+            RegisterCulture(nameof(German),
+                grammarData: GrammarData.Context(gpChangesWhenNotDefault),
+                buttonDrawData: new(sheetFrame: (int)German));
+
+            RegisterCulture(nameof(Italian),
+                grammarData: basicRomance,
+                buttonDrawData: new(sheetFrame: (int)Italian));
+
+            RegisterCulture(nameof(French),
+                grammarData: GrammarData.StyleOrderContext(PluralizationStyle.SimpleWithSingularZero, AdjectiveOrder.AfterWithSpace, gpChangesWhenNotDefault),
+                buttonDrawData: new(sheetFrame: (int)French));
+
+            RegisterCulture(nameof(Spanish),
+                grammarData: basicRomance,
+                buttonDrawData: new(sheetFrame: (int)Spanish));
+
+            RegisterCulture(nameof(Russian),
+                grammarData: GrammarData.StyleContext(PluralizationStyle.RussianThreeway, gpChangesWhenNotDefault),
+                buttonDrawData: new(sheetFrame: (int)Russian));
+
+            RegisterCulture(nameof(Chinese),
+                grammarData: GrammarData.StyleOrderContext(PluralizationStyle.None, AdjectiveOrder.Before, gpNeverChanges),
+                buttonDrawData: new(sheetFrame: (int)Chinese));
+
+            RegisterCulture(nameof(Portuguese),
+                grammarData: basicRomance,
+                buttonDrawData: new(sheetFrame: (int)Portuguese));
+
+            RegisterCulture(nameof(Polish),
+                grammarData: GrammarData.StyleContext(PluralizationStyle.PolishThreeway, gpChangesWhenNotDefault),
+                buttonDrawData: new(sheetFrame: (int)Polish));
         }
         private static void RegisterNativeCustomCultures()
         {
@@ -297,24 +326,94 @@ namespace MoreLocales.Core
 
             // MoreLocales provides you with this extension method: Mod.RegisterCulture, for simplicity (mod parameter automatically gets filled).
 
-            mod.RegisterCulture(nameof(BritishEnglish), "en-GB", grammarData: GrammarData.Context(gpNeverChanges));
-            mod.RegisterCulture(nameof(Japanese), "ja-JP", grammarData: GrammarData.StyleOrder(PluralizationStyle.None, AdjectiveOrder.Before));
-            mod.RegisterCulture(nameof(Korean), "ko-KR", grammarData: new(PluralizationStyle.None));
-            mod.RegisterCulture(nameof(TraditionalChinese), "zh-Hant", (int)Chinese, grammarData: GrammarData.StyleOrder(PluralizationStyle.None, AdjectiveOrder.Before));
-            mod.RegisterCulture(nameof(Turkish), "tr-TR", grammarData: new(PluralizationStyle.Custom, CultureHelper.turkishPlural));
-            mod.RegisterCulture(nameof(Thai), "th-TH", grammarData: GrammarData.StyleOrder(PluralizationStyle.None, AdjectiveOrder.After));
-            mod.RegisterCulture(nameof(Ukrainian), "uk-UA", (int)Russian, grammarData: new(PluralizationStyle.RussianThreeway));
-            mod.RegisterCulture(nameof(MexicanSpanish), "es-MX", (int)Spanish, grammarData: basicRomance);
-            mod.RegisterCulture(nameof(Czech), "cs-CZ", grammarData: new(PluralizationStyle.Custom, CultureHelper.czechPlural));
-            mod.RegisterCulture(nameof(Hungarian), "hu-HU");
-            mod.RegisterCulture(nameof(PortugalPortuguese), "pt-PT", (int)Portuguese, grammarData: basicRomance);
-            mod.RegisterCulture(nameof(Swedish), "sv-SE");
-            mod.RegisterCulture(nameof(Dutch), "nl-NL");
-            mod.RegisterCulture(nameof(Danish), "da-DK");
-            mod.RegisterCulture(nameof(Vietnamese), "vi-VN", hasSubtitle: false, grammarData: GrammarData.StyleOrder(PluralizationStyle.None, AdjectiveOrder.AfterWithSpace));
-            mod.RegisterCulture(nameof(Finnish), "fi-FI");
-            mod.RegisterCulture(nameof(Romanian), "ro-RO", grammarData: new(PluralizationStyle.Custom, customPluralizationRule: CultureHelper.romanianPlural,AdjectiveOrder.AfterWithSpace));
-            mod.RegisterCulture(nameof(Indonesian), "id-ID", grammarData: GrammarData.StyleOrder(PluralizationStyle.None, AdjectiveOrder.AfterWithSpace));
+            mod.RegisterCulture(nameof(BritishEnglish),
+                "en-GB",
+                grammarData: GrammarData.Context(gpNeverChanges),
+                buttonDrawData: new(sheetFrame: (int)BritishEnglish));
+
+            mod.RegisterCulture(nameof(Japanese),
+                "ja-JP",
+                grammarData: GrammarData.StyleOrder(PluralizationStyle.None, AdjectiveOrder.Before),
+                buttonDrawData: new(sheetFrame: (int)Japanese));
+
+            mod.RegisterCulture(nameof(Korean),
+                "ko-KR",
+                grammarData: new(PluralizationStyle.None),
+                buttonDrawData: new(sheetFrame: (int)Korean));
+
+            mod.RegisterCulture(nameof(TraditionalChinese),
+                "zh-Hant",
+                (int)Chinese,
+                grammarData: GrammarData.StyleOrder(PluralizationStyle.None, AdjectiveOrder.Before),
+                buttonDrawData: new(sheetFrame: (int)TraditionalChinese));
+
+            mod.RegisterCulture(nameof(Turkish),
+                "tr-TR",
+                grammarData: new(PluralizationStyle.Custom, CultureHelper.turkishPlural),
+                buttonDrawData: new(sheetFrame: (int)Turkish));
+
+            mod.RegisterCulture(nameof(Thai),
+                "th-TH",
+                grammarData: GrammarData.StyleOrder(PluralizationStyle.None, AdjectiveOrder.After),
+                buttonDrawData: new(sheetFrame: (int)Thai));
+
+            mod.RegisterCulture(nameof(Ukrainian),
+                "uk-UA",
+                (int)Russian,
+                grammarData: new(PluralizationStyle.RussianThreeway),
+                buttonDrawData: new(sheetFrame: (int)Ukrainian));
+
+            mod.RegisterCulture(nameof(MexicanSpanish),
+                "es-MX",
+                (int)Spanish,
+                grammarData: basicRomance,
+                buttonDrawData: new(sheetFrame: (int)MexicanSpanish));
+
+            mod.RegisterCulture(nameof(Czech),
+                "cs-CZ",
+                grammarData: new(PluralizationStyle.Custom, CultureHelper.czechPlural),
+                buttonDrawData: new(sheetFrame: (int)Czech));
+
+            mod.RegisterCulture(nameof(Hungarian),
+                "hu-HU",
+                buttonDrawData: new(sheetFrame: (int)Hungarian));
+
+            mod.RegisterCulture(nameof(PortugalPortuguese),
+                "pt-PT",
+                (int)Portuguese,
+                grammarData: basicRomance,
+                buttonDrawData: new(sheetFrame: (int)PortugalPortuguese));
+
+            mod.RegisterCulture(nameof(Swedish),
+                "sv-SE",
+                buttonDrawData: new(sheetFrame: (int)Swedish));
+
+            mod.RegisterCulture(nameof(Dutch),
+                "nl-NL",
+                buttonDrawData: new(sheetFrame: (int)Dutch));
+
+            mod.RegisterCulture(nameof(Danish),
+                "da-DK",
+                buttonDrawData: new(sheetFrame: (int)Danish));
+
+            mod.RegisterCulture(nameof(Vietnamese),
+                "vi-VN",
+                hasSubtitle: false,
+                grammarData: GrammarData.StyleOrder(PluralizationStyle.None, AdjectiveOrder.AfterWithSpace),
+                buttonDrawData: new(sheetFrame: (int)Vietnamese));
+
+            mod.RegisterCulture(nameof(Finnish),
+                "fi-FI",
+                buttonDrawData: new(sheetFrame: (int)Finnish));
+
+            mod.RegisterCulture(nameof(Romanian),
+                "ro-RO",
+                grammarData: new(PluralizationStyle.Custom, customPluralizationRule: CultureHelper.romanianPlural,AdjectiveOrder.AfterWithSpace),
+                buttonDrawData: new(sheetFrame: (int)Romanian));
+
+            mod.RegisterCulture(nameof(Indonesian),
+                "id-ID", grammarData: GrammarData.StyleOrder(PluralizationStyle.None, AdjectiveOrder.AfterWithSpace),
+                buttonDrawData: new(sheetFrame: (int)Indonesian));
         }
         internal static void DoSafeLoad()
         {

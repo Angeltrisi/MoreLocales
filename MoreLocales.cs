@@ -56,6 +56,8 @@ namespace MoreLocales
         }
         public override void PostSetupContent()
         {
+            BetterLangMenuV2.InitAssetsSafe();
+
             MoreLocalesSets._contentReady = true;
             MoreLocalesSets.ReloadedLocalizations();
 

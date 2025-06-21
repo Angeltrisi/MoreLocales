@@ -98,7 +98,9 @@ namespace MoreLocales.Utilities
         /// {Noun} {Adjective}
         /// </summary>
         public static AdjectiveOrder AfterWithSpace => _afterWithSpace;
-
+        /// <summary>
+        /// Formats the adjective and noun together
+        /// </summary>
         public string Apply(string noun, string adjective)
         {
             if (Type == AdjectiveOrderType.Before)

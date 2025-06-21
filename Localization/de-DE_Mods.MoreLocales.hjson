@@ -17,13 +17,13 @@ Configs: {
 		}
 
 		LocalizedPrefixPlacement: {
-			// Label: Localized Prefix Placement
-			// Tooltip: ""
+			// Label: Smart Prefix Position
+			// Tooltip: Changes the position of an item's prefix in certain languages
 		}
 
 		LocalizedPrefixGenderPluralization: {
-			// Label: Localized Prefix Gender Pluralization
-			// Tooltip: ""
+			// Label: Smart Prefix Inflection
+			// Tooltip: Changes the inflection of an item's prefix depending on the item in certain languages
 		}
 	}
 
@@ -126,7 +126,7 @@ Cultures: {
 		Subtitle: "{$Cultures.Common.StandardSubtitle}"
 	}
 
-	LatinAmericanSpanish: {
+	MexicanSpanish: {
 		Title: Español (Spanisch)
 		Subtitle: Standard Latin American
 	}

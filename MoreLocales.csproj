@@ -16,6 +16,7 @@
 	<ItemGroup>
 		<Publicize Include="ReLogic" />
 		<Publicize Include="tModLoader" />
+		<Publicize Include="FNA" />
 		<DoNotPublicize Include="tModLoader:Terraria.UI.UIElement" />
 		<DoNotPublicize Include="tModLoader:Terraria.Main.OnResolutionChanged" />
 	</ItemGroup>
