@@ -28,7 +28,6 @@ namespace MoreLocales.Common
     {
         private readonly struct ButtonText
         {
-            public readonly bool INIT;
             public readonly LocalizedText title;
             public readonly LocalizedText subtitle;
             public readonly LocalizedText description;
@@ -45,8 +44,6 @@ namespace MoreLocales.Common
 
                 if (source.HasDescription)
                     description = Language.GetOrRegister($"{cultureKey}.Description");
-
-                INIT = true;
             }
         }
         private struct ButtonDrawInfo
@@ -94,7 +91,12 @@ namespace MoreLocales.Common
             _panelTexture = ModContent.Request<Texture2D>("MoreLocales/Assets/BetterLangPanel");
             _panelHighlight = ModContent.Request<Texture2D>("MoreLocales/Assets/BetterLangPanel_Highlight");
             _flagAtlas = ModContent.Request<Texture2D>("MoreLocales/Assets/Flags");
-            _buttonPanel = ModContent.Request<Texture2D>("MoreLocales/Assets/LangButton");
+            _buttonPanel = ModContent.Request<Texture2D>("MoreLocales/Assets/LangButton", AssetRequestMode.ImmediateLoad);
+
+            // also finalize button size variables to avoid the one frame of nothingness :)
+            Texture2D buttonDrawTex = _buttonPanel.Value;
+            buttonWidth = buttonDrawTex.Width;
+            buttonHeight = (buttonDrawTex.Height / 2) - 2;
         }
         // runs when the custom cultures array has been finalized. called from MoreLocalesSystem
         internal static void InitArrays()
@@ -113,13 +115,6 @@ namespace MoreLocales.Common
         internal static void DrawTopLeft(SpriteBatch sb, int width, int height)
         {
             Texture2D buttonDrawTex = _buttonPanel.Value;
-
-            buttonPaddingY = 0;
-
-            if (buttonWidth == 1)
-                buttonWidth = buttonDrawTex.Width;
-            if (buttonHeight == 1)
-                buttonHeight = (buttonDrawTex.Height / 2) - 2;
 
             // TODO: reduce amount of calculations by caching stuff
 

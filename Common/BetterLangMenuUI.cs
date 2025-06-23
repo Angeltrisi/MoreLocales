@@ -69,7 +69,7 @@ namespace MoreLocales.Common
                 spriteBatchData.SortMode = SpriteSortMode.Immediate;
                 spriteBatch.Begin(spriteBatchData);
 
-                LangMenuV2.sideFadeShader.Apply(tex, 25f);
+                LangMenuV2.sideFadeShader.Apply(tex, 20f);
                 spriteBatch.Draw(tex, drawCenter, null, Color.White, 0f, innerSize * 0.5f, 1f, SpriteEffects.None, 0f);
 
                 spriteBatch.End();
