@@ -1,13 +1,15 @@
-﻿using System;
+﻿using ReLogic.Content;
+using System;
 using System.Collections.Generic;
 using Terraria;
-using Terraria.UI;
-using ReLogic.Content;
-using Terraria.Localization;
-using Terraria.UI.Chat;
-using Terraria.GameContent;
 using Terraria.Audio;
+using Terraria.DataStructures;
+using Terraria.GameContent;
+using Terraria.Graphics.Shaders;
 using Terraria.ID;
+using Terraria.Localization;
+using Terraria.UI;
+using Terraria.UI.Chat;
 using Terraria.UI.Gamepad;
 
 namespace MoreLocales.Common
@@ -62,7 +64,17 @@ namespace MoreLocales.Common
                 centeredBig.Inflate(BetterLangMenuV2.PaddingXTotal, BetterLangMenuV2.PaddingYTotal);
 
                 UIHelper.DrawAdjustableBox(spriteBatch, BetterLangMenuV2._panelTexture.Value, centeredBig, Color.Gray);
+
+                spriteBatch.End(out var spriteBatchData);
+                spriteBatchData.SortMode = SpriteSortMode.Immediate;
+                spriteBatch.Begin(spriteBatchData);
+
+                LangMenuV2.sideFadeShader.Apply(tex, 25f);
                 spriteBatch.Draw(tex, drawCenter, null, Color.White, 0f, innerSize * 0.5f, 1f, SpriteEffects.None, 0f);
+
+                spriteBatch.End();
+                spriteBatchData.SortMode = SpriteSortMode.Deferred;
+                spriteBatch.Begin(spriteBatchData);
 
                 BetterLangMenuV2.HandleInteractions(in centered);
             }

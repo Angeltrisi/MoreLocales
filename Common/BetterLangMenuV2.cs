@@ -235,10 +235,13 @@ namespace MoreLocales.Common
 
                 if (willDraw)
                 {
+                    MiscHelper.SpriteBatchData spriteBatchData = default;
+
                     if (buttonDrawData.shader > 0)
                     {
-                        sb.End(out var spriteBatchData);
-                        sb.Begin(spriteBatchData with { SortMode = SpriteSortMode.Immediate });
+                        sb.End(out spriteBatchData);
+                        spriteBatchData.SortMode = SpriteSortMode.Immediate;
+                        sb.Begin(spriteBatchData);
 
                         var shader = GameShaders.Armor._shaderData[buttonDrawData.shader - 1];
                         shader.Apply(null, buttonDrawData);
@@ -248,8 +251,9 @@ namespace MoreLocales.Common
 
                     if (buttonDrawData.shader > 0)
                     {
-                        sb.End(out var spriteBatchData);
-                        sb.Begin(spriteBatchData with { SortMode = SpriteSortMode.Deferred });
+                        sb.End();
+                        spriteBatchData.SortMode = SpriteSortMode.Deferred;
+                        sb.Begin(spriteBatchData);
                     }
 
                     if (interact && info.hovered)
@@ -259,8 +263,6 @@ namespace MoreLocales.Common
                         Color color = Main.OurFavoriteColor;
 
                         info.drawSelectionGraphic = buttonDrawData with { sourceRect = frame2, color = color };
-
-                        //sb.Draw(buttonDrawTex, buttonDrawData.position, frame2, color, buttonDrawData.rotation, buttonDrawData.origin, buttonDrawData.scale, buttonDrawData.effect, 0f);
                     }
                     else
                     {
@@ -448,10 +450,23 @@ namespace MoreLocales.Common
             return false;
         }
     }
-    public class LangMenuV2 : ARenderTargetContentByRequest, ILoadable
+    internal readonly struct ShaderThing(Asset<Effect> asset)
     {
+        public readonly Asset<Effect> shader = asset;
+        public void Apply(Texture2D tex, float uIntensity)
+        {
+            Effect s = this.shader.Value;
+            s.Parameters[0].SetValue(tex.Size());
+            s.Parameters[1].SetValue(uIntensity);
+            s.CurrentTechnique.Passes[0].Apply();
+        }
+    }
+    internal class LangMenuV2 : ARenderTargetContentByRequest, ILoadable
+    {
+        public static ShaderThing sideFadeShader;
         public void Load(Mod mod)
         {
+            sideFadeShader = new(mod.Assets.Request<Effect>("Assets/SidesFade"));
             Main.ContentThatNeedsRenderTargets.Add(this);
         }
         public override void HandleUseReqest(GraphicsDevice device, SpriteBatch spriteBatch)
