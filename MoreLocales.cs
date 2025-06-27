@@ -25,11 +25,7 @@ global using ReLogic.Graphics;
 global using Terraria.ModLoader;
 using MoreLocales.Common;
 using System;
-using System.Diagnostics;
-using System.IO;
-using System.Reflection;
 using System.Windows.Forms;
-using Terraria.GameContent.UI.Elements;
 using Terraria.Localization;
 
 namespace MoreLocales

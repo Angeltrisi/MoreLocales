@@ -1,20 +1,12 @@
-﻿using CsvHelper;
-using ReLogic.Content;
+﻿using ReLogic.Content;
 using ReLogic.Content.Readers;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Runtime.CompilerServices;
-using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
 using Terraria.ModLoader.Assets;
-using Terraria.ModLoader.Core;
-using Terraria.WorldBuilding;
 
 namespace MoreLocales.Utilities
 {
-    public static class AssetHelper
+    internal static class AssetHelper
     {
         private static Mod mod;
         private static AssetRepository repo;

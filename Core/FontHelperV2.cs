@@ -5,7 +5,6 @@ using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using System.Reflection;
-using System.Runtime.CompilerServices;
 using Terraria.GameContent;
 using static ReLogic.Graphics.DynamicSpriteFont;
 
@@ -55,7 +54,7 @@ namespace MoreLocales.Core
             return Children.GetEnumerator();
         }
     }
-    public class FontHelperV2
+    internal class FontHelperV2
     {
         /// <summary>
         /// I'm DEAD my guy

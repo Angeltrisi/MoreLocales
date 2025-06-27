@@ -3,7 +3,6 @@ using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Reflection;
-using System.Runtime.CompilerServices;
 using System.Threading;
 using Terraria;
 using Terraria.Localization;
@@ -13,7 +12,6 @@ using static MoreLocales.Core.CultureNamePlus;
 using static Terraria.Localization.GameCulture.CultureName;
 using ReLogic.Content;
 using Terraria.DataStructures;
-using Terraria.Audio;
 
 namespace MoreLocales.Core
 {

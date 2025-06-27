@@ -2,7 +2,6 @@
 using Terraria.Localization;
 using static MoreLocales.Core.CultureNamePlus;
 using Terraria;
-using System.Runtime.CompilerServices;
 
 namespace MoreLocales.Utilities
 {

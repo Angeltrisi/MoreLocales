@@ -91,9 +91,19 @@ namespace MoreLocales.Core
                 var c = new ILCursor(il);
 
                 // init our local
-                c.EmitLdsfld(typeof(ClientSideConfig).GetField("Instance"));
-                c.EmitLdfld(typeof(ClientSideConfig).GetField("LocalizedPrefixPlacement"));
+                c.EmitLdsfld(typeof(ClientSideConfig).GetField(nameof(ClientSideConfig.Instance)));
+                c.EmitLdfld(typeof(ClientSideConfig).GetField(nameof(ClientSideConfig.LocalizedPrefixPlacement)));
                 c.EmitStloc(localConfigOption.Index);
+
+                // let's load the correct (inflected) prefix value first
+                if (!c.TryGotoNext(MoveType.After, i => i.MatchLdelemRef()))
+                {
+                    m.Logger.Warn("LocalizedPrefixPosition: Couldn't find original prefix load for replacement");
+                    return;
+                }
+                c.EmitPop(); // pop the original localizedtext value before the string value is obtained from it
+                c.EmitLdarg0(); // get the item
+                c.EmitCall(typeof(LangFeaturesPlus).GetMethod(nameof(GetPrefixNameWithItemContext))); // get the new value
 
                 // this is the label for the final case (last line of the method)
                 ILLabel finalTextLabel = null;
@@ -169,10 +179,11 @@ namespace MoreLocales.Core
         /// <summary>
         /// Retrieves a LocalizedText that contains the gendered and pluralized form of a prefix depending on the item it's applied to (if applicable)
         /// </summary>
-        /// <param name="prefix">The ID of the prefix.</param>
         /// <param name="context">The item.</param>
-        public static LocalizedText GetPrefixNameWithItemContext(int prefix, Item context)
+        public static LocalizedText GetPrefixNameWithItemContext(Item context)
         {
+            int prefix = context.prefix;
+
             if (!ClientSideConfig.Instance.LocalizedPrefixGenderPluralization)
                 return Lang.prefix[prefix];
 

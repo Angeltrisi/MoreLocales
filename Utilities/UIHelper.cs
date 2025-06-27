@@ -3,7 +3,7 @@ using Terraria;
 
 namespace MoreLocales.Utilities
 {
-    public static class UIHelper
+    internal static class UIHelper
     {
         #region stuff
         /// <summary>
