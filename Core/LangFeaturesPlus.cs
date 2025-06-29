@@ -5,6 +5,7 @@ using System.Linq;
 using Terraria;
 using Terraria.ID;
 using Terraria.Localization;
+using System.Reflection;
 
 namespace MoreLocales.Core
 {
@@ -15,11 +16,26 @@ namespace MoreLocales.Core
     {
         private const string StringToReplace = "{Prefix}";
         private static readonly string[] GenderNames = Enum.GetNames<GrammaticalGender>();
+        private delegate void VoidsOrig();
         internal static void DoLoad()
         {
             // prefix stuff
             MonoModHooks.Modify(typeof(Item).GetMethod("get_Name"), RemovePrefixLiteralFromName);
             IL_Item.AffixName += LocalizedPrefixPosition;
+            // comment stuff
+            MonoModHooks.Add(typeof(SystemLoader).GetMethod("OnLocalizationsLoaded", BindingFlags.Static | BindingFlags.NonPublic), ResetLangUtilsBool);
+            MonoModHooks.Add(typeof(LocalizationLoader).GetMethod("Update", BindingFlags.Static | BindingFlags.NonPublic), UpdateLocalizationHook);
+        }
+        private static void ResetLangUtilsBool(VoidsOrig orig)
+        {
+            orig();
+            LangUtils.FilesWillBeReloadedDueToCommentsChange = false;
+        }
+        private static void UpdateLocalizationHook(VoidsOrig orig)
+        {
+            if (!Main.dedServ)
+                LangUtils.ConsumeCommentsQueue();
+            orig();
         }
         internal static string RemovePrefixLiteral(string input)
         {
@@ -54,8 +70,6 @@ namespace MoreLocales.Core
 
             if (char.IsWhiteSpace(before[^1]) && char.IsWhiteSpace(after[0]))
                 after = after[1..];
-
-            Debug.WriteLine(before + after);
 
             return before + after;
         }
@@ -253,7 +267,9 @@ namespace MoreLocales.Core
             Mod target = vanilla ? MoreLocales.Instance : modItem.Mod;
             string preprefix = vanilla ? "VanillaData." : string.Empty;
 
-            data = target.GetLocalization($"{preprefix}InflectionData.Items.{itemName}", () => "/");
+            string key = $"{preprefix}InflectionData.Items.{itemName}";
+            data = target.GetLocalization(key, () => "/");
+            target.AddComment(key,  $"DisplayName: {Lang.GetItemName(type)}", HjsonCommentType.Hash);
 
             if (TryParse(data.Value, out InflectionData inflectionData))
                 return inflectionData;

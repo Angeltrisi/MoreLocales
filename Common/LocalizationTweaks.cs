@@ -7,6 +7,7 @@ using System.Collections.Generic;
 using System.IO;
 using System.Reflection;
 using Terraria.Localization;
+using static Terraria.ModLoader.LocalizationLoader;
 
 namespace MoreLocales.Common
 {
@@ -14,6 +15,7 @@ namespace MoreLocales.Common
     {
         private static ILHook nestedMethodHook;
         private static MethodReference terriblyUnperformantMethod;
+        //private static MethodReference testingMethodDifference;
         internal static void Apply()
         {
             Type[] mParams =
@@ -30,6 +32,16 @@ namespace MoreLocales.Common
             nestedMethodHook = new ILHook(nested, LookForActualMethod, true);
 
             MonoModHooks.Modify(terriblyUnperformantMethod.ResolveReflection(), DontUseLINQForAGiganticDictionary);
+            /*
+            MonoModHooks.Add(testingMethodDifference.ResolveReflection(),
+            static
+            (Func<LocalizationFile, LocalizationEntry, string> orig, LocalizationFile baseLocalizationFileEntry, LocalizationEntry entry) => 
+            {
+                Console.WriteLine(entry.key);
+                Console.WriteLine(baseLocalizationFileEntry.prefix);
+                return orig(baseLocalizationFileEntry, entry);
+            });
+            */
         }
         /// <summary>
         /// System.Linq.Last, now hyperoptimized! (final time per mod load goes from around 2 seconds to 10 milliseconds)
@@ -78,6 +90,8 @@ namespace MoreLocales.Common
         private static void LookForActualMethod(ILContext il)
         {
             var c = new ILCursor(il);
+
+            //c.GotoNext(i => i.MatchLdloc3(), i => i.MatchCall(out testingMethodDifference));
 
             c.GotoNext
             (

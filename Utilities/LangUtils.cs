@@ -1,4 +1,5 @@
 ﻿using Hjson;
+using Microsoft.Xna.Framework.Input;
 using System;
 using System.Collections.Generic;
 using System.IO;
@@ -6,6 +7,8 @@ using System.Linq;
 using System.Runtime.CompilerServices;
 using System.Runtime.InteropServices;
 using System.Text;
+using System.Xml.Linq;
+using Terraria;
 using Terraria.Localization;
 using Terraria.ModLoader.Core;
 using static Terraria.ModLoader.LocalizationLoader;
@@ -30,6 +33,97 @@ namespace MoreLocales.Utilities
     /// </summary>
     public static class LangUtils
     {
+        public static bool FilesWillBeReloadedDueToCommentsChange { get; internal set; }
+        public record struct QueuedComment(Mod Mod, string Key, string Comment, HjsonCommentType CommentType, bool OverwriteComment);
+        private static readonly HashSet<Mod> _probablyValidMods = [];
+        private static readonly Queue<QueuedComment> _commentsQueue = [];
+        internal static void ConsumeCommentsQueue()
+        {
+            // if anyone's reading this pls tell me if i'm stupid
+            // can more than one mod even add comments at the same time?? if not then i have no idea why i'm doing this
+
+            if (_commentsQueue.Count > 0)
+                FilesWillBeReloadedDueToCommentsChange = true;
+            else
+                return;
+
+            Dictionary<Mod, List<(string key, string comment, HjsonCommentType commentType, bool overwriteComment)>> batches = [];
+
+            while (_commentsQueue.TryDequeue(out var comment))
+            {
+                if (!batches.ContainsKey(comment.Mod))
+                    batches[comment.Mod] = [];
+                batches[comment.Mod].Add((comment.Key, comment.Comment, comment.CommentType, comment.OverwriteComment));
+            }
+
+            foreach (var kvp in batches)
+            {
+                var mod = kvp.Key;
+
+                // get all the files in the mod
+                var filesArray = mod.GetLocalizationFiles(true);
+                // allocate a list of the same length as the array, convert the file entries to localization files and add them to the list
+                List<LocalizationFile> filesList = new(filesArray.Length);
+                for (int i = 0; i < filesArray.Length; i++)
+                {
+                    filesList.Add(filesArray[i].ToLocalizationFile(mod));
+                }
+
+                Dictionary<LocalizationFile, List<(string key, string comment, HjsonCommentType commentType, bool overwriteComment)>> fileActions = [];
+
+                foreach (var fileAction in CollectionsMarshal.AsSpan(kvp.Value))
+                {
+                    // find the .hjson file that contains the given key
+                    var file = FindHJSONFileForKey(filesList, fileAction.key);
+
+                    if (!fileActions.ContainsKey(file))
+                        fileActions[file] = [];
+                    fileActions[file].Add(fileAction);
+                }
+
+                foreach (var kvp2 in fileActions)
+                {
+                    var file = kvp2.Key;
+
+                    foreach (var action in kvp2.Value)
+                    {
+                        // find the entry. if it's not found (somehow???), exit
+                        if (!file.TryGetEntry(action.key, out var entry))
+                            continue;
+
+                        // get a ref to the entry for reassignment
+                        ref LocalizationEntry entryRef = ref entry.Value;
+
+                        // find out comment style
+                        string finalComment;
+                        if (action.overwriteComment)
+                        {
+                            finalComment = (action.commentType == HjsonCommentType.Slashes ? "// " : "# ") + action.comment;
+                        }
+                        else
+                        {
+                            finalComment = entryRef.comment + action.comment;
+                        }
+                        // do not freeze the comment here because then it won't change when it needs to,
+                        // instead freeze it during LocalizationLoader.UpdateLocalizationFilesForMod
+                        // (which is called automatically since tMod detects file writing with the file watchers)
+
+                        // reassign
+                        entryRef =
+                            new(entryRef.key,
+                                entryRef.value,
+                                finalComment,
+                                entryRef.type);
+                    }
+                }
+
+                foreach (var finalAction in fileActions.Keys)
+                {
+                    // write to disk
+                    finalAction.WriteToDisk(filesList, mod.SourceFolder, GameCulture.DefaultCulture);
+                }
+            }
+        }
         /// <summary>
         /// Attempts to add a comment before a localization key in a localization file in this fashion:<para/>
         /// <code>
@@ -39,9 +133,12 @@ namespace MoreLocales.Utilities
         /// <para/>
         /// If you want to include localized values in your comment, you can use the substitution format like usual: <c>{$KeyHere}</c><br/>
         /// MoreLocales extends the functionality of the format so that if found in comments, it is replaced with the actual localized value.<br/>
-        /// This is how MoreLocales' inflection data localization file works to add the helpful <c># DisplayName</c> comments.
+        /// This is how MoreLocales' inflection data localization file works to add the helpful <c># DisplayName</c> comments.<para/>
+        /// (If you're wondering how they're not replaced after the fact, comments that use the substitution format are marked with a special character<br/>
+        /// at the start, which prevents them from being automatically replaced by the game.)
         /// </summary>
         /// <param name="key">The key of the localization entry to add a comment to.</param>
+        /// <param name="suffix">The key of the localization entry to add a comment to, not including the 'Mods.ModName' prefix.</param>
         /// <param name="comment">The comment to add.</param>
         /// <param name="commentType">The style of the comment (which Hjson comment delimiter to use).</param>
         /// <param name="overwriteComment">Whether the comment should be overwritten or added to. Defaults to true (overwrite).</param>
@@ -69,43 +166,31 @@ namespace MoreLocales.Utilities
             if (!ModLoader.TryGetMod(parts[1], out var mod) || mod.File == null || !mod.File.IsOpen)
                 return false;
 
-            // check if the source folder exists on disk. if it doesn't, exit
-            if (!Directory.Exists(mod.SourceFolder))
-                return false;
-
-            // check if the locally built version of the tmod file exists. if it doesn't, exit
-            string localBuiltTModFile = Path.Combine(ModLoader.ModPath, mod.Name + ".tmod");
-            if (!File.Exists(localBuiltTModFile))
-                return false;
-
-            // get all the files in the mod
-            var filesArray = mod.GetLocalizationFiles(true);
-            // allocate a list of the same length as the array, convert the file entries to localization files and add them to the list
-            List<LocalizationFile> filesList = new(filesArray.Length);
-            for (int i = 0; i < filesArray.Length; i++)
+            // skip looking for files if we already know those files exist
+            if (!_probablyValidMods.Contains(mod))
             {
-                filesList.Add(filesArray[i].ToLocalizationFile(mod));
+                // check if the source folder exists on disk. if it doesn't, exit
+                if (!Directory.Exists(mod.SourceFolder))
+                    return false;
+
+                // check if the locally built version of the tmod file exists. if it doesn't, exit
+                string localBuiltTModFile = Path.Combine(ModLoader.ModPath, mod.Name + ".tmod");
+                if (!File.Exists(localBuiltTModFile))
+                    return false;
             }
+            // mark the files as existing
+            _probablyValidMods.Add(mod);
 
-            // find the .hjson file that contains the given key
-            var file = FindHJSONFileForKey(filesList, key);
+            // add the comment request to a queue
+            // this is needed because operating systems seemingly do not enjoy the same file being accessed like a hundred times in the same frame
+            _commentsQueue.Enqueue(new(mod, key, comment, commentType, overwriteComment));
 
-            // find the entry. if it's not found (somehow???), exit
-            if (!file.TryGetEntry(key, out var entry))
-                return false;
-
-            // get a ref to the entry for reassignment
-            ref LocalizationEntry entryRef = ref entry.Value;
-
-            // reassign
-            entryRef =
-                new(entryRef.key,
-                    entryRef.value,
-                    overwriteComment ? $"{(commentType == HjsonCommentType.Slashes ? "//" : "#")} {comment}" : entryRef.comment + comment,
-                    entryRef.type);
-
-            // write to disk
-            return file.WriteToDisk(filesList, mod.SourceFolder, GameCulture.DefaultCulture);
+            return true;
+        }
+        /// <inheritdoc cref="AddComment(string, string, HjsonCommentType, bool)"/>
+        public static bool AddComment(this Mod mod, string suffix, string comment, HjsonCommentType commentType = HjsonCommentType.Slashes, bool overwriteComment = true)
+        {
+            return AddComment(mod.GetLocalizationKey(suffix), comment, commentType, overwriteComment);
         }
         /// <summary>
         /// Returns an array of the files inside the given mod which are considered localization files by tModLoader (those with the .hjson extension).<para/>
@@ -215,6 +300,9 @@ namespace MoreLocales.Utilities
         /// <inheritdoc cref="ToLocalizationFile(TmodFile.FileEntry, List{LocalizationEntry}, string)"/>
         public static LocalizationFile ToLocalizationFile(this TmodFile.FileEntry entry, WscJsonObject jsonObjectEng, string prefix = null)
         {
+            if (prefix is null)
+                if (!LocalizationLoader.TryGetCultureAndPrefixFromPath(entry.Name, out _, out prefix))
+                    throw new Exception($"The provided file, {entry.Name}, is not a localization file.");
             return ToLocalizationFile(entry, ParseLocalizationEntries(jsonObjectEng, prefix), prefix);
         }
         /// <inheritdoc cref="ToLocalizationFile(TmodFile.FileEntry, List{LocalizationEntry}, string)"/>
@@ -289,14 +377,14 @@ namespace MoreLocales.Utilities
         /// <param name="key">The key to search for. May or may not include the file prefix (doesn't matter).</param>
         /// <param name="entry">A reference to the found entry. It is returned as <see cref="Ref{T}"/> so you can change it.</param>
         /// <returns>Whether or not the entry was found.</returns>
-        public static bool TryGetEntry(this LocalizationFile file, string key, out Ref<LocalizationEntry> entry)
+        public static bool TryGetEntry(this LocalizationFile file, string key, out Core.Ref<LocalizationEntry> entry)
         {
             // again, StartsWith and EndsWith are slightly faster if we use spans (though StringComparison.Ordinal comes close and is kinda the same thing)
             var prefixSpan = file.prefix.AsSpan();
 
             // if the user gave a key that already contains the prefix, sanitize it
-            if (key.AsSpan().StartsWith(prefixSpan))
-                key = key[(prefixSpan.Length + 1)..]; // add 1 to take into account the '.' after the prefix
+            if (!key.AsSpan().StartsWith(prefixSpan))
+                key = $"{file.prefix}.key"; // add 1 to take into account the '.' after the prefix
 
             // loop through a span of the entries and try to find an exact match
             foreach (ref LocalizationEntry e in CollectionsMarshal.AsSpan(file.Entries))

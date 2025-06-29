@@ -55,819 +55,1632 @@ InflectionData: {
 
 	Items: {
 		# DisplayName: Iron Pickaxe
-		IronPickaxe: /
-		IronBroadsword: /
-		IronShortsword: /
-		IronHammer: /
-		IronAxe: /
-		CopperWatch: /
-		SilverWatch: /
-		GoldWatch: /
-		DepthMeter: /
-		WoodenSword: /
-		WoodenBow: /
-		DemonBow: /
-		WarAxeoftheNight: /
-		LightsBane: /
-		BandofRegeneration: /
-		CloudinaBottle: /
-		HermesBoots: /
-		EnchantedBoomerang: /
-		Vilethorn: /
-		Starfury: /
-		FlintlockPistol: /
-		Musket: /
-		Minishark: /
-		IronBow: /
-		NightmarePickaxe: /
-		TheBreaker: /
-		BandofStarpower: /
-		FlowerofFire: /
-		MagicMissile: /
-		Flamarang: /
-		MoltenFury: /
-		FieryGreatsword: /
-		MoltenPickaxe: /
-		SpaceGun: /
-		RocketBoots: /
-		Muramasa: /
-		CobaltShield: /
-		AquaScepter: /
-		LuckyHorseshoe: /
-		ShinyRedBalloon: /
-		Harpoon: /
-		BallOHurt: /
-		BlueMoon: /
-		Handgun: /
-		WaterBolt: /
-		BreathingReed: /
-		Flipper: /
-		BladeofGrass: /
-		ThornChakram: /
-		ObsidianSkull: /
-		WoodenHammer: /
-		StarCannon: /
-		BluePhaseblade: /
-		RedPhaseblade: /
-		GreenPhaseblade: /
-		PurplePhaseblade: /
-		WhitePhaseblade: /
-		YellowPhaseblade: /
-		MeteorHamaxe: /
-		FeralClaws: /
-		AnkletoftheWind: /
-		StaffofRegrowth: /
-		Shackle: /
-		MoltenHamaxe: /
-		Flamelash: /
-		PhoenixBlaster: /
-		Sunfury: /
-		NaturesGift: /
-		Sandgun: /
-		DemonScythe: /
-		NightsEdge: /
-		DarkLance: /
-		Trident: /
-		Spear: /
-		Blowpipe: /
-		WoodenBoomerang: /
-		Aglet: /
-		Pwnhammer: /
-		Excalibur: /
-		CobaltChainsaw: /
-		MythrilChainsaw: /
-		CobaltDrill: /
-		MythrilDrill: /
-		AdamantiteChainsaw: /
-		AdamantiteDrill: /
-		DaoofPow: /
-		MythrilHalberd: /
-		Compass: /
-		DivingGear: /
-		GPS: /
-		ObsidianHorseshoe: /
-		ObsidianShield: /
-		CloudinaBalloon: /
-		SpectreBoots: /
-		AdamantiteGlaive: /
-		Toolbelt: /
-		BreakerBlade: /
-		ClockworkAssaultRifle: /
-		CobaltRepeater: /
-		MythrilRepeater: /
-		AdamantiteRepeater: /
-		AdamantiteSword: /
-		CobaltSword: /
-		MythrilSword: /
-		MoonCharm: /
-		Ruler: /
-		SorcererEmblem: /
-		WarriorEmblem: /
-		RangerEmblem: /
-		DemonWings: /
-		AngelWings: /
-		MagicalHarp: /
-		RainbowRod: /
-		IceRod: /
-		NeptunesShell: /
-		Flamethrower: /
-		LaserRifle: /
-		MagicDagger: /
-		CrystalStorm: /
-		CursedFlames: /
-		StarCloak: /
-		Megashark: /
-		Shotgun: /
-		PhilosophersStone: /
-		TitanGlove: /
-		CobaltNaginata: /
-		Gungnir: /
-		CrossNecklace: /
-		ManaFlower: /
-		LightDisc: /
-		HallowedRepeater: /
-		Drax: /
-		EbonwoodSword: /
-		EbonwoodHammer: /
-		EbonwoodBow: /
-		RichMahoganySword: /
-		RichMahoganyHammer: /
-		RichMahoganyBow: /
-		PearlwoodSword: /
-		PearlwoodHammer: /
-		PearlwoodBow: /
-		RedsWings: /
-		IceBoomerang: /
-		Keybrand: /
-		Cutlass: /
-		TrueExcalibur: /
-		TrueNightsEdge: /
-		Frostbrand: /
-		TacticalShotgun: /
-		Marrow: /
-		UnholyTrident: /
-		TinWatch: /
-		TungstenWatch: /
-		PlatinumWatch: /
-		BeamSword: /
-		IceBlade: /
-		IceBow: /
-		FrostStaff: /
-		AmethystStaff: /
-		TopazStaff: /
-		SapphireStaff: /
-		EmeraldStaff: /
-		RubyStaff: /
-		DiamondStaff: /
-		Jetpack: /
-		ButterflyWings: /
-		MushroomSpear: /
-		TerraBlade: /
-		GrenadeLauncher: /
-		RocketLauncher: /
-		ProximityMineLauncher: /
-		FairyWings: /
-		CobaltPickaxe: /
-		MythrilPickaxe: /
-		AdamantitePickaxe: /
-		HarpyWings: /
-		BoneWings: /
-		Hammush: /
-		NettleBurst: /
-		BloodButcherer: /
-		TendonBow: /
-		FleshGrinder: /
-		DeathbringerPickaxe: /
-		BloodLustCluster: /
-		TheUndertaker: /
-		TheMeatball: /
-		TheRottedFork: /
-		FlameWings: /
-		FrozenWings: /
-		GhostWings: /
-		DiscountCard: /
-		LuckyCoin: /
-		SandstorminaBottle: /
-		CharmofMyths: /
-		MoonShell: /
-		StarVeil: /
-		WaterWalkingBoots: /
-		CactusSword: /
-		CactusPickaxe: /
-		AdhesiveBandage: /
-		ArmorPolish: /
-		Bezoar: /
-		Blindfold: /
-		FastClock: /
-		Megaphone: /
-		Nazar: /
-		Vitamins: /
-		TrifoldMap: /
-		PowerGlove: /
-		LightningBoots: /
-		SunStone: /
-		MoonStone: /
-		ArmorBracing: /
-		MedicatedBandage: /
-		ThePlan: /
-		CountercurseMantra: /
-		LavaCharm: /
-		ObsidianWaterWalkingBoots: /
-		LavaWaders: /
-		ShadewoodSword: /
-		ShadewoodHammer: /
-		ShadewoodBow: /
-		FlareGun: /
-		FlyingCarpet: /
-		AvengerEmblem: /
-		MechanicalGlove: /
-		PaladinsShield: /
-		Umbrella: /
-		SteampunkWings: /
-		IceSkates: /
-		ClimbingClaws: /
-		BlackBelt: /
-		Boomstick: /
-		ShoeSpikes: /
-		TigerClimbingGear: /
-		Tabi: /
-		ManaRegenerationBand: /
-		SandstorminaBalloon: /
-		MasterNinjaGear: /
-		Blowgun: /
-		BlizzardinaBottle: /
-		EnchantedSword: /
-		PickaxeAxe: /
-		CobaltWaraxe: /
-		MythrilWaraxe: /
-		AdamantiteWaraxe: /
-		BeeGun: /
-		PossessedHatchet: /
-		BeeKeeper: /
-		GravityGlobe: /
-		HoneyComb: /
-		WaspGun: /
-		PiranhaGun: /
-		PygmyStaff: /
-		PygmyNecklace: /
-		LeafWings: /
-		BlizzardinaBalloon: /
-		BundleofBalloons: /
-		BatWings: /
-		BoneSword: /
-		HerculesBeetle: /
-		LeafBlower: /
-		PalladiumSword: /
-		PalladiumPike: /
-		PalladiumRepeater: /
-		PalladiumPickaxe: /
-		PalladiumDrill: /
-		PalladiumChainsaw: /
-		OrichalcumSword: /
-		OrichalcumHalberd: /
-		OrichalcumRepeater: /
-		OrichalcumPickaxe: /
-		OrichalcumDrill: /
-		OrichalcumChainsaw: /
-		TitaniumSword: /
-		TitaniumTrident: /
-		TitaniumRepeater: /
-		TitaniumPickaxe: /
-		TitaniumDrill: /
-		TitaniumChainsaw: /
-		PalladiumWaraxe: /
-		OrichalcumWaraxe: /
-		TitaniumWaraxe: /
-		ChlorophyteClaymore: /
-		ChlorophyteSaber: /
-		ChlorophytePartisan: /
-		ChlorophyteShotbow: /
-		ChlorophytePickaxe: /
-		ChlorophyteDrill: /
-		ChlorophyteChainsaw: /
-		ChlorophyteGreataxe: /
-		ChlorophyteWarhammer: /
-		NimbusRod: /
-		BeeCloak: /
-		EyeoftheGolem: /
-		HoneyBalloon: /
-		BlueHorseshoeBalloon: /
-		WhiteHorseshoeBalloon: /
-		YellowHorseshoeBalloon: /
-		FrozenTurtleShell: /
-		SniperRifle: /
-		VenusMagnum: /
-		CrimsonRod: /
-		Stynger: /
-		FlowerPow: /
-		RainbowGun: /
-		ChlorophyteJackhammer: /
-		FlowerofFrost: /
-		Uzi: /
-		MagnetSphere: /
-		PanicNecklace: /
-		Picksaw: /
-		HeatRay: /
-		StaffofEarth: /
-		GolemFist: /
-		RifleScope: /
-		DestroyerEmblem: /
-		JellyfishNecklace: /
-		ZombieArm: /
-		TheAxe: /
-		IceSickle: /
-		PoisonStaff: /
-		SlimeStaff: /
-		BookofSkulls: /
-		KOCannon: /
-		SnowballCannon: /
-		BonePickaxe: /
-		MagicQuiver: /
-		MagmaStone: /
-		ObsidianRose: /
-		Bananarang: /
-		ChainKnife: /
-		DeathSickle: /
-		GoldenShower: /
-		FireGauntlet: /
-		ShadowbeamStaff: /
-		InfernoFork: /
-		SpectreStaff: /
-		SpectrePickaxe: /
-		SpectreHamaxe: /
-		PaladinsHammer: /
-		BeeWings: /
-		SDMG: /
-		VampireKnives: /
-		ScourgeoftheCorruptor: /
-		StaffoftheFrostHydra: /
-		SweetheartNecklace: /
-		FlurryBoots: /
-		DTownsWings: /
-		WillsWings: /
-		CrownosWings: /
-		CenxsWings: /
-		MagicCuffs: /
-		AnkhCharm: /
-		AnkhShield: /
-		FartinaJar: /
-		CandyCornRifle: /
-		JackOLanternLauncher: /
-		Sickle: /
-		TatteredFairyWings: /
-		BatScepter: /
-		RavenStaff: /
-		BloodyMachete: /
-		TheHorsemansBlade: /
-		BladedGlove: /
-		SpookyWings: /
-		StakeLauncher: /
-		NecromanticScroll: /
-		SniperScope: /
-		JellyfishDivingGear: /
-		ArcticDivingGear: /
-		FrostsparkBoots: /
-		FartInABalloon: /
-		PapyrusScarab: /
-		CelestialStone: /
-		Hoverboard: /
-		RedRyder: /
-		FestiveWings: /
-		CandyCaneSword: /
-		ElfMelter: /
-		CnadyCanePickaxe: /
-		FruitcakeChakram: /
-		HandWarmer: /
-		Toolbox: /
-		ChristmasTreeSword: /
-		ChainGun: /
-		Razorpine: /
-		BlizzardStaff: /
-		SnowmanCannon: /
-		NorthPole: /
-		ShroomiteDiggingClaw: /
-		VenomStaff: /
-		BrickLayer: /
-		ExtendoGrip: /
-		PaintSprayer: /
-		PortableCementMixer: /
-		CelestialMagnet: /
-		CelestialEmblem: /
-		CelestialCuffs: /
-		PulseBow: /
-		Revolver: /
-		Gatligator: /
-		Katana: /
-		BeetleWings: /
-		Rockfish: /
-		PurpleClubberfish: /
-		ObsidianSwordfish: /
-		Swordfish: /
-		ReaverShark: /
-		SawtoothShark: /
-		HornetStaff: /
-		ImpStaff: /
-		QueenSpiderStaff: /
-		HighTestFishingLine: /
-		AnglerEarring: /
-		TackleBox: /
-		FrogLeg: /
-		Anchor: /
-		FinWings: /
-		PalmWoodBow: /
-		PalmWoodHammer: /
-		PalmWoodSword: /
-		OpticStaff: /
-		SpiderStaff: /
-		PirateStaff: /
-		FalconBlade: /
-		FishronWings: /
-		Flairon: /
-		TempestStaff: /
-		RazorbladeTyphoon: /
-		BubbleGun: /
-		Tsunami: /
-		BorealWoodSword: /
-		BorealWoodHammer: /
-		BorealWoodBow: /
-		XenoStaff: /
-		MeteorStaff: /
-		MothronWings: /
-		VortexDrill: /
-		VortexPickaxe: /
-		NebulaDrill: /
-		NebulaPickaxe: /
-		SolarFlareDrill: /
-		SolarFlarePickaxe: /
-		LaserMachinegun: /
-		ElectrosphereLauncher: /
-		Xenopopper: /
-		LaserDrill: /
-		LaserRuler: /
-		InfluxWaver: /
-		ChargedBlasterCannon: /
-		BeesKnees: /
-		SummonerEmblem: /
-		SoulDrain: /
-		DartPistol: /
-		DartRifle: /
-		ChainGuillotines: /
-		FetidBaghnakhs: /
-		ClingerStaff: /
-		PutridScent: /
-		FleshKnuckles: /
-		FlowerBoots: /
-		Seedler: /
-		HellwingBow: /
-		DaedalusStormbow: /
-		FlyingKnife: /
-		GoldRing: /
-		CoinRing: /
-		GreedyRing: /
-		FishFinder: /
-		WeatherRadio: /
-		CrystalVileShard: /
-		ShadowFlameBow: /
-		ShadowFlameHexDoll: /
-		ShadowFlameKnife: /
-		ArchitectGizmoPack: /
-		Meowmere: /
-		StarWrath: /
-		CordageGuide: /
-		WandofSparking: /
-		Radar: /
-		RoyalGel: /
-		TallyCounter: /
-		Sextant: /
-		EoCShield: /
-		ButchersChainsaw: /
-		Stopwatch: /
-		MetalDetector: /
-		ToxicFlask: /
-		PsychoKnife: /
-		NailGun: /
-		CelestialShell: /
-		LifeformAnalyzer: /
-		DPSMeter: /
-		FishermansGuide: /
-		GoblinTech: /
-		REK: /
-		PDA: /
-		SailfishBoots: /
-		TsunamiInABottle: /
-		CrystalSerpent: /
-		Toxikarp: /
-		Bladetongue: /
-		SharkToothNecklace: /
-		BrainOfConfusion: /
-		WormScarf: /
-		BalloonPufferfish: /
-		BejeweledValkyrieWing: /
-		SharkronBalloon: /
-		BoneGlove: /
-		DeadlySphereStaff: /
-		BalloonHorseshoeFart: /
-		BalloonHorseshoeHoney: /
-		BalloonHorseshoeSharkron: /
-		SlapHand: /
-		Code1: /
-		MedusaHead: /
-		WoodYoyo: /
-		CorruptYoyo: /
-		CrimsonYoyo: /
-		JungleYoyo: /
-		Cascade: /
-		Chik: /
-		Code2: /
-		Rally: /
-		Yelets: /
-		RedsYoyo: /
-		ValkyrieYoyo: /
-		Amarok: /
-		HelFire: /
-		Kraken: /
-		TheEyeOfCthulhu: /
-		RedString: /
-		OrangeString: /
-		YellowString: /
-		LimeString: /
-		GreenString: /
-		TealString: /
-		CyanString: /
-		SkyBlueString: /
-		BlueString: /
-		PurpleString: /
-		VioletString: /
-		PinkString: /
-		BrownString: /
-		WhiteString: /
-		RainbowString: /
-		BlackString: /
-		BlackCounterweight: /
-		BlueCounterweight: /
-		GreenCounterweight: /
-		PurpleCounterweight: /
-		RedCounterweight: /
-		YellowCounterweight: /
-		FormatC: /
-		Gradient: /
-		Valor: /
-		HiveBackpack: /
-		YoYoGlove: /
-		SporeSac: /
-		ShinyStone: /
-		DyeTradersScimitar: /
-		PainterPaintballGun: /
-		TaxCollectorsStickOfDoom: /
-		StylistKilLaKillScissorsIWish: /
-		YoyoBag: /
-		Arkhalis: /
-		AmberStaff: /
-		Terrarian: /
-		StardustDrill: /
-		StardustPickaxe: /
-		WingsSolar: /
-		WingsVortex: /
-		WingsNebula: /
-		WingsStardust: /
-		SolarEruption: /
-		StardustCellStaff: /
-		VortexBeater: /
-		NebulaArcanum: /
-		PlatinumBow: /
-		PlatinumHammer: /
-		PlatinumAxe: /
-		PlatinumShortsword: /
-		PlatinumBroadsword: /
-		PlatinumPickaxe: /
-		TungstenBow: /
-		TungstenHammer: /
-		TungstenAxe: /
-		TungstenShortsword: /
-		TungstenBroadsword: /
-		TungstenPickaxe: /
-		LeadBow: /
-		LeadHammer: /
-		LeadAxe: /
-		LeadShortsword: /
-		LeadBroadsword: /
-		LeadPickaxe: /
-		TinBow: /
-		TinHammer: /
-		TinAxe: /
-		TinShortsword: /
-		TinBroadsword: /
-		TinPickaxe: /
-		CopperBow: /
-		CopperHammer: /
-		CopperAxe: /
-		CopperShortsword: /
-		CopperBroadsword: /
-		CopperPickaxe: /
-		SilverBow: /
-		SilverHammer: /
-		SilverAxe: /
-		SilverShortsword: /
-		SilverBroadsword: /
-		SilverPickaxe: /
-		GoldBow: /
-		GoldHammer: /
-		GoldAxe: /
-		GoldShortsword: /
-		GoldBroadsword: /
-		GoldPickaxe: /
-		LunarHamaxeSolar: /
-		LunarHamaxeVortex: /
-		LunarHamaxeNebula: /
-		LunarHamaxeStardust: /
-		StardustDragonStaff: /
-		Phantasm: /
-		LastPrism: /
-		NebulaBlaze: /
-		DayBreak: /
-		FireworksLauncher: /
-		MoonlordTurretStaff: /
-		LunarFlareBook: /
-		RainbowCrystalStaff: /
-		Yoraiz0rWings: /
-		JimsWings: /
-		SkiphsWings: /
-		LokisWings: /
-		MechanicalLens: /
-		ActuationAccessory: /
-		AnglerTackleBag: /
-		BluePhasesaber: /
-		RedPhasesaber: /
-		GreenPhasesaber: /
-		PurplePhasesaber: /
-		WhitePhasesaber: /
-		YellowPhasesaber: /
-		AntlionClaw: /
-		SpiritFlame: /
-		PocketMirror: /
-		SkyFracture: /
-		OnyxBlaster: /
-		ApprenticeScarf: /
-		SquireShield: /
-		HuntressBuckler: /
-		MonkBelt: /
-		DD2FlameburstTowerT1Popper: /
-		DD2FlameburstTowerT2Popper: /
-		DD2FlameburstTowerT3Popper: /
-		AleThrowingGlove: /
-		DD2SquireDemonSword: /
-		DD2BallistraTowerT1Popper: /
-		DD2BallistraTowerT2Popper: /
-		DD2BallistraTowerT3Popper: /
-		DD2SquireBetsySword: /
-		DD2LightningAuraT1Popper: /
-		DD2LightningAuraT2Popper: /
-		DD2LightningAuraT3Popper: /
-		DD2ExplosiveTrapT1Popper: /
-		DD2ExplosiveTrapT2Popper: /
-		DD2ExplosiveTrapT3Popper: /
-		MonkStaffT1: /
-		MonkStaffT2: /
-		BookStaff: /
-		DD2PhoenixBow: /
-		MonkStaffT3: /
-		DD2BetsyBow: /
-		ApprenticeStaffT3: /
-		BetsyWings: /
-		ArkhalisWings: /
-		LeinforsWings: /
-		Celeb2: /
-		GolfBall: /
-		AmphibianBoots: /
-		ArcaneFlower: /
-		BerserkerGlove: /
-		FairyBoots: /
-		FrogFlipper: /
-		FrogGear: /
-		FrogWebbing: /
-		FrozenShield: /
-		HeroShield: /
-		LavaSkull: /
-		MagnetFlower: /
-		ManaCloak: /
-		MoltenQuiver: /
-		MoltenSkullRose: /
-		ObsidianSkullRose: /
-		ReconScope: /
-		StalkersQuiver: /
-		StingerNecklace: /
-		MoltenCharm: /
-		SandBoots: /
-		AncientChisel: /
-		FossilPickaxe: /
-		SuperStarCannon: /
-		ThunderSpear: /
-		ThunderStaff: /
-		Terragrim: /
-		GolfBallDyedBlack: /
-		GolfBallDyedBlue: /
-		GolfBallDyedBrown: /
-		GolfBallDyedCyan: /
-		GolfBallDyedGreen: /
-		GolfBallDyedLimeGreen: /
-		GolfBallDyedOrange: /
-		GolfBallDyedPink: /
-		GolfBallDyedPurple: /
-		GolfBallDyedRed: /
-		GolfBallDyedSkyBlue: /
-		GolfBallDyedTeal: /
-		GolfBallDyedViolet: /
-		GolfBallDyedYellow: /
-		OrangePhaseblade: /
-		OrangePhasesaber: /
-		SanguineStaff: /
-		SharpTears: /
-		DripplerFlail: /
-		VampireFrogStaff: /
-		BabyBirdStaff: /
-		BloodHamaxe: /
-		PortableStool: /
-		ZapinatorGray: /
-		ZapinatorOrange: /
-		BloodRainBow: /
-		FloatingTube: /
-		SpectreGoggles: /
-		Gladius: /
-		StormTigerStaff: /
-		BlandWhip: /
-		SwordWhip: /
-		MaceWhip: /
-		ScytheWhip: /
-		QuadBarrelShotgun: /
-		TragicUmbrella: /
-		GravediggerShovel: /
-		SparkleGuitar: /
-		GhostarsWings: /
-		SafemanWings: /
-		FoodBarbarianWings: /
-		GroxTheGreatWings: /
-		Smolstar: /
-		BouncingShield: /
-		Shroomerang: /
-		JoustingLance: /
-		ShadowJoustingLance: /
-		HallowJoustingLance: /
-		CombatWrench: /
-		RainbowWings: /
-		HellfireTreads: /
-		LavaFishingHook: /
-		CoolWhip: /
-		FireWhip: /
-		ThornWhip: /
-		RainbowWhip: /
-		PiercingStarlight: /
-		FairyQueenMagicItem: /
-		FairyQueenRangedItem: /
-		LongRainbowTrailWings: /
-		Zenith: /
-		CreativeWings: /
-		VolatileGelatin: /
-		EmpressFlightBooster: /
-		TerrasparkBoots: /
-		EmpressBlade: /
-		TreasureMagnet: /
-		Mace: /
-		FlamingMace: /
-		LavaproofTackleBag: /
-		PrincessWeapon: /
-		FlinxStaff: /
-		BoneWhip: /
-		TentacleSpike: /
-		LucyTheAxe: /
-		HamBat: /
-		BatBat: /
-		BoneHelm: /
-		Magiluminescence: /
-		AbigailsFlower: /
-		PewMaticHorn: /
-		WeatherPain: /
-		HoundiusShootius: /
-		HandOfCreation: /
-		Flymeal: /
-		FishingBobber: /
-		FishingBobberGlowingStar: /
-		FishingBobberGlowingLava: /
-		FishingBobberGlowingKrypton: /
-		FishingBobberGlowingXenon: /
-		FishingBobberGlowingArgon: /
-		FishingBobberGlowingViolet: /
-		FishingBobberGlowingRainbow: /
-		WandofFrosting: /
-		AshWoodBow: /
-		AshWoodHammer: /
-		AshWoodSword: /
-		HiveFive: /
-		AcornAxe: /
-		Trimarang: /
-		HorseshoeBundle: /
-		ReflectiveShades: /
-		ShimmerCloak: /
-		WaffleIron: /
+		IronPickaxe: "/"
+		# DisplayName: Iron Broadsword
+		IronBroadsword: "/"
+		# DisplayName: Iron Shortsword
+		IronShortsword: "/"
+		# DisplayName: Iron Hammer
+		IronHammer: "/"
+		# DisplayName: Iron Axe
+		IronAxe: "/"
+		# DisplayName: Copper Watch
+		CopperWatch: "/"
+		# DisplayName: Silver Watch
+		SilverWatch: "/"
+		# DisplayName: Gold Watch
+		GoldWatch: "/"
+		# DisplayName: Depth Meter
+		DepthMeter: "/"
+		# DisplayName: Wooden Sword
+		WoodenSword: "/"
+		# DisplayName: Wooden Bow
+		WoodenBow: "/"
+		# DisplayName: Demon Bow
+		DemonBow: "/"
+		# DisplayName: War Axe of the Night
+		WarAxeoftheNight: "/"
+		# DisplayName: Light's Bane
+		LightsBane: "/"
+		# DisplayName: Band of Regeneration
+		BandofRegeneration: "/"
+		# DisplayName: Cloud in a Bottle
+		CloudinaBottle: "/"
+		# DisplayName: Hermes Boots
+		HermesBoots: "/"
+		# DisplayName: Enchanted Boomerang
+		EnchantedBoomerang: "/"
+		# DisplayName: Vilethorn
+		Vilethorn: "/"
+		# DisplayName: Starfury
+		Starfury: "/"
+		# DisplayName: Flintlock Pistol
+		FlintlockPistol: "/"
+		# DisplayName: Musket
+		Musket: "/"
+		# DisplayName: Minishark
+		Minishark: "/"
+		# DisplayName: Iron Bow
+		IronBow: "/"
+		# DisplayName: Nightmare Pickaxe
+		NightmarePickaxe: "/"
+		# DisplayName: The Breaker
+		TheBreaker: "/"
+		# DisplayName: Band of Starpower
+		BandofStarpower: "/"
+		# DisplayName: Flower of Fire
+		FlowerofFire: "/"
+		# DisplayName: Magic Missile
+		MagicMissile: "/"
+		# DisplayName: Flamarang
+		Flamarang: "/"
+		# DisplayName: Molten Fury
+		MoltenFury: "/"
+		# DisplayName: Volcano
+		FieryGreatsword: "/"
+		# DisplayName: Molten Pickaxe
+		MoltenPickaxe: "/"
+		# DisplayName: Space Gun
+		SpaceGun: "/"
+		# DisplayName: Rocket Boots
+		RocketBoots: "/"
+		# DisplayName: Muramasa
+		Muramasa: "/"
+		# DisplayName: Cobalt Shield
+		CobaltShield: "/"
+		# DisplayName: Aqua Scepter
+		AquaScepter: "/"
+		# DisplayName: Lucky Horseshoe
+		LuckyHorseshoe: "/"
+		# DisplayName: Shiny Red Balloon
+		ShinyRedBalloon: "/"
+		# DisplayName: Harpoon
+		Harpoon: "/"
+		# DisplayName: Ball O' Hurt
+		BallOHurt: "/"
+		# DisplayName: Blue Moon
+		BlueMoon: "/"
+		# DisplayName: Handgun
+		Handgun: "/"
+		# DisplayName: Water Bolt
+		WaterBolt: "/"
+		# DisplayName: Breathing Reed
+		BreathingReed: "/"
+		# DisplayName: Flipper
+		Flipper: "/"
+		# DisplayName: Blade of Grass
+		BladeofGrass: "/"
+		# DisplayName: Thorn Chakram
+		ThornChakram: "/"
+		# DisplayName: Obsidian Skull
+		ObsidianSkull: "/"
+		# DisplayName: Wooden Hammer
+		WoodenHammer: "/"
+		# DisplayName: Star Cannon
+		StarCannon: "/"
+		# DisplayName: Blue Phaseblade
+		BluePhaseblade: "/"
+		# DisplayName: Red Phaseblade
+		RedPhaseblade: "/"
+		# DisplayName: Green Phaseblade
+		GreenPhaseblade: "/"
+		# DisplayName: Purple Phaseblade
+		PurplePhaseblade: "/"
+		# DisplayName: White Phaseblade
+		WhitePhaseblade: "/"
+		# DisplayName: Yellow Phaseblade
+		YellowPhaseblade: "/"
+		# DisplayName: Meteor Hamaxe
+		MeteorHamaxe: "/"
+		# DisplayName: Feral Claws
+		FeralClaws: "/"
+		# DisplayName: Anklet of the Wind
+		AnkletoftheWind: "/"
+		# DisplayName: Staff of Regrowth
+		StaffofRegrowth: "/"
+		# DisplayName: Shackle
+		Shackle: "/"
+		# DisplayName: Molten Hamaxe
+		MoltenHamaxe: "/"
+		# DisplayName: Flamelash
+		Flamelash: "/"
+		# DisplayName: Phoenix Blaster
+		PhoenixBlaster: "/"
+		# DisplayName: Sunfury
+		Sunfury: "/"
+		# DisplayName: Nature's Gift
+		NaturesGift: "/"
+		# DisplayName: Sandgun
+		Sandgun: "/"
+		# DisplayName: Demon Scythe
+		DemonScythe: "/"
+		# DisplayName: Night's Edge
+		NightsEdge: "/"
+		# DisplayName: Dark Lance
+		DarkLance: "/"
+		# DisplayName: Trident
+		Trident: "/"
+		# DisplayName: Spear
+		Spear: "/"
+		# DisplayName: Blowpipe
+		Blowpipe: "/"
+		# DisplayName: Wooden Boomerang
+		WoodenBoomerang: "/"
+		# DisplayName: Aglet
+		Aglet: "/"
+		# DisplayName: Pwnhammer
+		Pwnhammer: "/"
+		# DisplayName: Excalibur
+		Excalibur: "/"
+		# DisplayName: Cobalt Chainsaw
+		CobaltChainsaw: "/"
+		# DisplayName: Mythril Chainsaw
+		MythrilChainsaw: "/"
+		# DisplayName: Cobalt Drill
+		CobaltDrill: "/"
+		# DisplayName: Mythril Drill
+		MythrilDrill: "/"
+		# DisplayName: Adamantite Chainsaw
+		AdamantiteChainsaw: "/"
+		# DisplayName: Adamantite Drill
+		AdamantiteDrill: "/"
+		# DisplayName: Dao of Pow
+		DaoofPow: "/"
+		# DisplayName: Mythril Halberd
+		MythrilHalberd: "/"
+		# DisplayName: Compass
+		Compass: "/"
+		# DisplayName: Diving Gear
+		DivingGear: "/"
+		# DisplayName: GPS
+		GPS: "/"
+		# DisplayName: Obsidian Horseshoe
+		ObsidianHorseshoe: "/"
+		# DisplayName: Obsidian Shield
+		ObsidianShield: "/"
+		# DisplayName: Cloud in a Balloon
+		CloudinaBalloon: "/"
+		# DisplayName: Spectre Boots
+		SpectreBoots: "/"
+		# DisplayName: Adamantite Glaive
+		AdamantiteGlaive: "/"
+		# DisplayName: Toolbelt
+		Toolbelt: "/"
+		# DisplayName: Breaker Blade
+		BreakerBlade: "/"
+		# DisplayName: Clockwork Assault Rifle
+		ClockworkAssaultRifle: "/"
+		# DisplayName: Cobalt Repeater
+		CobaltRepeater: "/"
+		# DisplayName: Mythril Repeater
+		MythrilRepeater: "/"
+		# DisplayName: Adamantite Repeater
+		AdamantiteRepeater: "/"
+		# DisplayName: Adamantite Sword
+		AdamantiteSword: "/"
+		# DisplayName: Cobalt Sword
+		CobaltSword: "/"
+		# DisplayName: Mythril Sword
+		MythrilSword: "/"
+		# DisplayName: Moon Charm
+		MoonCharm: "/"
+		# DisplayName: Ruler
+		Ruler: "/"
+		# DisplayName: Sorcerer Emblem
+		SorcererEmblem: "/"
+		# DisplayName: Warrior Emblem
+		WarriorEmblem: "/"
+		# DisplayName: Ranger Emblem
+		RangerEmblem: "/"
+		# DisplayName: Demon Wings
+		DemonWings: "/"
+		# DisplayName: Angel Wings
+		AngelWings: "/"
+		# DisplayName: Magical Harp
+		MagicalHarp: "/"
+		# DisplayName: Rainbow Rod
+		RainbowRod: "/"
+		# DisplayName: Ice Rod
+		IceRod: "/"
+		# DisplayName: Neptune's Shell
+		NeptunesShell: "/"
+		# DisplayName: Flamethrower
+		Flamethrower: "/"
+		# DisplayName: Laser Rifle
+		LaserRifle: "/"
+		# DisplayName: Magic Dagger
+		MagicDagger: "/"
+		# DisplayName: Crystal Storm
+		CrystalStorm: "/"
+		# DisplayName: Cursed Flames
+		CursedFlames: "/"
+		# DisplayName: Star Cloak
+		StarCloak: "/"
+		# DisplayName: Megashark
+		Megashark: "/"
+		# DisplayName: Shotgun
+		Shotgun: "/"
+		# DisplayName: Philosopher's Stone
+		PhilosophersStone: "/"
+		# DisplayName: Titan Glove
+		TitanGlove: "/"
+		# DisplayName: Cobalt Naginata
+		CobaltNaginata: "/"
+		# DisplayName: Gungnir
+		Gungnir: "/"
+		# DisplayName: Cross Necklace
+		CrossNecklace: "/"
+		# DisplayName: Mana Flower
+		ManaFlower: "/"
+		# DisplayName: Light Disc
+		LightDisc: "/"
+		# DisplayName: Hallowed Repeater
+		HallowedRepeater: "/"
+		# DisplayName: Drax
+		Drax: "/"
+		# DisplayName: Ebonwood Sword
+		EbonwoodSword: "/"
+		# DisplayName: Ebonwood Hammer
+		EbonwoodHammer: "/"
+		# DisplayName: Ebonwood Bow
+		EbonwoodBow: "/"
+		# DisplayName: Rich Mahogany Sword
+		RichMahoganySword: "/"
+		# DisplayName: Rich Mahogany Hammer
+		RichMahoganyHammer: "/"
+		# DisplayName: Rich Mahogany Bow
+		RichMahoganyBow: "/"
+		# DisplayName: Pearlwood Sword
+		PearlwoodSword: "/"
+		# DisplayName: Pearlwood Hammer
+		PearlwoodHammer: "/"
+		# DisplayName: Pearlwood Bow
+		PearlwoodBow: "/"
+		# DisplayName: Red's Wings
+		RedsWings: "/"
+		# DisplayName: Ice Boomerang
+		IceBoomerang: "/"
+		# DisplayName: Keybrand
+		Keybrand: "/"
+		# DisplayName: Cutlass
+		Cutlass: "/"
+		# DisplayName: True Excalibur
+		TrueExcalibur: "/"
+		# DisplayName: True Night's Edge
+		TrueNightsEdge: "/"
+		# DisplayName: Frostbrand
+		Frostbrand: "/"
+		# DisplayName: Tactical Shotgun
+		TacticalShotgun: "/"
+		# DisplayName: Marrow
+		Marrow: "/"
+		# DisplayName: Unholy Trident
+		UnholyTrident: "/"
+		# DisplayName: Tin Watch
+		TinWatch: "/"
+		# DisplayName: Tungsten Watch
+		TungstenWatch: "/"
+		# DisplayName: Platinum Watch
+		PlatinumWatch: "/"
+		# DisplayName: Beam Sword
+		BeamSword: "/"
+		# DisplayName: Ice Blade
+		IceBlade: "/"
+		# DisplayName: Ice Bow
+		IceBow: "/"
+		# DisplayName: Frost Staff
+		FrostStaff: "/"
+		# DisplayName: Amethyst Staff
+		AmethystStaff: "/"
+		# DisplayName: Topaz Staff
+		TopazStaff: "/"
+		# DisplayName: Sapphire Staff
+		SapphireStaff: "/"
+		# DisplayName: Emerald Staff
+		EmeraldStaff: "/"
+		# DisplayName: Ruby Staff
+		RubyStaff: "/"
+		# DisplayName: Diamond Staff
+		DiamondStaff: "/"
+		# DisplayName: Jetpack
+		Jetpack: "/"
+		# DisplayName: Butterfly Wings
+		ButterflyWings: "/"
+		# DisplayName: Mushroom Spear
+		MushroomSpear: "/"
+		# DisplayName: Terra Blade
+		TerraBlade: "/"
+		# DisplayName: Grenade Launcher
+		GrenadeLauncher: "/"
+		# DisplayName: Rocket Launcher
+		RocketLauncher: "/"
+		# DisplayName: Proximity Mine Launcher
+		ProximityMineLauncher: "/"
+		# DisplayName: Fairy Wings
+		FairyWings: "/"
+		# DisplayName: Cobalt Pickaxe
+		CobaltPickaxe: "/"
+		# DisplayName: Mythril Pickaxe
+		MythrilPickaxe: "/"
+		# DisplayName: Adamantite Pickaxe
+		AdamantitePickaxe: "/"
+		# DisplayName: Harpy Wings
+		HarpyWings: "/"
+		# DisplayName: Bone Wings
+		BoneWings: "/"
+		# DisplayName: Hammush
+		Hammush: "/"
+		# DisplayName: Nettle Burst
+		NettleBurst: "/"
+		# DisplayName: Blood Butcherer
+		BloodButcherer: "/"
+		# DisplayName: Tendon Bow
+		TendonBow: "/"
+		# DisplayName: Flesh Grinder
+		FleshGrinder: "/"
+		# DisplayName: Deathbringer Pickaxe
+		DeathbringerPickaxe: "/"
+		# DisplayName: Blood Lust Cluster
+		BloodLustCluster: "/"
+		# DisplayName: The Undertaker
+		TheUndertaker: "/"
+		# DisplayName: The Meatball
+		TheMeatball: "/"
+		# DisplayName: The Rotted Fork
+		TheRottedFork: "/"
+		# DisplayName: Flame Wings
+		FlameWings: "/"
+		# DisplayName: Frozen Wings
+		FrozenWings: "/"
+		# DisplayName: Spectre Wings
+		GhostWings: "/"
+		# DisplayName: Discount Card
+		DiscountCard: "/"
+		# DisplayName: Lucky Coin
+		LuckyCoin: "/"
+		# DisplayName: Sandstorm in a Bottle
+		SandstorminaBottle: "/"
+		# DisplayName: Charm of Myths
+		CharmofMyths: "/"
+		# DisplayName: Moon Shell
+		MoonShell: "/"
+		# DisplayName: Star Veil
+		StarVeil: "/"
+		# DisplayName: Water Walking Boots
+		WaterWalkingBoots: "/"
+		# DisplayName: Cactus Sword
+		CactusSword: "/"
+		# DisplayName: Cactus Pickaxe
+		CactusPickaxe: "/"
+		# DisplayName: Adhesive Bandage
+		AdhesiveBandage: "/"
+		# DisplayName: Armor Polish
+		ArmorPolish: "/"
+		# DisplayName: Bezoar
+		Bezoar: "/"
+		# DisplayName: Blindfold
+		Blindfold: "/"
+		# DisplayName: Fast Clock
+		FastClock: "/"
+		# DisplayName: Megaphone
+		Megaphone: "/"
+		# DisplayName: Nazar
+		Nazar: "/"
+		# DisplayName: Vitamins
+		Vitamins: "/"
+		# DisplayName: Trifold Map
+		TrifoldMap: "/"
+		# DisplayName: Power Glove
+		PowerGlove: "/"
+		# DisplayName: Lightning Boots
+		LightningBoots: "/"
+		# DisplayName: Sun Stone
+		SunStone: "/"
+		# DisplayName: Moon Stone
+		MoonStone: "/"
+		# DisplayName: Armor Bracing
+		ArmorBracing: "/"
+		# DisplayName: Medicated Bandage
+		MedicatedBandage: "/"
+		# DisplayName: The Plan
+		ThePlan: "/"
+		# DisplayName: Countercurse Mantra
+		CountercurseMantra: "/"
+		# DisplayName: Lava Charm
+		LavaCharm: "/"
+		# DisplayName: Obsidian Water Walking Boots
+		ObsidianWaterWalkingBoots: "/"
+		# DisplayName: Lava Waders
+		LavaWaders: "/"
+		# DisplayName: Shadewood Sword
+		ShadewoodSword: "/"
+		# DisplayName: Shadewood Hammer
+		ShadewoodHammer: "/"
+		# DisplayName: Shadewood Bow
+		ShadewoodBow: "/"
+		# DisplayName: Flare Gun
+		FlareGun: "/"
+		# DisplayName: Flying Carpet
+		FlyingCarpet: "/"
+		# DisplayName: Avenger Emblem
+		AvengerEmblem: "/"
+		# DisplayName: Mechanical Glove
+		MechanicalGlove: "/"
+		# DisplayName: Paladin's Shield
+		PaladinsShield: "/"
+		# DisplayName: Umbrella
+		Umbrella: "/"
+		# DisplayName: Steampunk Wings
+		SteampunkWings: "/"
+		# DisplayName: Ice Skates
+		IceSkates: "/"
+		# DisplayName: Climbing Claws
+		ClimbingClaws: "/"
+		# DisplayName: Black Belt
+		BlackBelt: "/"
+		# DisplayName: Boomstick
+		Boomstick: "/"
+		# DisplayName: Shoe Spikes
+		ShoeSpikes: "/"
+		# DisplayName: Tiger Climbing Gear
+		TigerClimbingGear: "/"
+		# DisplayName: Tabi
+		Tabi: "/"
+		# DisplayName: Mana Regeneration Band
+		ManaRegenerationBand: "/"
+		# DisplayName: Sandstorm in a Balloon
+		SandstorminaBalloon: "/"
+		# DisplayName: Master Ninja Gear
+		MasterNinjaGear: "/"
+		# DisplayName: Blowgun
+		Blowgun: "/"
+		# DisplayName: Blizzard in a Bottle
+		BlizzardinaBottle: "/"
+		# DisplayName: Enchanted Sword
+		EnchantedSword: "/"
+		# DisplayName: Pickaxe Axe
+		PickaxeAxe: "/"
+		# DisplayName: Cobalt Waraxe
+		CobaltWaraxe: "/"
+		# DisplayName: Mythril Waraxe
+		MythrilWaraxe: "/"
+		# DisplayName: Adamantite Waraxe
+		AdamantiteWaraxe: "/"
+		# DisplayName: Bee Gun
+		BeeGun: "/"
+		# DisplayName: Possessed Hatchet
+		PossessedHatchet: "/"
+		# DisplayName: Bee Keeper
+		BeeKeeper: "/"
+		# DisplayName: Gravity Globe
+		GravityGlobe: "/"
+		# DisplayName: Honey Comb
+		HoneyComb: "/"
+		# DisplayName: Wasp Gun
+		WaspGun: "/"
+		# DisplayName: Piranha Gun
+		PiranhaGun: "/"
+		# DisplayName: Pygmy Staff
+		PygmyStaff: "/"
+		# DisplayName: Pygmy Necklace
+		PygmyNecklace: "/"
+		# DisplayName: Leaf Wings
+		LeafWings: "/"
+		# DisplayName: Blizzard in a Balloon
+		BlizzardinaBalloon: "/"
+		# DisplayName: Bundle of Balloons
+		BundleofBalloons: "/"
+		# DisplayName: Bat Wings
+		BatWings: "/"
+		# DisplayName: Bone Sword
+		BoneSword: "/"
+		# DisplayName: Hercules Beetle
+		HerculesBeetle: "/"
+		# DisplayName: Leaf Blower
+		LeafBlower: "/"
+		# DisplayName: Palladium Sword
+		PalladiumSword: "/"
+		# DisplayName: Palladium Pike
+		PalladiumPike: "/"
+		# DisplayName: Palladium Repeater
+		PalladiumRepeater: "/"
+		# DisplayName: Palladium Pickaxe
+		PalladiumPickaxe: "/"
+		# DisplayName: Palladium Drill
+		PalladiumDrill: "/"
+		# DisplayName: Palladium Chainsaw
+		PalladiumChainsaw: "/"
+		# DisplayName: Orichalcum Sword
+		OrichalcumSword: "/"
+		# DisplayName: Orichalcum Halberd
+		OrichalcumHalberd: "/"
+		# DisplayName: Orichalcum Repeater
+		OrichalcumRepeater: "/"
+		# DisplayName: Orichalcum Pickaxe
+		OrichalcumPickaxe: "/"
+		# DisplayName: Orichalcum Drill
+		OrichalcumDrill: "/"
+		# DisplayName: Orichalcum Chainsaw
+		OrichalcumChainsaw: "/"
+		# DisplayName: Titanium Sword
+		TitaniumSword: "/"
+		# DisplayName: Titanium Trident
+		TitaniumTrident: "/"
+		# DisplayName: Titanium Repeater
+		TitaniumRepeater: "/"
+		# DisplayName: Titanium Pickaxe
+		TitaniumPickaxe: "/"
+		# DisplayName: Titanium Drill
+		TitaniumDrill: "/"
+		# DisplayName: Titanium Chainsaw
+		TitaniumChainsaw: "/"
+		# DisplayName: Palladium Waraxe
+		PalladiumWaraxe: "/"
+		# DisplayName: Orichalcum Waraxe
+		OrichalcumWaraxe: "/"
+		# DisplayName: Titanium Waraxe
+		TitaniumWaraxe: "/"
+		# DisplayName: Chlorophyte Claymore
+		ChlorophyteClaymore: "/"
+		# DisplayName: Chlorophyte Saber
+		ChlorophyteSaber: "/"
+		# DisplayName: Chlorophyte Partisan
+		ChlorophytePartisan: "/"
+		# DisplayName: Chlorophyte Shotbow
+		ChlorophyteShotbow: "/"
+		# DisplayName: Chlorophyte Pickaxe
+		ChlorophytePickaxe: "/"
+		# DisplayName: Chlorophyte Drill
+		ChlorophyteDrill: "/"
+		# DisplayName: Chlorophyte Chainsaw
+		ChlorophyteChainsaw: "/"
+		# DisplayName: Chlorophyte Greataxe
+		ChlorophyteGreataxe: "/"
+		# DisplayName: Chlorophyte Warhammer
+		ChlorophyteWarhammer: "/"
+		# DisplayName: Nimbus Rod
+		NimbusRod: "/"
+		# DisplayName: Bee Cloak
+		BeeCloak: "/"
+		# DisplayName: Eye of the Golem
+		EyeoftheGolem: "/"
+		# DisplayName: Honey Balloon
+		HoneyBalloon: "/"
+		# DisplayName: Blue Horseshoe Balloon
+		BlueHorseshoeBalloon: "/"
+		# DisplayName: White Horseshoe Balloon
+		WhiteHorseshoeBalloon: "/"
+		# DisplayName: Yellow Horseshoe Balloon
+		YellowHorseshoeBalloon: "/"
+		# DisplayName: Frozen Turtle Shell
+		FrozenTurtleShell: "/"
+		# DisplayName: Sniper Rifle
+		SniperRifle: "/"
+		# DisplayName: Venus Magnum
+		VenusMagnum: "/"
+		# DisplayName: Crimson Rod
+		CrimsonRod: "/"
+		# DisplayName: Stynger
+		Stynger: "/"
+		# DisplayName: Flower Pow
+		FlowerPow: "/"
+		# DisplayName: Rainbow Gun
+		RainbowGun: "/"
+		# DisplayName: Chlorophyte Jackhammer
+		ChlorophyteJackhammer: "/"
+		# DisplayName: Flower of Frost
+		FlowerofFrost: "/"
+		# DisplayName: Uzi
+		Uzi: "/"
+		# DisplayName: Magnet Sphere
+		MagnetSphere: "/"
+		# DisplayName: Panic Necklace
+		PanicNecklace: "/"
+		# DisplayName: Picksaw
+		Picksaw: "/"
+		# DisplayName: Heat Ray
+		HeatRay: "/"
+		# DisplayName: Staff of Earth
+		StaffofEarth: "/"
+		# DisplayName: Golem Fist
+		GolemFist: "/"
+		# DisplayName: Rifle Scope
+		RifleScope: "/"
+		# DisplayName: Destroyer Emblem
+		DestroyerEmblem: "/"
+		# DisplayName: Jellyfish Necklace
+		JellyfishNecklace: "/"
+		# DisplayName: Zombie Arm
+		ZombieArm: "/"
+		# DisplayName: The Axe
+		TheAxe: "/"
+		# DisplayName: Ice Sickle
+		IceSickle: "/"
+		# DisplayName: Poison Staff
+		PoisonStaff: "/"
+		# DisplayName: Slime Staff
+		SlimeStaff: "/"
+		# DisplayName: Book of Skulls
+		BookofSkulls: "/"
+		# DisplayName: KO Cannon
+		KOCannon: "/"
+		# DisplayName: Snowball Cannon
+		SnowballCannon: "/"
+		# DisplayName: Bone Pickaxe
+		BonePickaxe: "/"
+		# DisplayName: Magic Quiver
+		MagicQuiver: "/"
+		# DisplayName: Magma Stone
+		MagmaStone: "/"
+		# DisplayName: Obsidian Rose
+		ObsidianRose: "/"
+		# DisplayName: Bananarang
+		Bananarang: "/"
+		# DisplayName: Chain Knife
+		ChainKnife: "/"
+		# DisplayName: Death Sickle
+		DeathSickle: "/"
+		# DisplayName: Golden Shower
+		GoldenShower: "/"
+		# DisplayName: Fire Gauntlet
+		FireGauntlet: "/"
+		# DisplayName: Shadowbeam Staff
+		ShadowbeamStaff: "/"
+		# DisplayName: Inferno Fork
+		InfernoFork: "/"
+		# DisplayName: Spectre Staff
+		SpectreStaff: "/"
+		# DisplayName: Spectre Pickaxe
+		SpectrePickaxe: "/"
+		# DisplayName: Spectre Hamaxe
+		SpectreHamaxe: "/"
+		# DisplayName: Paladin's Hammer
+		PaladinsHammer: "/"
+		# DisplayName: Bee Wings
+		BeeWings: "/"
+		# DisplayName: S.D.M.G.
+		SDMG: "/"
+		# DisplayName: Vampire Knives
+		VampireKnives: "/"
+		# DisplayName: Scourge of the Corruptor
+		ScourgeoftheCorruptor: "/"
+		# DisplayName: Staff of the Frost Hydra
+		StaffoftheFrostHydra: "/"
+		# DisplayName: Sweetheart Necklace
+		SweetheartNecklace: "/"
+		# DisplayName: Flurry Boots
+		FlurryBoots: "/"
+		# DisplayName: D-Town's Wings
+		DTownsWings: "/"
+		# DisplayName: Will's Wings
+		WillsWings: "/"
+		# DisplayName: Crowno's Wings
+		CrownosWings: "/"
+		# DisplayName: Cenx's Wings
+		CenxsWings: "/"
+		# DisplayName: Magic Cuffs
+		MagicCuffs: "/"
+		# DisplayName: Ankh Charm
+		AnkhCharm: "/"
+		# DisplayName: Ankh Shield
+		AnkhShield: "/"
+		# DisplayName: Fart in a Jar
+		FartinaJar: "/"
+		# DisplayName: Candy Corn Rifle
+		CandyCornRifle: "/"
+		# DisplayName: Jack 'O Lantern Launcher
+		JackOLanternLauncher: "/"
+		# DisplayName: Sickle
+		Sickle: "/"
+		# DisplayName: Tattered Fairy Wings
+		TatteredFairyWings: "/"
+		# DisplayName: Bat Scepter
+		BatScepter: "/"
+		# DisplayName: Raven Staff
+		RavenStaff: "/"
+		# DisplayName: Bloody Machete
+		BloodyMachete: "/"
+		# DisplayName: The Horseman's Blade
+		TheHorsemansBlade: "/"
+		# DisplayName: Bladed Glove
+		BladedGlove: "/"
+		# DisplayName: Spooky Wings
+		SpookyWings: "/"
+		# DisplayName: Stake Launcher
+		StakeLauncher: "/"
+		# DisplayName: Necromantic Scroll
+		NecromanticScroll: "/"
+		# DisplayName: Sniper Scope
+		SniperScope: "/"
+		# DisplayName: Jellyfish Diving Gear
+		JellyfishDivingGear: "/"
+		# DisplayName: Arctic Diving Gear
+		ArcticDivingGear: "/"
+		# DisplayName: Frostspark Boots
+		FrostsparkBoots: "/"
+		# DisplayName: Fart in a Balloon
+		FartInABalloon: "/"
+		# DisplayName: Papyrus Scarab
+		PapyrusScarab: "/"
+		# DisplayName: Celestial Stone
+		CelestialStone: "/"
+		# DisplayName: Hoverboard
+		Hoverboard: "/"
+		# DisplayName: Red Ryder
+		RedRyder: "/"
+		# DisplayName: Festive Wings
+		FestiveWings: "/"
+		# DisplayName: Candy Cane Sword
+		CandyCaneSword: "/"
+		# DisplayName: Elf Melter
+		ElfMelter: "/"
+		# DisplayName: Candy Cane Pickaxe
+		CnadyCanePickaxe: "/"
+		# DisplayName: Fruitcake Chakram
+		FruitcakeChakram: "/"
+		# DisplayName: Hand Warmer
+		HandWarmer: "/"
+		# DisplayName: Toolbox
+		Toolbox: "/"
+		# DisplayName: Christmas Tree Sword
+		ChristmasTreeSword: "/"
+		# DisplayName: Chain Gun
+		ChainGun: "/"
+		# DisplayName: Razorpine
+		Razorpine: "/"
+		# DisplayName: Blizzard Staff
+		BlizzardStaff: "/"
+		# DisplayName: Snowman Cannon
+		SnowmanCannon: "/"
+		# DisplayName: North Pole
+		NorthPole: "/"
+		# DisplayName: Shroomite Digging Claw
+		ShroomiteDiggingClaw: "/"
+		# DisplayName: Venom Staff
+		VenomStaff: "/"
+		# DisplayName: Brick Layer
+		BrickLayer: "/"
+		# DisplayName: Extendo Grip
+		ExtendoGrip: "/"
+		# DisplayName: Paint Sprayer
+		PaintSprayer: "/"
+		# DisplayName: Portable Cement Mixer
+		PortableCementMixer: "/"
+		# DisplayName: Celestial Magnet
+		CelestialMagnet: "/"
+		# DisplayName: Celestial Emblem
+		CelestialEmblem: "/"
+		# DisplayName: Celestial Cuffs
+		CelestialCuffs: "/"
+		# DisplayName: Pulse Bow
+		PulseBow: "/"
+		# DisplayName: Revolver
+		Revolver: "/"
+		# DisplayName: Gatligator
+		Gatligator: "/"
+		# DisplayName: Katana
+		Katana: "/"
+		# DisplayName: Beetle Wings
+		BeetleWings: "/"
+		# DisplayName: Rockfish
+		Rockfish: "/"
+		# DisplayName: Purple Clubberfish
+		PurpleClubberfish: "/"
+		# DisplayName: Obsidian Swordfish
+		ObsidianSwordfish: "/"
+		# DisplayName: Swordfish
+		Swordfish: "/"
+		# DisplayName: Reaver Shark
+		ReaverShark: "/"
+		# DisplayName: Sawtooth Shark
+		SawtoothShark: "/"
+		# DisplayName: Hornet Staff
+		HornetStaff: "/"
+		# DisplayName: Imp Staff
+		ImpStaff: "/"
+		# DisplayName: Queen Spider Staff
+		QueenSpiderStaff: "/"
+		# DisplayName: High Test Fishing Line
+		HighTestFishingLine: "/"
+		# DisplayName: Angler Earring
+		AnglerEarring: "/"
+		# DisplayName: Tackle Box
+		TackleBox: "/"
+		# DisplayName: Frog Leg
+		FrogLeg: "/"
+		# DisplayName: Anchor
+		Anchor: "/"
+		# DisplayName: Fin Wings
+		FinWings: "/"
+		# DisplayName: Palm Wood Bow
+		PalmWoodBow: "/"
+		# DisplayName: Palm Wood Hammer
+		PalmWoodHammer: "/"
+		# DisplayName: Palm Wood Sword
+		PalmWoodSword: "/"
+		# DisplayName: Optic Staff
+		OpticStaff: "/"
+		# DisplayName: Spider Staff
+		SpiderStaff: "/"
+		# DisplayName: Pirate Staff
+		PirateStaff: "/"
+		# DisplayName: Falcon Blade
+		FalconBlade: "/"
+		# DisplayName: Fishron Wings
+		FishronWings: "/"
+		# DisplayName: Flairon
+		Flairon: "/"
+		# DisplayName: Tempest Staff
+		TempestStaff: "/"
+		# DisplayName: Razorblade Typhoon
+		RazorbladeTyphoon: "/"
+		# DisplayName: Bubble Gun
+		BubbleGun: "/"
+		# DisplayName: Tsunami
+		Tsunami: "/"
+		# DisplayName: Boreal Wood Sword
+		BorealWoodSword: "/"
+		# DisplayName: Boreal Wood Hammer
+		BorealWoodHammer: "/"
+		# DisplayName: Boreal Wood Bow
+		BorealWoodBow: "/"
+		# DisplayName: Xeno Staff
+		XenoStaff: "/"
+		# DisplayName: Meteor Staff
+		MeteorStaff: "/"
+		# DisplayName: Mothron Wings
+		MothronWings: "/"
+		# DisplayName: Vortex Drill
+		VortexDrill: "/"
+		# DisplayName: Vortex Pickaxe
+		VortexPickaxe: "/"
+		# DisplayName: Nebula Drill
+		NebulaDrill: "/"
+		# DisplayName: Nebula Pickaxe
+		NebulaPickaxe: "/"
+		# DisplayName: Solar Flare Drill
+		SolarFlareDrill: "/"
+		# DisplayName: Solar Flare Pickaxe
+		SolarFlarePickaxe: "/"
+		# DisplayName: Laser Machinegun
+		LaserMachinegun: "/"
+		# DisplayName: Electrosphere Launcher
+		ElectrosphereLauncher: "/"
+		# DisplayName: Xenopopper
+		Xenopopper: "/"
+		# DisplayName: Laser Drill
+		LaserDrill: "/"
+		# DisplayName: Mechanical Ruler
+		LaserRuler: "/"
+		# DisplayName: Influx Waver
+		InfluxWaver: "/"
+		# DisplayName: Charged Blaster Cannon
+		ChargedBlasterCannon: "/"
+		# DisplayName: The Bee's Knees
+		BeesKnees: "/"
+		# DisplayName: Summoner Emblem
+		SummonerEmblem: "/"
+		# DisplayName: Life Drain
+		SoulDrain: "/"
+		# DisplayName: Dart Pistol
+		DartPistol: "/"
+		# DisplayName: Dart Rifle
+		DartRifle: "/"
+		# DisplayName: Chain Guillotines
+		ChainGuillotines: "/"
+		# DisplayName: Fetid Baghnakhs
+		FetidBaghnakhs: "/"
+		# DisplayName: Clinger Staff
+		ClingerStaff: "/"
+		# DisplayName: Putrid Scent
+		PutridScent: "/"
+		# DisplayName: Flesh Knuckles
+		FleshKnuckles: "/"
+		# DisplayName: Flower Boots
+		FlowerBoots: "/"
+		# DisplayName: Seedler
+		Seedler: "/"
+		# DisplayName: Hellwing Bow
+		HellwingBow: "/"
+		# DisplayName: Daedalus Stormbow
+		DaedalusStormbow: "/"
+		# DisplayName: Flying Knife
+		FlyingKnife: "/"
+		# DisplayName: Gold Ring
+		GoldRing: "/"
+		# DisplayName: Coin Ring
+		CoinRing: "/"
+		# DisplayName: Greedy Ring
+		GreedyRing: "/"
+		# DisplayName: Fish Finder
+		FishFinder: "/"
+		# DisplayName: Weather Radio
+		WeatherRadio: "/"
+		# DisplayName: Crystal Vile Shard
+		CrystalVileShard: "/"
+		# DisplayName: Shadowflame Bow
+		ShadowFlameBow: "/"
+		# DisplayName: Shadowflame Hex Doll
+		ShadowFlameHexDoll: "/"
+		# DisplayName: Shadowflame Knife
+		ShadowFlameKnife: "/"
+		# DisplayName: Architect Gizmo Pack
+		ArchitectGizmoPack: "/"
+		# DisplayName: Meowmere
+		Meowmere: "/"
+		# DisplayName: Star Wrath
+		StarWrath: "/"
+		# DisplayName: Guide to Plant Fiber Cordage
+		CordageGuide: "/"
+		# DisplayName: Wand of Sparking
+		WandofSparking: "/"
+		# DisplayName: Radar
+		Radar: "/"
+		# DisplayName: Royal Gel
+		RoyalGel: "/"
+		# DisplayName: Tally Counter
+		TallyCounter: "/"
+		# DisplayName: Sextant
+		Sextant: "/"
+		# DisplayName: Shield of Cthulhu
+		EoCShield: "/"
+		# DisplayName: Butcher's Chainsaw
+		ButchersChainsaw: "/"
+		# DisplayName: Stopwatch
+		Stopwatch: "/"
+		# DisplayName: Metal Detector
+		MetalDetector: "/"
+		# DisplayName: Toxic Flask
+		ToxicFlask: "/"
+		# DisplayName: Psycho Knife
+		PsychoKnife: "/"
+		# DisplayName: Nail Gun
+		NailGun: "/"
+		# DisplayName: Celestial Shell
+		CelestialShell: "/"
+		# DisplayName: Lifeform Analyzer
+		LifeformAnalyzer: "/"
+		# DisplayName: DPS Meter
+		DPSMeter: "/"
+		# DisplayName: Fisherman's Pocket Guide
+		FishermansGuide: "/"
+		# DisplayName: Goblin Tech
+		GoblinTech: "/"
+		# DisplayName: R.E.K. 3000
+		REK: "/"
+		# DisplayName: PDA
+		PDA: "/"
+		# DisplayName: Sailfish Boots
+		SailfishBoots: "/"
+		# DisplayName: Tsunami in a Bottle
+		TsunamiInABottle: "/"
+		# DisplayName: Crystal Serpent
+		CrystalSerpent: "/"
+		# DisplayName: Toxikarp
+		Toxikarp: "/"
+		# DisplayName: Bladetongue
+		Bladetongue: "/"
+		# DisplayName: Shark Tooth Necklace
+		SharkToothNecklace: "/"
+		# DisplayName: Brain of Confusion
+		BrainOfConfusion: "/"
+		# DisplayName: Worm Scarf
+		WormScarf: "/"
+		# DisplayName: Balloon Pufferfish
+		BalloonPufferfish: "/"
+		# DisplayName: Lazure's Barrier Platform
+		BejeweledValkyrieWing: "/"
+		# DisplayName: Sharkron Balloon
+		SharkronBalloon: "/"
+		# DisplayName: Bone Glove
+		BoneGlove: "/"
+		# DisplayName: Deadly Sphere Staff
+		DeadlySphereStaff: "/"
+		# DisplayName: Green Horseshoe Balloon
+		BalloonHorseshoeFart: "/"
+		# DisplayName: Amber Horseshoe Balloon
+		BalloonHorseshoeHoney: "/"
+		# DisplayName: Pink Horseshoe Balloon
+		BalloonHorseshoeSharkron: "/"
+		# DisplayName: Slap Hand
+		SlapHand: "/"
+		# DisplayName: Code 1
+		Code1: "/"
+		# DisplayName: Medusa Head
+		MedusaHead: "/"
+		# DisplayName: Wooden Yoyo
+		WoodYoyo: "/"
+		# DisplayName: Malaise
+		CorruptYoyo: "/"
+		# DisplayName: Artery
+		CrimsonYoyo: "/"
+		# DisplayName: Amazon
+		JungleYoyo: "/"
+		# DisplayName: Cascade
+		Cascade: "/"
+		# DisplayName: Chik
+		Chik: "/"
+		# DisplayName: Code 2
+		Code2: "/"
+		# DisplayName: Rally
+		Rally: "/"
+		# DisplayName: Yelets
+		Yelets: "/"
+		# DisplayName: Red's Throw
+		RedsYoyo: "/"
+		# DisplayName: Valkyrie Yoyo
+		ValkyrieYoyo: "/"
+		# DisplayName: Amarok
+		Amarok: "/"
+		# DisplayName: Hel-Fire
+		HelFire: "/"
+		# DisplayName: Kraken
+		Kraken: "/"
+		# DisplayName: The Eye of Cthulhu
+		TheEyeOfCthulhu: "/"
+		# DisplayName: Red String
+		RedString: "/"
+		# DisplayName: Orange String
+		OrangeString: "/"
+		# DisplayName: Yellow String
+		YellowString: "/"
+		# DisplayName: Lime String
+		LimeString: "/"
+		# DisplayName: Green String
+		GreenString: "/"
+		# DisplayName: Teal String
+		TealString: "/"
+		# DisplayName: Cyan String
+		CyanString: "/"
+		# DisplayName: Sky Blue String
+		SkyBlueString: "/"
+		# DisplayName: Blue String
+		BlueString: "/"
+		# DisplayName: Purple String
+		PurpleString: "/"
+		# DisplayName: Violet String
+		VioletString: "/"
+		# DisplayName: Pink String
+		PinkString: "/"
+		# DisplayName: Brown String
+		BrownString: "/"
+		# DisplayName: White String
+		WhiteString: "/"
+		# DisplayName: Rainbow String
+		RainbowString: "/"
+		# DisplayName: Black String
+		BlackString: "/"
+		# DisplayName: Black Counterweight
+		BlackCounterweight: "/"
+		# DisplayName: Blue Counterweight
+		BlueCounterweight: "/"
+		# DisplayName: Green Counterweight
+		GreenCounterweight: "/"
+		# DisplayName: Purple Counterweight
+		PurpleCounterweight: "/"
+		# DisplayName: Red Counterweight
+		RedCounterweight: "/"
+		# DisplayName: Yellow Counterweight
+		YellowCounterweight: "/"
+		# DisplayName: Format:C
+		FormatC: "/"
+		# DisplayName: Gradient
+		Gradient: "/"
+		# DisplayName: Valor
+		Valor: "/"
+		# DisplayName: Hive Pack
+		HiveBackpack: "/"
+		# DisplayName: Yoyo Glove
+		YoYoGlove: "/"
+		# DisplayName: Spore Sac
+		SporeSac: "/"
+		# DisplayName: Shiny Stone
+		ShinyStone: "/"
+		# DisplayName: Exotic Scimitar
+		DyeTradersScimitar: "/"
+		# DisplayName: Paintball Gun
+		PainterPaintballGun: "/"
+		# DisplayName: Classy Cane
+		TaxCollectorsStickOfDoom: "/"
+		# DisplayName: Stylish Scissors
+		StylistKilLaKillScissorsIWish: "/"
+		# DisplayName: Yoyo Bag
+		YoyoBag: "/"
+		# DisplayName: Arkhalis
+		Arkhalis: "/"
+		# DisplayName: Amber Staff
+		AmberStaff: "/"
+		# DisplayName: Terrarian
+		Terrarian: "/"
+		# DisplayName: Stardust Drill
+		StardustDrill: "/"
+		# DisplayName: Stardust Pickaxe
+		StardustPickaxe: "/"
+		# DisplayName: Solar Wings
+		WingsSolar: "/"
+		# DisplayName: Vortex Booster
+		WingsVortex: "/"
+		# DisplayName: Nebula Mantle
+		WingsNebula: "/"
+		# DisplayName: Stardust Wings
+		WingsStardust: "/"
+		# DisplayName: Solar Eruption
+		SolarEruption: "/"
+		# DisplayName: Stardust Cell Staff
+		StardustCellStaff: "/"
+		# DisplayName: Vortex Beater
+		VortexBeater: "/"
+		# DisplayName: Nebula Arcanum
+		NebulaArcanum: "/"
+		# DisplayName: Platinum Bow
+		PlatinumBow: "/"
+		# DisplayName: Platinum Hammer
+		PlatinumHammer: "/"
+		# DisplayName: Platinum Axe
+		PlatinumAxe: "/"
+		# DisplayName: Platinum Shortsword
+		PlatinumShortsword: "/"
+		# DisplayName: Platinum Broadsword
+		PlatinumBroadsword: "/"
+		# DisplayName: Platinum Pickaxe
+		PlatinumPickaxe: "/"
+		# DisplayName: Tungsten Bow
+		TungstenBow: "/"
+		# DisplayName: Tungsten Hammer
+		TungstenHammer: "/"
+		# DisplayName: Tungsten Axe
+		TungstenAxe: "/"
+		# DisplayName: Tungsten Shortsword
+		TungstenShortsword: "/"
+		# DisplayName: Tungsten Broadsword
+		TungstenBroadsword: "/"
+		# DisplayName: Tungsten Pickaxe
+		TungstenPickaxe: "/"
+		# DisplayName: Lead Bow
+		LeadBow: "/"
+		# DisplayName: Lead Hammer
+		LeadHammer: "/"
+		# DisplayName: Lead Axe
+		LeadAxe: "/"
+		# DisplayName: Lead Shortsword
+		LeadShortsword: "/"
+		# DisplayName: Lead Broadsword
+		LeadBroadsword: "/"
+		# DisplayName: Lead Pickaxe
+		LeadPickaxe: "/"
+		# DisplayName: Tin Bow
+		TinBow: "/"
+		# DisplayName: Tin Hammer
+		TinHammer: "/"
+		# DisplayName: Tin Axe
+		TinAxe: "/"
+		# DisplayName: Tin Shortsword
+		TinShortsword: "/"
+		# DisplayName: Tin Broadsword
+		TinBroadsword: "/"
+		# DisplayName: Tin Pickaxe
+		TinPickaxe: "/"
+		# DisplayName: Copper Bow
+		CopperBow: "/"
+		# DisplayName: Copper Hammer
+		CopperHammer: "/"
+		# DisplayName: Copper Axe
+		CopperAxe: "/"
+		# DisplayName: Copper Shortsword
+		CopperShortsword: "/"
+		# DisplayName: Copper Broadsword
+		CopperBroadsword: "/"
+		# DisplayName: Copper Pickaxe
+		CopperPickaxe: "/"
+		# DisplayName: Silver Bow
+		SilverBow: "/"
+		# DisplayName: Silver Hammer
+		SilverHammer: "/"
+		# DisplayName: Silver Axe
+		SilverAxe: "/"
+		# DisplayName: Silver Shortsword
+		SilverShortsword: "/"
+		# DisplayName: Silver Broadsword
+		SilverBroadsword: "/"
+		# DisplayName: Silver Pickaxe
+		SilverPickaxe: "/"
+		# DisplayName: Gold Bow
+		GoldBow: "/"
+		# DisplayName: Gold Hammer
+		GoldHammer: "/"
+		# DisplayName: Gold Axe
+		GoldAxe: "/"
+		# DisplayName: Gold Shortsword
+		GoldShortsword: "/"
+		# DisplayName: Gold Broadsword
+		GoldBroadsword: "/"
+		# DisplayName: Gold Pickaxe
+		GoldPickaxe: "/"
+		# DisplayName: Solar Flare Hamaxe
+		LunarHamaxeSolar: "/"
+		# DisplayName: Vortex Hamaxe
+		LunarHamaxeVortex: "/"
+		# DisplayName: Nebula Hamaxe
+		LunarHamaxeNebula: "/"
+		# DisplayName: Stardust Hamaxe
+		LunarHamaxeStardust: "/"
+		# DisplayName: Stardust Dragon Staff
+		StardustDragonStaff: "/"
+		# DisplayName: Phantasm
+		Phantasm: "/"
+		# DisplayName: Last Prism
+		LastPrism: "/"
+		# DisplayName: Nebula Blaze
+		NebulaBlaze: "/"
+		# DisplayName: Daybreak
+		DayBreak: "/"
+		# DisplayName: Celebration
+		FireworksLauncher: "/"
+		# DisplayName: Lunar Portal Staff
+		MoonlordTurretStaff: "/"
+		# DisplayName: Lunar Flare
+		LunarFlareBook: "/"
+		# DisplayName: Rainbow Crystal Staff
+		RainbowCrystalStaff: "/"
+		# DisplayName: Yoraiz0r's Spell
+		Yoraiz0rWings: "/"
+		# DisplayName: Jim's Wings
+		JimsWings: "/"
+		# DisplayName: Skiphs' Paws
+		SkiphsWings: "/"
+		# DisplayName: Loki's Wings
+		LokisWings: "/"
+		# DisplayName: Mechanical Lens
+		MechanicalLens: "/"
+		# DisplayName: Presserator
+		ActuationAccessory: "/"
+		# DisplayName: Angler Tackle Bag
+		AnglerTackleBag: "/"
+		# DisplayName: Blue Phasesaber
+		BluePhasesaber: "/"
+		# DisplayName: Red Phasesaber
+		RedPhasesaber: "/"
+		# DisplayName: Green Phasesaber
+		GreenPhasesaber: "/"
+		# DisplayName: Purple Phasesaber
+		PurplePhasesaber: "/"
+		# DisplayName: White Phasesaber
+		WhitePhasesaber: "/"
+		# DisplayName: Yellow Phasesaber
+		YellowPhasesaber: "/"
+		# DisplayName: Mandible Blade
+		AntlionClaw: "/"
+		# DisplayName: Spirit Flame
+		SpiritFlame: "/"
+		# DisplayName: Pocket Mirror
+		PocketMirror: "/"
+		# DisplayName: Sky Fracture
+		SkyFracture: "/"
+		# DisplayName: Onyx Blaster
+		OnyxBlaster: "/"
+		# DisplayName: Apprentice's Scarf
+		ApprenticeScarf: "/"
+		# DisplayName: Squire's Shield
+		SquireShield: "/"
+		# DisplayName: Huntress's Buckler
+		HuntressBuckler: "/"
+		# DisplayName: Monk's Belt
+		MonkBelt: "/"
+		# DisplayName: Flameburst Rod
+		DD2FlameburstTowerT1Popper: "/"
+		# DisplayName: Flameburst Cane
+		DD2FlameburstTowerT2Popper: "/"
+		# DisplayName: Flameburst Staff
+		DD2FlameburstTowerT3Popper: "/"
+		# DisplayName: Ale Tosser
+		AleThrowingGlove: "/"
+		# DisplayName: Brand of the Inferno
+		DD2SquireDemonSword: "/"
+		# DisplayName: Ballista Rod
+		DD2BallistraTowerT1Popper: "/"
+		# DisplayName: Ballista Cane
+		DD2BallistraTowerT2Popper: "/"
+		# DisplayName: Ballista Staff
+		DD2BallistraTowerT3Popper: "/"
+		# DisplayName: Flying Dragon
+		DD2SquireBetsySword: "/"
+		# DisplayName: Lightning Aura Rod
+		DD2LightningAuraT1Popper: "/"
+		# DisplayName: Lightning Aura Cane
+		DD2LightningAuraT2Popper: "/"
+		# DisplayName: Lightning Aura Staff
+		DD2LightningAuraT3Popper: "/"
+		# DisplayName: Explosive Trap Rod
+		DD2ExplosiveTrapT1Popper: "/"
+		# DisplayName: Explosive Trap Cane
+		DD2ExplosiveTrapT2Popper: "/"
+		# DisplayName: Explosive Trap Staff
+		DD2ExplosiveTrapT3Popper: "/"
+		# DisplayName: Sleepy Octopod
+		MonkStaffT1: "/"
+		# DisplayName: Ghastly Glaive
+		MonkStaffT2: "/"
+		# DisplayName: Tome of Infinite Wisdom
+		BookStaff: "/"
+		# DisplayName: Phantom Phoenix
+		DD2PhoenixBow: "/"
+		# DisplayName: Sky Dragon's Fury
+		MonkStaffT3: "/"
+		# DisplayName: Aerial Bane
+		DD2BetsyBow: "/"
+		# DisplayName: Betsy's Wrath
+		ApprenticeStaffT3: "/"
+		# DisplayName: Betsy's Wings
+		BetsyWings: "/"
+		# DisplayName: Arkhalis' Lightwings
+		ArkhalisWings: "/"
+		# DisplayName: Leinfors' Prehensile Cloak
+		LeinforsWings: "/"
+		# DisplayName: Celebration Mk2
+		Celeb2: "/"
+		# DisplayName: Golf Ball
+		GolfBall: "/"
+		# DisplayName: Amphibian Boots
+		AmphibianBoots: "/"
+		# DisplayName: Arcane Flower
+		ArcaneFlower: "/"
+		# DisplayName: Berserker's Glove
+		BerserkerGlove: "/"
+		# DisplayName: Fairy Boots
+		FairyBoots: "/"
+		# DisplayName: Frog Flipper
+		FrogFlipper: "/"
+		# DisplayName: Frog Gear
+		FrogGear: "/"
+		# DisplayName: Frog Webbing
+		FrogWebbing: "/"
+		# DisplayName: Frozen Shield
+		FrozenShield: "/"
+		# DisplayName: Hero Shield
+		HeroShield: "/"
+		# DisplayName: Magma Skull
+		LavaSkull: "/"
+		# DisplayName: Magnet Flower
+		MagnetFlower: "/"
+		# DisplayName: Mana Cloak
+		ManaCloak: "/"
+		# DisplayName: Molten Quiver
+		MoltenQuiver: "/"
+		# DisplayName: Molten Skull Rose
+		MoltenSkullRose: "/"
+		# DisplayName: Obsidian Skull Rose
+		ObsidianSkullRose: "/"
+		# DisplayName: Recon Scope
+		ReconScope: "/"
+		# DisplayName: Stalker's Quiver
+		StalkersQuiver: "/"
+		# DisplayName: Stinger Necklace
+		StingerNecklace: "/"
+		# DisplayName: Molten Charm
+		MoltenCharm: "/"
+		# DisplayName: Dunerider Boots
+		SandBoots: "/"
+		# DisplayName: Ancient Chisel
+		AncientChisel: "/"
+		# DisplayName: Fossil Pickaxe
+		FossilPickaxe: "/"
+		# DisplayName: Super Star Shooter
+		SuperStarCannon: "/"
+		# DisplayName: Storm Spear
+		ThunderSpear: "/"
+		# DisplayName: Thunder Zapper
+		ThunderStaff: "/"
+		# DisplayName: Terragrim
+		Terragrim: "/"
+		# DisplayName: Black Golf Ball
+		GolfBallDyedBlack: "/"
+		# DisplayName: Blue Golf Ball
+		GolfBallDyedBlue: "/"
+		# DisplayName: Brown Golf Ball
+		GolfBallDyedBrown: "/"
+		# DisplayName: Cyan Golf Ball
+		GolfBallDyedCyan: "/"
+		# DisplayName: Green Golf Ball
+		GolfBallDyedGreen: "/"
+		# DisplayName: Lime Golf Ball
+		GolfBallDyedLimeGreen: "/"
+		# DisplayName: Orange Golf Ball
+		GolfBallDyedOrange: "/"
+		# DisplayName: Pink Golf Ball
+		GolfBallDyedPink: "/"
+		# DisplayName: Purple Golf Ball
+		GolfBallDyedPurple: "/"
+		# DisplayName: Red Golf Ball
+		GolfBallDyedRed: "/"
+		# DisplayName: Sky Blue Golf Ball
+		GolfBallDyedSkyBlue: "/"
+		# DisplayName: Teal Golf Ball
+		GolfBallDyedTeal: "/"
+		# DisplayName: Violet Golf Ball
+		GolfBallDyedViolet: "/"
+		# DisplayName: Yellow Golf Ball
+		GolfBallDyedYellow: "/"
+		# DisplayName: Orange Phaseblade
+		OrangePhaseblade: "/"
+		# DisplayName: Orange Phasesaber
+		OrangePhasesaber: "/"
+		# DisplayName: Sanguine Staff
+		SanguineStaff: "/"
+		# DisplayName: Blood Thorn
+		SharpTears: "/"
+		# DisplayName: Drippler Crippler
+		DripplerFlail: "/"
+		# DisplayName: Vampire Frog Staff
+		VampireFrogStaff: "/"
+		# DisplayName: Finch Staff
+		BabyBirdStaff: "/"
+		# DisplayName: Haemorrhaxe
+		BloodHamaxe: "/"
+		# DisplayName: Step Stool
+		PortableStool: "/"
+		# DisplayName: Gray Zapinator
+		ZapinatorGray: "/"
+		# DisplayName: Orange Zapinator
+		ZapinatorOrange: "/"
+		# DisplayName: Blood Rain Bow
+		BloodRainBow: "/"
+		# DisplayName: Inner Tube
+		FloatingTube: "/"
+		# DisplayName: Spectre Goggles
+		SpectreGoggles: "/"
+		# DisplayName: Gladius
+		Gladius: "/"
+		# DisplayName: Desert Tiger Staff
+		StormTigerStaff: "/"
+		# DisplayName: Leather Whip
+		BlandWhip: "/"
+		# DisplayName: Durendal
+		SwordWhip: "/"
+		# DisplayName: Morning Star
+		MaceWhip: "/"
+		# DisplayName: Dark Harvest
+		ScytheWhip: "/"
+		# DisplayName: Quad-Barrel Shotgun
+		QuadBarrelShotgun: "/"
+		# DisplayName: Tragic Umbrella
+		TragicUmbrella: "/"
+		# DisplayName: Gravedigger's Shovel
+		GravediggerShovel: "/"
+		# DisplayName: Stellar Tune
+		SparkleGuitar: "/"
+		# DisplayName: Ghostar's Infinity Eight
+		GhostarsWings: "/"
+		# DisplayName: Safeman's Blanket Cape
+		SafemanWings: "/"
+		# DisplayName: FoodBarbarian's Tattered Dragon Wings
+		FoodBarbarianWings: "/"
+		# DisplayName: Grox The Great's Wings
+		GroxTheGreatWings: "/"
+		# DisplayName: Blade Staff
+		Smolstar: "/"
+		# DisplayName: Sergeant United Shield
+		BouncingShield: "/"
+		# DisplayName: Shroomerang
+		Shroomerang: "/"
+		# DisplayName: Jousting Lance
+		JoustingLance: "/"
+		# DisplayName: Shadow Jousting Lance
+		ShadowJoustingLance: "/"
+		# DisplayName: Hallowed Jousting Lance
+		HallowJoustingLance: "/"
+		# DisplayName: Combat Wrench
+		CombatWrench: "/"
+		# DisplayName: Empress Wings
+		RainbowWings: "/"
+		# DisplayName: Hellfire Treads
+		HellfireTreads: "/"
+		# DisplayName: Lavaproof Fishing Hook
+		LavaFishingHook: "/"
+		# DisplayName: Cool Whip
+		CoolWhip: "/"
+		# DisplayName: Firecracker
+		FireWhip: "/"
+		# DisplayName: Snapthorn
+		ThornWhip: "/"
+		# DisplayName: Kaleidoscope
+		RainbowWhip: "/"
+		# DisplayName: Starlight
+		PiercingStarlight: "/"
+		# DisplayName: Nightglow
+		FairyQueenMagicItem: "/"
+		# DisplayName: Eventide
+		FairyQueenRangedItem: "/"
+		# DisplayName: Celestial Starboard
+		LongRainbowTrailWings: "/"
+		# DisplayName: Zenith
+		Zenith: "/"
+		# DisplayName: Fledgling Wings
+		CreativeWings: "/"
+		# DisplayName: Volatile Gelatin
+		VolatileGelatin: "/"
+		# DisplayName: Soaring Insignia
+		EmpressFlightBooster: "/"
+		# DisplayName: Terraspark Boots
+		TerrasparkBoots: "/"
+		# DisplayName: Terraprisma
+		EmpressBlade: "/"
+		# DisplayName: Treasure Magnet
+		TreasureMagnet: "/"
+		# DisplayName: Mace
+		Mace: "/"
+		# DisplayName: Flaming Mace
+		FlamingMace: "/"
+		# DisplayName: Lavaproof Tackle Bag
+		LavaproofTackleBag: "/"
+		# DisplayName: Resonance Scepter
+		PrincessWeapon: "/"
+		# DisplayName: Flinx Staff
+		FlinxStaff: "/"
+		# DisplayName: Spinal Tap
+		BoneWhip: "/"
+		# DisplayName: Tentacle Spike
+		TentacleSpike: "/"
+		# DisplayName: Lucy the Axe
+		LucyTheAxe: "/"
+		# DisplayName: Ham Bat
+		HamBat: "/"
+		# DisplayName: Bat Bat
+		BatBat: "/"
+		# DisplayName: Bone Helm
+		BoneHelm: "/"
+		# DisplayName: Magiluminescence
+		Magiluminescence: "/"
+		# DisplayName: Abigail's Flower
+		AbigailsFlower: "/"
+		# DisplayName: Pew-matic Horn
+		PewMaticHorn: "/"
+		# DisplayName: Weather Pain
+		WeatherPain: "/"
+		# DisplayName: Houndius Shootius
+		HoundiusShootius: "/"
+		# DisplayName: Hand Of Creation
+		HandOfCreation: "/"
+		# DisplayName: Flymeal
+		Flymeal: "/"
+		# DisplayName: Fishing Bobber
+		FishingBobber: "/"
+		# DisplayName: Glowing Fishing Bobber
+		FishingBobberGlowingStar: "/"
+		# DisplayName: Lava Moss Fishing Bobber
+		FishingBobberGlowingLava: "/"
+		# DisplayName: Krypton Moss Fishing Bobber
+		FishingBobberGlowingKrypton: "/"
+		# DisplayName: Xenon Moss Fishing Bobber
+		FishingBobberGlowingXenon: "/"
+		# DisplayName: Argon Moss Fishing Bobber
+		FishingBobberGlowingArgon: "/"
+		# DisplayName: Neon Moss Fishing Bobber
+		FishingBobberGlowingViolet: "/"
+		# DisplayName: Helium Moss Fishing Bobber
+		FishingBobberGlowingRainbow: "/"
+		# DisplayName: Wand of Frosting
+		WandofFrosting: "/"
+		# DisplayName: Ash Wood Bow
+		AshWoodBow: "/"
+		# DisplayName: Ash Wood Hammer
+		AshWoodHammer: "/"
+		# DisplayName: Ash Wood Sword
+		AshWoodSword: "/"
+		# DisplayName: Hive-Five
+		HiveFive: "/"
+		# DisplayName: Axe of Regrowth
+		AcornAxe: "/"
+		# DisplayName: Trimarang
+		Trimarang: "/"
+		# DisplayName: Bundle of Horseshoe Balloons
+		HorseshoeBundle: "/"
+		# DisplayName: Reflective Shades
+		ReflectiveShades: "/"
+		# DisplayName: Chromatic Cloak
+		ShimmerCloak: "/"
+		# DisplayName: Waffle's Iron
+		WaffleIron: "/"
+		# DisplayName: FPV Goggles
 		JimsDroneVisor: /
 	}
 

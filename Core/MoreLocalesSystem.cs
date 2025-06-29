@@ -123,6 +123,8 @@ namespace MoreLocales.Core
 
             if (Main.keyState.IsKeyUp(Keys.F) && !Main.oldKeyState.IsKeyUp(Keys.F))
             {
+                MoreLocalesSets.ReloadedLocalizations();
+                /*
                 var files = LangUtils.GetLocalizationFiles(Mod, true);
 
                 var firstFile = files[0];
@@ -132,6 +134,7 @@ namespace MoreLocales.Core
                 {
                     Console.Write(entry.comment);
                 }
+                */
                 /*
                 for (int i = 0; i < files.Length; i++)
                 {
