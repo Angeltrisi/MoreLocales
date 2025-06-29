@@ -101,7 +101,7 @@ namespace MoreLocales.Utilities
             entryRef =
                 new(entryRef.key,
                     entryRef.value,
-                    overwriteComment ? comment : entryRef.comment + comment,
+                    overwriteComment ? $"{(commentType == HjsonCommentType.Slashes ? "//" : "#")} {comment}" : entryRef.comment + comment,
                     entryRef.type);
 
             // write to disk
