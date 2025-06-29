@@ -7,6 +7,7 @@ using System;
 using MoreLocales.Common;
 using System.Reflection;
 using Terraria.ID;
+using System.Runtime.InteropServices;
 
 namespace MoreLocales.Core
 {
@@ -122,12 +123,31 @@ namespace MoreLocales.Core
 
             if (Main.keyState.IsKeyUp(Keys.F) && !Main.oldKeyState.IsKeyUp(Keys.F))
             {
+                var files = LangUtils.GetLocalizationFiles(Mod, true);
+
+                var firstFile = files[0];
+                Console.WriteLine(firstFile.Name);
+                LocalizationLoader.LocalizationFile localizationFile = firstFile.ToLocalizationFile(Mod);
+                foreach (var entry in CollectionsMarshal.AsSpan(localizationFile.Entries))
+                {
+                    Console.Write(entry.comment);
+                }
+                /*
+                for (int i = 0; i < files.Length; i++)
+                {
+                    var file = files[i];
+                    Console.WriteLine(file.Name);
+
+                }
+                */
+                /*
                 string target = "pt-PT";
                 if (LanguageManager.Instance.ActiveCulture.Name != target)
                     LanguageManager.Instance.SetLanguage(target);
                 else
                     LanguageManager.Instance.SetLanguage("en-US");
                 Main.NewText(LanguageManager.Instance.ActiveCulture.Name);
+                */
             }
         }
         #endregion
