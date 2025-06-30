@@ -7,15 +7,13 @@ using System.Collections.Generic;
 using System.IO;
 using System.Reflection;
 using Terraria.Localization;
+using Terraria.ModLoader;
 using static Terraria.ModLoader.LocalizationLoader;
 
 namespace MoreLocales.Common
 {
     public static class LocalizationTweaks
     {
-        private static ILHook nestedMethodHook;
-        private static MethodReference terriblyUnperformantMethod;
-        //private static MethodReference testingMethodDifference;
         internal static void Apply()
         {
             Type[] mParams =
@@ -28,78 +26,50 @@ namespace MoreLocales.Common
             MonoModHooks.Modify(peskyLegacyMarker, FixPeskyLegacyMarking);
 
             MethodInfo nested = typeof(LocalizationLoader).GetMethod("LocalizationFileToHjsonText", BindingFlags.Static | BindingFlags.NonPublic);
-            // i cannot use MonoModHooks.Modify because i need to get the value for the methodref immediately
-            nestedMethodHook = new ILHook(nested, LookForActualMethod, true);
+            MonoModHooks.Modify(nested, FixHjsonToStringMethod);
+        }
+        internal static void PlaceCommentAboveNewEntryNew(LocalizationEntry entry, CommentedWscJsonObject parent, Dictionary<string, string> localizationsForCulture)
+        {
+            // the original method doesn't take the dictionary as a parameter
+            // so i replace all calls to the method inside LocalizationFileToHjsonText with this one
 
-            MonoModHooks.Modify(terriblyUnperformantMethod.ResolveReflection(), DontUseLINQForAGiganticDictionary);
+            string sub = LangUtils.Substitute(entry.comment, entry.key, localizationsForCulture);
+
             /*
-            MonoModHooks.Add(testingMethodDifference.ResolveReflection(),
-            static
-            (Func<LocalizationFile, LocalizationEntry, string> orig, LocalizationFile baseLocalizationFileEntry, LocalizationEntry entry) => 
-            {
-                Console.WriteLine(entry.key);
-                Console.WriteLine(baseLocalizationFileEntry.prefix);
-                return orig(baseLocalizationFileEntry, entry);
-            });
+            Console.WriteLine("--DICTSTART--");
+            foreach (var kvp in localizationsForCulture)
+                Console.WriteLine($"{kvp.Key}: {kvp.Value}");
+            Console.WriteLine("--DICTEND--");
             */
-        }
-        /// <summary>
-        /// System.Linq.Last, now hyperoptimized! (final time per mod load goes from around 2 seconds to 10 milliseconds)
-        /// </summary>
-        private static void EmitJsonObjectLastKey(ILCursor c)
-        {
-            // assuming we're right after the jsonobject was loaded (and arg1 is the jsonobject)
+            //Console.WriteLine(sub);
 
-            // get the map field to load it
-            FieldInfo mapField = typeof(JsonObject)
-                .GetField("map", BindingFlags.Instance | BindingFlags.NonPublic) ?? throw new NullReferenceException("null");
-            // first we load the "map" field from the object, which is a Dictionary<string, JsonValue>
-            c.EmitLdfld(mapField);
-            // then, we access an internal array dictionaries have, "_entries", which is a Dictionary<,>.Entry<string, JsonValue>[]
-            c.EmitLdfld(typeof(Dictionary<string, JsonValue>)
-                .GetField("_entries", BindingFlags.Instance | BindingFlags.NonPublic) ?? throw new NullReferenceException("null"));
-            // load the map again to get the count
-            c.EmitLdarg1();
-            c.EmitLdfld(mapField);
-            // then, we get the count of the total key value pairs
-            c.EmitCallvirt(typeof(Dictionary<string, JsonValue>).GetMethod("get_Count") ?? throw new NullReferenceException("null"));
-            // make it usable for indexing
-            c.EmitLdcI4(1);
-            c.EmitSub();
-            // we get the entry's type to index into the array
-            Type entryType = typeof(Dictionary<,>).GetNestedType("Entry", BindingFlags.NonPublic)
-                .MakeGenericType([typeof(string), typeof(JsonValue)]) ?? throw new NullReferenceException("null");
-            // load the element at our index
-            c.EmitLdelema(entryType);
-            // load the key field from it, which will be a string
-            c.EmitLdfld(entryType.GetField("key") ?? throw new NullReferenceException("null"));
-            // you can, uh, wipe the sweat off your system now.
-        }
-        private static void DontUseLINQForAGiganticDictionary(ILContext il) // throwing shade
-        {
-            var c = new ILCursor(il);
-
-            if (!c.TryGotoNext(MoveType.After, i => i.MatchRet(), i => i.MatchLdarg1()))
+            if (parent.Count == 0)
             {
-                Logging.tML.Warn("DontUseLINQForAGiganticDictionary: Couldn't find place to remove instructions from");
-                return;
+                parent.Comments[""] = sub;
             }
-            c.RemoveRange(2); // lol
-            EmitJsonObjectLastKey(c);
+            else
+            {
+                var dict = parent.map;
+                var entries = _entries.GetValue(dict) as Array;
+
+                string actualCommentKey = (string)_key.GetValue(entries.GetValue(parent.Count - 1));
+                parent.Comments[actualCommentKey] = sub;
+            }
         }
-        private static void LookForActualMethod(ILContext il)
+        private static readonly FieldInfo _entries = typeof(Dictionary<string, JsonValue>).GetField("_entries", BindingFlags.Instance | BindingFlags.NonPublic);
+        private static readonly FieldInfo _key = typeof(Dictionary<,>).GetNestedType("Entry", BindingFlags.NonPublic).MakeGenericType([typeof(string), typeof(JsonValue)]).GetField("key");
+        private static void FixHjsonToStringMethod(ILContext il)
         {
+            MethodReference newCommentMethod = il.Import(typeof(LocalizationTweaks).GetMethod(nameof(PlaceCommentAboveNewEntryNew), BindingFlags.Static | BindingFlags.NonPublic));
+
             var c = new ILCursor(il);
 
-            //c.GotoNext(i => i.MatchLdloc3(), i => i.MatchCall(out testingMethodDifference));
-
-            c.GotoNext
-            (
-                i => i.MatchBrtrue(out _),
-                i => i.MatchLdloc(out _),
-                i => i.MatchLdloc(out _),
-                i => i.MatchCall(out terriblyUnperformantMethod)
-            );
+            while (c.TryGotoNext(i => i.MatchCall(out MethodReference method) && method.FullName.Contains("PlaceCommentAboveNewEntry|")))
+            {
+                c.EmitLdarg1();
+                c.Next.Operand = newCommentMethod;
+                c.Index++;
+            }
         }
         // fixes problem where tmod would mark the vanilla translation files as legacy since they don't have an en-US equivalent
         private static void FixPeskyLegacyMarking(ILContext il)
@@ -137,8 +107,7 @@ namespace MoreLocales.Common
         }
         internal static void Unapply()
         {
-            nestedMethodHook.Dispose();
-            nestedMethodHook = null;
+
         }
     }
 }

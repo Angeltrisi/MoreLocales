@@ -6,7 +6,9 @@ using System.IO;
 using System.Linq;
 using System.Runtime.CompilerServices;
 using System.Runtime.InteropServices;
+using System.Security;
 using System.Text;
+using System.Text.RegularExpressions;
 using System.Xml.Linq;
 using Terraria;
 using Terraria.Localization;
@@ -85,10 +87,10 @@ namespace MoreLocales.Utilities
                 {
                     var file = kvp2.Key;
 
-                    foreach (var action in kvp2.Value)
+                    foreach (var (key, comment, commentType, overwriteComment) in kvp2.Value)
                     {
                         // find the entry. if it's not found (somehow???), exit
-                        if (!file.TryGetEntry(action.key, out var entry))
+                        if (!file.TryGetEntry(key, out var entry))
                             continue;
 
                         // get a ref to the entry for reassignment
@@ -96,13 +98,13 @@ namespace MoreLocales.Utilities
 
                         // find out comment style
                         string finalComment;
-                        if (action.overwriteComment)
+                        if (overwriteComment)
                         {
-                            finalComment = (action.commentType == HjsonCommentType.Slashes ? "// " : "# ") + action.comment;
+                            finalComment = (commentType == HjsonCommentType.Slashes ? "// " : "# ") + comment;
                         }
                         else
                         {
-                            finalComment = entryRef.comment + action.comment;
+                            finalComment = entryRef.comment + comment;
                         }
                         // do not freeze the comment here because then it won't change when it needs to,
                         // instead freeze it during LocalizationLoader.UpdateLocalizationFilesForMod
@@ -191,6 +193,82 @@ namespace MoreLocales.Utilities
         public static bool AddComment(this Mod mod, string suffix, string comment, HjsonCommentType commentType = HjsonCommentType.Slashes, bool overwriteComment = true)
         {
             return AddComment(mod.GetLocalizationKey(suffix), comment, commentType, overwriteComment);
+        }
+        /// <summary>
+        /// Formats a string containing a substitution (e.g. <c>'{$Mods.ExampleMod.ExampleSubstitution}'</c>) with the key that's inside it,<br/>
+        /// optionally with a pre-defined scope and/or lookup table.
+        /// </summary>
+        /// <param name="containsSubstitution"></param>
+        /// <param name="scope"></param>
+        /// <param name="specificSearch"></param>
+        /// <returns>The string with the correct substituted value, or the original string if the given key isn't found.</returns>
+        public static string Substitute(string containsSubstitution, string scope = null, Dictionary<string, string> specificSearch = null)
+        {
+            string result = LocalizationLoader.referenceRegex.Replace(containsSubstitution, (Match match) =>
+            {
+                HashSet<string> keysCollection;
+                if (specificSearch is null)
+                {
+                    var dict = LanguageManager.Instance._localizedTexts;
+                    int count = dict.Count;
+
+                    specificSearch = new(count);
+                    keysCollection = new(count);
+
+                    foreach (var kvp in dict)
+                    {
+                        keysCollection.Add(kvp.Key);
+                        specificSearch.Add(kvp.Key, kvp.Value.Value);
+                    }
+                }
+                else
+                {
+                    keysCollection = new(specificSearch.Count);
+
+                    foreach (var kvp in specificSearch)
+                    {
+                        keysCollection.Add(kvp.Key);
+                    }
+                }
+
+                string validKey = FindKeyInScope(match.Groups[1].Value, scope, keysCollection);
+
+                if (validKey is null)
+                {
+                    return match.Value; // don't replace at all if it's not a valid key
+                }
+
+                return specificSearch[validKey];
+            });
+
+            return result;
+        }
+        /// <summary>
+        /// Finds and returns a valid key given a key in any scope and a scope.<para/>
+        /// Original is a nested method inside <see cref="LanguageManager.ProcessCopyCommandsInTexts"/> for some reason.
+        /// </summary>
+        /// <param name="key">A key in any scope.</param>
+        /// <param name="scope">A scope to search in.</param>
+        /// <param name="specificSearch">A specific lookup table. If left null, <see cref="LanguageManager._localizedTexts"/> will be used.</param>
+        /// <returns>A valid localization key, or <see langword="null"/> if one isn't found.</returns>
+        public static string FindKeyInScope(string key, string scope, HashSet<string> specificSearch = null)
+        {
+            specificSearch ??= [.. LanguageManager.Instance._localizedTexts.Keys];
+
+            if (specificSearch.Contains(key))
+                return key;
+
+            string[] splitKey = scope.Split('.');
+            for (int i = splitKey.Length - 1; i >= 0; i--)
+            {
+                string combinedKey = string.Join('.', splitKey.Take(i + 1)) + '.' + key;
+                if (specificSearch.Contains(combinedKey))
+                {
+                    return combinedKey;
+                }
+            }
+            // change: returns null instead of the original key
+            return null;
         }
         /// <summary>
         /// Returns an array of the files inside the given mod which are considered localization files by tModLoader (those with the .hjson extension).<para/>

@@ -1,4 +1,6 @@
-﻿namespace MoreLocales.Utilities
+﻿using System.IO;
+
+namespace MoreLocales.Utilities
 {
     /*
      * MIT License
@@ -61,6 +63,22 @@
                     curOffset += copy.GetSize();
                 }
             }
+        }
+        public static void DumpIL(ILContext il, string folderName)
+        {
+            string methodName = il.Method.FullName.Replace(':', '_').Replace('<', '[').Replace('>', ']');
+            if (methodName.Contains('?')) // MonoMod IL copies are created with mangled names like DMD<Terraria.Player::beeType>?38504011::Terraria.Player::beeType(Terraria.Player)
+                methodName = methodName[(methodName.LastIndexOf('?') + 1)..];
+            methodName = string.Join("_", methodName.Split(Path.GetInvalidFileNameChars())); // Catch any other illegal characters, just in case.
+
+            string filePath = Path.Combine(Logging.LogDir, "ILDumps", folderName, methodName + ".txt");
+            string folderPath = Path.GetDirectoryName(filePath);
+
+            if (!Directory.Exists(folderPath))
+                Directory.CreateDirectory(folderPath);
+            File.WriteAllText(filePath, il.ToString());
+
+            Logging.tML.Debug($"Dumped ILContext \"{il.Method.FullName}\" to \"{filePath}\"");
         }
     }
 }

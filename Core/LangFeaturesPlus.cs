@@ -269,7 +269,7 @@ namespace MoreLocales.Core
 
             string key = $"{preprefix}InflectionData.Items.{itemName}";
             data = target.GetLocalization(key, () => "/");
-            target.AddComment(key,  $"DisplayName: {Lang.GetItemName(type)}", HjsonCommentType.Hash);
+            target.AddComment(key,  $"DisplayName: {{${Lang.GetItemName(type).Key}}}", HjsonCommentType.Hash);
 
             if (TryParse(data.Value, out InflectionData inflectionData))
                 return inflectionData;

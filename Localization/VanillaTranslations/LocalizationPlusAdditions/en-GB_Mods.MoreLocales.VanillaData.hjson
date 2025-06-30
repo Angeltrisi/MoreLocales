@@ -54,1633 +54,1633 @@ InflectionData: {
 	// PluralizationAliases: ""
 
 	Items: {
-		# DisplayName: Iron Pickaxe
+		# DisplayName: {$ItemName.IronPickaxe}
 		// IronPickaxe: /
-		# DisplayName: Iron Broadsword
+		# DisplayName: {$ItemName.IronBroadsword}
 		// IronBroadsword: /
-		# DisplayName: Iron Shortsword
+		# DisplayName: {$ItemName.IronShortsword}
 		// IronShortsword: /
-		# DisplayName: Iron Hammer
+		# DisplayName: {$ItemName.IronHammer}
 		// IronHammer: /
-		# DisplayName: Iron Axe
+		# DisplayName: {$ItemName.IronAxe}
 		// IronAxe: /
-		# DisplayName: Copper Watch
+		# DisplayName: {$ItemName.CopperWatch}
 		// CopperWatch: /
-		# DisplayName: Silver Watch
+		# DisplayName: {$ItemName.SilverWatch}
 		// SilverWatch: /
-		# DisplayName: Gold Watch
+		# DisplayName: {$ItemName.GoldWatch}
 		// GoldWatch: /
-		# DisplayName: Depth Meter
+		# DisplayName: {$ItemName.DepthMeter}
 		// DepthMeter: /
-		# DisplayName: Wooden Sword
+		# DisplayName: {$ItemName.WoodenSword}
 		// WoodenSword: /
-		# DisplayName: Wooden Bow
+		# DisplayName: {$ItemName.WoodenBow}
 		// WoodenBow: /
-		# DisplayName: Demon Bow
+		# DisplayName: {$ItemName.DemonBow}
 		// DemonBow: /
-		# DisplayName: War Axe of the Night
+		# DisplayName: {$ItemName.WarAxeoftheNight}
 		// WarAxeoftheNight: /
-		# DisplayName: Light's Bane
+		# DisplayName: {$ItemName.LightsBane}
 		// LightsBane: /
-		# DisplayName: Band of Regeneration
+		# DisplayName: {$ItemName.BandofRegeneration}
 		// BandofRegeneration: /
-		# DisplayName: Cloud in a Bottle
+		# DisplayName: {$ItemName.CloudinaBottle}
 		// CloudinaBottle: /
-		# DisplayName: Hermes Boots
+		# DisplayName: {$ItemName.HermesBoots}
 		// HermesBoots: /
-		# DisplayName: Enchanted Boomerang
+		# DisplayName: {$ItemName.EnchantedBoomerang}
 		// EnchantedBoomerang: /
-		# DisplayName: Vilethorn
+		# DisplayName: {$ItemName.Vilethorn}
 		// Vilethorn: /
-		# DisplayName: Starfury
+		# DisplayName: {$ItemName.Starfury}
 		// Starfury: /
-		# DisplayName: Flintlock Pistol
+		# DisplayName: {$ItemName.FlintlockPistol}
 		// FlintlockPistol: /
-		# DisplayName: Musket
+		# DisplayName: {$ItemName.Musket}
 		// Musket: /
-		# DisplayName: Minishark
+		# DisplayName: {$ItemName.Minishark}
 		// Minishark: /
-		# DisplayName: Iron Bow
+		# DisplayName: {$ItemName.IronBow}
 		// IronBow: /
-		# DisplayName: Nightmare Pickaxe
+		# DisplayName: {$ItemName.NightmarePickaxe}
 		// NightmarePickaxe: /
-		# DisplayName: The Breaker
+		# DisplayName: {$ItemName.TheBreaker}
 		// TheBreaker: /
-		# DisplayName: Band of Starpower
+		# DisplayName: {$ItemName.BandofStarpower}
 		// BandofStarpower: /
-		# DisplayName: Flower of Fire
+		# DisplayName: {$ItemName.FlowerofFire}
 		// FlowerofFire: /
-		# DisplayName: Magic Missile
+		# DisplayName: {$ItemName.MagicMissile}
 		// MagicMissile: /
-		# DisplayName: Flamarang
+		# DisplayName: {$ItemName.Flamarang}
 		// Flamarang: /
-		# DisplayName: Molten Fury
+		# DisplayName: {$ItemName.MoltenFury}
 		// MoltenFury: /
-		# DisplayName: Volcano
+		# DisplayName: {$ItemName.FieryGreatsword}
 		// FieryGreatsword: /
-		# DisplayName: Molten Pickaxe
+		# DisplayName: {$ItemName.MoltenPickaxe}
 		// MoltenPickaxe: /
-		# DisplayName: Space Gun
+		# DisplayName: {$ItemName.SpaceGun}
 		// SpaceGun: /
-		# DisplayName: Rocket Boots
+		# DisplayName: {$ItemName.RocketBoots}
 		// RocketBoots: /
-		# DisplayName: Muramasa
+		# DisplayName: {$ItemName.Muramasa}
 		// Muramasa: /
-		# DisplayName: Cobalt Shield
+		# DisplayName: {$ItemName.CobaltShield}
 		// CobaltShield: /
-		# DisplayName: Aqua Scepter
+		# DisplayName: {$ItemName.AquaScepter}
 		// AquaScepter: /
-		# DisplayName: Lucky Horseshoe
+		# DisplayName: {$ItemName.LuckyHorseshoe}
 		// LuckyHorseshoe: /
-		# DisplayName: Shiny Red Balloon
+		# DisplayName: {$ItemName.ShinyRedBalloon}
 		// ShinyRedBalloon: /
-		# DisplayName: Harpoon
+		# DisplayName: {$ItemName.Harpoon}
 		// Harpoon: /
-		# DisplayName: Ball O' Hurt
+		# DisplayName: {$ItemName.BallOHurt}
 		// BallOHurt: /
-		# DisplayName: Blue Moon
+		# DisplayName: {$ItemName.BlueMoon}
 		// BlueMoon: /
-		# DisplayName: Handgun
+		# DisplayName: {$ItemName.Handgun}
 		// Handgun: /
-		# DisplayName: Water Bolt
+		# DisplayName: {$ItemName.WaterBolt}
 		// WaterBolt: /
-		# DisplayName: Breathing Reed
+		# DisplayName: {$ItemName.BreathingReed}
 		// BreathingReed: /
-		# DisplayName: Flipper
+		# DisplayName: {$ItemName.Flipper}
 		// Flipper: /
-		# DisplayName: Blade of Grass
+		# DisplayName: {$ItemName.BladeofGrass}
 		// BladeofGrass: /
-		# DisplayName: Thorn Chakram
+		# DisplayName: {$ItemName.ThornChakram}
 		// ThornChakram: /
-		# DisplayName: Obsidian Skull
+		# DisplayName: {$ItemName.ObsidianSkull}
 		// ObsidianSkull: /
-		# DisplayName: Wooden Hammer
+		# DisplayName: {$ItemName.WoodenHammer}
 		// WoodenHammer: /
-		# DisplayName: Star Cannon
+		# DisplayName: {$ItemName.StarCannon}
 		// StarCannon: /
-		# DisplayName: Blue Phaseblade
+		# DisplayName: {$ItemName.BluePhaseblade}
 		// BluePhaseblade: /
-		# DisplayName: Red Phaseblade
+		# DisplayName: {$ItemName.RedPhaseblade}
 		// RedPhaseblade: /
-		# DisplayName: Green Phaseblade
+		# DisplayName: {$ItemName.GreenPhaseblade}
 		// GreenPhaseblade: /
-		# DisplayName: Purple Phaseblade
+		# DisplayName: {$ItemName.PurplePhaseblade}
 		// PurplePhaseblade: /
-		# DisplayName: White Phaseblade
+		# DisplayName: {$ItemName.WhitePhaseblade}
 		// WhitePhaseblade: /
-		# DisplayName: Yellow Phaseblade
+		# DisplayName: {$ItemName.YellowPhaseblade}
 		// YellowPhaseblade: /
-		# DisplayName: Meteor Hamaxe
+		# DisplayName: {$ItemName.MeteorHamaxe}
 		// MeteorHamaxe: /
-		# DisplayName: Feral Claws
+		# DisplayName: {$ItemName.FeralClaws}
 		// FeralClaws: /
-		# DisplayName: Anklet of the Wind
+		# DisplayName: {$ItemName.AnkletoftheWind}
 		// AnkletoftheWind: /
-		# DisplayName: Staff of Regrowth
+		# DisplayName: {$ItemName.StaffofRegrowth}
 		// StaffofRegrowth: /
-		# DisplayName: Shackle
+		# DisplayName: {$ItemName.Shackle}
 		// Shackle: /
-		# DisplayName: Molten Hamaxe
+		# DisplayName: {$ItemName.MoltenHamaxe}
 		// MoltenHamaxe: /
-		# DisplayName: Flamelash
+		# DisplayName: {$ItemName.Flamelash}
 		// Flamelash: /
-		# DisplayName: Phoenix Blaster
+		# DisplayName: {$ItemName.PhoenixBlaster}
 		// PhoenixBlaster: /
-		# DisplayName: Sunfury
+		# DisplayName: {$ItemName.Sunfury}
 		// Sunfury: /
-		# DisplayName: Nature's Gift
+		# DisplayName: {$ItemName.NaturesGift}
 		// NaturesGift: /
-		# DisplayName: Sandgun
+		# DisplayName: {$ItemName.Sandgun}
 		// Sandgun: /
-		# DisplayName: Demon Scythe
+		# DisplayName: {$ItemName.DemonScythe}
 		// DemonScythe: /
-		# DisplayName: Night's Edge
+		# DisplayName: {$ItemName.NightsEdge}
 		// NightsEdge: /
-		# DisplayName: Dark Lance
+		# DisplayName: {$ItemName.DarkLance}
 		// DarkLance: /
-		# DisplayName: Trident
+		# DisplayName: {$ItemName.Trident}
 		// Trident: /
-		# DisplayName: Spear
+		# DisplayName: {$ItemName.Spear}
 		// Spear: /
-		# DisplayName: Blowpipe
+		# DisplayName: {$ItemName.Blowpipe}
 		// Blowpipe: /
-		# DisplayName: Wooden Boomerang
+		# DisplayName: {$ItemName.WoodenBoomerang}
 		// WoodenBoomerang: /
-		# DisplayName: Aglet
+		# DisplayName: {$ItemName.Aglet}
 		// Aglet: /
-		# DisplayName: Pwnhammer
+		# DisplayName: {$ItemName.Pwnhammer}
 		// Pwnhammer: /
-		# DisplayName: Excalibur
+		# DisplayName: {$ItemName.Excalibur}
 		// Excalibur: /
-		# DisplayName: Cobalt Chainsaw
+		# DisplayName: {$ItemName.CobaltChainsaw}
 		// CobaltChainsaw: /
-		# DisplayName: Mythril Chainsaw
+		# DisplayName: {$ItemName.MythrilChainsaw}
 		// MythrilChainsaw: /
-		# DisplayName: Cobalt Drill
+		# DisplayName: {$ItemName.CobaltDrill}
 		// CobaltDrill: /
-		# DisplayName: Mythril Drill
+		# DisplayName: {$ItemName.MythrilDrill}
 		// MythrilDrill: /
-		# DisplayName: Adamantite Chainsaw
+		# DisplayName: {$ItemName.AdamantiteChainsaw}
 		// AdamantiteChainsaw: /
-		# DisplayName: Adamantite Drill
+		# DisplayName: {$ItemName.AdamantiteDrill}
 		// AdamantiteDrill: /
-		# DisplayName: Dao of Pow
+		# DisplayName: {$ItemName.DaoofPow}
 		// DaoofPow: /
-		# DisplayName: Mythril Halberd
+		# DisplayName: {$ItemName.MythrilHalberd}
 		// MythrilHalberd: /
-		# DisplayName: Compass
+		# DisplayName: {$ItemName.Compass}
 		// Compass: /
-		# DisplayName: Diving Gear
+		# DisplayName: {$ItemName.DivingGear}
 		// DivingGear: /
-		# DisplayName: GPS
+		# DisplayName: {$ItemName.GPS}
 		// GPS: /
-		# DisplayName: Obsidian Horseshoe
+		# DisplayName: {$ItemName.ObsidianHorseshoe}
 		// ObsidianHorseshoe: /
-		# DisplayName: Obsidian Shield
+		# DisplayName: {$ItemName.ObsidianShield}
 		// ObsidianShield: /
-		# DisplayName: Cloud in a Balloon
+		# DisplayName: {$ItemName.CloudinaBalloon}
 		// CloudinaBalloon: /
-		# DisplayName: Spectre Boots
+		# DisplayName: {$ItemName.SpectreBoots}
 		// SpectreBoots: /
-		# DisplayName: Adamantite Glaive
+		# DisplayName: {$ItemName.AdamantiteGlaive}
 		// AdamantiteGlaive: /
-		# DisplayName: Toolbelt
+		# DisplayName: {$ItemName.Toolbelt}
 		// Toolbelt: /
-		# DisplayName: Breaker Blade
+		# DisplayName: {$ItemName.BreakerBlade}
 		// BreakerBlade: /
-		# DisplayName: Clockwork Assault Rifle
+		# DisplayName: {$ItemName.ClockworkAssaultRifle}
 		// ClockworkAssaultRifle: /
-		# DisplayName: Cobalt Repeater
+		# DisplayName: {$ItemName.CobaltRepeater}
 		// CobaltRepeater: /
-		# DisplayName: Mythril Repeater
+		# DisplayName: {$ItemName.MythrilRepeater}
 		// MythrilRepeater: /
-		# DisplayName: Adamantite Repeater
+		# DisplayName: {$ItemName.AdamantiteRepeater}
 		// AdamantiteRepeater: /
-		# DisplayName: Adamantite Sword
+		# DisplayName: {$ItemName.AdamantiteSword}
 		// AdamantiteSword: /
-		# DisplayName: Cobalt Sword
+		# DisplayName: {$ItemName.CobaltSword}
 		// CobaltSword: /
-		# DisplayName: Mythril Sword
+		# DisplayName: {$ItemName.MythrilSword}
 		// MythrilSword: /
-		# DisplayName: Moon Charm
+		# DisplayName: {$ItemName.MoonCharm}
 		// MoonCharm: /
-		# DisplayName: Ruler
+		# DisplayName: {$ItemName.Ruler}
 		// Ruler: /
-		# DisplayName: Sorcerer Emblem
+		# DisplayName: {$ItemName.SorcererEmblem}
 		// SorcererEmblem: /
-		# DisplayName: Warrior Emblem
+		# DisplayName: {$ItemName.WarriorEmblem}
 		// WarriorEmblem: /
-		# DisplayName: Ranger Emblem
+		# DisplayName: {$ItemName.RangerEmblem}
 		// RangerEmblem: /
-		# DisplayName: Demon Wings
+		# DisplayName: {$ItemName.DemonWings}
 		// DemonWings: /
-		# DisplayName: Angel Wings
+		# DisplayName: {$ItemName.AngelWings}
 		// AngelWings: /
-		# DisplayName: Magical Harp
+		# DisplayName: {$ItemName.MagicalHarp}
 		// MagicalHarp: /
-		# DisplayName: Rainbow Rod
+		# DisplayName: {$ItemName.RainbowRod}
 		// RainbowRod: /
-		# DisplayName: Ice Rod
+		# DisplayName: {$ItemName.IceRod}
 		// IceRod: /
-		# DisplayName: Neptune's Shell
+		# DisplayName: {$ItemName.NeptunesShell}
 		// NeptunesShell: /
-		# DisplayName: Flamethrower
+		# DisplayName: {$ItemName.Flamethrower}
 		// Flamethrower: /
-		# DisplayName: Laser Rifle
+		# DisplayName: {$ItemName.LaserRifle}
 		// LaserRifle: /
-		# DisplayName: Magic Dagger
+		# DisplayName: {$ItemName.MagicDagger}
 		// MagicDagger: /
-		# DisplayName: Crystal Storm
+		# DisplayName: {$ItemName.CrystalStorm}
 		// CrystalStorm: /
-		# DisplayName: Cursed Flames
+		# DisplayName: {$ItemName.CursedFlames}
 		// CursedFlames: /
-		# DisplayName: Star Cloak
+		# DisplayName: {$ItemName.StarCloak}
 		// StarCloak: /
-		# DisplayName: Megashark
+		# DisplayName: {$ItemName.Megashark}
 		// Megashark: /
-		# DisplayName: Shotgun
+		# DisplayName: {$ItemName.Shotgun}
 		// Shotgun: /
-		# DisplayName: Philosopher's Stone
+		# DisplayName: {$ItemName.PhilosophersStone}
 		// PhilosophersStone: /
-		# DisplayName: Titan Glove
+		# DisplayName: {$ItemName.TitanGlove}
 		// TitanGlove: /
-		# DisplayName: Cobalt Naginata
+		# DisplayName: {$ItemName.CobaltNaginata}
 		// CobaltNaginata: /
-		# DisplayName: Gungnir
+		# DisplayName: {$ItemName.Gungnir}
 		// Gungnir: /
-		# DisplayName: Cross Necklace
+		# DisplayName: {$ItemName.CrossNecklace}
 		// CrossNecklace: /
-		# DisplayName: Mana Flower
+		# DisplayName: {$ItemName.ManaFlower}
 		// ManaFlower: /
-		# DisplayName: Light Disc
+		# DisplayName: {$ItemName.LightDisc}
 		// LightDisc: /
-		# DisplayName: Hallowed Repeater
+		# DisplayName: {$ItemName.HallowedRepeater}
 		// HallowedRepeater: /
-		# DisplayName: Drax
+		# DisplayName: {$ItemName.Drax}
 		// Drax: /
-		# DisplayName: Ebonwood Sword
+		# DisplayName: {$ItemName.EbonwoodSword}
 		// EbonwoodSword: /
-		# DisplayName: Ebonwood Hammer
+		# DisplayName: {$ItemName.EbonwoodHammer}
 		// EbonwoodHammer: /
-		# DisplayName: Ebonwood Bow
+		# DisplayName: {$ItemName.EbonwoodBow}
 		// EbonwoodBow: /
-		# DisplayName: Rich Mahogany Sword
+		# DisplayName: {$ItemName.RichMahoganySword}
 		// RichMahoganySword: /
-		# DisplayName: Rich Mahogany Hammer
+		# DisplayName: {$ItemName.RichMahoganyHammer}
 		// RichMahoganyHammer: /
-		# DisplayName: Rich Mahogany Bow
+		# DisplayName: {$ItemName.RichMahoganyBow}
 		// RichMahoganyBow: /
-		# DisplayName: Pearlwood Sword
+		# DisplayName: {$ItemName.PearlwoodSword}
 		// PearlwoodSword: /
-		# DisplayName: Pearlwood Hammer
+		# DisplayName: {$ItemName.PearlwoodHammer}
 		// PearlwoodHammer: /
-		# DisplayName: Pearlwood Bow
+		# DisplayName: {$ItemName.PearlwoodBow}
 		// PearlwoodBow: /
-		# DisplayName: Red's Wings
+		# DisplayName: {$ItemName.RedsWings}
 		// RedsWings: /
-		# DisplayName: Ice Boomerang
+		# DisplayName: {$ItemName.IceBoomerang}
 		// IceBoomerang: /
-		# DisplayName: Keybrand
+		# DisplayName: {$ItemName.Keybrand}
 		// Keybrand: /
-		# DisplayName: Cutlass
+		# DisplayName: {$ItemName.Cutlass}
 		// Cutlass: /
-		# DisplayName: True Excalibur
+		# DisplayName: {$ItemName.TrueExcalibur}
 		// TrueExcalibur: /
-		# DisplayName: True Night's Edge
+		# DisplayName: {$ItemName.TrueNightsEdge}
 		// TrueNightsEdge: /
-		# DisplayName: Frostbrand
+		# DisplayName: {$ItemName.Frostbrand}
 		// Frostbrand: /
-		# DisplayName: Tactical Shotgun
+		# DisplayName: {$ItemName.TacticalShotgun}
 		// TacticalShotgun: /
-		# DisplayName: Marrow
+		# DisplayName: {$ItemName.Marrow}
 		// Marrow: /
-		# DisplayName: Unholy Trident
+		# DisplayName: {$ItemName.UnholyTrident}
 		// UnholyTrident: /
-		# DisplayName: Tin Watch
+		# DisplayName: {$ItemName.TinWatch}
 		// TinWatch: /
-		# DisplayName: Tungsten Watch
+		# DisplayName: {$ItemName.TungstenWatch}
 		// TungstenWatch: /
-		# DisplayName: Platinum Watch
+		# DisplayName: {$ItemName.PlatinumWatch}
 		// PlatinumWatch: /
-		# DisplayName: Beam Sword
+		# DisplayName: {$ItemName.BeamSword}
 		// BeamSword: /
-		# DisplayName: Ice Blade
+		# DisplayName: {$ItemName.IceBlade}
 		// IceBlade: /
-		# DisplayName: Ice Bow
+		# DisplayName: {$ItemName.IceBow}
 		// IceBow: /
-		# DisplayName: Frost Staff
+		# DisplayName: {$ItemName.FrostStaff}
 		// FrostStaff: /
-		# DisplayName: Amethyst Staff
+		# DisplayName: {$ItemName.AmethystStaff}
 		// AmethystStaff: /
-		# DisplayName: Topaz Staff
+		# DisplayName: {$ItemName.TopazStaff}
 		// TopazStaff: /
-		# DisplayName: Sapphire Staff
+		# DisplayName: {$ItemName.SapphireStaff}
 		// SapphireStaff: /
-		# DisplayName: Emerald Staff
+		# DisplayName: {$ItemName.EmeraldStaff}
 		// EmeraldStaff: /
-		# DisplayName: Ruby Staff
+		# DisplayName: {$ItemName.RubyStaff}
 		// RubyStaff: /
-		# DisplayName: Diamond Staff
+		# DisplayName: {$ItemName.DiamondStaff}
 		// DiamondStaff: /
-		# DisplayName: Jetpack
+		# DisplayName: {$ItemName.Jetpack}
 		// Jetpack: /
-		# DisplayName: Butterfly Wings
+		# DisplayName: {$ItemName.ButterflyWings}
 		// ButterflyWings: /
-		# DisplayName: Mushroom Spear
+		# DisplayName: {$ItemName.MushroomSpear}
 		// MushroomSpear: /
-		# DisplayName: Terra Blade
+		# DisplayName: {$ItemName.TerraBlade}
 		// TerraBlade: /
-		# DisplayName: Grenade Launcher
+		# DisplayName: {$ItemName.GrenadeLauncher}
 		// GrenadeLauncher: /
-		# DisplayName: Rocket Launcher
+		# DisplayName: {$ItemName.RocketLauncher}
 		// RocketLauncher: /
-		# DisplayName: Proximity Mine Launcher
+		# DisplayName: {$ItemName.ProximityMineLauncher}
 		// ProximityMineLauncher: /
-		# DisplayName: Fairy Wings
+		# DisplayName: {$ItemName.FairyWings}
 		// FairyWings: /
-		# DisplayName: Cobalt Pickaxe
+		# DisplayName: {$ItemName.CobaltPickaxe}
 		// CobaltPickaxe: /
-		# DisplayName: Mythril Pickaxe
+		# DisplayName: {$ItemName.MythrilPickaxe}
 		// MythrilPickaxe: /
-		# DisplayName: Adamantite Pickaxe
+		# DisplayName: {$ItemName.AdamantitePickaxe}
 		// AdamantitePickaxe: /
-		# DisplayName: Harpy Wings
+		# DisplayName: {$ItemName.HarpyWings}
 		// HarpyWings: /
-		# DisplayName: Bone Wings
+		# DisplayName: {$ItemName.BoneWings}
 		// BoneWings: /
-		# DisplayName: Hammush
+		# DisplayName: {$ItemName.Hammush}
 		// Hammush: /
-		# DisplayName: Nettle Burst
+		# DisplayName: {$ItemName.NettleBurst}
 		// NettleBurst: /
-		# DisplayName: Blood Butcherer
+		# DisplayName: {$ItemName.BloodButcherer}
 		// BloodButcherer: /
-		# DisplayName: Tendon Bow
+		# DisplayName: {$ItemName.TendonBow}
 		// TendonBow: /
-		# DisplayName: Flesh Grinder
+		# DisplayName: {$ItemName.FleshGrinder}
 		// FleshGrinder: /
-		# DisplayName: Deathbringer Pickaxe
+		# DisplayName: {$ItemName.DeathbringerPickaxe}
 		// DeathbringerPickaxe: /
-		# DisplayName: Blood Lust Cluster
+		# DisplayName: {$ItemName.BloodLustCluster}
 		// BloodLustCluster: /
-		# DisplayName: The Undertaker
+		# DisplayName: {$ItemName.TheUndertaker}
 		// TheUndertaker: /
-		# DisplayName: The Meatball
+		# DisplayName: {$ItemName.TheMeatball}
 		// TheMeatball: /
-		# DisplayName: The Rotted Fork
+		# DisplayName: {$ItemName.TheRottedFork}
 		// TheRottedFork: /
-		# DisplayName: Flame Wings
+		# DisplayName: {$ItemName.FlameWings}
 		// FlameWings: /
-		# DisplayName: Frozen Wings
+		# DisplayName: {$ItemName.FrozenWings}
 		// FrozenWings: /
-		# DisplayName: Spectre Wings
+		# DisplayName: {$ItemName.GhostWings}
 		// GhostWings: /
-		# DisplayName: Discount Card
+		# DisplayName: {$ItemName.DiscountCard}
 		// DiscountCard: /
-		# DisplayName: Lucky Coin
+		# DisplayName: {$ItemName.LuckyCoin}
 		// LuckyCoin: /
-		# DisplayName: Sandstorm in a Bottle
+		# DisplayName: {$ItemName.SandstorminaBottle}
 		// SandstorminaBottle: /
-		# DisplayName: Charm of Myths
+		# DisplayName: {$ItemName.CharmofMyths}
 		// CharmofMyths: /
-		# DisplayName: Moon Shell
+		# DisplayName: {$ItemName.MoonShell}
 		// MoonShell: /
-		# DisplayName: Star Veil
+		# DisplayName: {$ItemName.StarVeil}
 		// StarVeil: /
-		# DisplayName: Water Walking Boots
+		# DisplayName: {$ItemName.WaterWalkingBoots}
 		// WaterWalkingBoots: /
-		# DisplayName: Cactus Sword
+		# DisplayName: {$ItemName.CactusSword}
 		// CactusSword: /
-		# DisplayName: Cactus Pickaxe
+		# DisplayName: {$ItemName.CactusPickaxe}
 		// CactusPickaxe: /
-		# DisplayName: Adhesive Bandage
+		# DisplayName: {$ItemName.AdhesiveBandage}
 		// AdhesiveBandage: /
-		# DisplayName: Armor Polish
+		# DisplayName: {$ItemName.ArmorPolish}
 		// ArmorPolish: /
-		# DisplayName: Bezoar
+		# DisplayName: {$ItemName.Bezoar}
 		// Bezoar: /
-		# DisplayName: Blindfold
+		# DisplayName: {$ItemName.Blindfold}
 		// Blindfold: /
-		# DisplayName: Fast Clock
+		# DisplayName: {$ItemName.FastClock}
 		// FastClock: /
-		# DisplayName: Megaphone
+		# DisplayName: {$ItemName.Megaphone}
 		// Megaphone: /
-		# DisplayName: Nazar
+		# DisplayName: {$ItemName.Nazar}
 		// Nazar: /
-		# DisplayName: Vitamins
+		# DisplayName: {$ItemName.Vitamins}
 		// Vitamins: /
-		# DisplayName: Trifold Map
+		# DisplayName: {$ItemName.TrifoldMap}
 		// TrifoldMap: /
-		# DisplayName: Power Glove
+		# DisplayName: {$ItemName.PowerGlove}
 		// PowerGlove: /
-		# DisplayName: Lightning Boots
+		# DisplayName: {$ItemName.LightningBoots}
 		// LightningBoots: /
-		# DisplayName: Sun Stone
+		# DisplayName: {$ItemName.SunStone}
 		// SunStone: /
-		# DisplayName: Moon Stone
+		# DisplayName: {$ItemName.MoonStone}
 		// MoonStone: /
-		# DisplayName: Armor Bracing
+		# DisplayName: {$ItemName.ArmorBracing}
 		// ArmorBracing: /
-		# DisplayName: Medicated Bandage
+		# DisplayName: {$ItemName.MedicatedBandage}
 		// MedicatedBandage: /
-		# DisplayName: The Plan
+		# DisplayName: {$ItemName.ThePlan}
 		// ThePlan: /
-		# DisplayName: Countercurse Mantra
+		# DisplayName: {$ItemName.CountercurseMantra}
 		// CountercurseMantra: /
-		# DisplayName: Lava Charm
+		# DisplayName: {$ItemName.LavaCharm}
 		// LavaCharm: /
-		# DisplayName: Obsidian Water Walking Boots
+		# DisplayName: {$ItemName.ObsidianWaterWalkingBoots}
 		// ObsidianWaterWalkingBoots: /
-		# DisplayName: Lava Waders
+		# DisplayName: {$ItemName.LavaWaders}
 		// LavaWaders: /
-		# DisplayName: Shadewood Sword
+		# DisplayName: {$ItemName.ShadewoodSword}
 		// ShadewoodSword: /
-		# DisplayName: Shadewood Hammer
+		# DisplayName: {$ItemName.ShadewoodHammer}
 		// ShadewoodHammer: /
-		# DisplayName: Shadewood Bow
+		# DisplayName: {$ItemName.ShadewoodBow}
 		// ShadewoodBow: /
-		# DisplayName: Flare Gun
+		# DisplayName: {$ItemName.FlareGun}
 		// FlareGun: /
-		# DisplayName: Flying Carpet
+		# DisplayName: {$ItemName.FlyingCarpet}
 		// FlyingCarpet: /
-		# DisplayName: Avenger Emblem
+		# DisplayName: {$ItemName.AvengerEmblem}
 		// AvengerEmblem: /
-		# DisplayName: Mechanical Glove
+		# DisplayName: {$ItemName.MechanicalGlove}
 		// MechanicalGlove: /
-		# DisplayName: Paladin's Shield
+		# DisplayName: {$ItemName.PaladinsShield}
 		// PaladinsShield: /
-		# DisplayName: Umbrella
+		# DisplayName: {$ItemName.Umbrella}
 		// Umbrella: /
-		# DisplayName: Steampunk Wings
+		# DisplayName: {$ItemName.SteampunkWings}
 		// SteampunkWings: /
-		# DisplayName: Ice Skates
+		# DisplayName: {$ItemName.IceSkates}
 		// IceSkates: /
-		# DisplayName: Climbing Claws
+		# DisplayName: {$ItemName.ClimbingClaws}
 		// ClimbingClaws: /
-		# DisplayName: Black Belt
+		# DisplayName: {$ItemName.BlackBelt}
 		// BlackBelt: /
-		# DisplayName: Boomstick
+		# DisplayName: {$ItemName.Boomstick}
 		// Boomstick: /
-		# DisplayName: Shoe Spikes
+		# DisplayName: {$ItemName.ShoeSpikes}
 		// ShoeSpikes: /
-		# DisplayName: Tiger Climbing Gear
+		# DisplayName: {$ItemName.TigerClimbingGear}
 		// TigerClimbingGear: /
-		# DisplayName: Tabi
+		# DisplayName: {$ItemName.Tabi}
 		// Tabi: /
-		# DisplayName: Mana Regeneration Band
+		# DisplayName: {$ItemName.ManaRegenerationBand}
 		// ManaRegenerationBand: /
-		# DisplayName: Sandstorm in a Balloon
+		# DisplayName: {$ItemName.SandstorminaBalloon}
 		// SandstorminaBalloon: /
-		# DisplayName: Master Ninja Gear
+		# DisplayName: {$ItemName.MasterNinjaGear}
 		// MasterNinjaGear: /
-		# DisplayName: Blowgun
+		# DisplayName: {$ItemName.Blowgun}
 		// Blowgun: /
-		# DisplayName: Blizzard in a Bottle
+		# DisplayName: {$ItemName.BlizzardinaBottle}
 		// BlizzardinaBottle: /
-		# DisplayName: Enchanted Sword
+		# DisplayName: {$ItemName.EnchantedSword}
 		// EnchantedSword: /
-		# DisplayName: Pickaxe Axe
+		# DisplayName: {$ItemName.PickaxeAxe}
 		// PickaxeAxe: /
-		# DisplayName: Cobalt Waraxe
+		# DisplayName: {$ItemName.CobaltWaraxe}
 		// CobaltWaraxe: /
-		# DisplayName: Mythril Waraxe
+		# DisplayName: {$ItemName.MythrilWaraxe}
 		// MythrilWaraxe: /
-		# DisplayName: Adamantite Waraxe
+		# DisplayName: {$ItemName.AdamantiteWaraxe}
 		// AdamantiteWaraxe: /
-		# DisplayName: Bee Gun
+		# DisplayName: {$ItemName.BeeGun}
 		// BeeGun: /
-		# DisplayName: Possessed Hatchet
+		# DisplayName: {$ItemName.PossessedHatchet}
 		// PossessedHatchet: /
-		# DisplayName: Bee Keeper
+		# DisplayName: {$ItemName.BeeKeeper}
 		// BeeKeeper: /
-		# DisplayName: Gravity Globe
+		# DisplayName: {$ItemName.GravityGlobe}
 		// GravityGlobe: /
-		# DisplayName: Honey Comb
+		# DisplayName: {$ItemName.HoneyComb}
 		// HoneyComb: /
-		# DisplayName: Wasp Gun
+		# DisplayName: {$ItemName.WaspGun}
 		// WaspGun: /
-		# DisplayName: Piranha Gun
+		# DisplayName: {$ItemName.PiranhaGun}
 		// PiranhaGun: /
-		# DisplayName: Pygmy Staff
+		# DisplayName: {$ItemName.PygmyStaff}
 		// PygmyStaff: /
-		# DisplayName: Pygmy Necklace
+		# DisplayName: {$ItemName.PygmyNecklace}
 		// PygmyNecklace: /
-		# DisplayName: Leaf Wings
+		# DisplayName: {$ItemName.LeafWings}
 		// LeafWings: /
-		# DisplayName: Blizzard in a Balloon
+		# DisplayName: {$ItemName.BlizzardinaBalloon}
 		// BlizzardinaBalloon: /
-		# DisplayName: Bundle of Balloons
+		# DisplayName: {$ItemName.BundleofBalloons}
 		// BundleofBalloons: /
-		# DisplayName: Bat Wings
+		# DisplayName: {$ItemName.BatWings}
 		// BatWings: /
-		# DisplayName: Bone Sword
+		# DisplayName: {$ItemName.BoneSword}
 		// BoneSword: /
-		# DisplayName: Hercules Beetle
+		# DisplayName: {$ItemName.HerculesBeetle}
 		// HerculesBeetle: /
-		# DisplayName: Leaf Blower
+		# DisplayName: {$ItemName.LeafBlower}
 		// LeafBlower: /
-		# DisplayName: Palladium Sword
+		# DisplayName: {$ItemName.PalladiumSword}
 		// PalladiumSword: /
-		# DisplayName: Palladium Pike
+		# DisplayName: {$ItemName.PalladiumPike}
 		// PalladiumPike: /
-		# DisplayName: Palladium Repeater
+		# DisplayName: {$ItemName.PalladiumRepeater}
 		// PalladiumRepeater: /
-		# DisplayName: Palladium Pickaxe
+		# DisplayName: {$ItemName.PalladiumPickaxe}
 		// PalladiumPickaxe: /
-		# DisplayName: Palladium Drill
+		# DisplayName: {$ItemName.PalladiumDrill}
 		// PalladiumDrill: /
-		# DisplayName: Palladium Chainsaw
+		# DisplayName: {$ItemName.PalladiumChainsaw}
 		// PalladiumChainsaw: /
-		# DisplayName: Orichalcum Sword
+		# DisplayName: {$ItemName.OrichalcumSword}
 		// OrichalcumSword: /
-		# DisplayName: Orichalcum Halberd
+		# DisplayName: {$ItemName.OrichalcumHalberd}
 		// OrichalcumHalberd: /
-		# DisplayName: Orichalcum Repeater
+		# DisplayName: {$ItemName.OrichalcumRepeater}
 		// OrichalcumRepeater: /
-		# DisplayName: Orichalcum Pickaxe
+		# DisplayName: {$ItemName.OrichalcumPickaxe}
 		// OrichalcumPickaxe: /
-		# DisplayName: Orichalcum Drill
+		# DisplayName: {$ItemName.OrichalcumDrill}
 		// OrichalcumDrill: /
-		# DisplayName: Orichalcum Chainsaw
+		# DisplayName: {$ItemName.OrichalcumChainsaw}
 		// OrichalcumChainsaw: /
-		# DisplayName: Titanium Sword
+		# DisplayName: {$ItemName.TitaniumSword}
 		// TitaniumSword: /
-		# DisplayName: Titanium Trident
+		# DisplayName: {$ItemName.TitaniumTrident}
 		// TitaniumTrident: /
-		# DisplayName: Titanium Repeater
+		# DisplayName: {$ItemName.TitaniumRepeater}
 		// TitaniumRepeater: /
-		# DisplayName: Titanium Pickaxe
+		# DisplayName: {$ItemName.TitaniumPickaxe}
 		// TitaniumPickaxe: /
-		# DisplayName: Titanium Drill
+		# DisplayName: {$ItemName.TitaniumDrill}
 		// TitaniumDrill: /
-		# DisplayName: Titanium Chainsaw
+		# DisplayName: {$ItemName.TitaniumChainsaw}
 		// TitaniumChainsaw: /
-		# DisplayName: Palladium Waraxe
+		# DisplayName: {$ItemName.PalladiumWaraxe}
 		// PalladiumWaraxe: /
-		# DisplayName: Orichalcum Waraxe
+		# DisplayName: {$ItemName.OrichalcumWaraxe}
 		// OrichalcumWaraxe: /
-		# DisplayName: Titanium Waraxe
+		# DisplayName: {$ItemName.TitaniumWaraxe}
 		// TitaniumWaraxe: /
-		# DisplayName: Chlorophyte Claymore
+		# DisplayName: {$ItemName.ChlorophyteClaymore}
 		// ChlorophyteClaymore: /
-		# DisplayName: Chlorophyte Saber
+		# DisplayName: {$ItemName.ChlorophyteSaber}
 		// ChlorophyteSaber: /
-		# DisplayName: Chlorophyte Partisan
+		# DisplayName: {$ItemName.ChlorophytePartisan}
 		// ChlorophytePartisan: /
-		# DisplayName: Chlorophyte Shotbow
+		# DisplayName: {$ItemName.ChlorophyteShotbow}
 		// ChlorophyteShotbow: /
-		# DisplayName: Chlorophyte Pickaxe
+		# DisplayName: {$ItemName.ChlorophytePickaxe}
 		// ChlorophytePickaxe: /
-		# DisplayName: Chlorophyte Drill
+		# DisplayName: {$ItemName.ChlorophyteDrill}
 		// ChlorophyteDrill: /
-		# DisplayName: Chlorophyte Chainsaw
+		# DisplayName: {$ItemName.ChlorophyteChainsaw}
 		// ChlorophyteChainsaw: /
-		# DisplayName: Chlorophyte Greataxe
+		# DisplayName: {$ItemName.ChlorophyteGreataxe}
 		// ChlorophyteGreataxe: /
-		# DisplayName: Chlorophyte Warhammer
+		# DisplayName: {$ItemName.ChlorophyteWarhammer}
 		// ChlorophyteWarhammer: /
-		# DisplayName: Nimbus Rod
+		# DisplayName: {$ItemName.NimbusRod}
 		// NimbusRod: /
-		# DisplayName: Bee Cloak
+		# DisplayName: {$ItemName.BeeCloak}
 		// BeeCloak: /
-		# DisplayName: Eye of the Golem
+		# DisplayName: {$ItemName.EyeoftheGolem}
 		// EyeoftheGolem: /
-		# DisplayName: Honey Balloon
+		# DisplayName: {$ItemName.HoneyBalloon}
 		// HoneyBalloon: /
-		# DisplayName: Blue Horseshoe Balloon
+		# DisplayName: {$ItemName.BlueHorseshoeBalloon}
 		// BlueHorseshoeBalloon: /
-		# DisplayName: White Horseshoe Balloon
+		# DisplayName: {$ItemName.WhiteHorseshoeBalloon}
 		// WhiteHorseshoeBalloon: /
-		# DisplayName: Yellow Horseshoe Balloon
+		# DisplayName: {$ItemName.YellowHorseshoeBalloon}
 		// YellowHorseshoeBalloon: /
-		# DisplayName: Frozen Turtle Shell
+		# DisplayName: {$ItemName.FrozenTurtleShell}
 		// FrozenTurtleShell: /
-		# DisplayName: Sniper Rifle
+		# DisplayName: {$ItemName.SniperRifle}
 		// SniperRifle: /
-		# DisplayName: Venus Magnum
+		# DisplayName: {$ItemName.VenusMagnum}
 		// VenusMagnum: /
-		# DisplayName: Crimson Rod
+		# DisplayName: {$ItemName.CrimsonRod}
 		// CrimsonRod: /
-		# DisplayName: Stynger
+		# DisplayName: {$ItemName.Stynger}
 		// Stynger: /
-		# DisplayName: Flower Pow
+		# DisplayName: {$ItemName.FlowerPow}
 		// FlowerPow: /
-		# DisplayName: Rainbow Gun
+		# DisplayName: {$ItemName.RainbowGun}
 		// RainbowGun: /
-		# DisplayName: Chlorophyte Jackhammer
+		# DisplayName: {$ItemName.ChlorophyteJackhammer}
 		// ChlorophyteJackhammer: /
-		# DisplayName: Flower of Frost
+		# DisplayName: {$ItemName.FlowerofFrost}
 		// FlowerofFrost: /
-		# DisplayName: Uzi
+		# DisplayName: {$ItemName.Uzi}
 		// Uzi: /
-		# DisplayName: Magnet Sphere
+		# DisplayName: {$ItemName.MagnetSphere}
 		// MagnetSphere: /
-		# DisplayName: Panic Necklace
+		# DisplayName: {$ItemName.PanicNecklace}
 		// PanicNecklace: /
-		# DisplayName: Picksaw
+		# DisplayName: {$ItemName.Picksaw}
 		// Picksaw: /
-		# DisplayName: Heat Ray
+		# DisplayName: {$ItemName.HeatRay}
 		// HeatRay: /
-		# DisplayName: Staff of Earth
+		# DisplayName: {$ItemName.StaffofEarth}
 		// StaffofEarth: /
-		# DisplayName: Golem Fist
+		# DisplayName: {$ItemName.GolemFist}
 		// GolemFist: /
-		# DisplayName: Rifle Scope
+		# DisplayName: {$ItemName.RifleScope}
 		// RifleScope: /
-		# DisplayName: Destroyer Emblem
+		# DisplayName: {$ItemName.DestroyerEmblem}
 		// DestroyerEmblem: /
-		# DisplayName: Jellyfish Necklace
+		# DisplayName: {$ItemName.JellyfishNecklace}
 		// JellyfishNecklace: /
-		# DisplayName: Zombie Arm
+		# DisplayName: {$ItemName.ZombieArm}
 		// ZombieArm: /
-		# DisplayName: The Axe
+		# DisplayName: {$ItemName.TheAxe}
 		// TheAxe: /
-		# DisplayName: Ice Sickle
+		# DisplayName: {$ItemName.IceSickle}
 		// IceSickle: /
-		# DisplayName: Poison Staff
+		# DisplayName: {$ItemName.PoisonStaff}
 		// PoisonStaff: /
-		# DisplayName: Slime Staff
+		# DisplayName: {$ItemName.SlimeStaff}
 		// SlimeStaff: /
-		# DisplayName: Book of Skulls
+		# DisplayName: {$ItemName.BookofSkulls}
 		// BookofSkulls: /
-		# DisplayName: KO Cannon
+		# DisplayName: {$ItemName.KOCannon}
 		// KOCannon: /
-		# DisplayName: Snowball Cannon
+		# DisplayName: {$ItemName.SnowballCannon}
 		// SnowballCannon: /
-		# DisplayName: Bone Pickaxe
+		# DisplayName: {$ItemName.BonePickaxe}
 		// BonePickaxe: /
-		# DisplayName: Magic Quiver
+		# DisplayName: {$ItemName.MagicQuiver}
 		// MagicQuiver: /
-		# DisplayName: Magma Stone
+		# DisplayName: {$ItemName.MagmaStone}
 		// MagmaStone: /
-		# DisplayName: Obsidian Rose
+		# DisplayName: {$ItemName.ObsidianRose}
 		// ObsidianRose: /
-		# DisplayName: Bananarang
+		# DisplayName: {$ItemName.Bananarang}
 		// Bananarang: /
-		# DisplayName: Chain Knife
+		# DisplayName: {$ItemName.ChainKnife}
 		// ChainKnife: /
-		# DisplayName: Death Sickle
+		# DisplayName: {$ItemName.DeathSickle}
 		// DeathSickle: /
-		# DisplayName: Golden Shower
+		# DisplayName: {$ItemName.GoldenShower}
 		// GoldenShower: /
-		# DisplayName: Fire Gauntlet
+		# DisplayName: {$ItemName.FireGauntlet}
 		// FireGauntlet: /
-		# DisplayName: Shadowbeam Staff
+		# DisplayName: {$ItemName.ShadowbeamStaff}
 		// ShadowbeamStaff: /
-		# DisplayName: Inferno Fork
+		# DisplayName: {$ItemName.InfernoFork}
 		// InfernoFork: /
-		# DisplayName: Spectre Staff
+		# DisplayName: {$ItemName.SpectreStaff}
 		// SpectreStaff: /
-		# DisplayName: Spectre Pickaxe
+		# DisplayName: {$ItemName.SpectrePickaxe}
 		// SpectrePickaxe: /
-		# DisplayName: Spectre Hamaxe
+		# DisplayName: {$ItemName.SpectreHamaxe}
 		// SpectreHamaxe: /
-		# DisplayName: Paladin's Hammer
+		# DisplayName: {$ItemName.PaladinsHammer}
 		// PaladinsHammer: /
-		# DisplayName: Bee Wings
+		# DisplayName: {$ItemName.BeeWings}
 		// BeeWings: /
-		# DisplayName: S.D.M.G.
+		# DisplayName: {$ItemName.SDMG}
 		// SDMG: /
-		# DisplayName: Vampire Knives
+		# DisplayName: {$ItemName.VampireKnives}
 		// VampireKnives: /
-		# DisplayName: Scourge of the Corruptor
+		# DisplayName: {$ItemName.ScourgeoftheCorruptor}
 		// ScourgeoftheCorruptor: /
-		# DisplayName: Staff of the Frost Hydra
+		# DisplayName: {$ItemName.StaffoftheFrostHydra}
 		// StaffoftheFrostHydra: /
-		# DisplayName: Sweetheart Necklace
+		# DisplayName: {$ItemName.SweetheartNecklace}
 		// SweetheartNecklace: /
-		# DisplayName: Flurry Boots
+		# DisplayName: {$ItemName.FlurryBoots}
 		// FlurryBoots: /
-		# DisplayName: D-Town's Wings
+		# DisplayName: {$ItemName.DTownsWings}
 		// DTownsWings: /
-		# DisplayName: Will's Wings
+		# DisplayName: {$ItemName.WillsWings}
 		// WillsWings: /
-		# DisplayName: Crowno's Wings
+		# DisplayName: {$ItemName.CrownosWings}
 		// CrownosWings: /
-		# DisplayName: Cenx's Wings
+		# DisplayName: {$ItemName.CenxsWings}
 		// CenxsWings: /
-		# DisplayName: Magic Cuffs
+		# DisplayName: {$ItemName.MagicCuffs}
 		// MagicCuffs: /
-		# DisplayName: Ankh Charm
+		# DisplayName: {$ItemName.AnkhCharm}
 		// AnkhCharm: /
-		# DisplayName: Ankh Shield
+		# DisplayName: {$ItemName.AnkhShield}
 		// AnkhShield: /
-		# DisplayName: Fart in a Jar
+		# DisplayName: {$ItemName.FartinaJar}
 		// FartinaJar: /
-		# DisplayName: Candy Corn Rifle
+		# DisplayName: {$ItemName.CandyCornRifle}
 		// CandyCornRifle: /
-		# DisplayName: Jack 'O Lantern Launcher
+		# DisplayName: {$ItemName.JackOLanternLauncher}
 		// JackOLanternLauncher: /
-		# DisplayName: Sickle
+		# DisplayName: {$ItemName.Sickle}
 		// Sickle: /
-		# DisplayName: Tattered Fairy Wings
+		# DisplayName: {$ItemName.TatteredFairyWings}
 		// TatteredFairyWings: /
-		# DisplayName: Bat Scepter
+		# DisplayName: {$ItemName.BatScepter}
 		// BatScepter: /
-		# DisplayName: Raven Staff
+		# DisplayName: {$ItemName.RavenStaff}
 		// RavenStaff: /
-		# DisplayName: Bloody Machete
+		# DisplayName: {$ItemName.BloodyMachete}
 		// BloodyMachete: /
-		# DisplayName: The Horseman's Blade
+		# DisplayName: {$ItemName.TheHorsemansBlade}
 		// TheHorsemansBlade: /
-		# DisplayName: Bladed Glove
+		# DisplayName: {$ItemName.BladedGlove}
 		// BladedGlove: /
-		# DisplayName: Spooky Wings
+		# DisplayName: {$ItemName.SpookyWings}
 		// SpookyWings: /
-		# DisplayName: Stake Launcher
+		# DisplayName: {$ItemName.StakeLauncher}
 		// StakeLauncher: /
-		# DisplayName: Necromantic Scroll
+		# DisplayName: {$ItemName.NecromanticScroll}
 		// NecromanticScroll: /
-		# DisplayName: Sniper Scope
+		# DisplayName: {$ItemName.SniperScope}
 		// SniperScope: /
-		# DisplayName: Jellyfish Diving Gear
+		# DisplayName: {$ItemName.JellyfishDivingGear}
 		// JellyfishDivingGear: /
-		# DisplayName: Arctic Diving Gear
+		# DisplayName: {$ItemName.ArcticDivingGear}
 		// ArcticDivingGear: /
-		# DisplayName: Frostspark Boots
+		# DisplayName: {$ItemName.FrostsparkBoots}
 		// FrostsparkBoots: /
-		# DisplayName: Fart in a Balloon
+		# DisplayName: {$ItemName.FartInABalloon}
 		// FartInABalloon: /
-		# DisplayName: Papyrus Scarab
+		# DisplayName: {$ItemName.PapyrusScarab}
 		// PapyrusScarab: /
-		# DisplayName: Celestial Stone
+		# DisplayName: {$ItemName.CelestialStone}
 		// CelestialStone: /
-		# DisplayName: Hoverboard
+		# DisplayName: {$ItemName.Hoverboard}
 		// Hoverboard: /
-		# DisplayName: Red Ryder
+		# DisplayName: {$ItemName.RedRyder}
 		// RedRyder: /
-		# DisplayName: Festive Wings
+		# DisplayName: {$ItemName.FestiveWings}
 		// FestiveWings: /
-		# DisplayName: Candy Cane Sword
+		# DisplayName: {$ItemName.CandyCaneSword}
 		// CandyCaneSword: /
-		# DisplayName: Elf Melter
+		# DisplayName: {$ItemName.ElfMelter}
 		// ElfMelter: /
-		# DisplayName: Candy Cane Pickaxe
+		# DisplayName: {$ItemName.CnadyCanePickaxe}
 		// CnadyCanePickaxe: /
-		# DisplayName: Fruitcake Chakram
+		# DisplayName: {$ItemName.FruitcakeChakram}
 		// FruitcakeChakram: /
-		# DisplayName: Hand Warmer
+		# DisplayName: {$ItemName.HandWarmer}
 		// HandWarmer: /
-		# DisplayName: Toolbox
+		# DisplayName: {$ItemName.Toolbox}
 		// Toolbox: /
-		# DisplayName: Christmas Tree Sword
+		# DisplayName: {$ItemName.ChristmasTreeSword}
 		// ChristmasTreeSword: /
-		# DisplayName: Chain Gun
+		# DisplayName: {$ItemName.ChainGun}
 		// ChainGun: /
-		# DisplayName: Razorpine
+		# DisplayName: {$ItemName.Razorpine}
 		// Razorpine: /
-		# DisplayName: Blizzard Staff
+		# DisplayName: {$ItemName.BlizzardStaff}
 		// BlizzardStaff: /
-		# DisplayName: Snowman Cannon
+		# DisplayName: {$ItemName.SnowmanCannon}
 		// SnowmanCannon: /
-		# DisplayName: North Pole
+		# DisplayName: {$ItemName.NorthPole}
 		// NorthPole: /
-		# DisplayName: Shroomite Digging Claw
+		# DisplayName: {$ItemName.ShroomiteDiggingClaw}
 		// ShroomiteDiggingClaw: /
-		# DisplayName: Venom Staff
+		# DisplayName: {$ItemName.VenomStaff}
 		// VenomStaff: /
-		# DisplayName: Brick Layer
+		# DisplayName: {$ItemName.BrickLayer}
 		// BrickLayer: /
-		# DisplayName: Extendo Grip
+		# DisplayName: {$ItemName.ExtendoGrip}
 		// ExtendoGrip: /
-		# DisplayName: Paint Sprayer
+		# DisplayName: {$ItemName.PaintSprayer}
 		// PaintSprayer: /
-		# DisplayName: Portable Cement Mixer
+		# DisplayName: {$ItemName.PortableCementMixer}
 		// PortableCementMixer: /
-		# DisplayName: Celestial Magnet
+		# DisplayName: {$ItemName.CelestialMagnet}
 		// CelestialMagnet: /
-		# DisplayName: Celestial Emblem
+		# DisplayName: {$ItemName.CelestialEmblem}
 		// CelestialEmblem: /
-		# DisplayName: Celestial Cuffs
+		# DisplayName: {$ItemName.CelestialCuffs}
 		// CelestialCuffs: /
-		# DisplayName: Pulse Bow
+		# DisplayName: {$ItemName.PulseBow}
 		// PulseBow: /
-		# DisplayName: Revolver
+		# DisplayName: {$ItemName.Revolver}
 		// Revolver: /
-		# DisplayName: Gatligator
+		# DisplayName: {$ItemName.Gatligator}
 		// Gatligator: /
-		# DisplayName: Katana
+		# DisplayName: {$ItemName.Katana}
 		// Katana: /
-		# DisplayName: Beetle Wings
+		# DisplayName: {$ItemName.BeetleWings}
 		// BeetleWings: /
-		# DisplayName: Rockfish
+		# DisplayName: {$ItemName.Rockfish}
 		// Rockfish: /
-		# DisplayName: Purple Clubberfish
+		# DisplayName: {$ItemName.PurpleClubberfish}
 		// PurpleClubberfish: /
-		# DisplayName: Obsidian Swordfish
+		# DisplayName: {$ItemName.ObsidianSwordfish}
 		// ObsidianSwordfish: /
-		# DisplayName: Swordfish
+		# DisplayName: {$ItemName.Swordfish}
 		// Swordfish: /
-		# DisplayName: Reaver Shark
+		# DisplayName: {$ItemName.ReaverShark}
 		// ReaverShark: /
-		# DisplayName: Sawtooth Shark
+		# DisplayName: {$ItemName.SawtoothShark}
 		// SawtoothShark: /
-		# DisplayName: Hornet Staff
+		# DisplayName: {$ItemName.HornetStaff}
 		// HornetStaff: /
-		# DisplayName: Imp Staff
+		# DisplayName: {$ItemName.ImpStaff}
 		// ImpStaff: /
-		# DisplayName: Queen Spider Staff
+		# DisplayName: {$ItemName.QueenSpiderStaff}
 		// QueenSpiderStaff: /
-		# DisplayName: High Test Fishing Line
+		# DisplayName: {$ItemName.HighTestFishingLine}
 		// HighTestFishingLine: /
-		# DisplayName: Angler Earring
+		# DisplayName: {$ItemName.AnglerEarring}
 		// AnglerEarring: /
-		# DisplayName: Tackle Box
+		# DisplayName: {$ItemName.TackleBox}
 		// TackleBox: /
-		# DisplayName: Frog Leg
+		# DisplayName: {$ItemName.FrogLeg}
 		// FrogLeg: /
-		# DisplayName: Anchor
+		# DisplayName: {$ItemName.Anchor}
 		// Anchor: /
-		# DisplayName: Fin Wings
+		# DisplayName: {$ItemName.FinWings}
 		// FinWings: /
-		# DisplayName: Palm Wood Bow
+		# DisplayName: {$ItemName.PalmWoodBow}
 		// PalmWoodBow: /
-		# DisplayName: Palm Wood Hammer
+		# DisplayName: {$ItemName.PalmWoodHammer}
 		// PalmWoodHammer: /
-		# DisplayName: Palm Wood Sword
+		# DisplayName: {$ItemName.PalmWoodSword}
 		// PalmWoodSword: /
-		# DisplayName: Optic Staff
+		# DisplayName: {$ItemName.OpticStaff}
 		// OpticStaff: /
-		# DisplayName: Spider Staff
+		# DisplayName: {$ItemName.SpiderStaff}
 		// SpiderStaff: /
-		# DisplayName: Pirate Staff
+		# DisplayName: {$ItemName.PirateStaff}
 		// PirateStaff: /
-		# DisplayName: Falcon Blade
+		# DisplayName: {$ItemName.FalconBlade}
 		// FalconBlade: /
-		# DisplayName: Fishron Wings
+		# DisplayName: {$ItemName.FishronWings}
 		// FishronWings: /
-		# DisplayName: Flairon
+		# DisplayName: {$ItemName.Flairon}
 		// Flairon: /
-		# DisplayName: Tempest Staff
+		# DisplayName: {$ItemName.TempestStaff}
 		// TempestStaff: /
-		# DisplayName: Razorblade Typhoon
+		# DisplayName: {$ItemName.RazorbladeTyphoon}
 		// RazorbladeTyphoon: /
-		# DisplayName: Bubble Gun
+		# DisplayName: {$ItemName.BubbleGun}
 		// BubbleGun: /
-		# DisplayName: Tsunami
+		# DisplayName: {$ItemName.Tsunami}
 		// Tsunami: /
-		# DisplayName: Boreal Wood Sword
+		# DisplayName: {$ItemName.BorealWoodSword}
 		// BorealWoodSword: /
-		# DisplayName: Boreal Wood Hammer
+		# DisplayName: {$ItemName.BorealWoodHammer}
 		// BorealWoodHammer: /
-		# DisplayName: Boreal Wood Bow
+		# DisplayName: {$ItemName.BorealWoodBow}
 		// BorealWoodBow: /
-		# DisplayName: Xeno Staff
+		# DisplayName: {$ItemName.XenoStaff}
 		// XenoStaff: /
-		# DisplayName: Meteor Staff
+		# DisplayName: {$ItemName.MeteorStaff}
 		// MeteorStaff: /
-		# DisplayName: Mothron Wings
+		# DisplayName: {$ItemName.MothronWings}
 		// MothronWings: /
-		# DisplayName: Vortex Drill
+		# DisplayName: {$ItemName.VortexDrill}
 		// VortexDrill: /
-		# DisplayName: Vortex Pickaxe
+		# DisplayName: {$ItemName.VortexPickaxe}
 		// VortexPickaxe: /
-		# DisplayName: Nebula Drill
+		# DisplayName: {$ItemName.NebulaDrill}
 		// NebulaDrill: /
-		# DisplayName: Nebula Pickaxe
+		# DisplayName: {$ItemName.NebulaPickaxe}
 		// NebulaPickaxe: /
-		# DisplayName: Solar Flare Drill
+		# DisplayName: {$ItemName.SolarFlareDrill}
 		// SolarFlareDrill: /
-		# DisplayName: Solar Flare Pickaxe
+		# DisplayName: {$ItemName.SolarFlarePickaxe}
 		// SolarFlarePickaxe: /
-		# DisplayName: Laser Machinegun
+		# DisplayName: {$ItemName.LaserMachinegun}
 		// LaserMachinegun: /
-		# DisplayName: Electrosphere Launcher
+		# DisplayName: {$ItemName.ElectrosphereLauncher}
 		// ElectrosphereLauncher: /
-		# DisplayName: Xenopopper
+		# DisplayName: {$ItemName.Xenopopper}
 		// Xenopopper: /
-		# DisplayName: Laser Drill
+		# DisplayName: {$ItemName.LaserDrill}
 		// LaserDrill: /
-		# DisplayName: Mechanical Ruler
+		# DisplayName: {$ItemName.LaserRuler}
 		// LaserRuler: /
-		# DisplayName: Influx Waver
+		# DisplayName: {$ItemName.InfluxWaver}
 		// InfluxWaver: /
-		# DisplayName: Charged Blaster Cannon
+		# DisplayName: {$ItemName.ChargedBlasterCannon}
 		// ChargedBlasterCannon: /
-		# DisplayName: The Bee's Knees
+		# DisplayName: {$ItemName.BeesKnees}
 		// BeesKnees: /
-		# DisplayName: Summoner Emblem
+		# DisplayName: {$ItemName.SummonerEmblem}
 		// SummonerEmblem: /
-		# DisplayName: Life Drain
+		# DisplayName: {$ItemName.SoulDrain}
 		// SoulDrain: /
-		# DisplayName: Dart Pistol
+		# DisplayName: {$ItemName.DartPistol}
 		// DartPistol: /
-		# DisplayName: Dart Rifle
+		# DisplayName: {$ItemName.DartRifle}
 		// DartRifle: /
-		# DisplayName: Chain Guillotines
+		# DisplayName: {$ItemName.ChainGuillotines}
 		// ChainGuillotines: /
-		# DisplayName: Fetid Baghnakhs
+		# DisplayName: {$ItemName.FetidBaghnakhs}
 		// FetidBaghnakhs: /
-		# DisplayName: Clinger Staff
+		# DisplayName: {$ItemName.ClingerStaff}
 		// ClingerStaff: /
-		# DisplayName: Putrid Scent
+		# DisplayName: {$ItemName.PutridScent}
 		// PutridScent: /
-		# DisplayName: Flesh Knuckles
+		# DisplayName: {$ItemName.FleshKnuckles}
 		// FleshKnuckles: /
-		# DisplayName: Flower Boots
+		# DisplayName: {$ItemName.FlowerBoots}
 		// FlowerBoots: /
-		# DisplayName: Seedler
+		# DisplayName: {$ItemName.Seedler}
 		// Seedler: /
-		# DisplayName: Hellwing Bow
+		# DisplayName: {$ItemName.HellwingBow}
 		// HellwingBow: /
-		# DisplayName: Daedalus Stormbow
+		# DisplayName: {$ItemName.DaedalusStormbow}
 		// DaedalusStormbow: /
-		# DisplayName: Flying Knife
+		# DisplayName: {$ItemName.FlyingKnife}
 		// FlyingKnife: /
-		# DisplayName: Gold Ring
+		# DisplayName: {$ItemName.GoldRing}
 		// GoldRing: /
-		# DisplayName: Coin Ring
+		# DisplayName: {$ItemName.CoinRing}
 		// CoinRing: /
-		# DisplayName: Greedy Ring
+		# DisplayName: {$ItemName.GreedyRing}
 		// GreedyRing: /
-		# DisplayName: Fish Finder
+		# DisplayName: {$ItemName.FishFinder}
 		// FishFinder: /
-		# DisplayName: Weather Radio
+		# DisplayName: {$ItemName.WeatherRadio}
 		// WeatherRadio: /
-		# DisplayName: Crystal Vile Shard
+		# DisplayName: {$ItemName.CrystalVileShard}
 		// CrystalVileShard: /
-		# DisplayName: Shadowflame Bow
+		# DisplayName: {$ItemName.ShadowFlameBow}
 		// ShadowFlameBow: /
-		# DisplayName: Shadowflame Hex Doll
+		# DisplayName: {$ItemName.ShadowFlameHexDoll}
 		// ShadowFlameHexDoll: /
-		# DisplayName: Shadowflame Knife
+		# DisplayName: {$ItemName.ShadowFlameKnife}
 		// ShadowFlameKnife: /
-		# DisplayName: Architect Gizmo Pack
+		# DisplayName: {$ItemName.ArchitectGizmoPack}
 		// ArchitectGizmoPack: /
-		# DisplayName: Meowmere
+		# DisplayName: {$ItemName.Meowmere}
 		// Meowmere: /
-		# DisplayName: Star Wrath
+		# DisplayName: {$ItemName.StarWrath}
 		// StarWrath: /
-		# DisplayName: Guide to Plant Fiber Cordage
+		# DisplayName: {$ItemName.CordageGuide}
 		// CordageGuide: /
-		# DisplayName: Wand of Sparking
+		# DisplayName: {$ItemName.WandofSparking}
 		// WandofSparking: /
-		# DisplayName: Radar
+		# DisplayName: {$ItemName.Radar}
 		// Radar: /
-		# DisplayName: Royal Gel
+		# DisplayName: {$ItemName.RoyalGel}
 		// RoyalGel: /
-		# DisplayName: Tally Counter
+		# DisplayName: {$ItemName.TallyCounter}
 		// TallyCounter: /
-		# DisplayName: Sextant
+		# DisplayName: {$ItemName.Sextant}
 		// Sextant: /
-		# DisplayName: Shield of Cthulhu
+		# DisplayName: {$ItemName.EoCShield}
 		// EoCShield: /
-		# DisplayName: Butcher's Chainsaw
+		# DisplayName: {$ItemName.ButchersChainsaw}
 		// ButchersChainsaw: /
-		# DisplayName: Stopwatch
+		# DisplayName: {$ItemName.Stopwatch}
 		// Stopwatch: /
-		# DisplayName: Metal Detector
+		# DisplayName: {$ItemName.MetalDetector}
 		// MetalDetector: /
-		# DisplayName: Toxic Flask
+		# DisplayName: {$ItemName.ToxicFlask}
 		// ToxicFlask: /
-		# DisplayName: Psycho Knife
+		# DisplayName: {$ItemName.PsychoKnife}
 		// PsychoKnife: /
-		# DisplayName: Nail Gun
+		# DisplayName: {$ItemName.NailGun}
 		// NailGun: /
-		# DisplayName: Celestial Shell
+		# DisplayName: {$ItemName.CelestialShell}
 		// CelestialShell: /
-		# DisplayName: Lifeform Analyzer
+		# DisplayName: {$ItemName.LifeformAnalyzer}
 		// LifeformAnalyzer: /
-		# DisplayName: DPS Meter
+		# DisplayName: {$ItemName.DPSMeter}
 		// DPSMeter: /
-		# DisplayName: Fisherman's Pocket Guide
+		# DisplayName: {$ItemName.FishermansGuide}
 		// FishermansGuide: /
-		# DisplayName: Goblin Tech
+		# DisplayName: {$ItemName.GoblinTech}
 		// GoblinTech: /
-		# DisplayName: R.E.K. 3000
+		# DisplayName: {$ItemName.REK}
 		// REK: /
-		# DisplayName: PDA
+		# DisplayName: {$ItemName.PDA}
 		// PDA: /
-		# DisplayName: Sailfish Boots
+		# DisplayName: {$ItemName.SailfishBoots}
 		// SailfishBoots: /
-		# DisplayName: Tsunami in a Bottle
+		# DisplayName: {$ItemName.TsunamiInABottle}
 		// TsunamiInABottle: /
-		# DisplayName: Crystal Serpent
+		# DisplayName: {$ItemName.CrystalSerpent}
 		// CrystalSerpent: /
-		# DisplayName: Toxikarp
+		# DisplayName: {$ItemName.Toxikarp}
 		// Toxikarp: /
-		# DisplayName: Bladetongue
+		# DisplayName: {$ItemName.Bladetongue}
 		// Bladetongue: /
-		# DisplayName: Shark Tooth Necklace
+		# DisplayName: {$ItemName.SharkToothNecklace}
 		// SharkToothNecklace: /
-		# DisplayName: Brain of Confusion
+		# DisplayName: {$ItemName.BrainOfConfusion}
 		// BrainOfConfusion: /
-		# DisplayName: Worm Scarf
+		# DisplayName: {$ItemName.WormScarf}
 		// WormScarf: /
-		# DisplayName: Balloon Pufferfish
+		# DisplayName: {$ItemName.BalloonPufferfish}
 		// BalloonPufferfish: /
-		# DisplayName: Lazure's Barrier Platform
+		# DisplayName: {$ItemName.BejeweledValkyrieWing}
 		// BejeweledValkyrieWing: /
-		# DisplayName: Sharkron Balloon
+		# DisplayName: {$ItemName.SharkronBalloon}
 		// SharkronBalloon: /
-		# DisplayName: Bone Glove
+		# DisplayName: {$ItemName.BoneGlove}
 		// BoneGlove: /
-		# DisplayName: Deadly Sphere Staff
+		# DisplayName: {$ItemName.DeadlySphereStaff}
 		// DeadlySphereStaff: /
-		# DisplayName: Green Horseshoe Balloon
+		# DisplayName: {$ItemName.BalloonHorseshoeFart}
 		// BalloonHorseshoeFart: /
-		# DisplayName: Amber Horseshoe Balloon
+		# DisplayName: {$ItemName.BalloonHorseshoeHoney}
 		// BalloonHorseshoeHoney: /
-		# DisplayName: Pink Horseshoe Balloon
+		# DisplayName: {$ItemName.BalloonHorseshoeSharkron}
 		// BalloonHorseshoeSharkron: /
-		# DisplayName: Slap Hand
+		# DisplayName: {$ItemName.SlapHand}
 		// SlapHand: /
-		# DisplayName: Code 1
+		# DisplayName: {$ItemName.Code1}
 		// Code1: /
-		# DisplayName: Medusa Head
+		# DisplayName: {$ItemName.MedusaHead}
 		// MedusaHead: /
-		# DisplayName: Wooden Yoyo
+		# DisplayName: {$ItemName.WoodYoyo}
 		// WoodYoyo: /
-		# DisplayName: Malaise
+		# DisplayName: {$ItemName.CorruptYoyo}
 		// CorruptYoyo: /
-		# DisplayName: Artery
+		# DisplayName: {$ItemName.CrimsonYoyo}
 		// CrimsonYoyo: /
-		# DisplayName: Amazon
+		# DisplayName: {$ItemName.JungleYoyo}
 		// JungleYoyo: /
-		# DisplayName: Cascade
+		# DisplayName: {$ItemName.Cascade}
 		// Cascade: /
-		# DisplayName: Chik
+		# DisplayName: {$ItemName.Chik}
 		// Chik: /
-		# DisplayName: Code 2
+		# DisplayName: {$ItemName.Code2}
 		// Code2: /
-		# DisplayName: Rally
+		# DisplayName: {$ItemName.Rally}
 		// Rally: /
-		# DisplayName: Yelets
+		# DisplayName: {$ItemName.Yelets}
 		// Yelets: /
-		# DisplayName: Red's Throw
+		# DisplayName: {$ItemName.RedsYoyo}
 		// RedsYoyo: /
-		# DisplayName: Valkyrie Yoyo
+		# DisplayName: {$ItemName.ValkyrieYoyo}
 		// ValkyrieYoyo: /
-		# DisplayName: Amarok
+		# DisplayName: {$ItemName.Amarok}
 		// Amarok: /
-		# DisplayName: Hel-Fire
+		# DisplayName: {$ItemName.HelFire}
 		// HelFire: /
-		# DisplayName: Kraken
+		# DisplayName: {$ItemName.Kraken}
 		// Kraken: /
-		# DisplayName: The Eye of Cthulhu
+		# DisplayName: {$ItemName.TheEyeOfCthulhu}
 		// TheEyeOfCthulhu: /
-		# DisplayName: Red String
+		# DisplayName: {$ItemName.RedString}
 		// RedString: /
-		# DisplayName: Orange String
+		# DisplayName: {$ItemName.OrangeString}
 		// OrangeString: /
-		# DisplayName: Yellow String
+		# DisplayName: {$ItemName.YellowString}
 		// YellowString: /
-		# DisplayName: Lime String
+		# DisplayName: {$ItemName.LimeString}
 		// LimeString: /
-		# DisplayName: Green String
+		# DisplayName: {$ItemName.GreenString}
 		// GreenString: /
-		# DisplayName: Teal String
+		# DisplayName: {$ItemName.TealString}
 		// TealString: /
-		# DisplayName: Cyan String
+		# DisplayName: {$ItemName.CyanString}
 		// CyanString: /
-		# DisplayName: Sky Blue String
+		# DisplayName: {$ItemName.SkyBlueString}
 		// SkyBlueString: /
-		# DisplayName: Blue String
+		# DisplayName: {$ItemName.BlueString}
 		// BlueString: /
-		# DisplayName: Purple String
+		# DisplayName: {$ItemName.PurpleString}
 		// PurpleString: /
-		# DisplayName: Violet String
+		# DisplayName: {$ItemName.VioletString}
 		// VioletString: /
-		# DisplayName: Pink String
+		# DisplayName: {$ItemName.PinkString}
 		// PinkString: /
-		# DisplayName: Brown String
+		# DisplayName: {$ItemName.BrownString}
 		// BrownString: /
-		# DisplayName: White String
+		# DisplayName: {$ItemName.WhiteString}
 		// WhiteString: /
-		# DisplayName: Rainbow String
+		# DisplayName: {$ItemName.RainbowString}
 		// RainbowString: /
-		# DisplayName: Black String
+		# DisplayName: {$ItemName.BlackString}
 		// BlackString: /
-		# DisplayName: Black Counterweight
+		# DisplayName: {$ItemName.BlackCounterweight}
 		// BlackCounterweight: /
-		# DisplayName: Blue Counterweight
+		# DisplayName: {$ItemName.BlueCounterweight}
 		// BlueCounterweight: /
-		# DisplayName: Green Counterweight
+		# DisplayName: {$ItemName.GreenCounterweight}
 		// GreenCounterweight: /
-		# DisplayName: Purple Counterweight
+		# DisplayName: {$ItemName.PurpleCounterweight}
 		// PurpleCounterweight: /
-		# DisplayName: Red Counterweight
+		# DisplayName: {$ItemName.RedCounterweight}
 		// RedCounterweight: /
-		# DisplayName: Yellow Counterweight
+		# DisplayName: {$ItemName.YellowCounterweight}
 		// YellowCounterweight: /
-		# DisplayName: Format:C
+		# DisplayName: {$ItemName.FormatC}
 		// FormatC: /
-		# DisplayName: Gradient
+		# DisplayName: {$ItemName.Gradient}
 		// Gradient: /
-		# DisplayName: Valor
+		# DisplayName: Valour
 		// Valor: /
-		# DisplayName: Hive Pack
+		# DisplayName: {$ItemName.HiveBackpack}
 		// HiveBackpack: /
-		# DisplayName: Yoyo Glove
+		# DisplayName: {$ItemName.YoYoGlove}
 		// YoYoGlove: /
-		# DisplayName: Spore Sac
+		# DisplayName: {$ItemName.SporeSac}
 		// SporeSac: /
-		# DisplayName: Shiny Stone
+		# DisplayName: {$ItemName.ShinyStone}
 		// ShinyStone: /
-		# DisplayName: Exotic Scimitar
+		# DisplayName: {$ItemName.DyeTradersScimitar}
 		// DyeTradersScimitar: /
-		# DisplayName: Paintball Gun
+		# DisplayName: {$ItemName.PainterPaintballGun}
 		// PainterPaintballGun: /
-		# DisplayName: Classy Cane
+		# DisplayName: {$ItemName.TaxCollectorsStickOfDoom}
 		// TaxCollectorsStickOfDoom: /
-		# DisplayName: Stylish Scissors
+		# DisplayName: {$ItemName.StylistKilLaKillScissorsIWish}
 		// StylistKilLaKillScissorsIWish: /
-		# DisplayName: Yoyo Bag
+		# DisplayName: {$ItemName.YoyoBag}
 		// YoyoBag: /
-		# DisplayName: Arkhalis
+		# DisplayName: {$ItemName.Arkhalis}
 		// Arkhalis: /
-		# DisplayName: Amber Staff
+		# DisplayName: {$ItemName.AmberStaff}
 		// AmberStaff: /
-		# DisplayName: Terrarian
+		# DisplayName: {$ItemName.Terrarian}
 		// Terrarian: /
-		# DisplayName: Stardust Drill
+		# DisplayName: {$ItemName.StardustDrill}
 		// StardustDrill: /
-		# DisplayName: Stardust Pickaxe
+		# DisplayName: {$ItemName.StardustPickaxe}
 		// StardustPickaxe: /
-		# DisplayName: Solar Wings
+		# DisplayName: {$ItemName.WingsSolar}
 		// WingsSolar: /
-		# DisplayName: Vortex Booster
+		# DisplayName: {$ItemName.WingsVortex}
 		// WingsVortex: /
-		# DisplayName: Nebula Mantle
+		# DisplayName: {$ItemName.WingsNebula}
 		// WingsNebula: /
-		# DisplayName: Stardust Wings
+		# DisplayName: {$ItemName.WingsStardust}
 		// WingsStardust: /
-		# DisplayName: Solar Eruption
+		# DisplayName: {$ItemName.SolarEruption}
 		// SolarEruption: /
-		# DisplayName: Stardust Cell Staff
+		# DisplayName: {$ItemName.StardustCellStaff}
 		// StardustCellStaff: /
-		# DisplayName: Vortex Beater
+		# DisplayName: {$ItemName.VortexBeater}
 		// VortexBeater: /
-		# DisplayName: Nebula Arcanum
+		# DisplayName: {$ItemName.NebulaArcanum}
 		// NebulaArcanum: /
-		# DisplayName: Platinum Bow
+		# DisplayName: {$ItemName.PlatinumBow}
 		// PlatinumBow: /
-		# DisplayName: Platinum Hammer
+		# DisplayName: {$ItemName.PlatinumHammer}
 		// PlatinumHammer: /
-		# DisplayName: Platinum Axe
+		# DisplayName: {$ItemName.PlatinumAxe}
 		// PlatinumAxe: /
-		# DisplayName: Platinum Shortsword
+		# DisplayName: {$ItemName.PlatinumShortsword}
 		// PlatinumShortsword: /
-		# DisplayName: Platinum Broadsword
+		# DisplayName: {$ItemName.PlatinumBroadsword}
 		// PlatinumBroadsword: /
-		# DisplayName: Platinum Pickaxe
+		# DisplayName: {$ItemName.PlatinumPickaxe}
 		// PlatinumPickaxe: /
-		# DisplayName: Tungsten Bow
+		# DisplayName: {$ItemName.TungstenBow}
 		// TungstenBow: /
-		# DisplayName: Tungsten Hammer
+		# DisplayName: {$ItemName.TungstenHammer}
 		// TungstenHammer: /
-		# DisplayName: Tungsten Axe
+		# DisplayName: {$ItemName.TungstenAxe}
 		// TungstenAxe: /
-		# DisplayName: Tungsten Shortsword
+		# DisplayName: {$ItemName.TungstenShortsword}
 		// TungstenShortsword: /
-		# DisplayName: Tungsten Broadsword
+		# DisplayName: {$ItemName.TungstenBroadsword}
 		// TungstenBroadsword: /
-		# DisplayName: Tungsten Pickaxe
+		# DisplayName: {$ItemName.TungstenPickaxe}
 		// TungstenPickaxe: /
-		# DisplayName: Lead Bow
+		# DisplayName: {$ItemName.LeadBow}
 		// LeadBow: /
-		# DisplayName: Lead Hammer
+		# DisplayName: {$ItemName.LeadHammer}
 		// LeadHammer: /
-		# DisplayName: Lead Axe
+		# DisplayName: {$ItemName.LeadAxe}
 		// LeadAxe: /
-		# DisplayName: Lead Shortsword
+		# DisplayName: {$ItemName.LeadShortsword}
 		// LeadShortsword: /
-		# DisplayName: Lead Broadsword
+		# DisplayName: {$ItemName.LeadBroadsword}
 		// LeadBroadsword: /
-		# DisplayName: Lead Pickaxe
+		# DisplayName: {$ItemName.LeadPickaxe}
 		// LeadPickaxe: /
-		# DisplayName: Tin Bow
+		# DisplayName: {$ItemName.TinBow}
 		// TinBow: /
-		# DisplayName: Tin Hammer
+		# DisplayName: {$ItemName.TinHammer}
 		// TinHammer: /
-		# DisplayName: Tin Axe
+		# DisplayName: {$ItemName.TinAxe}
 		// TinAxe: /
-		# DisplayName: Tin Shortsword
+		# DisplayName: {$ItemName.TinShortsword}
 		// TinShortsword: /
-		# DisplayName: Tin Broadsword
+		# DisplayName: {$ItemName.TinBroadsword}
 		// TinBroadsword: /
-		# DisplayName: Tin Pickaxe
+		# DisplayName: {$ItemName.TinPickaxe}
 		// TinPickaxe: /
-		# DisplayName: Copper Bow
+		# DisplayName: {$ItemName.CopperBow}
 		// CopperBow: /
-		# DisplayName: Copper Hammer
+		# DisplayName: {$ItemName.CopperHammer}
 		// CopperHammer: /
-		# DisplayName: Copper Axe
+		# DisplayName: {$ItemName.CopperAxe}
 		// CopperAxe: /
-		# DisplayName: Copper Shortsword
+		# DisplayName: {$ItemName.CopperShortsword}
 		// CopperShortsword: /
-		# DisplayName: Copper Broadsword
+		# DisplayName: {$ItemName.CopperBroadsword}
 		// CopperBroadsword: /
-		# DisplayName: Copper Pickaxe
+		# DisplayName: {$ItemName.CopperPickaxe}
 		// CopperPickaxe: /
-		# DisplayName: Silver Bow
+		# DisplayName: {$ItemName.SilverBow}
 		// SilverBow: /
-		# DisplayName: Silver Hammer
+		# DisplayName: {$ItemName.SilverHammer}
 		// SilverHammer: /
-		# DisplayName: Silver Axe
+		# DisplayName: {$ItemName.SilverAxe}
 		// SilverAxe: /
-		# DisplayName: Silver Shortsword
+		# DisplayName: {$ItemName.SilverShortsword}
 		// SilverShortsword: /
-		# DisplayName: Silver Broadsword
+		# DisplayName: {$ItemName.SilverBroadsword}
 		// SilverBroadsword: /
-		# DisplayName: Silver Pickaxe
+		# DisplayName: {$ItemName.SilverPickaxe}
 		// SilverPickaxe: /
-		# DisplayName: Gold Bow
+		# DisplayName: {$ItemName.GoldBow}
 		// GoldBow: /
-		# DisplayName: Gold Hammer
+		# DisplayName: {$ItemName.GoldHammer}
 		// GoldHammer: /
-		# DisplayName: Gold Axe
+		# DisplayName: {$ItemName.GoldAxe}
 		// GoldAxe: /
-		# DisplayName: Gold Shortsword
+		# DisplayName: {$ItemName.GoldShortsword}
 		// GoldShortsword: /
-		# DisplayName: Gold Broadsword
+		# DisplayName: {$ItemName.GoldBroadsword}
 		// GoldBroadsword: /
-		# DisplayName: Gold Pickaxe
+		# DisplayName: {$ItemName.GoldPickaxe}
 		// GoldPickaxe: /
-		# DisplayName: Solar Flare Hamaxe
+		# DisplayName: {$ItemName.LunarHamaxeSolar}
 		// LunarHamaxeSolar: /
-		# DisplayName: Vortex Hamaxe
+		# DisplayName: {$ItemName.LunarHamaxeVortex}
 		// LunarHamaxeVortex: /
-		# DisplayName: Nebula Hamaxe
+		# DisplayName: {$ItemName.LunarHamaxeNebula}
 		// LunarHamaxeNebula: /
-		# DisplayName: Stardust Hamaxe
+		# DisplayName: {$ItemName.LunarHamaxeStardust}
 		// LunarHamaxeStardust: /
-		# DisplayName: Stardust Dragon Staff
+		# DisplayName: {$ItemName.StardustDragonStaff}
 		// StardustDragonStaff: /
-		# DisplayName: Phantasm
+		# DisplayName: {$ItemName.Phantasm}
 		// Phantasm: /
-		# DisplayName: Last Prism
+		# DisplayName: {$ItemName.LastPrism}
 		// LastPrism: /
-		# DisplayName: Nebula Blaze
+		# DisplayName: {$ItemName.NebulaBlaze}
 		// NebulaBlaze: /
-		# DisplayName: Daybreak
+		# DisplayName: {$ItemName.DayBreak}
 		// DayBreak: /
-		# DisplayName: Celebration
+		# DisplayName: {$ItemName.FireworksLauncher}
 		// FireworksLauncher: /
-		# DisplayName: Lunar Portal Staff
+		# DisplayName: {$ItemName.MoonlordTurretStaff}
 		// MoonlordTurretStaff: /
-		# DisplayName: Lunar Flare
+		# DisplayName: {$ItemName.LunarFlareBook}
 		// LunarFlareBook: /
-		# DisplayName: Rainbow Crystal Staff
+		# DisplayName: {$ItemName.RainbowCrystalStaff}
 		// RainbowCrystalStaff: /
-		# DisplayName: Yoraiz0r's Spell
+		# DisplayName: {$ItemName.Yoraiz0rWings}
 		// Yoraiz0rWings: /
-		# DisplayName: Jim's Wings
+		# DisplayName: {$ItemName.JimsWings}
 		// JimsWings: /
-		# DisplayName: Skiphs' Paws
+		# DisplayName: {$ItemName.SkiphsWings}
 		// SkiphsWings: /
-		# DisplayName: Loki's Wings
+		# DisplayName: {$ItemName.LokisWings}
 		// LokisWings: /
-		# DisplayName: Mechanical Lens
+		# DisplayName: {$ItemName.MechanicalLens}
 		// MechanicalLens: /
-		# DisplayName: Presserator
+		# DisplayName: {$ItemName.ActuationAccessory}
 		// ActuationAccessory: /
-		# DisplayName: Angler Tackle Bag
+		# DisplayName: {$ItemName.AnglerTackleBag}
 		// AnglerTackleBag: /
-		# DisplayName: Blue Phasesaber
+		# DisplayName: {$ItemName.BluePhasesaber}
 		// BluePhasesaber: /
-		# DisplayName: Red Phasesaber
+		# DisplayName: {$ItemName.RedPhasesaber}
 		// RedPhasesaber: /
-		# DisplayName: Green Phasesaber
+		# DisplayName: {$ItemName.GreenPhasesaber}
 		// GreenPhasesaber: /
-		# DisplayName: Purple Phasesaber
+		# DisplayName: {$ItemName.PurplePhasesaber}
 		// PurplePhasesaber: /
-		# DisplayName: White Phasesaber
+		# DisplayName: {$ItemName.WhitePhasesaber}
 		// WhitePhasesaber: /
-		# DisplayName: Yellow Phasesaber
+		# DisplayName: {$ItemName.YellowPhasesaber}
 		// YellowPhasesaber: /
-		# DisplayName: Mandible Blade
+		# DisplayName: {$ItemName.AntlionClaw}
 		// AntlionClaw: /
-		# DisplayName: Spirit Flame
+		# DisplayName: {$ItemName.SpiritFlame}
 		// SpiritFlame: /
-		# DisplayName: Pocket Mirror
+		# DisplayName: {$ItemName.PocketMirror}
 		// PocketMirror: /
-		# DisplayName: Sky Fracture
+		# DisplayName: {$ItemName.SkyFracture}
 		// SkyFracture: /
-		# DisplayName: Onyx Blaster
+		# DisplayName: {$ItemName.OnyxBlaster}
 		// OnyxBlaster: /
-		# DisplayName: Apprentice's Scarf
+		# DisplayName: {$ItemName.ApprenticeScarf}
 		// ApprenticeScarf: /
-		# DisplayName: Squire's Shield
+		# DisplayName: {$ItemName.SquireShield}
 		// SquireShield: /
-		# DisplayName: Huntress's Buckler
+		# DisplayName: {$ItemName.HuntressBuckler}
 		// HuntressBuckler: /
-		# DisplayName: Monk's Belt
+		# DisplayName: {$ItemName.MonkBelt}
 		// MonkBelt: /
-		# DisplayName: Flameburst Rod
+		# DisplayName: {$ItemName.DD2FlameburstTowerT1Popper}
 		// DD2FlameburstTowerT1Popper: /
-		# DisplayName: Flameburst Cane
+		# DisplayName: {$ItemName.DD2FlameburstTowerT2Popper}
 		// DD2FlameburstTowerT2Popper: /
-		# DisplayName: Flameburst Staff
+		# DisplayName: {$ItemName.DD2FlameburstTowerT3Popper}
 		// DD2FlameburstTowerT3Popper: /
-		# DisplayName: Ale Tosser
+		# DisplayName: {$ItemName.AleThrowingGlove}
 		// AleThrowingGlove: /
-		# DisplayName: Brand of the Inferno
+		# DisplayName: {$ItemName.DD2SquireDemonSword}
 		// DD2SquireDemonSword: /
-		# DisplayName: Ballista Rod
+		# DisplayName: {$ItemName.DD2BallistraTowerT1Popper}
 		// DD2BallistraTowerT1Popper: /
-		# DisplayName: Ballista Cane
+		# DisplayName: {$ItemName.DD2BallistraTowerT2Popper}
 		// DD2BallistraTowerT2Popper: /
-		# DisplayName: Ballista Staff
+		# DisplayName: {$ItemName.DD2BallistraTowerT3Popper}
 		// DD2BallistraTowerT3Popper: /
-		# DisplayName: Flying Dragon
+		# DisplayName: {$ItemName.DD2SquireBetsySword}
 		// DD2SquireBetsySword: /
-		# DisplayName: Lightning Aura Rod
+		# DisplayName: {$ItemName.DD2LightningAuraT1Popper}
 		// DD2LightningAuraT1Popper: /
-		# DisplayName: Lightning Aura Cane
+		# DisplayName: {$ItemName.DD2LightningAuraT2Popper}
 		// DD2LightningAuraT2Popper: /
-		# DisplayName: Lightning Aura Staff
+		# DisplayName: {$ItemName.DD2LightningAuraT3Popper}
 		// DD2LightningAuraT3Popper: /
-		# DisplayName: Explosive Trap Rod
+		# DisplayName: {$ItemName.DD2ExplosiveTrapT1Popper}
 		// DD2ExplosiveTrapT1Popper: /
-		# DisplayName: Explosive Trap Cane
+		# DisplayName: {$ItemName.DD2ExplosiveTrapT2Popper}
 		// DD2ExplosiveTrapT2Popper: /
-		# DisplayName: Explosive Trap Staff
+		# DisplayName: {$ItemName.DD2ExplosiveTrapT3Popper}
 		// DD2ExplosiveTrapT3Popper: /
-		# DisplayName: Sleepy Octopod
+		# DisplayName: {$ItemName.MonkStaffT1}
 		// MonkStaffT1: /
-		# DisplayName: Ghastly Glaive
+		# DisplayName: {$ItemName.MonkStaffT2}
 		// MonkStaffT2: /
-		# DisplayName: Tome of Infinite Wisdom
+		# DisplayName: {$ItemName.BookStaff}
 		// BookStaff: /
-		# DisplayName: Phantom Phoenix
+		# DisplayName: {$ItemName.DD2PhoenixBow}
 		// DD2PhoenixBow: /
-		# DisplayName: Sky Dragon's Fury
+		# DisplayName: {$ItemName.MonkStaffT3}
 		// MonkStaffT3: /
-		# DisplayName: Aerial Bane
+		# DisplayName: {$ItemName.DD2BetsyBow}
 		// DD2BetsyBow: /
-		# DisplayName: Betsy's Wrath
+		# DisplayName: {$ItemName.ApprenticeStaffT3}
 		// ApprenticeStaffT3: /
-		# DisplayName: Betsy's Wings
+		# DisplayName: {$ItemName.BetsyWings}
 		// BetsyWings: /
-		# DisplayName: Arkhalis' Lightwings
+		# DisplayName: {$ItemName.ArkhalisWings}
 		// ArkhalisWings: /
-		# DisplayName: Leinfors' Prehensile Cloak
+		# DisplayName: {$ItemName.LeinforsWings}
 		// LeinforsWings: /
-		# DisplayName: Celebration Mk2
+		# DisplayName: {$ItemName.Celeb2}
 		// Celeb2: /
-		# DisplayName: Golf Ball
+		# DisplayName: {$ItemName.GolfBall}
 		// GolfBall: /
-		# DisplayName: Amphibian Boots
+		# DisplayName: {$ItemName.AmphibianBoots}
 		// AmphibianBoots: /
-		# DisplayName: Arcane Flower
+		# DisplayName: {$ItemName.ArcaneFlower}
 		// ArcaneFlower: /
-		# DisplayName: Berserker's Glove
+		# DisplayName: {$ItemName.BerserkerGlove}
 		// BerserkerGlove: /
-		# DisplayName: Fairy Boots
+		# DisplayName: {$ItemName.FairyBoots}
 		// FairyBoots: /
-		# DisplayName: Frog Flipper
+		# DisplayName: {$ItemName.FrogFlipper}
 		// FrogFlipper: /
-		# DisplayName: Frog Gear
+		# DisplayName: {$ItemName.FrogGear}
 		// FrogGear: /
-		# DisplayName: Frog Webbing
+		# DisplayName: {$ItemName.FrogWebbing}
 		// FrogWebbing: /
-		# DisplayName: Frozen Shield
+		# DisplayName: {$ItemName.FrozenShield}
 		// FrozenShield: /
-		# DisplayName: Hero Shield
+		# DisplayName: {$ItemName.HeroShield}
 		// HeroShield: /
-		# DisplayName: Magma Skull
+		# DisplayName: {$ItemName.LavaSkull}
 		// LavaSkull: /
-		# DisplayName: Magnet Flower
+		# DisplayName: {$ItemName.MagnetFlower}
 		// MagnetFlower: /
-		# DisplayName: Mana Cloak
+		# DisplayName: {$ItemName.ManaCloak}
 		// ManaCloak: /
-		# DisplayName: Molten Quiver
+		# DisplayName: {$ItemName.MoltenQuiver}
 		// MoltenQuiver: /
-		# DisplayName: Molten Skull Rose
+		# DisplayName: {$ItemName.MoltenSkullRose}
 		// MoltenSkullRose: /
-		# DisplayName: Obsidian Skull Rose
+		# DisplayName: {$ItemName.ObsidianSkullRose}
 		// ObsidianSkullRose: /
-		# DisplayName: Recon Scope
+		# DisplayName: {$ItemName.ReconScope}
 		// ReconScope: /
-		# DisplayName: Stalker's Quiver
+		# DisplayName: {$ItemName.StalkersQuiver}
 		// StalkersQuiver: /
-		# DisplayName: Stinger Necklace
+		# DisplayName: {$ItemName.StingerNecklace}
 		// StingerNecklace: /
-		# DisplayName: Molten Charm
+		# DisplayName: {$ItemName.MoltenCharm}
 		// MoltenCharm: /
-		# DisplayName: Dunerider Boots
+		# DisplayName: {$ItemName.SandBoots}
 		// SandBoots: /
-		# DisplayName: Ancient Chisel
+		# DisplayName: {$ItemName.AncientChisel}
 		// AncientChisel: /
-		# DisplayName: Fossil Pickaxe
+		# DisplayName: {$ItemName.FossilPickaxe}
 		// FossilPickaxe: /
-		# DisplayName: Super Star Shooter
+		# DisplayName: {$ItemName.SuperStarCannon}
 		// SuperStarCannon: /
-		# DisplayName: Storm Spear
+		# DisplayName: {$ItemName.ThunderSpear}
 		// ThunderSpear: /
-		# DisplayName: Thunder Zapper
+		# DisplayName: {$ItemName.ThunderStaff}
 		// ThunderStaff: /
-		# DisplayName: Terragrim
+		# DisplayName: {$ItemName.Terragrim}
 		// Terragrim: /
-		# DisplayName: Black Golf Ball
+		# DisplayName: {$ItemName.GolfBallDyedBlack}
 		// GolfBallDyedBlack: /
-		# DisplayName: Blue Golf Ball
+		# DisplayName: {$ItemName.GolfBallDyedBlue}
 		// GolfBallDyedBlue: /
-		# DisplayName: Brown Golf Ball
+		# DisplayName: {$ItemName.GolfBallDyedBrown}
 		// GolfBallDyedBrown: /
-		# DisplayName: Cyan Golf Ball
+		# DisplayName: {$ItemName.GolfBallDyedCyan}
 		// GolfBallDyedCyan: /
-		# DisplayName: Green Golf Ball
+		# DisplayName: {$ItemName.GolfBallDyedGreen}
 		// GolfBallDyedGreen: /
-		# DisplayName: Lime Golf Ball
+		# DisplayName: {$ItemName.GolfBallDyedLimeGreen}
 		// GolfBallDyedLimeGreen: /
-		# DisplayName: Orange Golf Ball
+		# DisplayName: {$ItemName.GolfBallDyedOrange}
 		// GolfBallDyedOrange: /
-		# DisplayName: Pink Golf Ball
+		# DisplayName: {$ItemName.GolfBallDyedPink}
 		// GolfBallDyedPink: /
-		# DisplayName: Purple Golf Ball
+		# DisplayName: {$ItemName.GolfBallDyedPurple}
 		// GolfBallDyedPurple: /
-		# DisplayName: Red Golf Ball
+		# DisplayName: {$ItemName.GolfBallDyedRed}
 		// GolfBallDyedRed: /
-		# DisplayName: Sky Blue Golf Ball
+		# DisplayName: {$ItemName.GolfBallDyedSkyBlue}
 		// GolfBallDyedSkyBlue: /
-		# DisplayName: Teal Golf Ball
+		# DisplayName: {$ItemName.GolfBallDyedTeal}
 		// GolfBallDyedTeal: /
-		# DisplayName: Violet Golf Ball
+		# DisplayName: {$ItemName.GolfBallDyedViolet}
 		// GolfBallDyedViolet: /
-		# DisplayName: Yellow Golf Ball
+		# DisplayName: {$ItemName.GolfBallDyedYellow}
 		// GolfBallDyedYellow: /
-		# DisplayName: Orange Phaseblade
+		# DisplayName: {$ItemName.OrangePhaseblade}
 		// OrangePhaseblade: /
-		# DisplayName: Orange Phasesaber
+		# DisplayName: {$ItemName.OrangePhasesaber}
 		// OrangePhasesaber: /
-		# DisplayName: Sanguine Staff
+		# DisplayName: {$ItemName.SanguineStaff}
 		// SanguineStaff: /
-		# DisplayName: Blood Thorn
+		# DisplayName: {$ItemName.SharpTears}
 		// SharpTears: /
-		# DisplayName: Drippler Crippler
+		# DisplayName: {$ItemName.DripplerFlail}
 		// DripplerFlail: /
-		# DisplayName: Vampire Frog Staff
+		# DisplayName: {$ItemName.VampireFrogStaff}
 		// VampireFrogStaff: /
-		# DisplayName: Finch Staff
+		# DisplayName: {$ItemName.BabyBirdStaff}
 		// BabyBirdStaff: /
-		# DisplayName: Haemorrhaxe
+		# DisplayName: {$ItemName.BloodHamaxe}
 		// BloodHamaxe: /
-		# DisplayName: Step Stool
+		# DisplayName: {$ItemName.PortableStool}
 		// PortableStool: /
-		# DisplayName: Gray Zapinator
+		# DisplayName: Grey Zapinator
 		// ZapinatorGray: /
-		# DisplayName: Orange Zapinator
+		# DisplayName: {$ItemName.ZapinatorOrange}
 		// ZapinatorOrange: /
-		# DisplayName: Blood Rain Bow
+		# DisplayName: {$ItemName.BloodRainBow}
 		// BloodRainBow: /
-		# DisplayName: Inner Tube
+		# DisplayName: {$ItemName.FloatingTube}
 		// FloatingTube: /
-		# DisplayName: Spectre Goggles
+		# DisplayName: {$ItemName.SpectreGoggles}
 		// SpectreGoggles: /
-		# DisplayName: Gladius
+		# DisplayName: {$ItemName.Gladius}
 		// Gladius: /
-		# DisplayName: Desert Tiger Staff
+		# DisplayName: {$ItemName.StormTigerStaff}
 		// StormTigerStaff: /
-		# DisplayName: Leather Whip
+		# DisplayName: {$ItemName.BlandWhip}
 		// BlandWhip: /
-		# DisplayName: Durendal
+		# DisplayName: {$ItemName.SwordWhip}
 		// SwordWhip: /
-		# DisplayName: Morning Star
+		# DisplayName: {$ItemName.MaceWhip}
 		// MaceWhip: /
-		# DisplayName: Dark Harvest
+		# DisplayName: {$ItemName.ScytheWhip}
 		// ScytheWhip: /
-		# DisplayName: Quad-Barrel Shotgun
+		# DisplayName: {$ItemName.QuadBarrelShotgun}
 		// QuadBarrelShotgun: /
-		# DisplayName: Tragic Umbrella
+		# DisplayName: {$ItemName.TragicUmbrella}
 		// TragicUmbrella: /
-		# DisplayName: Gravedigger's Shovel
+		# DisplayName: {$ItemName.GravediggerShovel}
 		// GravediggerShovel: /
-		# DisplayName: Stellar Tune
+		# DisplayName: {$ItemName.SparkleGuitar}
 		// SparkleGuitar: /
-		# DisplayName: Ghostar's Infinity Eight
+		# DisplayName: {$ItemName.GhostarsWings}
 		// GhostarsWings: /
-		# DisplayName: Safeman's Blanket Cape
+		# DisplayName: {$ItemName.SafemanWings}
 		// SafemanWings: /
-		# DisplayName: FoodBarbarian's Tattered Dragon Wings
+		# DisplayName: {$ItemName.FoodBarbarianWings}
 		// FoodBarbarianWings: /
-		# DisplayName: Grox The Great's Wings
+		# DisplayName: {$ItemName.GroxTheGreatWings}
 		// GroxTheGreatWings: /
-		# DisplayName: Blade Staff
+		# DisplayName: {$ItemName.Smolstar}
 		// Smolstar: /
-		# DisplayName: Sergeant United Shield
+		# DisplayName: {$ItemName.BouncingShield}
 		// BouncingShield: /
-		# DisplayName: Shroomerang
+		# DisplayName: {$ItemName.Shroomerang}
 		// Shroomerang: /
-		# DisplayName: Jousting Lance
+		# DisplayName: {$ItemName.JoustingLance}
 		// JoustingLance: /
-		# DisplayName: Shadow Jousting Lance
+		# DisplayName: {$ItemName.ShadowJoustingLance}
 		// ShadowJoustingLance: /
-		# DisplayName: Hallowed Jousting Lance
+		# DisplayName: {$ItemName.HallowJoustingLance}
 		// HallowJoustingLance: /
-		# DisplayName: Combat Wrench
+		# DisplayName: Combat Spanner
 		// CombatWrench: /
-		# DisplayName: Empress Wings
+		# DisplayName: {$ItemName.RainbowWings}
 		// RainbowWings: /
-		# DisplayName: Hellfire Treads
+		# DisplayName: {$ItemName.HellfireTreads}
 		// HellfireTreads: /
-		# DisplayName: Lavaproof Fishing Hook
+		# DisplayName: {$ItemName.LavaFishingHook}
 		// LavaFishingHook: /
-		# DisplayName: Cool Whip
+		# DisplayName: {$ItemName.CoolWhip}
 		// CoolWhip: /
-		# DisplayName: Firecracker
+		# DisplayName: {$ItemName.FireWhip}
 		// FireWhip: /
-		# DisplayName: Snapthorn
+		# DisplayName: {$ItemName.ThornWhip}
 		// ThornWhip: /
-		# DisplayName: Kaleidoscope
+		# DisplayName: {$ItemName.RainbowWhip}
 		// RainbowWhip: /
-		# DisplayName: Starlight
+		# DisplayName: {$ItemName.PiercingStarlight}
 		// PiercingStarlight: /
-		# DisplayName: Nightglow
+		# DisplayName: {$ItemName.FairyQueenMagicItem}
 		// FairyQueenMagicItem: /
-		# DisplayName: Eventide
+		# DisplayName: {$ItemName.FairyQueenRangedItem}
 		// FairyQueenRangedItem: /
-		# DisplayName: Celestial Starboard
+		# DisplayName: {$ItemName.LongRainbowTrailWings}
 		// LongRainbowTrailWings: /
-		# DisplayName: Zenith
+		# DisplayName: {$ItemName.Zenith}
 		// Zenith: /
-		# DisplayName: Fledgling Wings
+		# DisplayName: {$ItemName.CreativeWings}
 		// CreativeWings: /
-		# DisplayName: Volatile Gelatin
+		# DisplayName: {$ItemName.VolatileGelatin}
 		// VolatileGelatin: /
-		# DisplayName: Soaring Insignia
+		# DisplayName: {$ItemName.EmpressFlightBooster}
 		// EmpressFlightBooster: /
-		# DisplayName: Terraspark Boots
+		# DisplayName: {$ItemName.TerrasparkBoots}
 		// TerrasparkBoots: /
-		# DisplayName: Terraprisma
+		# DisplayName: {$ItemName.EmpressBlade}
 		// EmpressBlade: /
-		# DisplayName: Treasure Magnet
+		# DisplayName: {$ItemName.TreasureMagnet}
 		// TreasureMagnet: /
-		# DisplayName: Mace
+		# DisplayName: {$ItemName.Mace}
 		// Mace: /
-		# DisplayName: Flaming Mace
+		# DisplayName: {$ItemName.FlamingMace}
 		// FlamingMace: /
-		# DisplayName: Lavaproof Tackle Bag
+		# DisplayName: {$ItemName.LavaproofTackleBag}
 		// LavaproofTackleBag: /
-		# DisplayName: Resonance Scepter
+		# DisplayName: {$ItemName.PrincessWeapon}
 		// PrincessWeapon: /
-		# DisplayName: Flinx Staff
+		# DisplayName: {$ItemName.FlinxStaff}
 		// FlinxStaff: /
-		# DisplayName: Spinal Tap
+		# DisplayName: {$ItemName.BoneWhip}
 		// BoneWhip: /
-		# DisplayName: Tentacle Spike
+		# DisplayName: {$ItemName.TentacleSpike}
 		// TentacleSpike: /
-		# DisplayName: Lucy the Axe
+		# DisplayName: {$ItemName.LucyTheAxe}
 		// LucyTheAxe: /
-		# DisplayName: Ham Bat
+		# DisplayName: {$ItemName.HamBat}
 		// HamBat: /
-		# DisplayName: Bat Bat
+		# DisplayName: {$ItemName.BatBat}
 		// BatBat: /
-		# DisplayName: Bone Helm
+		# DisplayName: {$ItemName.BoneHelm}
 		// BoneHelm: /
-		# DisplayName: Magiluminescence
+		# DisplayName: {$ItemName.Magiluminescence}
 		// Magiluminescence: /
-		# DisplayName: Abigail's Flower
+		# DisplayName: {$ItemName.AbigailsFlower}
 		// AbigailsFlower: /
-		# DisplayName: Pew-matic Horn
+		# DisplayName: {$ItemName.PewMaticHorn}
 		// PewMaticHorn: /
-		# DisplayName: Weather Pain
+		# DisplayName: {$ItemName.WeatherPain}
 		// WeatherPain: /
-		# DisplayName: Houndius Shootius
+		# DisplayName: {$ItemName.HoundiusShootius}
 		// HoundiusShootius: /
-		# DisplayName: Hand Of Creation
+		# DisplayName: {$ItemName.HandOfCreation}
 		// HandOfCreation: /
-		# DisplayName: Flymeal
+		# DisplayName: {$ItemName.Flymeal}
 		// Flymeal: /
-		# DisplayName: Fishing Bobber
+		# DisplayName: {$ItemName.FishingBobber}
 		// FishingBobber: /
-		# DisplayName: Glowing Fishing Bobber
+		# DisplayName: {$ItemName.FishingBobberGlowingStar}
 		// FishingBobberGlowingStar: /
-		# DisplayName: Lava Moss Fishing Bobber
+		# DisplayName: {$ItemName.FishingBobberGlowingLava}
 		// FishingBobberGlowingLava: /
-		# DisplayName: Krypton Moss Fishing Bobber
+		# DisplayName: {$ItemName.FishingBobberGlowingKrypton}
 		// FishingBobberGlowingKrypton: /
-		# DisplayName: Xenon Moss Fishing Bobber
+		# DisplayName: {$ItemName.FishingBobberGlowingXenon}
 		// FishingBobberGlowingXenon: /
-		# DisplayName: Argon Moss Fishing Bobber
+		# DisplayName: {$ItemName.FishingBobberGlowingArgon}
 		// FishingBobberGlowingArgon: /
-		# DisplayName: Neon Moss Fishing Bobber
+		# DisplayName: {$ItemName.FishingBobberGlowingViolet}
 		// FishingBobberGlowingViolet: /
-		# DisplayName: Helium Moss Fishing Bobber
+		# DisplayName: {$ItemName.FishingBobberGlowingRainbow}
 		// FishingBobberGlowingRainbow: /
-		# DisplayName: Wand of Frosting
+		# DisplayName: {$ItemName.WandofFrosting}
 		// WandofFrosting: /
-		# DisplayName: Ash Wood Bow
+		# DisplayName: {$ItemName.AshWoodBow}
 		// AshWoodBow: /
-		# DisplayName: Ash Wood Hammer
+		# DisplayName: {$ItemName.AshWoodHammer}
 		// AshWoodHammer: /
-		# DisplayName: Ash Wood Sword
+		# DisplayName: {$ItemName.AshWoodSword}
 		// AshWoodSword: /
-		# DisplayName: Hive-Five
+		# DisplayName: {$ItemName.HiveFive}
 		// HiveFive: /
-		# DisplayName: Axe of Regrowth
+		# DisplayName: {$ItemName.AcornAxe}
 		// AcornAxe: /
-		# DisplayName: Trimarang
+		# DisplayName: {$ItemName.Trimarang}
 		// Trimarang: /
-		# DisplayName: Bundle of Horseshoe Balloons
+		# DisplayName: {$ItemName.HorseshoeBundle}
 		// HorseshoeBundle: /
-		# DisplayName: Reflective Shades
+		# DisplayName: {$ItemName.ReflectiveShades}
 		// ReflectiveShades: /
-		# DisplayName: Chromatic Cloak
+		# DisplayName: {$ItemName.ShimmerCloak}
 		// ShimmerCloak: /
-		# DisplayName: Waffle's Iron
+		# DisplayName: {$ItemName.WaffleIron}
 		// WaffleIron: /
-		# DisplayName: FPV Goggles
+		# DisplayName: {$ItemName.JimsDroneVisor}
 		// JimsDroneVisor: /
 	}
 

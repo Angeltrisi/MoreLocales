@@ -121,8 +121,10 @@ namespace MoreLocales.Core
         {
             return;
 
-            if (Main.keyState.IsKeyUp(Keys.F) && !Main.oldKeyState.IsKeyUp(Keys.F))
+            if (Main.keyState.IsKeyDown(Keys.F) && !Main.oldKeyState.IsKeyDown(Keys.F))
             {
+                //Main.NewText(LangUtils.Substitute("{$Title}", "Mods.MoreLocales.Cultures.MexicanSpanish.Title"));
+
                 MoreLocalesSets.ReloadedLocalizations();
                 /*
                 var files = LangUtils.GetLocalizationFiles(Mod, true);
