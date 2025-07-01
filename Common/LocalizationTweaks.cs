@@ -1,13 +1,11 @@
 ﻿using Hjson;
 using Mono.Cecil;
-using MonoMod.RuntimeDetour;
-using MonoMod.Utils;
 using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Reflection;
+using System.Text.RegularExpressions;
 using Terraria.Localization;
-using Terraria.ModLoader;
 using static Terraria.ModLoader.LocalizationLoader;
 
 namespace MoreLocales.Common
@@ -28,20 +26,41 @@ namespace MoreLocales.Common
             MethodInfo nested = typeof(LocalizationLoader).GetMethod("LocalizationFileToHjsonText", BindingFlags.Static | BindingFlags.NonPublic);
             MonoModHooks.Modify(nested, FixHjsonToStringMethod);
         }
-        internal static void PlaceCommentAboveNewEntryNew(LocalizationEntry entry, CommentedWscJsonObject parent, Dictionary<string, string> localizationsForCulture)
+        internal static void PlaceCommentAboveNewEntryNew(LocalizationEntry entry, CommentedWscJsonObject parent, Dictionary<string, string> localizationsForCulture, LocalizationFile file)
         {
             // the original method doesn't take the dictionary as a parameter
             // so i replace all calls to the method inside LocalizationFileToHjsonText with this one
 
-            string sub = LangUtils.Substitute(entry.comment, entry.key, localizationsForCulture);
+            string sub;
 
-            /*
-            Console.WriteLine("--DICTSTART--");
-            foreach (var kvp in localizationsForCulture)
-                Console.WriteLine($"{kvp.Key}: {kvp.Value}");
-            Console.WriteLine("--DICTEND--");
-            */
-            //Console.WriteLine(sub);
+            Match m = LocalizationLoader.referenceRegex.Match(entry.comment);
+            if (m.Success) // regex matched, but we don't know if it's a valid key yet, so let's look in the scope
+            {
+                if (!LocalizationLoader.TryGetCultureAndPrefixFromPath(file.path, out var culture, out _))
+                {
+                    sub = entry.comment;
+                }
+                else
+                {
+                    // add vanilla keys
+                    Dictionary<string, string>[] allVanillaKeys = LangUtils.GetVanillaLanguageFilesForCultureFlattened(culture);
+                    for (int i = 0; i < allVanillaKeys.Length; i++)
+                    {
+                        foreach (var kvp in allVanillaKeys[i])
+                            localizationsForCulture[kvp.Key] = kvp.Value;
+                    }
+
+                    string validKey = LangUtils.FindKeyInScope(m.Groups[1].Value, entry.key, [.. localizationsForCulture.Keys]);
+                    if (validKey is null)
+                        sub = entry.comment;
+                    else
+                        sub = m.Result(localizationsForCulture[validKey]);
+                }
+            }
+            else
+            {
+                sub = entry.comment;
+            }
 
             if (parent.Count == 0)
             {
@@ -67,6 +86,7 @@ namespace MoreLocales.Common
             while (c.TryGotoNext(i => i.MatchCall(out MethodReference method) && method.FullName.Contains("PlaceCommentAboveNewEntry|")))
             {
                 c.EmitLdarg1();
+                c.EmitLdarg0();
                 c.Next.Operand = newCommentMethod;
                 c.Index++;
             }

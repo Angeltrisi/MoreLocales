@@ -1,6 +1,5 @@
 ﻿using MoreLocales.Config;
 using System;
-using System.Diagnostics;
 using System.Linq;
 using Terraria;
 using Terraria.ID;
@@ -82,7 +81,7 @@ namespace MoreLocales.Core
 
                 c.GotoNext(i => i.MatchRet());
 
-                c.EmitCall(typeof(LangFeaturesPlus).GetMethod("RemovePrefixLiteral"));
+                c.EmitCall(typeof(LangFeaturesPlus).GetMethod(nameof(RemovePrefixLiteral), BindingFlags.Static | BindingFlags.NonPublic));
             }
             catch
             {

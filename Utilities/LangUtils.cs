@@ -1,15 +1,13 @@
 ﻿using Hjson;
-using Microsoft.Xna.Framework.Input;
+using Newtonsoft.Json;
 using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using System.Runtime.CompilerServices;
 using System.Runtime.InteropServices;
-using System.Security;
 using System.Text;
 using System.Text.RegularExpressions;
-using System.Xml.Linq;
 using Terraria;
 using Terraria.Localization;
 using Terraria.ModLoader.Core;
@@ -39,6 +37,7 @@ namespace MoreLocales.Utilities
         public record struct QueuedComment(Mod Mod, string Key, string Comment, HjsonCommentType CommentType, bool OverwriteComment);
         private static readonly HashSet<Mod> _probablyValidMods = [];
         private static readonly Queue<QueuedComment> _commentsQueue = [];
+        internal static readonly Dictionary<GameCulture, Dictionary<string, string>[]> _flattenedCache = [];
         internal static void ConsumeCommentsQueue()
         {
             // if anyone's reading this pls tell me if i'm stupid
@@ -310,6 +309,105 @@ namespace MoreLocales.Utilities
             Array.Resize(ref arr, j);
 
             return arr;
+        }
+        /// <summary>
+        /// Returns the embedded resource paths for all vanilla localization files for a certain culture.<para/>
+        /// These can be read using <see cref="Utils.ReadEmbeddedResource(string)"/> if you wish to parse them yourself or for whatever other reason.<br/>
+        /// However, you may also use <see cref="ParseVanillaLanguageFile(string)"/> to quickly parse them. <para/>
+        /// To save yourself the trouble, you can also use the sister methods <see cref="GetVanillaLanguageFilesForCultureParsed(GameCulture)"/> and <see cref="GetVanillaLanguageFilesForCultureFlattened(GameCulture)"/> depending on your needs.
+        /// </summary>
+        /// <param name="culture">The culture whose language code should be used to look for embedded vanilla .json files.</param>
+        /// <returns></returns>
+        [MethodImpl(MethodImplOptions.AggressiveInlining)]
+        public static string[] GetVanillaLanguageFilesForCulture(GameCulture culture)
+        {
+            return LanguageManager.Instance.GetLanguageFilesForCulture(culture);
+        }
+        /// <summary>
+        /// Returns all vanilla localization files for a given culture, returned as the direct Json deserialization of said files.<para/>
+        /// <see cref="GetVanillaLanguageFilesForCultureFlattened(GameCulture)"/> may be more helpful.<br/>
+        /// (read <see cref="FlattenVanillaLanguageDict(Dictionary{string, Dictionary{string, string}})"/>'s docs for more info)
+        /// </summary>
+        /// <param name="culture"></param>
+        /// <returns></returns>
+        public static Dictionary<string, Dictionary<string, string>>[] GetVanillaLanguageFilesForCultureParsed(GameCulture culture)
+        {
+            var arr = GetVanillaLanguageFilesForCulture(culture);
+            Dictionary<string, Dictionary<string, string>>[] result = new Dictionary<string, Dictionary<string, string>>[arr.Length];
+            for (int i = 0; i < arr.Length; i++)
+            {
+                result[i] = ParseVanillaLanguageFile(arr[i]);
+            }
+            return result;
+        }
+        /// <summary>
+        /// Returns all vanilla localization files for a given culture, formatted as string-string dictionaries.
+        /// </summary>
+        /// <param name="culture">The culture whose language code should be used to look for embedded vanilla .json files.</param>
+        /// <returns></returns>
+        public static Dictionary<string, string>[] GetVanillaLanguageFilesForCultureFlattened(GameCulture culture)
+        {
+            if (_flattenedCache.TryGetValue(culture, out var value))
+                return value;
+            var arr = GetVanillaLanguageFilesForCulture(culture);
+            Dictionary<string, string>[] result = new Dictionary<string, string>[arr.Length];
+            for (int i = 0; i < arr.Length; i++)
+            {
+                result[i] = FlattenVanillaLanguageDict(ParseVanillaLanguageFile(arr[i]));
+            }
+            _flattenedCache[culture] = result;
+            return result;
+        }
+        /// <summary>
+        /// Attempts to parse a vanilla localization file, and returns the result as a dictionary.<para/>
+        /// The dictionary's keys are the topmost localization categories, e. g. <c>'ItemTooltip'</c>, <c>'MapObject'</c>, <c>'WorldGeneration'</c>, etc.<br/>
+        /// The dictionary's values are dicts containing the actual keys (not including the topmost category), and the localization values for those keys.<para/>
+        /// So, to access a localized value from this dictionary, for example, <c>'ItemTooltip.CopperAxe'</c>, you'd do <c>'dict["ItemTooltip"]["CopperAxe"]'</c>.<para/>
+        /// If you wish to flatten this into a simpler string-string dictionary, use <see cref="FlattenVanillaLanguageDict(Dictionary{string, Dictionary{string, string}})"/>
+        /// </summary>
+        /// <param name="embeddedPath">The path for the embedded .json file. May be obtained using <see cref="GetVanillaLanguageFilesForCulture(GameCulture)"/>.</param>
+        /// <returns></returns>
+        public static Dictionary<string, Dictionary<string, string>> ParseVanillaLanguageFile(string embeddedPath)
+        {
+            string fileContents;
+            try
+            {
+                fileContents = Utils.ReadEmbeddedResource(embeddedPath);
+            }
+            catch
+            {
+                return null;
+            }
+
+            if (fileContents == null || fileContents.Length < 2)
+                return null;
+
+            try
+            {
+                return JsonConvert.DeserializeObject<Dictionary<string, Dictionary<string, string>>>(fileContents);
+            }
+            catch
+            {
+                return null;
+            }
+        }
+        /// <summary>
+        /// Flattens a vanilla localization dictionary (like the one provided by <see cref="ParseVanillaLanguageFile(string)"/>) to a more workable format.<para/>
+        /// If you read the example in the mentioned method, the same value could be accessed by using <c>'dict["ItemTooltip.CopperAxe"]'</c> with this dictionary.
+        /// </summary>
+        /// <param name="original"></param>
+        /// <returns></returns>
+        public static Dictionary<string, string> FlattenVanillaLanguageDict(Dictionary<string, Dictionary<string, string>> original)
+        {
+            Dictionary<string, string> result = new(original.Count); // doesn't hurt to start with a guaranteed number
+            foreach (var kvp in original)
+            {
+                foreach (var kvp2 in kvp.Value)
+                {
+                    result.Add($"{kvp.Key}.{kvp2.Key}", kvp2.Value);
+                }
+            }
+            return result;
         }
         /// <summary>
         /// Reads a file assuming UTF8 encoding and returns the result as a string.

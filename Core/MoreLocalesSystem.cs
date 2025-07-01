@@ -1,13 +1,12 @@
 ﻿using ReLogic.Content;
 using Terraria;
 using Terraria.GameContent;
-using Terraria.Localization;
 using Microsoft.Xna.Framework.Input;
 using System;
 using MoreLocales.Common;
 using System.Reflection;
 using Terraria.ID;
-using System.Runtime.InteropServices;
+using System.Globalization;
 
 namespace MoreLocales.Core
 {
@@ -123,9 +122,70 @@ namespace MoreLocales.Core
 
             if (Main.keyState.IsKeyDown(Keys.F) && !Main.oldKeyState.IsKeyDown(Keys.F))
             {
+                unsafe
+                {
+                    int nintSize = sizeof(nint);
+                    int baseBytesCount = 0;
+                    int thingsCount = 1; // dict object header
+                    foreach (var thing in LangUtils._flattenedCache)
+                    {
+                        thingsCount++;
+
+                        // GameCulture:
+                        /// legacyID
+                        thingsCount++;
+                        baseBytesCount += sizeof(int);
+                        // cultureinfo (really rough approximation)
+                        thingsCount++;
+                        CultureInfo info = thing.Key.CultureInfo;
+                        /// isreadonly, isinherited
+                        thingsCount += 2;
+                        baseBytesCount += sizeof(bool) * 2;
+                        /// name
+                        thingsCount++;
+                        baseBytesCount += info.Name.Length * sizeof(char);
+
+                        // Dictionary<string, string>
+                        for (int i = 0; i < thing.Value.Length; i++)
+                        {
+                            thingsCount++;
+                            var dict = thing.Value[i];
+                            foreach (var kvp in dict)
+                            {
+                                // each entry inside a dictionary is a Dictionary<TKey, TValue>.Entry
+                                // then each entry holds both the key and value objects
+                                thingsCount += 3;
+                                baseBytesCount += (kvp.Key.Length + kvp.Value.Length) * sizeof(char);
+                            }
+                        }
+                    }
+                    Main.NewText(baseBytesCount + (thingsCount * nintSize));
+                }
                 //Main.NewText(LangUtils.Substitute("{$Title}", "Mods.MoreLocales.Cultures.MexicanSpanish.Title"));
 
-                MoreLocalesSets.ReloadedLocalizations();
+                //MoreLocalesSets.ReloadedLocalizations();
+
+                //var testDict = LangUtils.ParseVanillaLanguageFile(LangUtils.GetVanillaLanguageFilesForCulture(GameCulture.DefaultCulture)[6]);
+                //if (testDict != null)
+                {
+                    //var newDict = LangUtils.FlattenVanillaLanguageDict(testDict);
+                    //foreach (var kvp in newDict)
+                    {
+                        //Console.WriteLine($"{kvp.Key}: {kvp.Value}");
+                    }
+                    /*
+                    foreach (var kvp in testDict)
+                    {
+                        Console.WriteLine($"Original Key: {kvp.Key}");
+                        Console.WriteLine("Subdict:");
+                        foreach (var kvp2 in kvp.Value)
+                        {
+                            Console.WriteLine($"{kvp2.Key} :: {kvp2.Value}");
+                        }
+                        Console.WriteLine("End");
+                    }
+                    */
+                }
                 /*
                 var files = LangUtils.GetLocalizationFiles(Mod, true);
 
