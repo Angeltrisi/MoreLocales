@@ -38,6 +38,21 @@ namespace MoreLocales.Utilities
         private static readonly HashSet<Mod> _probablyValidMods = [];
         private static readonly Queue<QueuedComment> _commentsQueue = [];
         internal static readonly Dictionary<GameCulture, Dictionary<string, string>[]> _flattenedCache = [];
+        private static GameCulture[] _vanillaCultures;
+        public static GameCulture[] VanillaCultures
+        {
+            get
+            {
+                if (_vanillaCultures != null)
+                    return _vanillaCultures;
+                _vanillaCultures = new GameCulture[(int)GameCulture.CultureName.Polish];
+                for (int i = 0; i < _vanillaCultures.Length; i++)
+                {
+                    _vanillaCultures[i] = GameCulture.FromLegacyId(i + 1);
+                }
+                return _vanillaCultures;
+            }
+        }
         internal static void ConsumeCommentsQueue()
         {
             // if anyone's reading this pls tell me if i'm stupid
@@ -131,12 +146,6 @@ namespace MoreLocales.Utilities
         /// // My super cool comment!
         /// Key: Value
         /// </code>
-        /// <para/>
-        /// If you want to include localized values in your comment, you can use the substitution format like usual: <c>{$KeyHere}</c><br/>
-        /// MoreLocales extends the functionality of the format so that if found in comments, it is replaced with the actual localized value.<br/>
-        /// This is how MoreLocales' inflection data localization file works to add the helpful <c># DisplayName</c> comments.<para/>
-        /// (If you're wondering how they're not replaced after the fact, comments that use the substitution format are marked with a special character<br/>
-        /// at the start, which prevents them from being automatically replaced by the game.)
         /// </summary>
         /// <param name="key">The key of the localization entry to add a comment to.</param>
         /// <param name="suffix">The key of the localization entry to add a comment to, not including the 'Mods.ModName' prefix.</param>
@@ -321,6 +330,8 @@ namespace MoreLocales.Utilities
         [MethodImpl(MethodImplOptions.AggressiveInlining)]
         public static string[] GetVanillaLanguageFilesForCulture(GameCulture culture)
         {
+            if (culture.IsCustom())
+                throw new InvalidOperationException("You cannot get an embedded language file from a custom culture. Utilize the Mod.GetLocalizationFiles method and/or other LangUtils helpers.");
             return LanguageManager.Instance.GetLanguageFilesForCulture(culture);
         }
         /// <summary>
@@ -357,6 +368,29 @@ namespace MoreLocales.Utilities
             }
             _flattenedCache[culture] = result;
             return result;
+        }
+        /// <summary>
+        /// Allows you to get an array of the localization values for a given key, as long as all the target cultures are vanilla cultures.<para/>
+        /// If you wish for something similar to this for modded cultures, scream at me in the Discord because I am so incredibly tired from writing all of this code<br/>
+        /// or just impl it urself
+        /// </summary>
+        /// <param name="key"></param>
+        /// <param name="targetCultures"></param>
+        /// <returns></returns>
+        public static string[] GetVanillaLocalizationValues(string key, params GameCulture[] targetCultures)
+        {
+            string[] values = new string[targetCultures.Length];
+            for (int i = 0; i < targetCultures.Length; i++)
+            {
+                var culture = targetCultures[i];
+                var dicts = GetVanillaLanguageFilesForCultureFlattened(culture);
+                for (int j = 0; j < dicts.Length; j++)
+                {
+                    if (dicts[j].TryGetValue(key, out string real))
+                        values[i] = real;
+                }
+            }
+            return values;
         }
         /// <summary>
         /// Attempts to parse a vanilla localization file, and returns the result as a dictionary.<para/>
