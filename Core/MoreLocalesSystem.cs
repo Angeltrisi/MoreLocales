@@ -6,7 +6,6 @@ using System;
 using MoreLocales.Common;
 using System.Reflection;
 using Terraria.ID;
-using System.Globalization;
 using Terraria.Localization;
 
 namespace MoreLocales.Core
@@ -119,7 +118,7 @@ namespace MoreLocales.Core
 
         public override void PostUpdateDusts()
         {
-            //return;
+            return;
 
             if (Main.keyState.IsKeyDown(Keys.F) && !Main.oldKeyState.IsKeyDown(Keys.F))
             {

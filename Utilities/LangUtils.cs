@@ -1,6 +1,7 @@
 ﻿using Hjson;
 using Newtonsoft.Json;
 using System;
+using System.Collections.Concurrent;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
@@ -36,7 +37,7 @@ namespace MoreLocales.Utilities
         public static bool FilesWillBeReloadedDueToCommentsChange { get; internal set; }
         public record struct QueuedComment(Mod Mod, string Key, string Comment, HjsonCommentType CommentType, bool OverwriteComment);
         private static readonly HashSet<Mod> _probablyValidMods = [];
-        private static readonly Queue<QueuedComment> _commentsQueue = [];
+        private static readonly ConcurrentQueue<QueuedComment> _commentsQueue = [];
         internal static readonly Dictionary<GameCulture, Dictionary<string, string>[]> _flattenedCache = [];
         private static GameCulture[] _vanillaCultures;
         public static GameCulture[] VanillaCultures
@@ -58,7 +59,7 @@ namespace MoreLocales.Utilities
             // if anyone's reading this pls tell me if i'm stupid
             // can more than one mod even add comments at the same time?? if not then i have no idea why i'm doing this
 
-            if (_commentsQueue.Count > 0)
+            if (!_commentsQueue.IsEmpty)
                 FilesWillBeReloadedDueToCommentsChange = true;
             else
                 return;
@@ -163,6 +164,8 @@ namespace MoreLocales.Utilities
         /// </returns>
         public static bool AddComment(string key, string comment, HjsonCommentType commentType = HjsonCommentType.Slashes, bool overwriteComment = true)
         {
+            // currently can't be added to categories. make that possible
+
             if (!Language.Exists(key))
                 return false;
 

@@ -5,15 +5,12 @@ using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Reflection;
-using System.Text.RegularExpressions;
 using Terraria.Localization;
-using static Terraria.ModLoader.LocalizationLoader;
 
 namespace MoreLocales.Common
 {
     public static class LocalizationTweaks
     {
-        // internal static GameCulture _currentProcessedCulture;
         private static MethodReference terriblyUnperformantMethod;
         internal static void Apply()
         {
@@ -75,53 +72,6 @@ namespace MoreLocales.Common
             c.RemoveRange(2); // lol
             EmitJsonObjectLastKey(c);
         }
-        /*
-        internal static void PlaceCommentAboveNewEntryNew(LocalizationEntry entry, CommentedWscJsonObject parent, Dictionary<string, string> localizationsForCulture, LocalizationFile file)
-        {
-            // the original method doesn't take the dictionary as a parameter
-            // so i replace all calls to the method inside LocalizationFileToHjsonText with this one
-
-            string sub;
-
-            Match m = LocalizationLoader.referenceRegex.Match(entry.comment);
-            if (m.Success) // regex matched, but we don't know if it's a valid key yet, so let's look in the scope
-            {
-                var culture = _currentProcessedCulture;
-                // add vanilla keys
-                Dictionary<string, string>[] allVanillaKeys = LangUtils.GetVanillaLanguageFilesForCultureFlattened(culture);
-                for (int i = 0; i < allVanillaKeys.Length; i++)
-                {
-                    foreach (var kvp in allVanillaKeys[i])
-                        localizationsForCulture[kvp.Key] = kvp.Value;
-                }
-
-                string validKey = LangUtils.FindKeyInScope(m.Groups[1].Value, entry.key, [.. localizationsForCulture.Keys]);
-                if (validKey is null)
-                    sub = entry.comment;
-                else
-                    sub = m.Result(localizationsForCulture[validKey]);
-
-                Console.WriteLine(culture.Name);
-            }
-            else
-            {
-                sub = entry.comment;
-            }
-
-            if (parent.Count == 0)
-            {
-                parent.Comments[""] = sub;
-            }
-            else
-            {
-                var dict = parent.map;
-                var entries = _entries.GetValue(dict) as Array;
-
-                string actualCommentKey = (string)_key.GetValue(entries.GetValue(parent.Count - 1));
-                parent.Comments[actualCommentKey] = sub;
-            }
-        }
-        */
         private static void LookForActualMethod(ILContext il)
         {
             var c = new ILCursor(il);
@@ -135,57 +85,11 @@ namespace MoreLocales.Common
                 i => i.MatchLdloc(out _),
                 i => i.MatchCall(out terriblyUnperformantMethod)
             );
-
-            /*
-
-            MethodReference newCommentMethod = il.Import(typeof(LocalizationTweaks).GetMethod(nameof(PlaceCommentAboveNewEntryNew), BindingFlags.Static | BindingFlags.NonPublic));
-
-            var c = new ILCursor(il);
-
-            while (c.TryGotoNext(i => i.MatchCall(out MethodReference method) && method.FullName.Contains("PlaceCommentAboveNewEntry|")))
-            {
-                c.EmitLdarg1();
-                c.EmitLdarg0();
-                c.Next.Operand = newCommentMethod;
-                c.Index++;
-            }
-
-            */
         }
         // fixes problem where tmod would mark the vanilla translation files as legacy since they don't have an en-US equivalent
-        // also allows referencing localizations from all languages even if a given language isn't the active language (nope!)
         private static void FixPeskyLegacyMarking(ILContext il)
         {
             var c = new ILCursor(il);
-
-            /*
-
-            // first part: to avoid changing calls to LocalizationFileToHjsonText, we store the current iterated target culture to a global variable
-
-            int cultureVar = 0; // will be index to the culture local, which gets reused multiple times within the method so it doesn't matter when we capture it
-
-            // get the culture local index
-            if (!c.TryGotoNext(i => i.MatchCallvirt<IEnumerator<GameCulture>>("get_Current"), i => i.MatchStloc(out cultureVar)))
-                throw new Exception("how");
-
-            // the 'baseLocalizationFiles' local apparently gets put in a compiler generated class for some reason,
-            // so it's not that easy to match to
-            FieldReference compGen = null;
-
-            if (!c.TryGotoNext(MoveType.AfterLabel,
-                i => i.MatchLdloc0(),
-                i => i.MatchLdfld(out compGen),
-                i => i.MatchCallvirt<List<LocalizationFile>>("GetEnumerator"),
-                i => i.MatchStloc(out _)
-                ) || compGen.Name != "baseLocalizationFiles") // check if the name match
-            {
-                throw new Exception(":O");
-            }
-
-            c.EmitLdloc(cultureVar);
-            c.EmitStsfld(typeof(LocalizationTweaks).GetField(nameof(_currentProcessedCulture), BindingFlags.Static | BindingFlags.NonPublic));
-
-            */
 
             MethodInfo move = typeof(File).GetMethod("Move", [typeof(string), typeof(string)]);
             PropertyInfo getTMLprop = typeof(Logging).GetProperty("tML", BindingFlags.Static | BindingFlags.NonPublic);

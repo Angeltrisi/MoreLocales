@@ -957,25 +957,25 @@ InflectionData: {
 		# DisplayName: Charged Blaster Cannon | Aufgeladene Blasterkanone | Cannone blaster carico | Canon à charge | Desintegrador cargado | Зарядная бластерная пушка | 带电爆破炮 | Canhão Detonador Carregado | Naładowany blaster armatni
 		ChargedBlasterCannon: /
 		# DisplayName: The Bee's Knees | Die Knie der Biene | Arco delle api | Arc des abeilles | Rodillas de la abeja | Пчелиный лук | 蜂膝弓 | Abelharco | Pszczał
-		BeesKnees: "/"
+		BeesKnees: /
 		# DisplayName: Summoner Emblem | Siegel des Beschwörers | Emblema evocatore | Emblème d'invocateur | Emblema de invocador | Эмблема призывателя | 召唤师徽章 | Emblema do Invocador | Symbol przywoływacza
-		SummonerEmblem: "/"
+		SummonerEmblem: /
 		# DisplayName: Life Drain | Lebensentweichung | Sottrazione vita | Absorbeur de santé | Absorción de vida | Похититель жизни | 夺命杖 | Drenagem da Vida | Wyssanie życia
-		SoulDrain: "/"
+		SoulDrain: /
 		# DisplayName: Dart Pistol | Dartpfeilpistole | Pistola a dardi | Pistolet à fléchettes | Pistola de dardos | Темный пистолет | 飞镖手枪 | Pistola de Dardos | Pistolet strzałkowy
-		DartPistol: "/"
+		DartPistol: /
 		# DisplayName: Dart Rifle | Dartpfeilgewehr | Fucile a dardi | Fusil à fléchettes | Escopeta de dardos | Темная винтовка | 飞镖步枪 | Fuzil de Dardos | Karabin strzałkowy
-		DartRifle: "/"
+		DartRifle: /
 		# DisplayName: Chain Guillotines | Kettenguillotinen | Ghigliottine a catena | Chaîne à guillotine | Guillotinas encadenadas | Гильотины на цепях | 铁链血滴子 | Guilhotinas com Corrente | Gilotyny łańcuchowe
-		ChainGuillotines: "/"
+		ChainGuillotines: /
 		# DisplayName: Fetid Baghnakhs | Stinkende Tigerkrallen | Bagh Nakh sporchi | Baghnakhs fétides | Baghnakhs fétidos | Гниющие когти | 臭虎爪 | Baghnakhs Fétidas | Cuchnące bagh naka
-		FetidBaghnakhs: "/"
+		FetidBaghnakhs: /
 		# DisplayName: Clinger Staff | Klettenstab | Bastone appiccicoso | Sceptre d'Accrocheur | Báculo de lapa | Посох хватателя | 爬藤怪法杖 | Cajado do Prendedor | Kostur chwytaka
-		ClingerStaff: "/"
+		ClingerStaff: /
 		# DisplayName: Putrid Scent | Fäulnisgeruch | Odore putrido | Odeur putride | Aroma putrefacto | Гнилые останки | 腐香囊 | Aroma Podre | Zgniły zapach
-		PutridScent: "/"
+		PutridScent: /
 		# DisplayName: Flesh Knuckles | Fleischknöchel | Nocche di carne | Poing américain en chair | Nudillos de carne | Кастет из плоти | 血肉指关节 | Punhos de Carne | Mięsiste kłykcie
-		FleshKnuckles: "/"
+		FleshKnuckles: /
 		# DisplayName: Flower Boots | Blumenstiefel | Stivali di fiori | Bottes fleurs | Botas floridas | Цветочные сапоги | 花靴 | Botas de Flores | Kwieciste buty
 		FlowerBoots: "/"
 		# DisplayName: Seedler | Setzling | Spargisemi | Semeuse | Semillera | Сеятель | 种子弯刀 | Espada Espinho | Siewca
