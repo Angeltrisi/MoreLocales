@@ -122,8 +122,13 @@ namespace MoreLocales.Core
 
             if (Main.keyState.IsKeyDown(Keys.F) && !Main.oldKeyState.IsKeyDown(Keys.F))
             {
+                MoreLocalesSets.ReloadedLocalizations();
+                if (!MoreLocalesSets._contentReady || LangUtils.FilesWillBeReloadedDueToCommentsChange)
+                    Main.NewText($"CAN'T {Main.rand.NextDouble()}");
+                /*
                 foreach (var key in LanguageManager.Instance._categoryGroupedKeys.Keys)
                     Console.WriteLine(key);
+                */
                 //Main.NewText(LanguageManager.Instance._categoryGroupedKeys.ContainsKey("Mods.MoreLocales.VanillaData.InflectionData"));
             }
         }

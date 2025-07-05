@@ -55,927 +55,927 @@ InflectionData: {
 
 	Items: {
 		# DisplayName: Iron Pickaxe | Eisenspitzhacke | Piccone di ferro | Pioche en fer | Pico de hierro | Железная кирка | 铁镐 | Picareta de Ferro | Żelazny kilof
-		IronPickaxe: /
+		IronPickaxe: "/"
 		# DisplayName: Iron Broadsword | Eisenbreitschwert | Spadone di ferro | Épée longue en fer | Espada larga de hierro | Железный меч | 铁阔剑 | Espada Larga de Ferro | Żelazny pałasz
-		IronBroadsword: /
+		IronBroadsword: "/"
 		# DisplayName: Iron Shortsword | Eisenkurzschwert | Spada corta di ferro | Épée courte en fer | Espada corta de hierro | Железный короткий меч | 铁短剑 | Espada Curta de Ferro | Żelazny krótki miecz
-		IronShortsword: /
+		IronShortsword: "/"
 		# DisplayName: Iron Hammer | Eisenhammer | Martello di ferro | Marteau en fer | Martillo de hierro | Железный молот | 铁锤 | Martelo de Ferro | Żelazny młot
-		IronHammer: /
+		IronHammer: "/"
 		# DisplayName: Iron Axe | Eisenaxt | Ascia di ferro | Hache en fer | Hacha de hierro | Железный топор | 铁斧 | Machado de Ferro | Żelazna siekiera
-		IronAxe: /
+		IronAxe: "/"
 		# DisplayName: Copper Watch | Kupferuhr | Orologio di rame | Montre en cuivre | Reloj de cobre | Медные часы | 铜表 | Relógio de Cobre | Miedziany zegarek
-		CopperWatch: /
+		CopperWatch: "/"
 		# DisplayName: Silver Watch | Silberuhr | Orologio d'argento | Montre en argent | Reloj de plata | Серебряные часы | 银表 | Relógio de Prata | Srebrny zegarek
-		SilverWatch: /
+		SilverWatch: "/"
 		# DisplayName: Gold Watch | Golduhr | Orologio d'oro | Montre en or | Reloj de oro | Золотые часы | 金表 | Relógio de Ouro | Złoty zegarek
-		GoldWatch: /
+		GoldWatch: "/"
 		# DisplayName: Depth Meter | Tiefenmesser | Misuratore di profondità | Altimètre | Medidor de profundidad | Глубиномер | 深度计 | Medidor de Profundidade | Głębinomierz
-		DepthMeter: /
+		DepthMeter: "/"
 		# DisplayName: Wooden Sword | Holzschwert | Spada di legno | Épée en bois | Espada de madera | Деревянный меч | 木剑 | Espada de Madeira | Drewniany miecz
-		WoodenSword: /
+		WoodenSword: "/"
 		# DisplayName: Wooden Bow | Holzbogen | Arco di legno | Arc en bois | Arco de madera | Деревянный лук | 木弓 | Arco de Madeira | Drewniany łuk
-		WoodenBow: /
+		WoodenBow: "/"
 		# DisplayName: Demon Bow | Dämonenbogen | Arco demoniaco | Arc démoniaque | Arco demoníaco | Демонический лук | 恶魔弓 | Arco Demoníaco | Demoniczny łuk
-		DemonBow: /
+		DemonBow: "/"
 		# DisplayName: War Axe of the Night | Kriegsaxt der Nacht | Ascia da guerra della notte | Hache de guerre de la nuit | Hacha de la noche | Топор ночи | 暗夜战斧 | Machado de Guerra da Noite | Topór wojenny nocy
-		WarAxeoftheNight: /
+		WarAxeoftheNight: "/"
 		# DisplayName: Light's Bane | Schrecken des Tages | Flagello di luce | Fléau de la lumière | Azote de la luz | Бич света | 魔光剑 | Destruidor da Luz | Zguba światła
-		LightsBane: /
+		LightsBane: "/"
 		# DisplayName: Band of Regeneration | Wiederherstellungsband | Benda di rigenerazione | Anneau de régénération | Banda de regeneración | Браслет регенерации | 再生手环 | Pulseira da Regeneração | Opaska regeneracji
-		BandofRegeneration: /
+		BandofRegeneration: "/"
 		# DisplayName: Cloud in a Bottle | Wolke in einer Flasche | Nuvola in bottiglia | Nuage en bouteille | Nube embotellada | Облако в бутылке | 云朵瓶 | Nuvem na Garrafa | Chmura w butelce
-		CloudinaBottle: /
+		CloudinaBottle: "/"
 		# DisplayName: Hermes Boots | Hermes-Stiefel | Stivali di Ermes | Bottes d'Hermès | Botas de Hermes | Сапоги Гермеса | 赫尔墨斯靴 | Botas de Hermes | Buty Hermesa
-		HermesBoots: /
+		HermesBoots: "/"
 		# DisplayName: Enchanted Boomerang | Verzauberter Bumerang | Boomerang incantato | Boomerang envoûté | Bumerán encantado | Зачарованный бумеранг | 附魔回旋镖 | Bumerangue Encantado | Zaczarowany bumerang
-		EnchantedBoomerang: /
+		EnchantedBoomerang: "/"
 		# DisplayName: Vilethorn | Ekeldorn | Spina vile | Vilépine | Espina vil | Злая колючка | 魔刺 | Espinho Infame | Plugawy cierń
-		Vilethorn: /
+		Vilethorn: "/"
 		# DisplayName: Starfury | Sternenwut | Furia stellare | Furie étoilée | Furia de estrellas | Звездная ярость | 星怒 | Fúria das Estrelas | Gwiezdna furia
-		Starfury: /
+		Starfury: "/"
 		# DisplayName: Flintlock Pistol | Steinschlosspistole | Pistola a pietra focaia | Pistolet à silex | Pistola de pedernal | Кремневый пистолет | 燧发枪 | Pistola Antiga | Pistolet skałkowy
-		FlintlockPistol: /
+		FlintlockPistol: "/"
 		# DisplayName: Musket | Muskete | Moschetto | Mousquet | Mosquete | Мушкет | 火枪 | Mosquete | Muszkiet
-		Musket: /
+		Musket: "/"
 		# DisplayName: Minishark | Minihai | Minishark | Minirequin | Minitiburón | Мини-акула | 迷你鲨 | Mini-tubarão | Minirekin
-		Minishark: /
+		Minishark: "/"
 		# DisplayName: Iron Bow | Eisenbogen | Arco di ferro | Arc de fer | Arco de hierro | Железный лук | 铁弓 | Arco de Ferro | Żelazny łuk
-		IronBow: /
+		IronBow: "/"
 		# DisplayName: Nightmare Pickaxe | Albtraum-Spitzhacke | Piccone dell'incubo | Pioche de cauchemar | Pico de pesadilla | Кошмарная кирка | 梦魇镐 | Picareta de Pesadelos | Koszmarny kilof
-		NightmarePickaxe: /
+		NightmarePickaxe: "/"
 		# DisplayName: The Breaker | Zerschmetterer | Il Distruttore | Le Casseur | La Despedazadora | Разрушитель | 魔锤 | O Batedor | Kruszyciel
-		TheBreaker: /
+		TheBreaker: "/"
 		# DisplayName: Band of Starpower | Sternenkraftband | Benda della forza stellare | Brassard de puissance étoilée | Banda de polvo de estrellas | Браслет звездной силы | 星力手环 | Pulseira do Poder das Estrelas | Opaska gwiezdnej mocy
-		BandofStarpower: /
+		BandofStarpower: "/"
 		# DisplayName: Flower of Fire | Feuerblume | Fiore di fuoco | Fleur de feu | Flor de fuego | Огненный цветок | 火之花 | Flor de Fogo | Kwiat ognia
-		FlowerofFire: /
+		FlowerofFire: "/"
 		# DisplayName: Magic Missile | Magische Rakete | Missile magico | Missile magique | Proyectil mágico | Волшебная ракета | 魔法导弹 | Míssil Mágico | Magiczny pocisk
-		MagicMissile: /
+		MagicMissile: "/"
 		# DisplayName: Flamarang | Flammarang | Flamarang | Flammerang | Bumerán en llamas | Огнеранг | 烈焰回旋镖 | Bumerangue Flamejante | Ogniorang
-		Flamarang: /
+		Flamarang: "/"
 		# DisplayName: Molten Fury | Geschmolzene Wut | Furia fusa | Furie en fusion | Furia fundida | Литая ярость | 熔火之怒 | Fúria Derretida | Roztopiona furia
-		MoltenFury: /
+		MoltenFury: "/"
 		# DisplayName: Volcano | Vulkan | Vulcano | Volcan | Volcán | Вулкан | 火山 | Vulcão | Wulkan
-		FieryGreatsword: /
+		FieryGreatsword: "/"
 		# DisplayName: Molten Pickaxe | Geschmolzene Spitzhacke | Piccone fuso | Pioche en fusion | Pico fundido | Литая кирка | 熔岩镐 | Picareta Derretida | Roztopiony kilof
-		MoltenPickaxe: /
+		MoltenPickaxe: "/"
 		# DisplayName: Space Gun | Weltraumpistole | Pistola spaziale | Pistolet spatial | Pistola espacial | Космическая пушка | 太空枪 | Arma Espacial | Pistolet kosmiczny
-		SpaceGun: /
+		SpaceGun: "/"
 		# DisplayName: Rocket Boots | Raketenstiefel | Stivali razzo | Bottes à fusée | Botas cohete | Реактивные сапоги | 火箭靴 | Botas Foguete | Buty rakietowe
-		RocketBoots: /
+		RocketBoots: "/"
 		# DisplayName: Muramasa | Muramasa | Muramasa | Muramasa | Muramasa | Мурамаса | 村正大刀 | Muramasa | Muramasa
-		Muramasa: /
+		Muramasa: "/"
 		# DisplayName: Cobalt Shield | Kobaltschild | Scudo di cobalto | Bouclier en cobalt | Escudo de cobalto | Кобальтовый щит | 钴护盾 | Escudo de Cobalto | Kobaltowa tarcza
-		CobaltShield: /
+		CobaltShield: "/"
 		# DisplayName: Aqua Scepter | Aqua-Zepter | Scettro d'acqua | Sceptre aquatique | Cetro de agua | Водный скипетр | 海蓝权杖 | Cetro d'água | Wodne berło
-		AquaScepter: /
+		AquaScepter: "/"
 		# DisplayName: Lucky Horseshoe | Glückshufeisen | Ferro di cavallo fortunato | Fer à cheval porte-bonheur | Herradura de la suerte | Счастливая подкова | 幸运马掌 | Ferradura da Sorte | Szczęśliwa podkowa
-		LuckyHorseshoe: /
+		LuckyHorseshoe: "/"
 		# DisplayName: Shiny Red Balloon | Leuchtend roter Ballon | Palloncino rosso brillante | Ballon rouge brillant | Globo rojo brillante | Блестящий красный шарик | 闪亮红气球 | Balão Vermelho Brilhante | Błyszczący czerwony balon
-		ShinyRedBalloon: /
+		ShinyRedBalloon: "/"
 		# DisplayName: Harpoon | Harpune | Arpione | Harpon | Arpón | Гарпун | 鱼叉枪 | Arpão | Harpun
-		Harpoon: /
+		Harpoon: "/"
 		# DisplayName: Ball O' Hurt | Schmerzball | Palla del dolore | Boule de douleur | Flagelo con bola | Шар боли | 链球 | Bola de Dor | Kula bólu
-		BallOHurt: /
+		BallOHurt: "/"
 		# DisplayName: Blue Moon | Blauer Mond | Luna blu | Lune bleue | Luna azul | Синяя луна | 蓝月 | Lua Azul | Niebieski księżyc
-		BlueMoon: /
+		BlueMoon: "/"
 		# DisplayName: Handgun | Pistole | Pistola | Pistolet | Pistola | Пистолет | 手枪 | Arma | Pistolet jednoręczny
-		Handgun: /
+		Handgun: "/"
 		# DisplayName: Water Bolt | Wasserbolzen | Dardo d'acqua | Sort de l'eau | Proyectil de agua | Водяной выстрел | 水矢 | Raio d'água | Pocisk wodny
-		WaterBolt: /
+		WaterBolt: "/"
 		# DisplayName: Breathing Reed | Schilfrohr | Canna per la respirazione | Roseau de respiration | Caña para respirar | Дыхательная трубка | 芦苇呼吸管 | Snorkel de Junco | Trzcina do oddychania
-		BreathingReed: /
+		BreathingReed: "/"
 		# DisplayName: Flipper | Flosse | Pinna | Palmes | Aletas | Ласты | 脚蹼 | Nadadeira | Płetwa
-		Flipper: /
+		Flipper: "/"
 		# DisplayName: Blade of Grass | Grasklinge | Spada di erba | Lame d'herbe | Espada de hierba | Травяной клинок | 草剑 | Folha de Grama | Źdźbło trawy
-		BladeofGrass: /
+		BladeofGrass: "/"
 		# DisplayName: Thorn Chakram | Dornen-Chakram | Artiglio di Chakram | Chakram épineux | Chakram de espinas | Колючий чакрам | 荆棘旋刃 | Chakram com Espinhos | Kolczy czakram
-		ThornChakram: /
+		ThornChakram: "/"
 		# DisplayName: Obsidian Skull | Obsidianschädel | Teschio di ossidiana | Crâne en obsidienne | Calavera de obsidiana | Обсидиановый череп | 黑曜石骷髅头 | Caveira de Obsidiana | Obsydianowa czaszka
-		ObsidianSkull: /
+		ObsidianSkull: "/"
 		# DisplayName: Wooden Hammer | Holzhammer | Martello di legno | Marteau en bois | Martillo de madera | Деревянный молот | 木锤 | Martelo de Madeira | Drewniany młotek
-		WoodenHammer: /
+		WoodenHammer: "/"
 		# DisplayName: Star Cannon | Sternenkanone | Cannone stellare | Canon à étoiles | Cañón de estrellas | Звездная пушка | 星星炮 | Canhão de Estrelas | Gwiezdna armata
-		StarCannon: /
+		StarCannon: "/"
 		# DisplayName: Blue Phaseblade | Blaue Laserklinge | Spada laser blu | Sabre laser bleu | Espada de luz azul | Синий лазерный меч | 蓝陨石光剑 | Espada de Luz Azul | Niebieski miecz świetny
-		BluePhaseblade: /
+		BluePhaseblade: "/"
 		# DisplayName: Red Phaseblade | Rote Laserklinge | Spada laser rossa | Sabre laser rouge | Espada de luz roja | Красный лазерный меч | 红陨石光剑 | Espada de Luz Vermelha | Czerwony miecz świetny
-		RedPhaseblade: /
+		RedPhaseblade: "/"
 		# DisplayName: Green Phaseblade | Grüne Laserklinge | Spada laser verde | Sabre laser vert | Espada de luz verde | Зеленый лазерный меч | 绿陨石光剑 | Espada de Luz Verde | Zielony miecz świetny
-		GreenPhaseblade: /
+		GreenPhaseblade: "/"
 		# DisplayName: Purple Phaseblade | Lila Laserklinge | Spada laser viola | Sabre laser violet | Espada de luz morada | Фиолетовый лазерный меч | 紫陨石光剑 | Espada de Luz Roxa | Fioletowy miecz świetny
-		PurplePhaseblade: /
+		PurplePhaseblade: "/"
 		# DisplayName: White Phaseblade | Weiße Laserklinge | Spada laser bianca | Sabre laser blanc | Espada de luz blanca | Белый лазерный меч | 白陨石光剑 | Espada de Luz Branca | Biały miecz świetny
-		WhitePhaseblade: /
+		WhitePhaseblade: "/"
 		# DisplayName: Yellow Phaseblade | Gelbe Laserklinge | Spada laser gialla | Sabre laser jaune | Espada de luz amarilla | Желтый лазерный меч | 黄陨石光剑 | Espada de Luz Amarela | Żółty miecz świetny
-		YellowPhaseblade: /
+		YellowPhaseblade: "/"
 		# DisplayName: Meteor Hamaxe | Meteor-Hamaxt | Maglio di meteorite | Martache de météore | Hacha-martillo de meteorito | Метеоритовый молотопор | 流星锤斧 | Martelo-machado de Meteoro | Młotopór z meteoru
-		MeteorHamaxe: /
+		MeteorHamaxe: "/"
 		# DisplayName: Feral Claws | Wilde Klauen | Artigli bestiali | Griffes sauvages | Garras de bestia | Звериные когти | 猛爪手套 | Garras Ferozes | Dzikie szpony
-		FeralClaws: /
+		FeralClaws: "/"
 		# DisplayName: Anklet of the Wind | Fusskette des Windes | Cavigliera del vento | Bracelet du vent | Tobillera de viento | Браслет ветра | 疾风脚镯 | Tornozeleira do Vento | Obrączka wiatru
-		AnkletoftheWind: /
+		AnkletoftheWind: "/"
 		# DisplayName: Staff of Regrowth | Stab des Nachwachsens | Bastone della ricrescita | Sceptre de repousse | Báculo de regeneración | Посох выращивания | 再生法杖 | Cajado do Renascimento | Kostur porostu
-		StaffofRegrowth: /
+		StaffofRegrowth: "/"
 		# DisplayName: Shackle | Fessel | Grillo | Menotte | Argolla | Кандалы | 脚镣 | Algema | Kajdany
-		Shackle: /
+		Shackle: "/"
 		# DisplayName: Molten Hamaxe | Geschmolzene Hamaxt | Maglio fuso | Martache en fusion | Hacha-martillo fundida | Литой молотопор | 熔岩锤斧 | Martelo-machado Derretido | Roztopiony młotopór
-		MoltenHamaxe: /
+		MoltenHamaxe: "/"
 		# DisplayName: Flamelash | Flammenpeitsche | Lanciatore di fiamma | Flammissile | Látigo de llamas | Огнеплеть | 烈焰火鞭 | Chicote Flamejante | Ognik
-		Flamelash: /
+		Flamelash: "/"
 		# DisplayName: Phoenix Blaster | Phoenix-Blaster | Blaster della fenice | Pistolet Phénix | Desintegrador Fénix | Бластер феникса | 凤凰爆破枪 | Pistola da Fênix | Feniksowy blaster
-		PhoenixBlaster: /
+		PhoenixBlaster: "/"
 		# DisplayName: Sunfury | Sonnenzorn | Furia del sole | Furie solaire | Furia solar | Солнечная ярость | 阳炎之怒 | Fúria do Sol | Słoneczna furia
-		Sunfury: /
+		Sunfury: "/"
 		# DisplayName: Nature's Gift | Geschenk der Natur | Dono della natura | Don de la nature | Don de la naturaleza | Дар природы | 大自然的恩赐 | Presente da Natureza | Prezent natury
-		NaturesGift: /
+		NaturesGift: "/"
 		# DisplayName: Sandgun | Sandgewehr | Pistola di sabbia | Sableuse | Pistola de arena | Песчаная пушка | 沙枪 | Arma de Areia | Piaskowy pistolet
-		Sandgun: /
+		Sandgun: "/"
 		# DisplayName: Demon Scythe | Dämonensense | Falce demoniaca | Faux démoniaque | Guadaña demoníaca | Демоническая коса | 恶魔锄刀 | Gadanha Demoníaca | Demoniczna kosa
-		DemonScythe: /
+		DemonScythe: "/"
 		# DisplayName: Night's Edge | Klinge der Nacht | Confine della notte | Épée des ténèbres | Filo de la noche | Грань ночи | 永夜刃 | Lâmina da Noite | Nocne ostrze
-		NightsEdge: /
+		NightsEdge: "/"
 		# DisplayName: Dark Lance | Finstere Lanze | Lancia oscura | Lance du mal | Lanza de la oscuridad | Темное копье | 暗黑长戟 | Lança das Trevas | Mroczna lanca
-		DarkLance: /
+		DarkLance: "/"
 		# DisplayName: Trident | Dreizack | Tridente | Trident | Tridente | Трезубец | 三叉戟 | Tridente | Trójząb
-		Trident: /
+		Trident: "/"
 		# DisplayName: Spear | Speer | Lancia | Lance | Lanza | Копье | 长矛 | Lança | Włócznia
-		Spear: /
+		Spear: "/"
 		# DisplayName: Blowpipe | Blasrohr | Cerbottana | Sarbacane | Cerbatana | Духовая трубка | 吹管 | Zarabatana | Dmuchawka
-		Blowpipe: /
+		Blowpipe: "/"
 		# DisplayName: Wooden Boomerang | Holzbumerang | Boomerang di legno | Boomerang en bois | Bumerán de madera | Деревянный бумеранг | 木制回旋镖 | Bumerangue de Madeira | Drewniany bumerang
-		WoodenBoomerang: /
+		WoodenBoomerang: "/"
 		# DisplayName: Aglet | Schnürsenkelkappe | Aghetto | Ferret | Herrete | Аксельбант | 金属带扣 | Aglet | Sznurówka
-		Aglet: /
+		Aglet: "/"
 		# DisplayName: Pwnhammer | Pwnhammer | Martellone | Supermarteau | Gran martillo | Святой молот | 神锤 | Pwnhammer | Młot-demolka
-		Pwnhammer: /
+		Pwnhammer: "/"
 		# DisplayName: Excalibur | Excalibur | Excalibur | Excalibur | Excalibur | Экскалибур | 断钢剑 | Excalibur | Excalibur
-		Excalibur: /
+		Excalibur: "/"
 		# DisplayName: Cobalt Chainsaw | Kobaltkettensäge | Motosega di cobalto | Tronçonneuse en cobalt | Motosierra de cobalto | Кобальтовая бензопила | 钴链锯 | Serra-elétrica de Cobalto | Kobaltowa piła łańcuchowa
-		CobaltChainsaw: /
+		CobaltChainsaw: "/"
 		# DisplayName: Mythril Chainsaw | Mithrilkettensäge | Motosega di mitrilio | Tronçonneuse en mithril | Motosierra de mithril | Мифриловая бензопила | 秘银链锯 | Serra-elétrica de Mithril | Mithrilowa piła łańcuchowa
-		MythrilChainsaw: /
+		MythrilChainsaw: "/"
 		# DisplayName: Cobalt Drill | Kobaltbohrer | Perforatrice di cobalto | Foreuse en cobalt | Taladro de cobalto | Кобальтовый бур | 钴钻头 | Furadeira de Cobalto | Kobaltowy świder
-		CobaltDrill: /
+		CobaltDrill: "/"
 		# DisplayName: Mythril Drill | Mithrilbohrer | Perforatrice di mitrilio | Foreuse en mithril | Taladro de mithril | Мифриловый бур | 秘银钻头 | Furadeira de Mithril | Mithrilowy świder
-		MythrilDrill: /
+		MythrilDrill: "/"
 		# DisplayName: Adamantite Chainsaw | Adamantkettensäge | Motosega di adamantio | Tronçonneuse en adamantite | Motosierra de adamantita | Адамантитовая бензопила | 精金链锯 | Serra-elétrica de Adamantina | Adamantytowa piła łańcuchowa
-		AdamantiteChainsaw: /
+		AdamantiteChainsaw: "/"
 		# DisplayName: Adamantite Drill | Adamantbohrer | Perforatrice di adamantio | Foreuse en adamantite | Taladro de adamantita | Адамантитовый бур | 精金钻头 | Furadeira de Adamantina | Adamantytowy świder
-		AdamantiteDrill: /
+		AdamantiteDrill: "/"
 		# DisplayName: Dao of Pow | Dao von Pow | Frustona | Fouet taoïste | Flagelo Taoísta | Дао Пуха | 太极连枷 | Poder de Dao | Dao mocy
-		DaoofPow: /
+		DaoofPow: "/"
 		# DisplayName: Mythril Halberd | Mithrilhellebarde | Alabarda di mitrilio | Hallebarde en mithril | Alabarda de mithril | Мифриловая алебарда | 秘银长戟 | Alabarda de Mithril | Mithrilowa halabarda
-		MythrilHalberd: /
+		MythrilHalberd: "/"
 		# DisplayName: Compass | Kompass | Bussola | Boussole | Brújula | Компас | 罗盘 | Bússola | Kompas
-		Compass: /
+		Compass: "/"
 		# DisplayName: Diving Gear | Tauchausrüstung | Muta da sub | Matériel de plongée | Equipo de buceo | Снаряжение для дайвинга | 潜水装备 | Equipamento de Mergulho | Sprzęt do nurkowania
-		DivingGear: /
+		DivingGear: "/"
 		# DisplayName: GPS | GPS | GPS | GPS | GPS | GPS | 全球定位系统 | GPS | GPS
-		GPS: /
+		GPS: "/"
 		# DisplayName: Obsidian Horseshoe | Obsidian-Hufeisen | Ferro di cavallo di ossidiana | Fer à cheval en obsidienne | Herradura de obsidiana | Обсидиановая подкова | 黑曜石马掌 | Ferradura de Obsidiana | Obsydianowa podkowa
-		ObsidianHorseshoe: /
+		ObsidianHorseshoe: "/"
 		# DisplayName: Obsidian Shield | Obsidianschild | Scudo di ossidiana | Bouclier en obsidienne | Escudo de obsidiana | Обсидиановый щит | 黑曜石护盾 | Escudo de Obsidiana | Obsydianowa tarcza
-		ObsidianShield: /
+		ObsidianShield: "/"
 		# DisplayName: Cloud in a Balloon | Wolke in einem Ballon | Nuvola in un palloncino | Nuage dans un ballon | Nube en globo | Облако в шарике | 云朵气球 | Nuvem no Balão | Chmura w balonie
-		CloudinaBalloon: /
+		CloudinaBalloon: "/"
 		# DisplayName: Spectre Boots | Geisterstiefel | Stivali da fantasma | Bottes spectrales | Botas de espectro | Спектральные ботинки | 幽灵靴 | Botas Espectrais | Widmowe buty
-		SpectreBoots: /
+		SpectreBoots: "/"
 		# DisplayName: Adamantite Glaive | Adamant-Glefe | Alabarda di adamantio | Glaive en adamantite | Guja de adamantita | Адамантитовая глефа | 精金关刀 | Gládio de Adamantina | Adamantytowa glewia
-		AdamantiteGlaive: /
+		AdamantiteGlaive: "/"
 		# DisplayName: Toolbelt | Werkzeuggürtel | Cintura porta attrezzi | Ceinture à outils | Cinturón de herramientas | Пояс с инструментами | 工具腰带 | Cinto de Utilidades | Pasek na narzędzia
-		Toolbelt: /
+		Toolbelt: "/"
 		# DisplayName: Breaker Blade | Schmetterklinge | Lama del distruttore | La Briseuse | Espada despedazadora | Дробильщик | 毁灭刃 | Lâmina do Batedor | Ostrze kruszące
-		BreakerBlade: /
+		BreakerBlade: "/"
 		# DisplayName: Clockwork Assault Rifle | Automatiksturmwaffe | Fucile d'assalto automatico | Fusil d'assaut mécanique | Fusil de asalto de precisión | Заводная штурмовая винтовка | 发条式突击步枪 | Fuzil de Assalto Relógio | Mechaniczny karabin
-		ClockworkAssaultRifle: /
+		ClockworkAssaultRifle: "/"
 		# DisplayName: Cobalt Repeater | Kobaltrepetierer | Balestra automatica di cobalto | Arbalète en cobalt | Repetidor de cobalto | Кобальтовый арбалет | 钴连弩 | Repetidora de Cobalto | Kusza powtarzalna z kobaltu
-		CobaltRepeater: /
+		CobaltRepeater: "/"
 		# DisplayName: Mythril Repeater | Mithrilrepetierer | Balestra automatica di mitrilio | Arbalète en mithril | Repetidor de mithril | Мифриловый арбалет | 秘银连弩 | Repetidora de Mithril | Kusza powtarzalna z mithrilu
-		MythrilRepeater: /
+		MythrilRepeater: "/"
 		# DisplayName: Adamantite Repeater | Adamantitrepetierer | Mietitore di adamantio | Arbalète en adamantite | Repetidor de adamantita | Адамантитовый арбалет | 精金连弩 | Repetidora de Adamantina | Kusza powtarzalna z adamantytu
-		AdamantiteRepeater: /
+		AdamantiteRepeater: "/"
 		# DisplayName: Adamantite Sword | Adamantitschwert | Spada di adamantio | Épée en adamantite | Espada de adamantita | Адамантитовый меч | 精金剑 | Espada de Adamantina | Adamantytowy miecz
-		AdamantiteSword: /
+		AdamantiteSword: "/"
 		# DisplayName: Cobalt Sword | Kobaltschwert | Spada di cobalto | Épée en cobalt | Espada de cobalto | Кобальтовый меч | 钴剑 | Espada de Cobalto | Kobaltowy miecz
-		CobaltSword: /
+		CobaltSword: "/"
 		# DisplayName: Mythril Sword | Mithrilschwert | Spada di mitrilio | Épée en mithril | Espada de mithril | Мифриловый меч | 秘银剑 | Espada de Mithril | Mithrilowy miecz
-		MythrilSword: /
+		MythrilSword: "/"
 		# DisplayName: Moon Charm | Mondzauber | Amuleto della luna | Amulette lunaire | Hechizo de luna | Зачарованная луна | 月光护身符 | Amuleto da Lua | Księżycowy wisior
-		MoonCharm: /
+		MoonCharm: "/"
 		# DisplayName: Ruler | Lineal | Righello | Règle | Regla | Линейка | 标尺 | Régua | Linijka
-		Ruler: /
+		Ruler: "/"
 		# DisplayName: Sorcerer Emblem | Siegel des Magiers | Emblema dell'incantatore | Emblème de mage | Emblema de hechicero | Эмблема мага | 巫士徽章 | Emblema do Feiticeiro | Symbol czarownika
-		SorcererEmblem: /
+		SorcererEmblem: "/"
 		# DisplayName: Warrior Emblem | Siegel des Kriegers | Emblema del guerriero | Emblème de guerrier | Emblema de guerrero | Эмблема воина | 战士徽章 | Emblema do Guerreiro | Symbol wojownika
-		WarriorEmblem: /
+		WarriorEmblem: "/"
 		# DisplayName: Ranger Emblem | Siegel des Schützen | Emblema del guardiaboschi | Emblème de ranger | Emblema de guardián | Эмблема лучника | 游侠徽章 | Emblema do Vigia | Symbol leśnika
-		RangerEmblem: /
+		RangerEmblem: "/"
 		# DisplayName: Demon Wings | Dämonenflügel | Ali del demone | Ailes de démon | Alas demoníacas | Крылья демона | 恶魔之翼 | Asas Demoníacas | Demoniczne skrzydła
-		DemonWings: /
+		DemonWings: "/"
 		# DisplayName: Angel Wings | Engelsflügel | Ali dell'angelo | Ailes d'ange | Alas de ángel | Крылья ангела | 天使之翼 | Asas Angelicais | Anielskie skrzydła
-		AngelWings: /
+		AngelWings: "/"
 		# DisplayName: Magical Harp | Magische Harfe | Arpa magica | Harpe magique | Arpa mágica | Магическая арфа | 魔法竖琴 | Harpia Mágica | Magiczna harfa
-		MagicalHarp: /
+		MagicalHarp: "/"
 		# DisplayName: Rainbow Rod | Regenbogenrute | Bastone dell'arcobaleno | Bâton arc-en-ciel | Varita multicolor | Радужный жезл | 彩虹魔杖 | Bastão de Arco-íris | Tęczowy kostur
-		RainbowRod: /
+		RainbowRod: "/"
 		# DisplayName: Ice Rod | Eisrute | Bastone di ghiaccio | Bâton de glace | Varita helada | Ледяной жезл | 冰雪魔杖 | Bastão de Gelo | Lodowy kostur
-		IceRod: /
+		IceRod: "/"
 		# DisplayName: Neptune's Shell | Neptuns Muschel | Conchiglia di Nettuno | Coquillage de Neptune | Concha de Neptuno | Ракушка Нептуна | 海神贝壳 | Concha de Netuno | Skorupa Neptuna
-		NeptunesShell: /
+		NeptunesShell: "/"
 		# DisplayName: Flamethrower | Flammenwerfer | Lanciafiamme | Lance-flammes | Lanzallamas | Огнемет | 火焰喷射器 | Lança-Chamas | Miotacz płomieni
-		Flamethrower: /
+		Flamethrower: "/"
 		# DisplayName: Laser Rifle | Lasergewehr | Fucile laser | Fusil à laser | Fusil láser | Лазерная винтовка | 激光步枪 | Fuzil de Laser | Karabin laserowy
-		LaserRifle: /
+		LaserRifle: "/"
 		# DisplayName: Magic Dagger | Magischer Dolch | Pugnale magico | Dague magique | Daga mágica | Магический кинжал | 魔法飞刀 | Adaga Mágica | Magiczny sztylet
-		MagicDagger: /
+		MagicDagger: "/"
 		# DisplayName: Crystal Storm | Kristallsturm | Tempesta di cristallo | Tempête de cristal | Tormenta de cristal | Кристальный шторм | 水晶风暴 | Tempestade de Cristal | Kryształowa burza
-		CrystalStorm: /
+		CrystalStorm: "/"
 		# DisplayName: Cursed Flames | Verfluchte Flammen | Fiamme maledette | Flammes maudites | Llamas malditas | Проклятый огонь | 诅咒焰 | Chamas Amaldiçoadas | Przeklęte płomienie
-		CursedFlames: /
+		CursedFlames: "/"
 		# DisplayName: Star Cloak | Sternenumhang | Mantello stellato | Cape étoilée | Manto de estrellas | Звездный плащ | 星星斗篷 | Manto das Estrelas | Gwiezdna peleryna
-		StarCloak: /
+		StarCloak: "/"
 		# DisplayName: Megashark | Maxihai | Megashark | Mégarequin | Megatiburón | Мега-акула | 巨兽鲨 | Megatubarão | Megarekin
-		Megashark: /
+		Megashark: "/"
 		# DisplayName: Shotgun | Schrotflinte | Fucile | Fusil à pompe | Escopeta | Дробовик | 霰弹枪 | Espingarda | Strzelba
-		Shotgun: /
+		Shotgun: "/"
 		# DisplayName: Philosopher's Stone | Stein der Weisen | Pietra filosofale | Pierre philosophale | Piedra filosofal | Философский камень | 点金石 | Pedra Filosofal | Kamień filozoficzny
-		PhilosophersStone: /
+		PhilosophersStone: "/"
 		# DisplayName: Titan Glove | Titanhandschuh | Guanto del Titano | Gant de titan | Guante de titán | Перчатка титана | 泰坦手套 | Luva de Titã | Tytanowa rękawica
-		TitanGlove: /
+		TitanGlove: "/"
 		# DisplayName: Cobalt Naginata | Kobalt-Naginata | Naginata di cobalto | Naginata en cobalt | Naginata de cobalto | Кобальтовая нагината | 钴剃刀 | Naginata de Cobalto | Kobaltowa naginata
-		CobaltNaginata: /
+		CobaltNaginata: "/"
 		# DisplayName: Gungnir | Gungnir | Gungnir | Gungnir | Gungnir | Гунгнир | 永恒之枪 | Gungnir | Gungnir
-		Gungnir: /
+		Gungnir: "/"
 		# DisplayName: Cross Necklace | Kreuzhalskette | Collana con croce | Pendentif en croix | Collar con cruz | Золотой крестик | 十字项链 | Colar com Cruz | Łańcuszek z krzyżem
-		CrossNecklace: /
+		CrossNecklace: "/"
 		# DisplayName: Mana Flower | Mana-Blume | Fiore di mana | Fleur de mana | Flor de maná | Цветок маны | 魔力花 | Flor de Mana | Kwiat many
-		ManaFlower: /
+		ManaFlower: "/"
 		# DisplayName: Light Disc | Lichtscheibe | Disco di luce | Disque de lumière | Disco de luz | Диск света | 光辉飞盘 | Disco de Luz | Świetlisty dysk
-		LightDisc: /
+		LightDisc: "/"
 		# DisplayName: Hallowed Repeater | Heiliger Repetierer | Balestra automatica consacrata | Arbalète sacré | Repetidor sagrado | Святой арбалет | 神圣连弩 | Repetidora Consagrada | Bajkowa kusza powtarzalna
-		HallowedRepeater: /
+		HallowedRepeater: "/"
 		# DisplayName: Drax | Drax | Perforascia | Forche | Taladro hacha | Молотобур | 斧钻 | Drax | Świdrolof
-		Drax: /
+		Drax: "/"
 		# DisplayName: Ebonwood Sword | Ebenholzschwert | Spada di ebano | Épée en ébène | Espada de madera de ébano | Меч из черной древесины | 乌木剑 | Espada de Madeira de Ébano | Miecz z drewna ebonowego
-		EbonwoodSword: /
+		EbonwoodSword: "/"
 		# DisplayName: Ebonwood Hammer | Ebenholzhammer | Martello di ebano | Marteau en ébène | Martillo de madera de ébano | Молот из черной древесины | 乌木锤 | Martelo de Madeira de Ébano | Młot z drewna ebonowego
-		EbonwoodHammer: /
+		EbonwoodHammer: "/"
 		# DisplayName: Ebonwood Bow | Ebenholzbogen | Arco di ebano | Arc en ébène | Arco de madera de ébano | Лук из черной древесины | 乌木弓 | Arco de Madeira de Ébano | Łuk z drewna ebonowego
-		EbonwoodBow: /
+		EbonwoodBow: "/"
 		# DisplayName: Rich Mahogany Sword | Reiches Mahagonischwert | Spada di mogano scuro | Épée en acajou riche | Espada de madera de caoba rica | Меч из красной древесины | 红木剑 | Espada de Mogno | Miecz mahoniowy
-		RichMahoganySword: /
+		RichMahoganySword: "/"
 		# DisplayName: Rich Mahogany Hammer | Reicher Mahagonihammer | Martello di mogano scuro | Marteau en acajou riche | Martillo de madera de caoba rica | Молот из красной древесины | 红木锤 | Martelo de Mogno | Młot mahoniowy
-		RichMahoganyHammer: /
+		RichMahoganyHammer: "/"
 		# DisplayName: Rich Mahogany Bow | Reicher Mahagonibogen | Arco di mogano scuro | Arc en acajou riche | Arco de madera de caoba rica | Лук из красной древесины | 红木弓 | Arco de Mogno | Łuk mahoniowy
-		RichMahoganyBow: /
+		RichMahoganyBow: "/"
 		# DisplayName: Pearlwood Sword | Perlholzschwert | Spada di legno perlato | Épée en bois perlé | Espada de madera perlada | Меч из жемчужной древесины | 珍珠木剑 | Espada de Madeira Pérola | Miecz z drewna perłowego
-		PearlwoodSword: /
+		PearlwoodSword: "/"
 		# DisplayName: Pearlwood Hammer | Perlholzhammer | Martello di legno perlato | Marteau en bois perlé | Martillo de madera perlada | Молот из жемчужной древесины | 珍珠木锤 | Martelo de Madeira Pérola | Młot z drewna perłowego
-		PearlwoodHammer: /
+		PearlwoodHammer: "/"
 		# DisplayName: Pearlwood Bow | Perlholzbogen | Arco di legno perlato | Arc en bois perlé | Arco de madera perlada | Лук из жемчужной древесины | 珍珠木弓 | Arco de Madeira Pérola | Łuk z drewna perłowego
-		PearlwoodBow: /
+		PearlwoodBow: "/"
 		# DisplayName: Red's Wings | Reds Flügel | Ali di Redigit | Ailes de Red | Alas de Red | Крылья Red | Red的翅膀 | Asas de Redigit | Skrzydła Reda
-		RedsWings: /
+		RedsWings: "/"
 		# DisplayName: Ice Boomerang | Eisbumerang | Boomerang di ghiaccio | Boomerang glacial | Bumerán de hielo | Ледяной бумеранг | 冰雪回旋镖 | Bumerangue de Gelo | Lodowy bumerang
-		IceBoomerang: /
+		IceBoomerang: "/"
 		# DisplayName: Keybrand | Schlüsselbrand | Chiave marchiata | Keybrand | Llave-espada | Ключ-меч | 钥匙剑 | Keybrand | Kluczowe cięcie
-		Keybrand: /
+		Keybrand: "/"
 		# DisplayName: Cutlass | Entermesser | Sciabola corta | Coutelas | Alfanje | Абордажная сабля | 短弯刀 | Cutlass | Kordelas
-		Cutlass: /
+		Cutlass: "/"
 		# DisplayName: True Excalibur | Das wahre Excalibur | Vera Excalibur | Véritable Excalibur | Excalibur verdadera | Истинный экскалибур | 原版断钢剑 | Verdadeira Excalibur | Prawdziwy Excalibur
-		TrueExcalibur: /
+		TrueExcalibur: "/"
 		# DisplayName: True Night's Edge | Die wahre Klinge der Nacht | Vero confine della notte | Vraie Épée des ténèbres | Espada de la noche verdadera | Истинная грань ночи | 原版永夜刃 | Verdadeira Lâmina da Noite | Prawdziwe nocne ostrze
-		TrueNightsEdge: /
+		TrueNightsEdge: "/"
 		# DisplayName: Frostbrand | Gefrierbrand | Marchio del gelo | Lame de givre | Espada helada | Ледяная марка | 霜印剑 | Frostbrand | Mroźne cięcie
-		Frostbrand: /
+		Frostbrand: "/"
 		# DisplayName: Tactical Shotgun | Taktische Schrotflinte | Fucile tattico | Fusil à pompe tactique | Escopeta táctica | Тактический дробовик | 战术霰弹枪 | Espingarda Tática | Strzelba taktyczna
-		TacticalShotgun: /
+		TacticalShotgun: "/"
 		# DisplayName: Marrow | Knochenmark | Arco di midollo | Moelle | Médula | Сущность | 骸骨弓 | Tutano | Szpik kostny
-		Marrow: /
+		Marrow: "/"
 		# DisplayName: Unholy Trident | Unheiliger Dreizack | Tridente profano | Trident profane | Tridente infame | Нечестивый трезубец | 邪恶三叉戟 | Tridente Profano | Nieświęty trójząb
-		UnholyTrident: /
+		UnholyTrident: "/"
 		# DisplayName: Tin Watch | Zinnuhr | Orologio di latta | Montre en étain | Reloj de estaño | Оловянные часы | 锡表 | Relógio de Estanho | Cynowy zegarek
-		TinWatch: /
+		TinWatch: "/"
 		# DisplayName: Tungsten Watch | Wolframuhr | Orologio di tungsteno | Montre en tungstène | Reloj de tungsteno | Вольфрамовые часы | 钨表 | Relógio de Tungstênio | Tungstenowy zegarek
-		TungstenWatch: /
+		TungstenWatch: "/"
 		# DisplayName: Platinum Watch | Platinuhr | Orologio di platino | Montre en platine | Reloj de platino | Платиновые часы | 铂金表 | Relógio de Platina | Platynowy zegarek
-		PlatinumWatch: /
+		PlatinumWatch: "/"
 		# DisplayName: Beam Sword | Strahlenschwert | Spada laser | Épée rayonnante | Espada lumínica | Лучевой меч | 光束剑 | Espada de Feixes | Miecz-promień
-		BeamSword: /
+		BeamSword: "/"
 		# DisplayName: Ice Blade | Eisklinge | Lama di ghiaccio | Épée de glace | Espada de hielo | Ледяной клинок | 冰雪刃 | Lâmina de Gelo | Lodowe ostrze
-		IceBlade: /
+		IceBlade: "/"
 		# DisplayName: Ice Bow | Eisbogen | Arco di ghiaccio | Arc de glace | Arco de hielo | Ледяной лук | 冰雪弓 | Arco de Gelo | Lodowy łuk
-		IceBow: /
+		IceBow: "/"
 		# DisplayName: Frost Staff | Froststab | Bastone del gelo | Sceptre de givre | Báculo helado | Морозный посох | 寒霜法杖 | Cajado Congelado | Mroźny kostur
-		FrostStaff: /
+		FrostStaff: "/"
 		# DisplayName: Amethyst Staff | Amethyststab | Bastone di ametista | Sceptre d'améthyste | Báculo de amatista | Аметистовый посох | 紫晶法杖 | Cajado de Ametista | Ametystowy kostur
-		AmethystStaff: /
+		AmethystStaff: "/"
 		# DisplayName: Topaz Staff | Topasstab | Bastone di topazio | Sceptre de topaze | Báculo de topacio | Топазовый посох | 黄玉法杖 | Cajado de Topázio | Topazowy kostur
-		TopazStaff: /
+		TopazStaff: "/"
 		# DisplayName: Sapphire Staff | Saphirstab | Bastone di zaffiro | Sceptre de saphir | Báculo de zafiro | Сапфировый посох | 蓝玉法杖 | Cajado de Safira | Szafirowy kostur
-		SapphireStaff: /
+		SapphireStaff: "/"
 		# DisplayName: Emerald Staff | Smaragdstab | Bastone di smeraldo | Sceptre d'émeraude | Báculo de esmeralda | Изумрудный посох | 翡翠法杖 | Cajado de Esmeralda | Szmaragdowy kostur
-		EmeraldStaff: /
+		EmeraldStaff: "/"
 		# DisplayName: Ruby Staff | Rubinstab | Bastone di rubino | Sceptre de rubis | Báculo de rubí | Рубиновый посох | 红玉法杖 | Cajado de Rubi | Rubinowy kostur
-		RubyStaff: /
+		RubyStaff: "/"
 		# DisplayName: Diamond Staff | Diamantstab | Bastone di diamante | Sceptre de diamant | Báculo de diamante | Алмазный посох | 钻石法杖 | Cajado de Diamante | Diamentowy kostur
-		DiamondStaff: /
+		DiamondStaff: "/"
 		# DisplayName: Jetpack | Jetpack | Jetpack | Jetpack | Mochila cohete | Реактивный ранец | 喷气背包 | Jetpack | Jetpack
-		Jetpack: /
+		Jetpack: "/"
 		# DisplayName: Butterfly Wings | Schmetterlingsflügel | Ali di farfalla | Ailes de papillon | Alas de mariposa | Крылья бабочки | 蝴蝶之翼 | Asas de Borboleta | Motyle skrzydła
-		ButterflyWings: /
+		ButterflyWings: "/"
 		# DisplayName: Mushroom Spear | Pilzspeer | Lancia a fungo | Lance de champignon | Lanza de champiñón | Грибное копье | 蘑菇长矛 | Lança de Cogumelos | Włócznia grzybowa
-		MushroomSpear: /
+		MushroomSpear: "/"
 		# DisplayName: Terra Blade | Terraklinge | Lama di terra | Lame Terra | Espada Terra | Клинок Земли | 泰拉刃 | Lâmina da Terra | Terraostrze
-		TerraBlade: /
+		TerraBlade: "/"
 		# DisplayName: Grenade Launcher | Granatwerfer | Lanciagranate | Lance-grenades | Lanzagranadas | Гранатомет | 手榴弹发射器 | Lança-granadas | Wyrzutnia granatów
-		GrenadeLauncher: /
+		GrenadeLauncher: "/"
 		# DisplayName: Rocket Launcher | Raketenwerfer | Lanciarazzi | Lance-roquettes | Lanzacohetes | Ракетомет | 火箭发射器 | Lança-foguetes | Wyrzutnia rakiet
-		RocketLauncher: /
+		RocketLauncher: "/"
 		# DisplayName: Proximity Mine Launcher | Landminenwerfer | Lanciamine di prossimità | Lance-mines de proximité | Lanzaminas de proximidad | Миномет | 感应雷发射器 | Lança-minas de Proximidade | Wyrzutnia min zbliżeniowych
-		ProximityMineLauncher: /
+		ProximityMineLauncher: "/"
 		# DisplayName: Fairy Wings | Feenflügel | Ali di fata | Ailes de bonne fée | Alas de hada | Крылья феи | 仙灵之翼 | Asas de Fada | Skrzydła duszka
-		FairyWings: /
+		FairyWings: "/"
 		# DisplayName: Cobalt Pickaxe | Kobaltspitzhacke | Piccone di cobalto | Pioche en cobalt | Pico de cobalto | Кобальтовая кирка | 钴镐 | Picareta de Cobalto | Kobaltowy kilof
-		CobaltPickaxe: /
+		CobaltPickaxe: "/"
 		# DisplayName: Mythril Pickaxe | Mithrilspitzhacke | Piccone di mitrilio | Pioche en mithril | Pico de mithril | Мифриловая кирка | 秘银镐 | Picareta de Mithril | Mithrilowy kilof
-		MythrilPickaxe: /
+		MythrilPickaxe: "/"
 		# DisplayName: Adamantite Pickaxe | Adamantitspitzhacke | Piccone di adamantio | Pioche en adamantite | Pico de adamantita | Адамантитовая кирка | 精金镐 | Picareta de Adamantina | Adamantytowy kilof
-		AdamantitePickaxe: /
+		AdamantitePickaxe: "/"
 		# DisplayName: Harpy Wings | Harpyienflügel | Ali dell'arpia | Ailes de harpie | Alas de arpía | Крылья гарпии | 鸟妖之翼 | Asas de Harpia | Skrzydła harpii
-		HarpyWings: /
+		HarpyWings: "/"
 		# DisplayName: Bone Wings | Knochenflügel | Ali di ossa | Ailes d'os | Alas de hueso | Костяные крылья | 骨之翼 | Asas de Osso | Kościane skrzydła
-		BoneWings: /
+		BoneWings: "/"
 		# DisplayName: Hammush | Hammpilz | Martelfungo | Marteaugnon | Martillo champiñón | Грибомолот | 蘑菇锤 | Cogumartelo | Grzybomłot
-		Hammush: /
+		Hammush: "/"
 		# DisplayName: Nettle Burst | Nesselstoß | Ortica a getto | Explosion d'orties | Relámpago de ortigas | Крапивный взрыв | 爆裂藤蔓 | Explosão de Urtiga | Wybuch pokrzywy
-		NettleBurst: /
+		NettleBurst: "/"
 		# DisplayName: Blood Butcherer | Blutschlächter | Macellaio insanguinato | Boucher sanglant | Espada carnicera | Кровавый мясорез | 血腥屠刀 | Açougueiro Sangrento | Krwawa rzeź
-		BloodButcherer: /
+		BloodButcherer: "/"
 		# DisplayName: Tendon Bow | Sehnenbogen | Arco di tendine | Arc de tendon | Arco de tendón | Лук плоти | 肌腱弓 | Arco do Tendão | Łuk ze ścięgien
-		TendonBow: /
+		TendonBow: "/"
 		# DisplayName: Flesh Grinder | Hackfleischmacher | Trita polpa | Broyeur de chair | Picadora de carne | Мясорубка | 血肉锤 | Moedor de Músculos | Ubijak mięsa
-		FleshGrinder: /
+		FleshGrinder: "/"
 		# DisplayName: Deathbringer Pickaxe | Todbringerspitzhacke | Piccone spargimorte | Pioche de la mort | Pico mortífero | Смертоносная кирка | 死亡使者镐 | Picareta da Morte | Kilof zguby
-		DeathbringerPickaxe: /
+		DeathbringerPickaxe: "/"
 		# DisplayName: Blood Lust Cluster | Blutrauschkluster | Ascia sanguinolenta | Bouquet sanguinaire | Clúster sed de sangre | Кровожадная громадина | 嗜血狂斧 | Machado da Cobiça por Sangue | Żądza krwi
-		BloodLustCluster: /
+		BloodLustCluster: "/"
 		# DisplayName: The Undertaker | Der Leichenbestatter | Il becchino | Le Croque-mort | El enterrador | Гробовщик | 夺命枪 | O Coveiro | Grabarz
-		TheUndertaker: /
+		TheUndertaker: "/"
 		# DisplayName: The Meatball | Der Fleischklops | Il macellaio | La Boulette de viande | La albóndiga | Фрикаделька | 血肉之球 | A Almôndega | Klopsik
-		TheMeatball: /
+		TheMeatball: "/"
 		# DisplayName: The Rotted Fork | Die verwittere Gabel | Il forcone marcio | La Fourche pourrie | El tenedor podrido | Гнилая вилка | 腐叉 | O Garfo Podre | Zbutwiałe widły
-		TheRottedFork: /
+		TheRottedFork: "/"
 		# DisplayName: Flame Wings | Flammenflügel | Ali di fiamme | Ailes de flammes | Alas de llamas | Огненные крылья | 烈焰之翼 | Asas em Chamas | Płomienne skrzydła
-		FlameWings: /
+		FlameWings: "/"
 		# DisplayName: Frozen Wings | Gefrorene Flügel | Ali congelate | Ailes gelées | Alas congeladas | Ледяные крылья | 冰冻之翼 | Asas Congeladas | Zamarznięte skrzydła
-		FrozenWings: /
+		FrozenWings: "/"
 		# DisplayName: Spectre Wings | Geisterflügel | Ali da spettro | Ailes spectrales | Alas espectrales | Спектральные крылья | 幽灵之翼 | Asas do Espectro | Widmowe skrzydła
-		GhostWings: /
+		GhostWings: "/"
 		# DisplayName: Discount Card | Kundenkarte | Carta sconto | Carte de réduction | Tarjeta de descuentos | Дисконтная карта | 优惠卡 | Cartão de Desconto | Karta rabatowa
-		DiscountCard: /
+		DiscountCard: "/"
 		# DisplayName: Lucky Coin | Glücksmünze | Moneta fortunata | Pièce porte-bonheur | Moneda de la suerte | Счастливая монета | 幸运币 | Moeda da Sorte | Szczęśliwa moneta
-		LuckyCoin: /
+		LuckyCoin: "/"
 		# DisplayName: Sandstorm in a Bottle | Sandsturm in der Flasche | Tempesta di sabbia in bottiglia | Tempête de sable en bouteille | Tormenta de arena embotellada | Песчаная буря в бутылке | 沙暴瓶 | Tempestade de Areia na Garrafa | Burza w butelce
-		SandstorminaBottle: /
+		SandstorminaBottle: "/"
 		# DisplayName: Charm of Myths | Mythenamulet | Amuleto dei miti | Talisman de mythes | Talismán de mitos | Очарование мифов | 神话护身符 | Amuleto dos Mitos | Talizman mitów
-		CharmofMyths: /
+		CharmofMyths: "/"
 		# DisplayName: Moon Shell | Mondmuschel | Conchiglia di luna | Coquillage lunaire | Concha de la luna | Лунная ракушка | 月亮贝壳 | Concha da Lua | Księżycowa skorupa
-		MoonShell: /
+		MoonShell: "/"
 		# DisplayName: Star Veil | Sternenschleier | Velo stellare | Voile d'étoiles | Velo estelar | Звездная завеса | 星星面纱 | Véu das Estrelas | Zasłona gwiazd
-		StarVeil: /
+		StarVeil: "/"
 		# DisplayName: Water Walking Boots | Wasserwanderstiefel | Stivali da acqua | Bottes pour marcher sur l'eau | Botas de flotación | Ботинки хождения по воде | 水上漂靴 | Botas para Andar Sobre a Água | Buty wodnego kroku
-		WaterWalkingBoots: /
+		WaterWalkingBoots: "/"
 		# DisplayName: Cactus Sword | Kaktus-Schwert | Spada di cactus | Épée en cactus | Espada de cactus | Кактусовый меч | 仙人掌剑 | Espada de Cacto | Kaktusowy miecz
-		CactusSword: /
+		CactusSword: "/"
 		# DisplayName: Cactus Pickaxe | Kaktus-Spitzhacke | Piccone di cactus | Pioche en cactus | Pico de cactus | Кактусовая кирка | 仙人掌镐 | Picareta de Cacto | Kaktusowy kilof
-		CactusPickaxe: /
+		CactusPickaxe: "/"
 		# DisplayName: Adhesive Bandage | Wundschnellverband | Cerotto adesivo | Pansement | Vendaje adhesivo | Липкий пластырь | 粘性绷带 | Curativo Adesivo | Plaster
-		AdhesiveBandage: /
+		AdhesiveBandage: "/"
 		# DisplayName: Armor Polish | Rüstungspolitur | Lucido da armatura | Cire pour armure | Pulidor de armaduras | Полироль | 盔甲抛光剂 | Polidor de Armadura | Pasta do zbroi
-		ArmorPolish: /
+		ArmorPolish: "/"
 		# DisplayName: Bezoar | Bezoar | Bezoar | Bézoard | Bezoar | Безоар | 牛黄 | Bezoar | Bezoar
-		Bezoar: /
+		Bezoar: "/"
 		# DisplayName: Blindfold | Augenbinde | Benda | Bandeau | Venda | Повязка на глаза | 蒙眼布 | Venda | Przepaska na oczy
-		Blindfold: /
+		Blindfold: "/"
 		# DisplayName: Fast Clock | Vorgehender Wecker | Orologio veloce | Horloge en avance | Reloj rápido | Быстрые часы | 快走时钟 | Relógio Adiantado | Śpieszący zegar
-		FastClock: /
+		FastClock: "/"
 		# DisplayName: Megaphone | Megafon | Megafono | Mégaphone | Megáfono | Мегафон | 扩音器 | Megafone | Megafon
-		Megaphone: /
+		Megaphone: "/"
 		# DisplayName: Nazar | Nazar | Nazar | Nazar | Nazar | Назар | 邪眼 | Nazar | Nazar
-		Nazar: /
+		Nazar: "/"
 		# DisplayName: Vitamins | Vitamine | Vitamine | Vitamines | Vitaminas | Витамины | 维生素 | Vitaminas | Witaminy
-		Vitamins: /
+		Vitamins: "/"
 		# DisplayName: Trifold Map | Dreifachkarte | Mappa ripiegata | Carte dépliante | Mapa tríptico | Складная карта | 三折地图 | Mapa em Três Partes | Składana mapa
-		TrifoldMap: /
+		TrifoldMap: "/"
 		# DisplayName: Power Glove | Powerhandschuh | Guanto del potere | Gant de puissance | Guante de poder | Перчатка силы | 强力手套 | Luva do Poder | Rękawica mocy
-		PowerGlove: /
+		PowerGlove: "/"
 		# DisplayName: Lightning Boots | Blitzstiefel | Stivali fulmine | Bottes éclaires | Botas relámpago | Молниеносные ботинки | 闪电靴 | Botas Relâmpago | Buty błyskawic
-		LightningBoots: /
+		LightningBoots: "/"
 		# DisplayName: Sun Stone | Sonnenstein | Pietra solare | Pierre solaire | Piedra de sol | Солнечный камень | 太阳石 | Pedra do Sol | Słoneczny kamień
-		SunStone: /
+		SunStone: "/"
 		# DisplayName: Moon Stone | Mondstein | Pietra lunare | Pierre lunaire | Piedra de luna | Лунный камень | 月亮石 | Pedra da Lua | Księżycowy kamień
-		MoonStone: /
+		MoonStone: "/"
 		# DisplayName: Armor Bracing | Rüstungskorsett | Lucido da armatura | Fortifiant d'armure | Fortalecedor de armadura | Крепление для брони | 盔甲背带 | Reforço de Armadura | Klamra do zbroi
-		ArmorBracing: /
+		ArmorBracing: "/"
 		# DisplayName: Medicated Bandage | Imprägnierter Verband | Cerotto medico | Pansement médicalisé | Vendaje medicinal | Лечебный пластырь | 药用绷带 | Curativo Medicado | Plaster leczniczy
-		MedicatedBandage: /
+		MedicatedBandage: "/"
 		# DisplayName: The Plan | Der Plan | Il piano | Le Plan | El plan | План | 计划书 | O Plano | Plan
-		ThePlan: /
+		ThePlan: "/"
 		# DisplayName: Countercurse Mantra | Gegenfluch-Mantra | Mantra antimaledizione | Mantra protecteur | Mantra antimaldición | Антисглазная мантра | 反诅咒咒语 | Mantra Contra Maldições | Mantra przeciw klątwom
-		CountercurseMantra: /
+		CountercurseMantra: "/"
 		# DisplayName: Lava Charm | Lavaamulet | Amuleto di lava | Amulette de lave | Talismán de lava | Амулет лавы | 熔岩护身符 | Amuleto de Lava | Wisior lawy
-		LavaCharm: /
+		LavaCharm: "/"
 		# DisplayName: Obsidian Water Walking Boots | Obsidianwasserwanderstiefel | Stivali di ossidiana da acqua | Bottes pour marcher sur l'eau en obsidienne | Botas de flotación obsidianas | Обсидиановые ботинки хождения по воде | 黑曜石水上漂靴 | Botas para Andar Sobre a Água de Obsidiana | Obsydianowe buty wodnego kroku
-		ObsidianWaterWalkingBoots: /
+		ObsidianWaterWalkingBoots: "/"
 		# DisplayName: Lava Waders | Lavawatstiefel | Stivaloni di lava | Cuissardes en lave | Katiuskas de lava | Ботинки хождения по лаве | 熔岩靴 | Botas de Lava | Ogniołazy
-		LavaWaders: /
+		LavaWaders: "/"
 		# DisplayName: Shadewood Sword | Schattenholzschwert | Spada di grigiolegno | Épée en bois d'ombre | Espada de madera sombría | Меч из мрачного дерева | 暗影木剑 | Espada de Madeira Escura | Miecz z drewna mroku
-		ShadewoodSword: /
+		ShadewoodSword: "/"
 		# DisplayName: Shadewood Hammer | Schattenholzhammer | Martello di grigiolegno | Marteau en bois d'ombre | Martillo de madera sombría | Молот из мрачного дерева | 暗影木锤 | Martelo de Madeira Escura | Młot z drewna mroku
-		ShadewoodHammer: /
+		ShadewoodHammer: "/"
 		# DisplayName: Shadewood Bow | Schattenholzbogen | Arco di grigiolegno | Arc en bois d'ombre | Arco de madera sombría | Лук из мрачного дерева | 暗影木弓 | Arco de Madeira Escura | Łuk z drewna mroku
-		ShadewoodBow: /
+		ShadewoodBow: "/"
 		# DisplayName: Flare Gun | Leuchtpistole | Pistola lanciarazzi | Pistolet à fusées | Pistola de bengalas | Сигнальная ракетница | 信号枪 | Pistola de Sinalização | Pistolet sygnałowy
-		FlareGun: /
+		FlareGun: "/"
 		# DisplayName: Flying Carpet | Fliegender Teppich | Tappeto volante | Tapis volant | Alfombra voladora | Ковер-самолет | 飞毯 | Tapete Mágico | Latający dywan
-		FlyingCarpet: /
+		FlyingCarpet: "/"
 		# DisplayName: Avenger Emblem | Siegel des Rächers | Emblema del vendicatore | Emblème de vengeur | Emblema de vengador | Эмблема мстителя | 复仇者徽章 | Emblema do Vingador | Symbol mściciela
-		AvengerEmblem: /
+		AvengerEmblem: "/"
 		# DisplayName: Mechanical Glove | Mechanischer Handschuh | Guanto meccanico | Gant mécanique | Guante mecánico | Механическая перчатка | 机械手套 | Luva Mecânica | Mechaniczna rękawica
-		MechanicalGlove: /
+		MechanicalGlove: "/"
 		# DisplayName: Paladin's Shield | Paladinschild | Scudo del paladino | Bouclier de paladin | Escudo de paladín | Щит паладина | 圣骑士护盾 | Escudo do Paladino | Tarcza paladyna
-		PaladinsShield: /
+		PaladinsShield: "/"
 		# DisplayName: Umbrella | Regenschirm | Ombrello | Parapluie | Paraguas | Зонт | 伞 | Guarda-chuva | Parasol
-		Umbrella: /
+		Umbrella: "/"
 		# DisplayName: Steampunk Wings | Steampunkflügel | Ali steampunk | Ailes steampunk | Alas steampunk | Стимпанковые крылья | 蒸汽朋克之翼 | Asas Steampunk | Steampunkowe skrzydła
-		SteampunkWings: /
+		SteampunkWings: "/"
 		# DisplayName: Ice Skates | Schlittschuhe | Pattini da ghiaccio | Patins à glace | Patines de hielo | Коньки | 溜冰鞋 | Patins de Gelo | Łyżwy
-		IceSkates: /
+		IceSkates: "/"
 		# DisplayName: Climbing Claws | Kletterklauen | Artigli da scalata | Griffes d'escalade | Garras de escalada | Когти альпиниста | 攀爬爪 | Garras para Escalada | Pazury wspinaczkowe
-		ClimbingClaws: /
+		ClimbingClaws: "/"
 		# DisplayName: Black Belt | Schwarzer Gürtel | Cintura nera | Ceinture noire | Cinturón negro | Черный пояс | 黑腰带 | Faixa Preta | Czarny pas
-		BlackBelt: /
+		BlackBelt: "/"
 		# DisplayName: Boomstick | Donnerstock | Bastone di tuono | Pistoboum | Explosiva | Обрез | 三发猎枪 | Cabo de Vassoura | Pukawka
-		Boomstick: /
+		Boomstick: "/"
 		# DisplayName: Shoe Spikes | Schuhspikes | Ramponi | Chaussures à pointes | Zapatos de púa | Шипастые ботинки | 鞋钉 | Espetos para Sapatos | Kolce do butów
-		ShoeSpikes: /
+		ShoeSpikes: "/"
 		# DisplayName: Tiger Climbing Gear | Tiger-Kletterausrüstung | Artigli da scalata | Matériel d'escalade de tigre | Equipo de escalada de tigre | Альпинистский набор тигра | 猛虎攀爬装备 | Equipamento de Escalada de Tigre | Tygrysi sprzęt wspinaczkowy
-		TigerClimbingGear: /
+		TigerClimbingGear: "/"
 		# DisplayName: Tabi | Tabi | Calzini tabi | Tabi | Tabi | Таби | 分趾厚底袜 | Tabi | Tabi
-		Tabi: /
+		Tabi: "/"
 		# DisplayName: Mana Regeneration Band | Mana-Regenerationsband | Benda rigenerazione mana | Anneau de régénération de mana | Banda de regeneración de maná | Браслет восстановления маны | 魔力再生手环 | Pulseira de Regeneração de Mana | Opaska regeneracji many
-		ManaRegenerationBand: /
+		ManaRegenerationBand: "/"
 		# DisplayName: Sandstorm in a Balloon | Sandsturm im Ballon | Tempesta di sabbia in un palloncino | Tempête de sable dans un ballon | Tormenta de arena en globo | Песчаная буря в шарике | 沙暴气球 | Tempestade de Areia no Balão | Burza w balonie
-		SandstorminaBalloon: /
+		SandstorminaBalloon: "/"
 		# DisplayName: Master Ninja Gear | Meister-Ninjaausrüstung | Attrezzatura da maestro ninja | Matériel de ninja pro | Equipo de maestro ninja | Снаряжения мастера ниндзя | 忍者大师装备 | Equipamento de Mestre Ninja | Sprzęt mistrza ninjutsu
-		MasterNinjaGear: /
+		MasterNinjaGear: "/"
 		# DisplayName: Blowgun | Blasgewehr | Cerbottana | Sarbafeu | Cerbatana | Духовое ружье | 吹箭筒 | Arma de Sopro | Dmuchawiec
-		Blowgun: /
+		Blowgun: "/"
 		# DisplayName: Blizzard in a Bottle | Schneesturm in der Flasche | Bufera in bottiglia | Blizzard en bouteille | Ventisca embotellada | Снежная буря в бутылке | 暴雪瓶 | Nevasca na Garrafa | Zamieć w butelce
-		BlizzardinaBottle: /
+		BlizzardinaBottle: "/"
 		# DisplayName: Enchanted Sword | Verzaubertes Schwert | Spada incantata | Épée envoûtée | Espada encantada | Зачарованный меч | 附魔剑 | Espada Encantada | Zaklęty miecz
-		EnchantedSword: /
+		EnchantedSword: "/"
 		# DisplayName: Pickaxe Axe | Spitzhackenaxt | Ascia piccone | Pioche-hache | Pico hacha | Киркотопор | 镐斧 | Machado Picareta | Kilofotopór
-		PickaxeAxe: /
+		PickaxeAxe: "/"
 		# DisplayName: Cobalt Waraxe | Kobaltkriegsaxt | Ascia di battaglia di cobalto | Hache de guerre en cobalt | Hacha de guerra de cobalto | Кобальтовый боевой топор | 钴战斧 | Machado de Guerra de Cobalto | Kobaltowy topór wojenny
-		CobaltWaraxe: /
+		CobaltWaraxe: "/"
 		# DisplayName: Mythril Waraxe | Mithrilkriegsaxt | Ascia di battaglia di mitrilio | Hache de guerre en mithril | Hacha de guerra de mithril | Мифриловый боевой топор | 秘银战斧 | Machado de Guerra de Mithril | Mithrilowy topór wojenny
-		MythrilWaraxe: /
+		MythrilWaraxe: "/"
 		# DisplayName: Adamantite Waraxe | Adamantitkriegsaxt | Ascia di battaglia di adamantio | Hache de guerre en adamantite | Hacha de guerra de adamantita | Адамантитовый боевой топор | 精金战斧 | Machado de Guerra de Adamantina | Adamantytowy topór wojenny
-		AdamantiteWaraxe: /
+		AdamantiteWaraxe: "/"
 		# DisplayName: Bee Gun | Bienenpistole | Pistola ad api | Fusil abeille | Pistola de abejas | Пчеломет | 蜜蜂枪 | Pistola de Abelhas | Pszczeli pistolet
-		BeeGun: /
+		BeeGun: "/"
 		# DisplayName: Possessed Hatchet | Besessenes Beil | Accetta posseduta | Hachette possédée | Hacha de mano poseída | Одержимый топорик | 疯狂飞斧 | Machadinha Possuída | Opętany topór
-		PossessedHatchet: /
+		PossessedHatchet: "/"
 		# DisplayName: Bee Keeper | Bienenzüchter | Apicoltore | Apicultrice | Apicultora | Пчеловод | 养蜂人 | Mestre das Abelhas | Pszczeli sprzymierzeniec
-		BeeKeeper: /
+		BeeKeeper: "/"
 		# DisplayName: Gravity Globe | Schwerkraftglobus | Sfera della gravità | Globe de gravité | Globo gravitacional | Шар гравитации | 重力球 | Globo da Gravidade | Kula grawitacyjna
-		GravityGlobe: /
+		GravityGlobe: "/"
 		# DisplayName: Honey Comb | Bienenwabe | Favo | Alvéole de miel | Panal | Мед в сотах | 蜂窝 | Favo de Mel | Plaster miodu
-		HoneyComb: /
+		HoneyComb: "/"
 		# DisplayName: Wasp Gun | Wespenpistole | Pistola vespa | Pistoguêpe | Pistola de avispas | Осиная пушка | 胡蜂枪 | Pistola de Vespas | Pistolet na osy
-		WaspGun: /
+		WaspGun: "/"
 		# DisplayName: Piranha Gun | Piranhapistole | Pistola piraña | Pistoranha | Pistola de pirañas | Пиранья пушка | 食人鱼枪 | Pistola de Piranhas | Pistolet na piranie
-		PiranhaGun: /
+		PiranhaGun: "/"
 		# DisplayName: Pygmy Staff | Pygmäenstab | Bastone pigmeo | Sceptre de pygmée | Báculo pigmeo | Посох пигмеев | 矮人法杖 | Cajado Pigmeu | Pigmejski kostur
-		PygmyStaff: /
+		PygmyStaff: "/"
 		# DisplayName: Pygmy Necklace | Pygmäenhalsband | Collana pigmea | Collier de pygmée | Collar pigmeo | Ожерелье пигмеев | 矮人项链 | Colar Pigmeu | Pigmejski naszyjnik
-		PygmyNecklace: /
+		PygmyNecklace: "/"
 		# DisplayName: Leaf Wings | Blattflügel | Ali di foglia | Ailes de feuilles | Alas de hoja | Лиственные крылья | 叶之翼 | Asas de Folhas | Liściaste skrzydła
-		LeafWings: /
+		LeafWings: "/"
 		# DisplayName: Blizzard in a Balloon | Schneesturm im Ballon | Bufera in un palloncino | Ballon de blizzard | Ventisca en globo | Снежная буря в шарике | 暴雪气球 | Nevasca no Balão | Zamieć w balonie
-		BlizzardinaBalloon: /
+		BlizzardinaBalloon: "/"
 		# DisplayName: Bundle of Balloons | Ballonbündel | Fascio di palloncini | Lot de ballons | Puñado de globos | Связка воздушных шариков | 气球束 | Monte de Balões | Zestaw balonów
-		BundleofBalloons: /
+		BundleofBalloons: "/"
 		# DisplayName: Bat Wings | Fledermausflügel | Ali di pipistrello | Ailes de chauve-souris | Alas de murciélago | Крылья летучей мыши | 蝙蝠之翼 | Asas de Morcego | Skrzydła nietoperza
-		BatWings: /
+		BatWings: "/"
 		# DisplayName: Bone Sword | Knochenschwert | Spada di ossa | Épée en os | Espada de hueso | Костяной меч | 骨剑 | Espada de Osso | Kościany miecz
-		BoneSword: /
+		BoneSword: "/"
 		# DisplayName: Hercules Beetle | Herkuleskäfer | Scarabeo Ercole | Scarabée Hercule | Escarabajo Hércules | Жук Геркулес | 大力士甲虫 | Besouro de Hércules | Żuk Herkules
-		HerculesBeetle: /
+		HerculesBeetle: "/"
 		# DisplayName: Leaf Blower | Laubsauger | Soffiafoglie | Souffleur de feuilles | Lanzahojas | Листомет | 吹叶机 | Soprador de Folhas | Dmuchawa do liści
-		LeafBlower: /
+		LeafBlower: "/"
 		# DisplayName: Palladium Sword | Palladiumschwert | Spada di palladio | Épée en palladium | Espada de paladio | Палладиевый меч | 钯金剑 | Espada de Paládio | Miecz z paladium
-		PalladiumSword: /
+		PalladiumSword: "/"
 		# DisplayName: Palladium Pike | Palladiumspieß | Picca di palladio | Pique en palladium | Pica de paladio | Палладиевая пика | 钯金刺矛 | Pique de Paládio | Kolec z paladium
-		PalladiumPike: /
+		PalladiumPike: "/"
 		# DisplayName: Palladium Repeater | Palladiumrepetierer | Balestra di palladio | Arbalète en palladium | Repetidor de paladio | Палладиевый арбалет | 钯金连弩 | Repetidora de Paládio | Kusza powtarzalna z paladium
-		PalladiumRepeater: /
+		PalladiumRepeater: "/"
 		# DisplayName: Palladium Pickaxe | Palladiumspitzhacke | Piccone di palladio | Pioche en palladium | Pico de paladio | Палладиевая кирка | 钯金镐 | Picareta de Paládio | Kilof z paladium
-		PalladiumPickaxe: /
+		PalladiumPickaxe: "/"
 		# DisplayName: Palladium Drill | Palladiumbohrer | Perforatrice di palladio | Foreuse en palladium | Taladro de paladio | Палладиевый бур | 钯金钻头 | Furadeira de Paládio | Świder z paladium
-		PalladiumDrill: /
+		PalladiumDrill: "/"
 		# DisplayName: Palladium Chainsaw | Palladiumkettensäge | Motosega di palladio | Tronçonneuse en palladium | Motosierra de paladio | Палладиевая бензопила | 钯金链锯 | Serra Elétrica de Paládio | Piła łańcuchowa z paladium
-		PalladiumChainsaw: /
+		PalladiumChainsaw: "/"
 		# DisplayName: Orichalcum Sword | Oreichalkosschwert | Spada di oricalco | Épée en orichalque | Espada de oricalco | Орихалковый меч | 山铜剑 | Espada de Oricalco | Miecz z orichalcum
-		OrichalcumSword: /
+		OrichalcumSword: "/"
 		# DisplayName: Orichalcum Halberd | Oreichalkoshellebarde | Alabarda di oricalco | Hallebarde en orichalque | Alabarda de oricalco | Орихалковая алебарда | 山铜长戟 | Alabarda de Oricalco | Halabarda z olicharcum
-		OrichalcumHalberd: /
+		OrichalcumHalberd: "/"
 		# DisplayName: Orichalcum Repeater | Oreichalkosrepetierer | Balestra di oricalco | Arbalète en orichalque | Repetidor de oricalco | Орихалковый арбалет | 山铜连弩 | Repetidora de Oricalco | Kusza powtarzalna z orichalcum
-		OrichalcumRepeater: /
+		OrichalcumRepeater: "/"
 		# DisplayName: Orichalcum Pickaxe | Oreichalkosspitzhacke | Piccone di oricalco | Pioche en orichalque | Pico de oricalco | Орихалковая кирка | 山铜镐 | Picareta de Oricalco | Kilof z orichalcum
-		OrichalcumPickaxe: /
+		OrichalcumPickaxe: "/"
 		# DisplayName: Orichalcum Drill | Oreichalkosbohrer | Perforatrice di oricalco | Foreuse en orichalque | Taladro de oricalco | Орихалковый бур | 山铜钻头 | Furadeira de Oricalco | Świder z orichalcum
-		OrichalcumDrill: /
+		OrichalcumDrill: "/"
 		# DisplayName: Orichalcum Chainsaw | Oreichalkoskettensäge | Motosega di oricalco | Tronçonneuse en orichalque | Motosierra de oricalco | Орихалковая бензопила | 山铜链锯 | Serra Elétrica de Oricalco | Piła łańcuchowa z orichalcum
-		OrichalcumChainsaw: /
+		OrichalcumChainsaw: "/"
 		# DisplayName: Titanium Sword | Titanschwert | Spada di titanio | Épée de titane | Espada de titanio | Титановый меч | 钛金剑 | Espada de Titânio | Miecz z tytanu
-		TitaniumSword: /
+		TitaniumSword: "/"
 		# DisplayName: Titanium Trident | Titandreizack | Tridente di titanio | Trident en titane | Tridente de titanio | Титановый трезубец | 钛金三叉戟 | Tridente de Titânio | Tytanowy trójząb
-		TitaniumTrident: /
+		TitaniumTrident: "/"
 		# DisplayName: Titanium Repeater | Titanrepetierer | Balestra di titanio | Arbalète en titane | Repetidor de titanio | Титановый арбалет | 钛金连弩 | Repetidora de Titânio | Kusza powtarzalna z tytanu
-		TitaniumRepeater: /
+		TitaniumRepeater: "/"
 		# DisplayName: Titanium Pickaxe | Titanspitzhacke | Piccone di titanio | Pioche en titane | Pico de titanio | Титановая кирка | 钛金镐 | Picareta de Titânio | Tytanowy kilof
-		TitaniumPickaxe: /
+		TitaniumPickaxe: "/"
 		# DisplayName: Titanium Drill | Titanbohrer | Perforatrice di titanio | Foreuse en titane | Taladro de titanio | Титановый бур | 钛金钻头 | Furadeira de Titânio | Tytanowy świder
-		TitaniumDrill: /
+		TitaniumDrill: "/"
 		# DisplayName: Titanium Chainsaw | Titankettensäge | Motosega di titanio | Tronçonneuse en titane | Motosierra de titanio | Титановая бензопила | 钛金链锯 | Serra-elétrica de Titânio | Tytanowa piła łańcuchowa
-		TitaniumChainsaw: /
+		TitaniumChainsaw: "/"
 		# DisplayName: Palladium Waraxe | Palladiumkriegsaxt | Ascia di battaglia di palladio | Hache de guerre en palladium | Hacha de guerra de paladio | Палладиевый боевой топор | 钯金战斧 | Machado de Guerra de Paládio | Topór wojenny z paladium
-		PalladiumWaraxe: /
+		PalladiumWaraxe: "/"
 		# DisplayName: Orichalcum Waraxe | Oreichalkoskriegsaxt | Ascia di battaglia di oricalco | Hache de guerre en orichalque | Hacha de guerra de oricalco | Орихалковый боевой топор | 山铜战斧 | Machado de Guerra de Oricalco | Topór wojenny z orichalcum
-		OrichalcumWaraxe: /
+		OrichalcumWaraxe: "/"
 		# DisplayName: Titanium Waraxe | Titankriegsaxt | Ascia di battaglia di titanio | Hache de guerre en titane | Hacha de guerra de titanio | Титановый боевой топор | 钛金战斧 | Machado de Guerra de Titânio | Tytanowy topór wojenny
-		TitaniumWaraxe: /
+		TitaniumWaraxe: "/"
 		# DisplayName: Chlorophyte Claymore | Grünalgenclaymore | Spadone di clorofite | Claymore en chlorophyte | Claymore de clorofita | Хлорофитовый клеймор | 叶绿双刃刀 | Claymore de Clorofita | Zielenicowy claymore
-		ChlorophyteClaymore: /
+		ChlorophyteClaymore: "/"
 		# DisplayName: Chlorophyte Saber | Grünalgensäbel | Sciabola di clorofite | Sabre en chlorophyte | Sable de clorofita | Хлорофитовая сабля | 叶绿军刀 | Sabre de Clorofita | Zielenicowa szabla
-		ChlorophyteSaber: /
+		ChlorophyteSaber: "/"
 		# DisplayName: Chlorophyte Partisan | Grünalgenpartisane | Partigiana di clorofite | Épieu en chlorophyte | Partisana de clorofita | Хлорофитовый протазан | 叶绿镋 | Partisan de Clorofita | Zielenicowa partyzana
-		ChlorophytePartisan: /
+		ChlorophytePartisan: "/"
 		# DisplayName: Chlorophyte Shotbow | Grünalgenschussbogen | Balestra di clorofite | Arbalète en chlorophyte | Arco de clorofita | Хлорофитовый арбалет | 叶绿连弩 | Besta de Clorofita | Zielenicowy strzelbołuk
-		ChlorophyteShotbow: /
+		ChlorophyteShotbow: "/"
 		# DisplayName: Chlorophyte Pickaxe | Grünalgenspitzhacke | Piccone di clorofite | Pioche en chlorophyte | Pico de clorofita | Хлорофитовая кирка | 叶绿镐 | Picareta de Clorofita | Zielenicowy topór
-		ChlorophytePickaxe: /
+		ChlorophytePickaxe: "/"
 		# DisplayName: Chlorophyte Drill | Grünalgenbohrer | Perforatrice di clorofite | Foreuse en chlorophyte | Taladro de clorofita | Хлорофитовый бур | 叶绿钻头 | Furadeira de Clorofita | Zielenicowy świder
-		ChlorophyteDrill: /
+		ChlorophyteDrill: "/"
 		# DisplayName: Chlorophyte Chainsaw | Grünalgenkettensäge | Motosega di clorofite | Tronçonneuse en chlorophyte | Motosierra de clorofita | Хлорофитовая бензопила | 叶绿链锯 | Serra-elétrica de Clorofita | Zielenicowa piła łańcuchowa
-		ChlorophyteChainsaw: /
+		ChlorophyteChainsaw: "/"
 		# DisplayName: Chlorophyte Greataxe | Grünalgengroßaxt | Ascia grande di clorofite | Grande hache en chlorophyte | Gran hacha de clorofita | Хлорофитовый топор | 叶绿巨斧 | Machado Grande de Clorofita | Zielenicowy wielki topór
-		ChlorophyteGreataxe: /
+		ChlorophyteGreataxe: "/"
 		# DisplayName: Chlorophyte Warhammer | Grünalgenkriegshammer | Martello d'armi di clorofite | Grand marteau en chlorophyte | Martillo de guerra de clorofita | Хлорофитовый молот | 叶绿战锤 | Martelo de Guerra de Clorofita | Zielenicowy młot wojenny
-		ChlorophyteWarhammer: /
+		ChlorophyteWarhammer: "/"
 		# DisplayName: Nimbus Rod | Nimbusrute | Bastone nimbus | Bâton nimbus | Varita de nimbo | Дождевой жезл | 雨云魔杖 | Varinha Nebulosa | Kostur chmur
-		NimbusRod: /
+		NimbusRod: "/"
 		# DisplayName: Bee Cloak | Bienenumhang | Mantello da ape | Cape d'abeille | Capa de abejas | Пчелиный плащ | 蜜蜂斗篷 | Manto de Abelhas | Pszczela peleryna
-		BeeCloak: /
+		BeeCloak: "/"
 		# DisplayName: Eye of the Golem | Golemauge | Occhio del golem | Œil du golem | Ojo del gólem | Глаз голема | 石巨人之眼 | Olho do Golem | Oko golema
-		EyeoftheGolem: /
+		EyeoftheGolem: "/"
 		# DisplayName: Honey Balloon | Honigballon | Palloncino di miele | Ballon de miel | Globo de miel | Воздушный шарик в меде | 蜂蜜气球 | Balão de Mel | Miodowy balon
-		HoneyBalloon: /
+		HoneyBalloon: "/"
 		# DisplayName: Blue Horseshoe Balloon | Blauer Hufeisenballon | Palloncino con ferro di cavallo blu | Ballon fer à cheval bleu | Globo de herradura azul | Синий подкованный шарик | 蓝马掌气球 | Balão da Ferradura Azul | Niebieski balon z podkową
-		BlueHorseshoeBalloon: /
+		BlueHorseshoeBalloon: "/"
 		# DisplayName: White Horseshoe Balloon | Weißer Hufeisenballon | Palloncino con ferro di cavallo bianco | Ballon fer à cheval blanc | Globo de herradura blanco | Белый подкованный шарик | 白马掌气球 | Balão da Ferradura Branca | Biały balon z podkową
-		WhiteHorseshoeBalloon: /
+		WhiteHorseshoeBalloon: "/"
 		# DisplayName: Yellow Horseshoe Balloon | Gelber Hufeisenballon | Palloncino con ferro di cavallo giallo | Ballon fer à cheval jaune | Globo de herradura amarillo | Желтый подкованный шарик | 黄马掌气球 | Balão da Ferradura Amarela | Żółty balon z podkową
-		YellowHorseshoeBalloon: /
+		YellowHorseshoeBalloon: "/"
 		# DisplayName: Frozen Turtle Shell | Gefrorener Schildkrötenpanzer | Guscio di tartaruga congelato | Carapace de tortue gelée | Caparazón de tortuga congelado | Ледяной черепаший панцирь | 冰冻海龟壳 | Casco de Tartaruga Congelada | Zamarznięta skorupa żółwia
-		FrozenTurtleShell: /
+		FrozenTurtleShell: "/"
 		# DisplayName: Sniper Rifle | Snipergewehr | Fucile da cecchino | Fusil de sniper | Fusil de francotirador | Снайперское ружье | 狙击步枪 | Fuzil de Longo Alcance | Karabin snajperski
-		SniperRifle: /
+		SniperRifle: "/"
 		# DisplayName: Venus Magnum | Venus-Magnum | Magnum velenosa | Magnum Venus | Venus Magnum | Магнум Венеры | 维纳斯万能枪 | Magnum de Vênus | Venus Magnum
-		VenusMagnum: /
+		VenusMagnum: "/"
 		# DisplayName: Crimson Rod | Purpurne Rute | Bastone cremisi | Bâton carmin | Varita carmesí | Багряный жезл | 猩红魔杖 | Varinha de Carmim | Szkarłatny kostur
-		CrimsonRod: /
+		CrimsonRod: "/"
 		# DisplayName: Stynger | Stachler | Lanciaframmenti | Cingleur | Stynger | Стингер | 毒刺发射器 | Ferroada | Stynger
-		Stynger: /
+		Stynger: "/"
 		# DisplayName: Flower Pow | Blumenpeng | Fiore potente | Fleuréau | Florecillas | Цветочный удар | 花冠 | Poder das Flores | Flower Pow
-		FlowerPow: /
+		FlowerPow: "/"
 		# DisplayName: Rainbow Gun | Regenbogengewehr | Pistola arcobaleno | Pistolet arc-en-ciel | Pistola arcoíris | Радужная пушка | 彩虹枪 | Pistola de Arco-íris | Tęczowy pistolet
-		RainbowGun: /
+		RainbowGun: "/"
 		# DisplayName: Chlorophyte Jackhammer | Grünalgendrucklufthammer | Martello pneumatico di clorofite | Marteau-piqueur en chlorophyte | Martillo neumático de clorofita | Хлорофитовый пневмомолот | 叶绿手提钻 | Britadeira de Clorofita | Zielenicowy młot pneumatyczny
-		ChlorophyteJackhammer: /
+		ChlorophyteJackhammer: "/"
 		# DisplayName: Flower of Frost | Frostblume | Fiore del gelo | Fleur de givre | Flor de escarcha | Ледяной цветок | 寒霜之花 | Flor de Gelo | Kwiat mrozu
-		FlowerofFrost: /
+		FlowerofFrost: "/"
 		# DisplayName: Uzi | Uzi | Uzi | Uzi | Uzi | Узи | 乌兹冲锋枪 | Uzi | Uzi
-		Uzi: /
+		Uzi: "/"
 		# DisplayName: Magnet Sphere | Magnetsphäre | Sfera a calamita | Sphère aimantée | Esfera magnética | Магнитная сфера | 磁球 | Esfera Magnética | Sfera magnetyczna
-		MagnetSphere: /
+		MagnetSphere: "/"
 		# DisplayName: Panic Necklace | Panikhalskette | Collana del panico | Collier de panique | Collar del pánico | Ожерелье паники | 恐慌项链 | Colar do Pânico | Naszyjnik paniki
-		PanicNecklace: /
+		PanicNecklace: "/"
 		# DisplayName: Picksaw | Spitzsäge | Segapiccone | Piochache | Picoserrucho | Киркопил | 锯刃镐 | Picareta Serrada | Piłolof
-		Picksaw: /
+		Picksaw: "/"
 		# DisplayName: Heat Ray | Hitzestrahl | Raggio di calore | Rayon thermique | Rayo calorífico | Тепловой луч | 高温射线枪 | Raio de Calor | Promień ciepła
-		HeatRay: /
+		HeatRay: "/"
 		# DisplayName: Staff of Earth | Stab der Erde | Bastone della terra | Sceptre de Terre | Báculo de la Tierra | Посох земли | 大地法杖 | Cajado da Terra | Kostur ziemi
-		StaffofEarth: /
+		StaffofEarth: "/"
 		# DisplayName: Golem Fist | Golemfaust | Pugno di golem | Poing de Golem | Puño de gólem | Кулак голема | 石巨人之拳 | Punho de Golem | Pięść golema
-		GolemFist: /
+		GolemFist: "/"
 		# DisplayName: Rifle Scope | Zielfernrohr | Mirino da fucile | Lunette de visée | Mira telescópica | Оптический прицел | 步枪瞄准镜 | Luneta do Fuzil | Luneta do karabinu
-		RifleScope: /
+		RifleScope: "/"
 		# DisplayName: Destroyer Emblem | Siegel des Zerstörers | Emblema del distruttore | Emblème du Destructeur | Emblema del Destructor | Эмблема Уничтожителя | 毁灭者徽章 | Emblema do Destruidor | Symbol Niszczyciela
-		DestroyerEmblem: /
+		DestroyerEmblem: "/"
 		# DisplayName: Jellyfish Necklace | Quallenhalskette | Collana medusa | Collier de méduse | Collar de medusa | Ожерелье медузы | 水母项链 | Colar de Água-viva | Meduzowy naszyjnik
-		JellyfishNecklace: /
+		JellyfishNecklace: "/"
 		# DisplayName: Zombie Arm | Zombiearm | Braccio di zombie | Bras de zombie | Brazo de zombi | Рука зомби | 僵尸臂 | Braço de Zumbi | Ręka zombie
-		ZombieArm: /
+		ZombieArm: "/"
 		# DisplayName: The Axe | Die Axt | L'ascia | Guithache | El hacha | Тот самый топор | 斧 | O Machado | Topór
-		TheAxe: /
+		TheAxe: "/"
 		# DisplayName: Ice Sickle | Eissichel | Falcetto di ghiaccio | Faux de glace | Hoz de hielo | Ледяная коса | 冰雪镰刀 | Foice de Gelo | Lodowy sierp
-		IceSickle: /
+		IceSickle: "/"
 		# DisplayName: Poison Staff | Giftstab | Bastone di veleno | Sceptre de poison | Báculo envenenado | Отравляющий посох | 剧毒法杖 | Cajado Venenoso | Zatruty kostur
-		PoisonStaff: /
+		PoisonStaff: "/"
 		# DisplayName: Slime Staff | Schleimstab | Bastone di slime | Sceptre de gelée | Báculo de slime | Посох слизней | 史莱姆法杖 | Cajado da Geleia | Szlamowy kostur
-		SlimeStaff: /
+		SlimeStaff: "/"
 		# DisplayName: Book of Skulls | Buch der Schädel | Libro di teschi | Livre de crânes | Libro de las calaveras | Книга черепов | 骷髅头法书 | Livro de Caveiras | Księga czaszek
-		BookofSkulls: /
+		BookofSkulls: "/"
 		# DisplayName: KO Cannon | K.O.-Kanone | Cannone K.O. | Canon KO | Cañón KO | Нокаут-пушка | 致胜炮 | Canhão Nocaute | Nokautująca armata
-		KOCannon: /
+		KOCannon: "/"
 		# DisplayName: Snowball Cannon | Schneeballkanone | Cannone a palle di neve | Canon à neige | Cañón de bolas de nieve | Снежковая пушка | 雪球炮 | Canhão de Bolas de Neve | Armata śnieżkowa
-		SnowballCannon: /
+		SnowballCannon: "/"
 		# DisplayName: Bone Pickaxe | Knochenspitzhacke | Piccone di ossa | Pioche en os | Pico de hueso | Костяная кирка | 骨镐 | Picareta de Osso | Kościany kilof
-		BonePickaxe: /
+		BonePickaxe: "/"
 		# DisplayName: Magic Quiver | Zauberköcher | Faretra magica | Carquois magique | Carcaj mágico | Магический колчан | 魔法箭袋 | Aljava Mágica | Magiczny kołczan
-		MagicQuiver: /
+		MagicQuiver: "/"
 		# DisplayName: Magma Stone | Magmastein | Pietra di magma | Pierre de magma | Piedra de magma | Камень магмы | 岩浆石 | Pedra de Magma | Kamień magmowy
-		MagmaStone: /
+		MagmaStone: "/"
 		# DisplayName: Obsidian Rose | Obsidianrose | Rosa di ossidiana | Rose d'obsidienne | Rosa de obsidiana | Обсидиановая роза | 黑曜石玫瑰 | Rosa de Obsidiana | Róża obsydianowa
-		ObsidianRose: /
+		ObsidianRose: "/"
 		# DisplayName: Bananarang | Bananarang | Bananarang | Bananerang | Bumerán plátano | Бананаранг | 香蕉回旋镖 | Bananarangue | Bananarang
-		Bananarang: /
+		Bananarang: "/"
 		# DisplayName: Chain Knife | Kettenmesser | Coltello a catena | Chaîne à couteau | Motocuchillo | Кинжал на цепи | 链刀 | Faca com Corrente | Nóż łańcuchowy
-		ChainKnife: /
+		ChainKnife: "/"
 		# DisplayName: Death Sickle | Todessichel | Falcetto letale | Faucille de la mort | Hoz mortífera | Коса смерти | 死神镰刀 | Foice da Morte | Zabójczy sierp
-		DeathSickle: /
+		DeathSickle: "/"
 		# DisplayName: Golden Shower | Goldener Schauer | Doccia dorata | Douche dorée | Ducha dorada | Золотой душ | 黄金雨 | Chuveiro Dourado | Złoty deszcz
-		GoldenShower: /
+		GoldenShower: "/"
 		# DisplayName: Fire Gauntlet | Feuerkampfhandschuh | Guanto di fuoco | Gantelet de feu | Guantelete de fuego | Огненная рукавица | 烈火手套 | Manopla de Fogo | Ognista rękawica
-		FireGauntlet: /
+		FireGauntlet: "/"
 		# DisplayName: Shadowbeam Staff | Schattenstrahlstab | Bastone raggio d'ombra | Sceptre de l'ombre | Báculo de rayos oscuros | Посох теневого луча | 暗影束法杖 | Cajado do Feixe das Sombras | Kostur cienistego promienia
-		ShadowbeamStaff: /
+		ShadowbeamStaff: "/"
 		# DisplayName: Inferno Fork | Infernogabel | Forcone infernale | Fourche infernale | Tenedor del infierno | Адский трезубец | 狱火叉 | Garfo do Inferno | Piekielny trójząb
-		InfernoFork: /
+		InfernoFork: "/"
 		# DisplayName: Spectre Staff | Gespensterstab | Bastone da spettro | Sceptre spectral | Báculo espectral | Спектральный посох | 幽灵法杖 | Cajado dos Espectros | Widmowy kostur
-		SpectreStaff: /
+		SpectreStaff: "/"
 		# DisplayName: Spectre Pickaxe | Gespensterspitzhacke | Piccone da spettro | Pioche spectrale | Pico espectral | Спектральная кирка | 幽灵镐 | Picareta Espectral | Widmowy kilof
-		SpectrePickaxe: /
+		SpectrePickaxe: "/"
 		# DisplayName: Spectre Hamaxe | Gespensterhammaxt | Maglio da spettro | Martache spectrale | Hacha-martillo espectral | Спектральный молотопор | 幽灵锤斧 | Martelo-machado Espectral | Widmowy młotopór
-		SpectreHamaxe: /
+		SpectreHamaxe: "/"
 		# DisplayName: Paladin's Hammer | Paladins Hammer | Martello del paladino | Marteau de paladin | Martillo del paladín | Молот паладина | 圣骑士锤 | Martelo do Paladino | Młot paladyna
-		PaladinsHammer: /
+		PaladinsHammer: "/"
 		# DisplayName: Bee Wings | Bienenflügel | Ali di ape | Ailes d'abeille | Alas de abeja | Пчелиные крылья | 蜜蜂之翼 | Asas de Abelha | Skrzydła pszczoły
-		BeeWings: /
+		BeeWings: "/"
 		# DisplayName: S.D.M.G. | W.D.M.G. | Delfino mitra | M.D.S | ADEE | П.К.Д. | 太空海豚机枪 | M.G.E. | S.D.M.G.
-		SDMG: /
+		SDMG: "/"
 		# DisplayName: Vampire Knives | Vampirmesser | Coltelli vampiro | Couteaux de vampire | Cuchillos de vampiro | Вампирские ножи | 吸血鬼刀 | Facas Vampiro | Wampirze noże
-		VampireKnives: /
+		VampireKnives: "/"
 		# DisplayName: Scourge of the Corruptor | Plage des Verderbers | Castigo del corruttore | Fléau du Corrupteur | Azote del Corruptor | Плеть пожирателя | 腐化者之戟 | Tormento do Corruptor | Bicz skaziciela
-		ScourgeoftheCorruptor: /
+		ScourgeoftheCorruptor: "/"
 		# DisplayName: Staff of the Frost Hydra | Stab der Eishydra | Bastone dell'idra del gelo | Sceptre d'hydre givrée | Báculo de la hidra de escarcha | Посох ледяной гидры | 寒霜九头蛇法杖 | Cajado da Hidra Congelada | Kostur mroźnej hydry
-		StaffoftheFrostHydra: /
+		StaffoftheFrostHydra: "/"
 		# DisplayName: Sweetheart Necklace | Herzlieb-Halskette | Collana da innamorati | Collier d'amoureux | Collar del cariño | Ожерелье возлюбленного | 甜心项链 | Colar da Amada | Naszyjnik miłości
-		SweetheartNecklace: /
+		SweetheartNecklace: "/"
 		# DisplayName: Flurry Boots | Gestöberstiefel | Stivali a raffica | Bottes de rafale | Botas del frenesí | Шквальные ботинки | 疾风雪靴 | Botas Aladas | Poruszone buty
-		FlurryBoots: /
+		FlurryBoots: "/"
 		# DisplayName: D-Town's Wings | D-Towns Flügel | Ali di D-Town | Ailes de D-Town | Alas de D-Town | Крылья D-Town | D-Town的翅膀 | Asas de D-Town | Skrzydła D-Towna
-		DTownsWings: /
+		DTownsWings: "/"
 		# DisplayName: Will's Wings | Wills Flügel | Ali di Will | Ailes de Will | Alas de Will | Крылья Will | Will的翅膀 | Asas de Will | Skrzydła Willa
-		WillsWings: /
+		WillsWings: "/"
 		# DisplayName: Crowno's Wings | Crownos Flügel | Ali di Crowno | Ailes de Crowno | Alas de Crowno | Крылья Crowno | Crowno的翅膀 | Asas de Crowno | Skrzydła Crowno
-		CrownosWings: /
+		CrownosWings: "/"
 		# DisplayName: Cenx's Wings | Cenx Flügel | Ali di Cenx | Ailes de Cenx | Alas de Cenx | Крылья Cenx | Cenx的翅膀 | Asas de Cenx | Skrzydła Cenx
-		CenxsWings: /
+		CenxsWings: "/"
 		# DisplayName: Magic Cuffs | Magische Handschellen | Manette magiche | Menottes magiques | Esposas mágicas | Магические наручники | 魔法手铐 | Algemas Mágicas | Magiczne kajdanki
-		MagicCuffs: /
+		MagicCuffs: "/"
 		# DisplayName: Ankh Charm | Anchamulett | Amuleto croce egizia | Amulette Ânkh | Amuleto de cruz ansata | Амулет анха | 十字章护身符 | Amuleto de Ankh | Wisior ankh
-		AnkhCharm: /
+		AnkhCharm: "/"
 		# DisplayName: Ankh Shield | Anchschild | Scudo croce egizia | Bouclier Ânkh | Escudo de cruz ansata | Щит анха | 十字章护盾 | Escudo de Ankh | Tarcza ankh
-		AnkhShield: /
+		AnkhShield: "/"
 		# DisplayName: Fart in a Jar | Furz im Glas | Flatulenza in barattolo | Pet en pot | Pedo en un bote | Пердушка в банке | 罐中臭屁 | Peido Engarrafado | Bąk w słoju
-		FartinaJar: /
+		FartinaJar: "/"
 		# DisplayName: Candy Corn Rifle | Bonbonmaisgewehr | Fucile caramella | Fusil bonbon au maïs | Fusil de maíz de caramelo | Винтовка из кенди-корна | 玉米糖步枪 | Fuzil de Doces | Karabin na cukierkową kukurydzę
-		CandyCornRifle: /
+		CandyCornRifle: "/"
 		# DisplayName: Jack 'O Lantern Launcher | Kürbislaternenwerfer | Lanciazucche intagliate | Lance-citrouilles menaçantes | Lanzador de linternas calabaza | Светильникомет Джека | 杰克南瓜灯发射器 | Lança Abóboras | Wyrzutnia Jack 'O Lanternów
-		JackOLanternLauncher: /
+		JackOLanternLauncher: "/"
 		# DisplayName: Sickle | Sichel | Falcetto | Faux | Hoz | Коса | 镰刀 | Foice | Sierp
-		Sickle: /
+		Sickle: "/"
 		# DisplayName: Tattered Fairy Wings | Ramponierte Feenflügel | Ali di fata a brandelli | Ailes abîmées de bonne fée | Alas de hada andrajosas | Изодранные крылья феи | 褴褛仙灵之翼 | Asas de Fadas Esfarrapadas | Poszarpane skrzydła duszka
-		TatteredFairyWings: /
+		TatteredFairyWings: "/"
 		# DisplayName: Bat Scepter | Fledermauszepter | Scettro pipistrello | Sceptre de chauve-souris | Cetro de murciélago | Скипетр летучей мыши | 蝙蝠权杖 | Cetro de Morcego | Berło nietoperza
-		BatScepter: /
+		BatScepter: "/"
 		# DisplayName: Raven Staff | Rabenstab | Bastone corvo | Sceptre de corbeau | Báculo de cuervo | Посох ворона | 乌鸦法杖 | Cajado de Corvo | Kostur kruka
-		RavenStaff: /
+		RavenStaff: "/"
 		# DisplayName: Bloody Machete | Blutige Machete | Machete insanguinato | Machette sanglante | Machete sangriento | Кровавый мачете | 血腥砍刀 | Machadinha Sangrenta | Krwawa maczeta
-		BloodyMachete: /
+		BloodyMachete: "/"
 		# DisplayName: The Horseman's Blade | Des Reitersmannes Klinge | Lama del cavaliere | L'épée du cavalier | La espada del Jinete | Клинок всадника | 无头骑士剑 | Lâmina do Cavaleiro | Ostrze jeźdźca
-		TheHorsemansBlade: /
+		TheHorsemansBlade: "/"
 		# DisplayName: Bladed Glove | Klingenhandschuh | Guanto affilato | Gant à lames | Guante con cuchillas | Перчатка с лезвиями | 利刃手套 | Luva Laminada | Rękawica z ostrzami
-		BladedGlove: /
+		BladedGlove: "/"
 		# DisplayName: Spooky Wings | Schaurige Flügel | Ali spettrali | Ailes sinistres | Alas tétricas | Жуткие крылья | 阴森之翼 | Asas Assustadoras | Straszne skrzydła
-		SpookyWings: /
+		SpookyWings: "/"
 		# DisplayName: Stake Launcher | Pflockwerfer | Lanciapaletti | Lance-pieu | Lanzaestacas | Коломет | 尖桩发射器 | Lança-estacas | Wyrzutnia kołków
-		StakeLauncher: /
+		StakeLauncher: "/"
 		# DisplayName: Necromantic Scroll | Nekromantische Schriftrolle | Pergamena necromatica | Parchemin nécromancien | Pergamino de nigromante | Свиток некроманта | 死灵卷轴 | Pergaminho do Necromancer | Nekromatnyczny zwój
-		NecromanticScroll: /
+		NecromanticScroll: "/"
 		# DisplayName: Sniper Scope | Sniper-Zielfernrohr | Mirino da cecchino | Lunette de sniper | Mira de francotirador | Снайперский прицел | 狙击镜 | Luneta do Atirador | Luneta snajperska
-		SniperScope: /
+		SniperScope: "/"
 		# DisplayName: Jellyfish Diving Gear | Quallentaucherausrüstung | Muta da sub medusa | Matériel de plongée de méduse | Equipo de buceo medusa | Медузный водолазный костюм | 水母潜水装备 | Equipamento de Mergulho de Água-viva | Meduzowy sprzęt do nurkowania
-		JellyfishDivingGear: /
+		JellyfishDivingGear: "/"
 		# DisplayName: Arctic Diving Gear | Arktische Taucherausrüstung | Muta da sub artica | Matériel de plongée arctique | Equipo de buceo ártico | Арктический водолазный костюм | 北极潜水装备 | Equipamento de Mergulho Ártico | Arktyczny sprzęt do nurkowania
-		ArcticDivingGear: /
+		ArcticDivingGear: "/"
 		# DisplayName: Frostspark Boots | Frostfunkenstiefel | Stivali lampo di gelo | Bottes d'éclair givré | Botas del campo helado | Искрометные морозные ботинки | 霜花靴 | Botas de Raios Congelados | Buty Mroźnej iskry
-		FrostsparkBoots: /
+		FrostsparkBoots: "/"
 		# DisplayName: Fart in a Balloon | Furz im Ballon | Flatulenza in un palloncino | Pet dans un ballon | Pedo en globo | Пердушка в шарике | 臭屁气球 | Peido no Balão | Bąk w balonie
-		FartInABalloon: /
+		FartInABalloon: "/"
 		# DisplayName: Papyrus Scarab | Papyrusskarabäus | Papiro con scarabeo | Papyrus scarabée | Escarabajo de papiro | Папирусный скарабей | 甲虫莎草纸 | Escaravelho de Papiro | Papirusowy skarabeusz
-		PapyrusScarab: /
+		PapyrusScarab: "/"
 		# DisplayName: Celestial Stone | Himmlischer Stein | Pietra celestiale | Pierre céleste | Piedra celestial | Небесный камень | 天界石 | Pedra Celestial | Niebiański kamień
-		CelestialStone: /
+		CelestialStone: "/"
 		# DisplayName: Hoverboard | Hoverboard | Volopattino | Hoverboard | Patinete volador | Летающая доска | 悬浮板 | Hoverboard | Latająca deskorolka
-		Hoverboard: /
+		Hoverboard: "/"
 		# DisplayName: Red Ryder | Red Ryder | Red Ryder | Red Ryder | Jinete rojo | Красное пневматическое ружье | 红莱德枪 | Cavaleiro Vermelho | Red Ryder
-		RedRyder: /
+		RedRyder: "/"
 		# DisplayName: Festive Wings | Festliche Flügel | Ali festive | Ailes festives | Alas festivas | Праздничные крылья | 喜庆之翼 | Asas Festivas | Świąteczne skrzydła
-		FestiveWings: /
+		FestiveWings: "/"
 		# DisplayName: Candy Cane Sword | Zuckerstangen-Schwert | Spada di zucchero | Épée en sucre d'orge | Espada de bastón de caramelo | Карамельный меч | 糖棒剑 | Espada de Doce | Cukierkowy miecz
-		CandyCaneSword: /
+		CandyCaneSword: "/"
 		# DisplayName: Elf Melter | Elfenschmelzer | Fondielfi | Fondue d'elfe | Derriteelfos | Тигель эльфа | 精灵熔炉 | Incinerador de Elfos | Podpalacz elfów
-		ElfMelter: /
+		ElfMelter: "/"
 		# DisplayName: Candy Cane Pickaxe | Zuckerstangen-Spitzhacke | Piccone di zucchero | Pioche en sucre d'orge | Pico de bastón de caramelo | Карамельная кирка | 糖棒镐 | Picareta de Doce | Cukierkowy kilof
-		CnadyCanePickaxe: /
+		CnadyCanePickaxe: "/"
 		# DisplayName: Fruitcake Chakram | Früchtebrot-Chakram | Chakram alla frutta | Chakram en gâteau | Chakram de tarta de frutas | Кексовый чакрам | 水果蛋糕旋刃 | Chakram com Frutas Cristalizadas | Czakram z ciasta owocowego
-		FruitcakeChakram: /
+		FruitcakeChakram: "/"
 		# DisplayName: Hand Warmer | Handwärmer | Scaldamani | Chauffe-main | Calientamanos | Варежка | 暖手宝 | Aquecedor de Mãos | Ogrzewacz do rąk
-		HandWarmer: /
+		HandWarmer: "/"
 		# DisplayName: Toolbox | Werkzeugkiste | Cassetta degli attrezzi | Boîte à outils | Caja de herramientas | Сумка с инструментами | 工具箱 | Caixa de Ferramentas | Skrzynka na narzędzia
-		Toolbox: /
+		Toolbox: "/"
 		# DisplayName: Christmas Tree Sword | Weihnachtsbaum-Schwert | Spada albero di Natale | Épée en sapin de Noël | Espada Árbol de Navidad | Елочный меч | 圣诞树剑 | Espada de Árvore de Natal | Miecz choinkowy
-		ChristmasTreeSword: /
+		ChristmasTreeSword: "/"
 		# DisplayName: Chain Gun | Kettenkanone | Mitragliatrice | Mitrailleuse | Metralleta | Пулемет | 链式机枪 | Metralhadora Giratória | Pistolet maszynowy
-		ChainGun: /
+		ChainGun: "/"
 		# DisplayName: Razorpine | Rasierfichte | Lancia-aghi | Pin acéré | Cuchillas de pino | Сосновый хвоемет | 剃刀松 | Pinheiro Afiado | Sosnostrzał
-		Razorpine: /
+		Razorpine: "/"
 		# DisplayName: Blizzard Staff | Schneesturmstab | Bastone da bufera | Sceptre de blizzard | Bastón de la ventisca | Посох волшебника | 暴雪法杖 | Cajado da Nevasca | Kostur zamieci
-		BlizzardStaff: /
+		BlizzardStaff: "/"
 		# DisplayName: Snowman Cannon | Schneemannkanone | Cannone pupazzo di neve | Canommes de neige | Cañón de muñecos de nieve | Пушка снеговика | 雪人炮 | Canhão do Homem das Neves | Bałwania armata
-		SnowmanCannon: /
+		SnowmanCannon: "/"
 		# DisplayName: North Pole | Nordpol | Polo Nord | Pôle Nord | Polo Norte | Северный полюс | 北极 | Polo Norte | Biegun północny
-		NorthPole: /
+		NorthPole: "/"
 		# DisplayName: Shroomite Digging Claw | Pilzmitgrabeforke | Forcone di micete | Griffes de champignite | Garra de piñonita excavadora | Грибная шахтерская перчатка | 蘑菇矿挖爪 | Garra para Cavar de Cogumelita | Grzybielenicowy pazur do kopania
-		ShroomiteDiggingClaw: /
+		ShroomiteDiggingClaw: "/"
 		# DisplayName: Venom Staff | Toxikumstab | Bastone tossico | Sceptre à venin | Cetro venenoso | Посох яда | 毒液法杖 | Cajado Peçonhento | Kostur jadu
-		VenomStaff: /
+		VenomStaff: "/"
 		# DisplayName: Brick Layer | Maurer | Cazzuola | Truelle | Capa de ladrillo | Мастерок | 砖层 | Camada de Tijolos | Warstwa cegieł
-		BrickLayer: /
+		BrickLayer: "/"
 		# DisplayName: Extendo Grip | Erweiterungsgriff | Bastone da allungo | Crochet d'extension | Agarre extendido | Ключ-удлинитель | 加长握爪 | Mão Biônika | Większy zasięg
-		ExtendoGrip: /
+		ExtendoGrip: "/"
 		# DisplayName: Paint Sprayer | Farbensprüher | Spruzzavernice | Pistolet à peinture | Spray de pintura | Краскопульт | 喷漆器 | Arma de Tinta | Rozpylacz farby
-		PaintSprayer: /
+		PaintSprayer: "/"
 		# DisplayName: Portable Cement Mixer | Tragbarer Zementmischer | Impastatrice portatile | Bétonneuse portable | Hormigonera portátil | Переносная бетономешалка | 便携式水泥搅拌机 | Betoneira Portátil | Przenośna betoniarka
-		PortableCementMixer: /
+		PortableCementMixer: "/"
 		# DisplayName: Celestial Magnet | Himmlischer Magnet | Calamita celestiale | Aimant céleste | Imán celestial | Небесный магнит | 天界磁石 | Ímã Celestial | Niebiański magnes
-		CelestialMagnet: /
+		CelestialMagnet: "/"
 		# DisplayName: Celestial Emblem | Siegel des Himmlischen | Emblema celestiale | Emblème céleste | Emblema celestial | Небесная эмблема | 天界徽章 | Emblema Celestial | Niebiański symbol
-		CelestialEmblem: /
+		CelestialEmblem: "/"
 		# DisplayName: Celestial Cuffs | Himmlische Handschellen | Manette celestiali | Menottes célestes | Esposas celestiales | Небесные наручники | 天界手铐 | Algemas Celestiais | Niebiańskie kajdanki
-		CelestialCuffs: /
+		CelestialCuffs: "/"
 		# DisplayName: Pulse Bow | Pulsbogen | Arco a impulsi | Arc à impulsion | Arco de pulsos | Пульсирующий лук | 脉冲弓 | Arco de Pulso | Pulsujący łuk
-		PulseBow: /
+		PulseBow: "/"
 		# DisplayName: Revolver | Revolver | Rivoltella | Revolver | Revólver | Револьвер | 左轮手枪 | Revólver | Rewolwer
-		Revolver: /
+		Revolver: "/"
 		# DisplayName: Gatligator | Gatligator | Gatligatore | Carabligator | Cocodrilo metralleta | Гатлингатор | 鳄鱼机关枪 | Metralhadora Jacaré | Gatligator
-		Gatligator: /
+		Gatligator: "/"
 		# DisplayName: Katana | Katana | Katana | Katana | Katana | Катана | 武士刀 | Katana | Katana
-		Katana: /
+		Katana: "/"
 		# DisplayName: Beetle Wings | Käferflügel | Ali di scarabeo | Ailes de scarabée | Alas de escarabajo | Крылья жука | 甲虫之翼 | Asas de Besouro | Skrzydła żuka
-		BeetleWings: /
+		BeetleWings: "/"
 		# DisplayName: Rockfish | Steinfisch | Pesce roccia | Poisson-roche | Pez roca | Морской окунь | 岩鱼锤 | Peixe-pedra | Ryba skalista
-		Rockfish: /
+		Rockfish: "/"
 		# DisplayName: Purple Clubberfish | Lila Keulenfisch | Pesce mazza viola | Massue-poisson violette | Pez garrote morado | Фиолетовая рыба-дубина | 紫挥棒鱼 | Peixe-clava Roxo | Fioletowa rybomaczuga
-		PurpleClubberfish: /
+		PurpleClubberfish: "/"
 		# DisplayName: Obsidian Swordfish | Osidianschwertfisch | Pesce spada di ossidiana | Espadon en obsidienne | Pez espada de obsidiana | Обсидиановая рыба-меч | 黑曜石剑鱼 | Peixe-Espada de Obsidiana | Obsydianowy miecznik
-		ObsidianSwordfish: /
+		ObsidianSwordfish: "/"
 		# DisplayName: Swordfish | Schwertfisch | Pesce spada | Espadon | Pez espada | Рыба-меч | 剑鱼 | Peixe-Espada | Miecznik
-		Swordfish: /
+		Swordfish: "/"
 		# DisplayName: Reaver Shark | Räuberhai | Squalo predatore | Requin-piqueur | Tiburón segador | Акула-похититель | 掠夺鲨 | Tubarão Ladrão | Zbirkin
-		ReaverShark: /
+		ReaverShark: "/"
 		# DisplayName: Sawtooth Shark | Sägezahnhai | Pesce sega | Requin-scieur | Tiburón dientes de sierra | Пилозубая акула | 锯齿鲨 | Tubarão de Dentes Serrados | Rekin piłokształtny
-		SawtoothShark: /
+		SawtoothShark: "/"
 		# DisplayName: Hornet Staff | Hornissenstab | Bastone calabrone | Sceptre de frelon | Báculo de avispón | Посох шершня | 黄蜂法杖 | Cajado da Vespa | Kostur szerszenia
-		HornetStaff: /
+		HornetStaff: "/"
 		# DisplayName: Imp Staff | Koboldstab | Bastone diavoletto | Sceptre de diablotin | Báculo de diablillo | Посох беса | 小鬼法杖 | Cajado do Demônio | Kostur diablika
-		ImpStaff: /
+		ImpStaff: "/"
 		# DisplayName: Queen Spider Staff | Spinnenköniginnenstab | Bastone ragno regina | Sceptre de la Reine-araignée | Báculo de reina araña | Посох королевы пауков | 蜘蛛女王法杖 | Cajado da Aranha Rainha | Kostur Królowej Pająków
-		QueenSpiderStaff: /
+		QueenSpiderStaff: "/"
 		# DisplayName: High Test Fishing Line | Geprüfte Angelschnur | Lenza indistruttibile | Canne à pêche résistante | Sedal de gran prueba | Прочная леска | 优质钓鱼线 | Fio de Pesca de Alto Desempenho | Wytrzymała żyłka
-		HighTestFishingLine: /
+		HighTestFishingLine: "/"
 		# DisplayName: Angler Earring | Anglerohrring | Orecchino da pescatore | Boucles d'oreille de pêcheur | Pendiente de Pescador | Серьга рыбака | 渔夫耳环 | Brinco de Pescador | Kolczyki wędkarza
-		AnglerEarring: /
+		AnglerEarring: "/"
 		# DisplayName: Tackle Box | Köderkiste | Cassetta da pescatore | Coffre à pêche | Caja de aparejos | Ящик рыбацких снастей | 钓具箱 | Caixa de Iscas | Pudełko na akcesoria
-		TackleBox: /
+		TackleBox: "/"
 		# DisplayName: Frog Leg | Froschschenkel | Zampa di rana | Cuisse de grenouille | Anca de rana | Лягушачья лапка | 蛙腿 | Perna de Rã | Żabie udko
-		FrogLeg: /
+		FrogLeg: "/"
 		# DisplayName: Anchor | Anker | Ancora | Ancre | Ancla | Якорь | 锚 | Âncora | Kotwica
-		Anchor: /
+		Anchor: "/"
 		# DisplayName: Fin Wings | Flossenflügel | Ali a pinne | Ailes nageoires | Alas de aleta | Плавниковые крылья | 鳍翼 | Asas de Barbatana | Płetwoskrzydła
-		FinWings: /
+		FinWings: "/"
 		# DisplayName: Palm Wood Bow | Palmholzbogen | Arco di legno di palma | Arc en palmier | Arco de madera de palmera | Лук из пальмовой древесины | 棕榈木弓 | Arco de Madeira de Palmeira | Łuk z drewna palmowego
-		PalmWoodBow: /
+		PalmWoodBow: "/"
 		# DisplayName: Palm Wood Hammer | Palmholzhammer | Martello di legno di palma | Marteau en palmier | Martillo de madera de palmera | Молот из пальмовой древесины | 棕榈木锤 | Martelo de Madeira de Palmeira | Młot z drewna palmowego
-		PalmWoodHammer: /
+		PalmWoodHammer: "/"
 		# DisplayName: Palm Wood Sword | Palmholzschwert | Spada di legno di palma | Épée en palmier | Espada de madera de palmera | Меч из пальмовой древесины | 棕榈木剑 | Espada de Madeira de Palmeira | Miecz z drewna palmowego
-		PalmWoodSword: /
+		PalmWoodSword: "/"
 		# DisplayName: Optic Staff | Optischer Stab | Bastone ottico | Sceptre optique | Báculo óptico | Оптический посох | 魔眼法杖 | Cajado Ótico | Kostur optyczny
-		OpticStaff: /
+		OpticStaff: "/"
 		# DisplayName: Spider Staff | Spinnenstab | Bastone ragno | Sceptre d'araignée | Báculo de araña | Паучий посох | 蜘蛛法杖 | Cajado de Aranha | Kostur pająka
-		SpiderStaff: /
+		SpiderStaff: "/"
 		# DisplayName: Pirate Staff | Piratenstab | Bastone pirata | Sceptre de pirate | Báculo pirata | Пиратский посох | 海盗法杖 | Cajado Pirata | Piracki kostur
-		PirateStaff: /
+		PirateStaff: "/"
 		# DisplayName: Falcon Blade | Falkenschneide | Lama di falco | Lame de faucon | Filo de halcón | Соколиное лезвие | 猎鹰刃 | Lâmina do Falcão | Sokole ostrze
-		FalconBlade: /
+		FalconBlade: "/"
 		# DisplayName: Fishron Wings | Fischronflügel | Ali di pesce drago | Ailes de Dracosson | Alas de Fishron | Крылья Рыброна | 猪龙鱼之翼 | Asas do Peixe-dragão | Skrzydła ryboka
-		FishronWings: /
+		FishronWings: "/"
 		# DisplayName: Flairon | Flairon | Frusta pesce drago | Fléon | Flairon | Флайрон | 猪鲨链球 | Mangual-Dragão | Rybocep
-		Flairon: /
+		Flairon: "/"
 		# DisplayName: Tempest Staff | Sturmstab | Bastone tempesta | Sceptre de tempête | Báculo de tempestades | Посох бури | 暴风雨法杖 | Cajado da Tempestade | Kostur nawałnicy
-		TempestStaff: /
+		TempestStaff: "/"
 		# DisplayName: Razorblade Typhoon | Rasierklingentaifun | Tifone tagliente | Typhon rasoir | Tifón de cuchillas | Бритвенный тайфун | 利刃台风 | Tufão de Navalhas | Tajfun żyletek
-		RazorbladeTyphoon: /
+		RazorbladeTyphoon: "/"
 		# DisplayName: Bubble Gun | Blasenpistole | Pistola sparabolle | Pistolet à bulles | Arma de burbujas | Пузырная пушка | 泡泡枪 | Arma de Bolhas | Bańkostrzał
-		BubbleGun: /
+		BubbleGun: "/"
 		# DisplayName: Tsunami | Tsunami | Maremoto | Tsunami | Tsunami | Цунами | 海啸 | Tsunami | Tsunami
-		Tsunami: /
+		Tsunami: "/"
 		# DisplayName: Boreal Wood Sword | Borealholzschwert | Spada di legno boreale | Épée en bois boréal | Espada de madera boreal | Меч из заснеженной древесины | 针叶木剑 | Espada de Madeira Boreal | Miecz z drewna borealnego
-		BorealWoodSword: /
+		BorealWoodSword: "/"
 		# DisplayName: Boreal Wood Hammer | Borealholzhammer | Martello di legno boreale | Marteau en bois boréal | Martillo de madera boreal | Молот из заснеженной древесины | 针叶木锤 | Martelo de Madeira Boreal | Młot z drewna borealnego
-		BorealWoodHammer: /
+		BorealWoodHammer: "/"
 		# DisplayName: Boreal Wood Bow | Borealholzbogen | Arco di legno boreale | Arc en bois boréal | Arco de madera boreal | Лук из заснеженной древесины | 针叶木弓 | Arco de Madeira Boreal | Łuk z drewna borealnego
-		BorealWoodBow: /
+		BorealWoodBow: "/"
 		# DisplayName: Xeno Staff | Xenostab | Bastone di Xeno | Sceptre xéno | Xenobáculo | Ксено-посох | 外星法杖 | Xeno Cajado | Ksenokostur
-		XenoStaff: /
+		XenoStaff: "/"
 		# DisplayName: Meteor Staff | Meteorstab | Bastone di meteorite | Sceptre de météore | Báculo de meteorito | Метеоритовый посох | 流星法杖 | Cajado de Meteoro | Kostur z meteoru
-		MeteorStaff: /
+		MeteorStaff: "/"
 		# DisplayName: Mothron Wings | Mottron-Flügel | Ali di mothron | Ailes de Mothron | Alas de polillón | Крылья Мотрона | 蛾怪之翼 | Asas de Mothron | Skrzydła mothronu
-		MothronWings: /
+		MothronWings: "/"
 		# DisplayName: Vortex Drill | Vortex-Bohrer | Perforatrice vortice | Foreuse du vortex | Taladro del vórtice | Бур вихря | 星旋钻头 | Furadeira do Vórtice | Świder wirów
-		VortexDrill: /
+		VortexDrill: "/"
 		# DisplayName: Vortex Pickaxe | Vortex-Spitzhacke | Piccone vortice | Pioche du vortex | Pico del vórtice | Кирка вихря | 星旋镐 | Picareta do Vórtice | Kilof wirów
-		VortexPickaxe: /
+		VortexPickaxe: "/"
 		# DisplayName: Nebula Drill | Nebula-Bohrer | Perforatrice della nebulosa | Foreuse nébuleuse | Taladro de nebulosa | Бур туманности | 星云钻头 | Furadeira de Nébula | Świder mgławicy
-		NebulaDrill: /
+		NebulaDrill: "/"
 		# DisplayName: Nebula Pickaxe | Nebula-Spitzhacke | Piccone della nebulosa | Pioche nébuleuse | Pico de nebulosa | Кирка туманности | 星云镐 | Picareta de Nébula | Kilof mgławicy
-		NebulaPickaxe: /
+		NebulaPickaxe: "/"
 		# DisplayName: Solar Flare Drill | Sonneneruptions-Bohrer | Perforatrice esplosione solare | Foreuse de lueur solaire | Taladro de fulguración solar | Бур солнечной вспышки | 耀斑钻头 | Furadeira das Chamas do Sol | Świder słonecznej flary
-		SolarFlareDrill: /
+		SolarFlareDrill: "/"
 		# DisplayName: Solar Flare Pickaxe | Sonneneruptions-Spitzhacke | Piccone esplosione solare | Pioche de lueur solaire | Pico de fulguración solar | Кирка солнечной вспышки | 耀斑镐斧 | Picareta das Chamas do Sol | Kilof słonecznej flary
-		SolarFlarePickaxe: /
+		SolarFlarePickaxe: "/"
 		# DisplayName: Laser Machinegun | Laser-Maschinengewehr | Mitragliatrice laser | Mitrailleuse laser | Metralleta láser | Лазерный пулемет | 激光机枪 | Metralhadora Laser | Laserowy karabin maszynowy
-		LaserMachinegun: /
+		LaserMachinegun: "/"
 		# DisplayName: Electrosphere Launcher | Elektrosphärenraketenwerfer | Lanciaelettrosfera | Lance-électrosphère | Lanzador de electroesferas | Электроракетница | 电圈发射器 | Lança-Eletrosfera | Wyrzutnia elektrosfer
-		ElectrosphereLauncher: /
+		ElectrosphereLauncher: "/"
 		# DisplayName: Xenopopper | Xenopopper | Xenopopper | Fusil à xéno | Xenolanzador | Ксенопушка | 外星霰弹枪 | Xenopopper | Bańkomiot
-		Xenopopper: /
+		Xenopopper: "/"
 		# DisplayName: Laser Drill | Laserbohrer | Perforatrice laser | Foreuse laser | Taladro láser | Лазерный бур | 激光钻头 | Furadeira Laser | Świder laserowy
-		LaserDrill: /
+		LaserDrill: "/"
 		# DisplayName: Mechanical Ruler | Mechanisches Lineal | Righello meccanico | Règle mécanique | Regla mecánica | Механическая линейка | 机械标尺 | Régua Mecânica | Mechaniczna linijka
-		LaserRuler: /
+		LaserRuler: "/"
 		# DisplayName: Influx Waver | Zuflussschwenken | Spadone dell'influsso | Épée à flot | Generadora de flujos | Колебатель приливов | 波涌之刃 | Ondulador de Fluxo | Przełamanie oporu
-		InfluxWaver: /
+		InfluxWaver: "/"
 		# DisplayName: Charged Blaster Cannon | Aufgeladene Blasterkanone | Cannone blaster carico | Canon à charge | Desintegrador cargado | Зарядная бластерная пушка | 带电爆破炮 | Canhão Detonador Carregado | Naładowany blaster armatni
-		ChargedBlasterCannon: /
+		ChargedBlasterCannon: "/"
 		# DisplayName: The Bee's Knees | Die Knie der Biene | Arco delle api | Arc des abeilles | Rodillas de la abeja | Пчелиный лук | 蜂膝弓 | Abelharco | Pszczał
-		BeesKnees: /
+		BeesKnees: "/"
 		# DisplayName: Summoner Emblem | Siegel des Beschwörers | Emblema evocatore | Emblème d'invocateur | Emblema de invocador | Эмблема призывателя | 召唤师徽章 | Emblema do Invocador | Symbol przywoływacza
-		SummonerEmblem: /
+		SummonerEmblem: "/"
 		# DisplayName: Life Drain | Lebensentweichung | Sottrazione vita | Absorbeur de santé | Absorción de vida | Похититель жизни | 夺命杖 | Drenagem da Vida | Wyssanie życia
-		SoulDrain: /
+		SoulDrain: "/"
 		# DisplayName: Dart Pistol | Dartpfeilpistole | Pistola a dardi | Pistolet à fléchettes | Pistola de dardos | Темный пистолет | 飞镖手枪 | Pistola de Dardos | Pistolet strzałkowy
-		DartPistol: /
+		DartPistol: "/"
 		# DisplayName: Dart Rifle | Dartpfeilgewehr | Fucile a dardi | Fusil à fléchettes | Escopeta de dardos | Темная винтовка | 飞镖步枪 | Fuzil de Dardos | Karabin strzałkowy
-		DartRifle: /
+		DartRifle: "/"
 		# DisplayName: Chain Guillotines | Kettenguillotinen | Ghigliottine a catena | Chaîne à guillotine | Guillotinas encadenadas | Гильотины на цепях | 铁链血滴子 | Guilhotinas com Corrente | Gilotyny łańcuchowe
-		ChainGuillotines: /
+		ChainGuillotines: "/"
 		# DisplayName: Fetid Baghnakhs | Stinkende Tigerkrallen | Bagh Nakh sporchi | Baghnakhs fétides | Baghnakhs fétidos | Гниющие когти | 臭虎爪 | Baghnakhs Fétidas | Cuchnące bagh naka
-		FetidBaghnakhs: /
+		FetidBaghnakhs: "/"
 		# DisplayName: Clinger Staff | Klettenstab | Bastone appiccicoso | Sceptre d'Accrocheur | Báculo de lapa | Посох хватателя | 爬藤怪法杖 | Cajado do Prendedor | Kostur chwytaka
-		ClingerStaff: /
+		ClingerStaff: "/"
 		# DisplayName: Putrid Scent | Fäulnisgeruch | Odore putrido | Odeur putride | Aroma putrefacto | Гнилые останки | 腐香囊 | Aroma Podre | Zgniły zapach
-		PutridScent: /
+		PutridScent: "/"
 		# DisplayName: Flesh Knuckles | Fleischknöchel | Nocche di carne | Poing américain en chair | Nudillos de carne | Кастет из плоти | 血肉指关节 | Punhos de Carne | Mięsiste kłykcie
-		FleshKnuckles: /
+		FleshKnuckles: "/"
 		# DisplayName: Flower Boots | Blumenstiefel | Stivali di fiori | Bottes fleurs | Botas floridas | Цветочные сапоги | 花靴 | Botas de Flores | Kwieciste buty
 		FlowerBoots: "/"
 		# DisplayName: Seedler | Setzling | Spargisemi | Semeuse | Semillera | Сеятель | 种子弯刀 | Espada Espinho | Siewca

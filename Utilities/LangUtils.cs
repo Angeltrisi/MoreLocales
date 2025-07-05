@@ -59,6 +59,8 @@ namespace MoreLocales.Utilities
             // if anyone's reading this pls tell me if i'm stupid
             // can more than one mod even add comments at the same time?? if not then i have no idea why i'm doing this
 
+            // this errored once. it is a dotnet-provided class. i am so incredibly paranoid right now that this will randomly error for no reason
+            // cosmic ray bit flip???
             if (!_commentsQueue.IsEmpty)
                 FilesWillBeReloadedDueToCommentsChange = true;
             else
@@ -98,6 +100,14 @@ namespace MoreLocales.Utilities
                     fileActions[file].Add(fileAction);
                 }
 
+                int count = fileActions.Count;
+
+                if (count == 0)
+                    continue;
+
+                HashSet<LocalizationFile> modifiedFiles = new(count);
+                List<LocalizationFile> write = new(count);
+
                 foreach (var kvp2 in fileActions)
                 {
                     var file = kvp2.Key;
@@ -121,24 +131,21 @@ namespace MoreLocales.Utilities
                         {
                             finalComment = entryRef.comment + comment;
                         }
-                        // do not freeze the comment here because then it won't change when it needs to,
-                        // instead freeze it during LocalizationLoader.UpdateLocalizationFilesForMod
-                        // (which is called automatically since tMod detects file writing with the file watchers)
 
-                        // reassign
-                        entryRef =
-                            new(entryRef.key,
-                                entryRef.value,
-                                finalComment,
-                                entryRef.type);
+                        // reassign (?)
+                        if (entryRef.comment != finalComment)
+                        {
+                            entryRef = entryRef with { comment = finalComment };
+
+                            if (modifiedFiles.Add(file)) // only adds if it wasn't already added (i may be stupid this seems like a really bad way of doing it)
+                                write.Add(file);
+                        }
                     }
                 }
 
-                foreach (var finalAction in fileActions.Keys)
-                {
+                foreach (var file in CollectionsMarshal.AsSpan(write))
                     // write to disk
-                    finalAction.WriteToDisk(filesList, mod.SourceFolder, GameCulture.DefaultCulture);
-                }
+                    file.WriteToDisk(filesList, mod.SourceFolder, GameCulture.DefaultCulture);
             }
         }
         /// <summary>
@@ -373,7 +380,8 @@ namespace MoreLocales.Utilities
             return result;
         }
         /// <summary>
-        /// Allows you to get an array of the localization values for a given key, as long as all the target cultures are vanilla cultures.<para/>
+        /// Allows you to get an array of the localization values for a given key, as long as all the target cultures are vanilla cultures.<br/>
+        /// If no cultures are passed in, the value will be retrieved from every vanilla culture.<para/>
         /// If you wish for something similar to this for modded cultures, scream at me in the Discord because I am so incredibly tired from writing all of this code<br/>
         /// or just impl it urself
         /// </summary>
@@ -382,6 +390,8 @@ namespace MoreLocales.Utilities
         /// <returns></returns>
         public static string[] GetVanillaLocalizationValues(string key, params GameCulture[] targetCultures)
         {
+            if (targetCultures.Length == 0)
+                targetCultures = VanillaCultures;
             string[] values = new string[targetCultures.Length];
             for (int i = 0; i < targetCultures.Length; i++)
             {

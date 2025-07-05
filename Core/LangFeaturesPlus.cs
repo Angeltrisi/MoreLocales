@@ -270,7 +270,7 @@ namespace MoreLocales.Core
             data = target.GetLocalization(key, () => "/");
             string commentBody = 
                 vanilla
-                ? string.Join(" | ", LangUtils.GetVanillaLocalizationValues($"ItemName.{itemName}", LangUtils.VanillaCultures))
+                ? string.Join(" | ", LangUtils.GetVanillaLocalizationValues($"ItemName.{itemName}"))
                 : Lang.GetItemName(type).Value;
             target.AddComment(key,  $"DisplayName: {commentBody}", HjsonCommentType.Hash);
 
