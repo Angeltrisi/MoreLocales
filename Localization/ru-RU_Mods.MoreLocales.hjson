@@ -1,7 +1,7 @@
 Configs: {
 	Headers: {
 		Fonts: Настройки шрифта
-		// Features: Localized Prefix Placement Header
+		// Features: Other Features
 	}
 
 	ClientSideConfig: {

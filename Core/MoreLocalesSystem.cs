@@ -123,8 +123,17 @@ namespace MoreLocales.Core
             if (Main.keyState.IsKeyDown(Keys.F) && !Main.oldKeyState.IsKeyDown(Keys.F))
             {
                 MoreLocalesSets.ReloadedLocalizations();
+                /*
+                foreach (var item in (typeof(LangFeaturesPlus).GetField("GenderNames", BindingFlags.Static | BindingFlags.NonPublic).GetValue(null) as string[]))
+                {
+                    Main.NewText(item);
+                }
+                */
+                /*
+                MoreLocalesSets.ReloadedLocalizations();
                 if (!MoreLocalesSets._contentReady || LangUtils.FilesWillBeReloadedDueToCommentsChange)
                     Main.NewText($"CAN'T {Main.rand.NextDouble()}");
+                */
                 /*
                 foreach (var key in LanguageManager.Instance._categoryGroupedKeys.Keys)
                     Console.WriteLine(key);

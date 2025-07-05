@@ -164,6 +164,7 @@ namespace MoreLocales.Utilities
         /// Whether or not the comment was successfully added.<para/>
         /// Adding comments will fail if:
         /// <list type="bullet">
+        /// <item>This code runs on a server.</item>
         /// <item>The given key doesn't exist.</item>
         /// <item>The mod associated with the key does not have its <see cref="TmodFile"/> open (during <see cref="Mod.Unload"/> for example)</item>
         /// <item>The mod associated with the key is not locally built.</item>
@@ -171,6 +172,9 @@ namespace MoreLocales.Utilities
         /// </returns>
         public static bool AddComment(string key, string comment, HjsonCommentType commentType = HjsonCommentType.Slashes, bool overwriteComment = true)
         {
+            if (Main.dedServ)
+                return false;
+
             // currently can't be added to categories. make that possible
 
             if (!Language.Exists(key))

@@ -1687,10 +1687,508 @@ InflectionData: {
 	# For prefixes, the new entries are separated into Masculine, Feminine and Neuter.
 	# Plurality is included in the same way it is normally included in tMod localization files. Read: https://github.com/tModLoader/tModLoader/wiki/Localization#pluralization
 	Prefixes: {
+		Large: {
+			Masculine: Large
+			Feminine: Large
+			Neuter: Large
+		}
+
+		Massive: {
+			Masculine: Massive
+			Feminine: Massive
+			Neuter: Massive
+		}
+
+		Dangerous: {
+			Masculine: Dangerous
+			Feminine: Dangerous
+			Neuter: Dangerous
+		}
+
+		Savage: {
+			Masculine: Savage
+			Feminine: Savage
+			Neuter: Savage
+		}
+
+		Sharp: {
+			Masculine: Sharp
+			Feminine: Sharp
+			Neuter: Sharp
+		}
+
+		Pointy: {
+			Masculine: Pointy
+			Feminine: Pointy
+			Neuter: Pointy
+		}
+
+		Tiny: {
+			Masculine: Tiny
+			Feminine: Tiny
+			Neuter: Tiny
+		}
+
+		Terrible: {
+			Masculine: Terrible
+			Feminine: Terrible
+			Neuter: Terrible
+		}
+
+		Small: {
+			Masculine: Small
+			Feminine: Small
+			Neuter: Small
+		}
+
 		Dull: {
 			Masculine: Dull
 			Feminine: Dull
 			Neuter: Dull
+		}
+
+		Unhappy: {
+			Masculine: Unhappy
+			Feminine: Unhappy
+			Neuter: Unhappy
+		}
+
+		Bulky: {
+			Masculine: Bulky
+			Feminine: Bulky
+			Neuter: Bulky
+		}
+
+		Shameful: {
+			Masculine: Shameful
+			Feminine: Shameful
+			Neuter: Shameful
+		}
+
+		Heavy: {
+			Masculine: Heavy
+			Feminine: Heavy
+			Neuter: Heavy
+		}
+
+		Light: {
+			Masculine: Light
+			Feminine: Light
+			Neuter: Light
+		}
+
+		Sighted: {
+			Masculine: Sighted
+			Feminine: Sighted
+			Neuter: Sighted
+		}
+
+		Rapid: {
+			Masculine: Rapid
+			Feminine: Rapid
+			Neuter: Rapid
+		}
+
+		Hasty: {
+			Masculine: Hasty
+			Feminine: Hasty
+			Neuter: Hasty
+		}
+
+		Intimidating: {
+			Masculine: Intimidating
+			Feminine: Intimidating
+			Neuter: Intimidating
+		}
+
+		Deadly: {
+			Masculine: Deadly
+			Feminine: Deadly
+			Neuter: Deadly
+		}
+
+		Staunch: {
+			Masculine: Staunch
+			Feminine: Staunch
+			Neuter: Staunch
+		}
+
+		Awful: {
+			Masculine: Awful
+			Feminine: Awful
+			Neuter: Awful
+		}
+
+		Lethargic: {
+			Masculine: Lethargic
+			Feminine: Lethargic
+			Neuter: Lethargic
+		}
+
+		Awkward: {
+			Masculine: Awkward
+			Feminine: Awkward
+			Neuter: Awkward
+		}
+
+		Powerful: {
+			Masculine: Powerful
+			Feminine: Powerful
+			Neuter: Powerful
+		}
+
+		Mystic: {
+			Masculine: Mystic
+			Feminine: Mystic
+			Neuter: Mystic
+		}
+
+		Adept: {
+			Masculine: Adept
+			Feminine: Adept
+			Neuter: Adept
+		}
+
+		Masterful: {
+			Masculine: Masterful
+			Feminine: Masterful
+			Neuter: Masterful
+		}
+
+		Inept: {
+			Masculine: Inept
+			Feminine: Inept
+			Neuter: Inept
+		}
+
+		Ignorant: {
+			Masculine: Ignorant
+			Feminine: Ignorant
+			Neuter: Ignorant
+		}
+
+		Deranged: {
+			Masculine: Deranged
+			Feminine: Deranged
+			Neuter: Deranged
+		}
+
+		Intense: {
+			Masculine: Intense
+			Feminine: Intense
+			Neuter: Intense
+		}
+
+		Taboo: {
+			Masculine: Taboo
+			Feminine: Taboo
+			Neuter: Taboo
+		}
+
+		Celestial: {
+			Masculine: Celestial
+			Feminine: Celestial
+			Neuter: Celestial
+		}
+
+		Furious: {
+			Masculine: Furious
+			Feminine: Furious
+			Neuter: Furious
+		}
+
+		Keen: {
+			Masculine: Keen
+			Feminine: Keen
+			Neuter: Keen
+		}
+
+		Superior: {
+			Masculine: Superior
+			Feminine: Superior
+			Neuter: Superior
+		}
+
+		Forceful: {
+			Masculine: Forceful
+			Feminine: Forceful
+			Neuter: Forceful
+		}
+
+		Broken: {
+			Masculine: Broken
+			Feminine: Broken
+			Neuter: Broken
+		}
+
+		Damaged: {
+			Masculine: Damaged
+			Feminine: Damaged
+			Neuter: Damaged
+		}
+
+		Shoddy: {
+			Masculine: Shoddy
+			Feminine: Shoddy
+			Neuter: Shoddy
+		}
+
+		Quick: {
+			Masculine: Quick
+			Feminine: Quick
+			Neuter: Quick
+		}
+
+		Deadly2: {
+			Masculine: Deadly
+			Feminine: Deadly
+			Neuter: Deadly
+		}
+
+		Agile: {
+			Masculine: Agile
+			Feminine: Agile
+			Neuter: Agile
+		}
+
+		Nimble: {
+			Masculine: Nimble
+			Feminine: Nimble
+			Neuter: Nimble
+		}
+
+		Murderous: {
+			Masculine: Murderous
+			Feminine: Murderous
+			Neuter: Murderous
+		}
+
+		Slow: {
+			Masculine: Slow
+			Feminine: Slow
+			Neuter: Slow
+		}
+
+		Sluggish: {
+			Masculine: Sluggish
+			Feminine: Sluggish
+			Neuter: Sluggish
+		}
+
+		Lazy: {
+			Masculine: Lazy
+			Feminine: Lazy
+			Neuter: Lazy
+		}
+
+		Annoying: {
+			Masculine: Annoying
+			Feminine: Annoying
+			Neuter: Annoying
+		}
+
+		Nasty: {
+			Masculine: Nasty
+			Feminine: Nasty
+			Neuter: Nasty
+		}
+
+		Manic: {
+			Masculine: Manic
+			Feminine: Manic
+			Neuter: Manic
+		}
+
+		Hurtful: {
+			Masculine: Hurtful
+			Feminine: Hurtful
+			Neuter: Hurtful
+		}
+
+		Strong: {
+			Masculine: Strong
+			Feminine: Strong
+			Neuter: Strong
+		}
+
+		Unpleasant: {
+			Masculine: Unpleasant
+			Feminine: Unpleasant
+			Neuter: Unpleasant
+		}
+
+		Weak: {
+			Masculine: Weak
+			Feminine: Weak
+			Neuter: Weak
+		}
+
+		Ruthless: {
+			Masculine: Ruthless
+			Feminine: Ruthless
+			Neuter: Ruthless
+		}
+
+		Frenzying: {
+			Masculine: Frenzying
+			Feminine: Frenzying
+			Neuter: Frenzying
+		}
+
+		Godly: {
+			Masculine: Godly
+			Feminine: Godly
+			Neuter: Godly
+		}
+
+		Demonic: {
+			Masculine: Demonic
+			Feminine: Demonic
+			Neuter: Demonic
+		}
+
+		Zealous: {
+			Masculine: Zealous
+			Feminine: Zealous
+			Neuter: Zealous
+		}
+
+		Hard: {
+			Masculine: Hard
+			Feminine: Hard
+			Neuter: Hard
+		}
+
+		Guarding: {
+			Masculine: Guarding
+			Feminine: Guarding
+			Neuter: Guarding
+		}
+
+		Armored: {
+			Masculine: Armored
+			Feminine: Armored
+			Neuter: Armored
+		}
+
+		Warding: {
+			Masculine: Warding
+			Feminine: Warding
+			Neuter: Warding
+		}
+
+		Arcane: {
+			Masculine: Arcane
+			Feminine: Arcane
+			Neuter: Arcane
+		}
+
+		Precise: {
+			Masculine: Precise
+			Feminine: Precise
+			Neuter: Precise
+		}
+
+		Lucky: {
+			Masculine: Lucky
+			Feminine: Lucky
+			Neuter: Lucky
+		}
+
+		Jagged: {
+			Masculine: Jagged
+			Feminine: Jagged
+			Neuter: Jagged
+		}
+
+		Spiked: {
+			Masculine: Spiked
+			Feminine: Spiked
+			Neuter: Spiked
+		}
+
+		Angry: {
+			Masculine: Angry
+			Feminine: Angry
+			Neuter: Angry
+		}
+
+		Menacing: {
+			Masculine: Menacing
+			Feminine: Menacing
+			Neuter: Menacing
+		}
+
+		Brisk: {
+			Masculine: Brisk
+			Feminine: Brisk
+			Neuter: Brisk
+		}
+
+		Fleeting: {
+			Masculine: Fleeting
+			Feminine: Fleeting
+			Neuter: Fleeting
+		}
+
+		Hasty2: {
+			Masculine: Hasty
+			Feminine: Hasty
+			Neuter: Hasty
+		}
+
+		Quick2: {
+			Masculine: Quick
+			Feminine: Quick
+			Neuter: Quick
+		}
+
+		Wild: {
+			Masculine: Wild
+			Feminine: Wild
+			Neuter: Wild
+		}
+
+		Rash: {
+			Masculine: Rash
+			Feminine: Rash
+			Neuter: Rash
+		}
+
+		Intrepid: {
+			Masculine: Intrepid
+			Feminine: Intrepid
+			Neuter: Intrepid
+		}
+
+		Violent: {
+			Masculine: Violent
+			Feminine: Violent
+			Neuter: Violent
+		}
+
+		Legendary: {
+			Masculine: Legendary
+			Feminine: Legendary
+			Neuter: Legendary
+		}
+
+		Unreal: {
+			Masculine: Unreal
+			Feminine: Unreal
+			Neuter: Unreal
+		}
+
+		Mythical: {
+			Masculine: Mythical
+			Feminine: Mythical
+			Neuter: Mythical
+		}
+
+		Legendary2: {
+			Masculine: Legendary
+			Feminine: Legendary
+			Neuter: Legendary
 		}
 	}
 }

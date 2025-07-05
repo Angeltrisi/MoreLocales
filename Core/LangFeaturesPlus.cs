@@ -219,6 +219,26 @@ namespace MoreLocales.Core
             string preprefix = vanilla ? "VanillaData." : string.Empty;
             return target.GetLocalization($"{preprefix}InflectionData.Prefixes.{prefixName}.{genderName}", () => Lang.prefix[prefix].Value).WithFormatArgs((byte)pluralization);
         }
+        internal static void EnsureKeysForPrefixExist(int prefix)
+        {
+            bool vanilla = prefix < PrefixID.Count;
+            ModPrefix modPrefix = null;
+
+            if (!vanilla)
+                modPrefix = PrefixLoader.GetPrefix(prefix);
+
+            string prefixName = vanilla ? PrefixID.Search.GetName(prefix) : modPrefix.Name;
+
+            Mod target = vanilla ? MoreLocales.Instance : modPrefix.Mod;
+            string preprefix = vanilla ? "VanillaData." : string.Empty;
+
+            for (int i = 0; i < GenderNames.Length; i++)
+            {
+                target.GetLocalization($"{preprefix}InflectionData.Prefixes.{prefixName}.{GenderNames[i]}", () => Lang.prefix[prefix]?.Value ?? prefixName);
+                // AAAA I NEED CATEGORY SUPPORT FOR THIS ONE
+                // target.AddComment
+            }
+        }
         public static bool GPDataChangesAdjectiveForm(this GameCulture c, InflectionData data)
         {
             data.Deconstruct(out GrammaticalGender gender, out Pluralization pluralization);
@@ -380,7 +400,7 @@ namespace MoreLocales.Core
     /// </summary>
     public enum GrammaticalGender : byte
     {
-        Masculine, Common = 0,
+        Masculine = 0,//, Common = 0,
         Feminine = 1,
         Neuter = 2,
     }
